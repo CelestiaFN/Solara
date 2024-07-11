@@ -13,12 +13,12 @@ export default function () {
   app.get("/api/oauth/discord/callback", async (c) => {
     const code = c.req.query("code");
     const tokenResponse = await oauth.tokenRequest({
-      clientId: "1257854812767125504",
-      clientSecret: "B9kOPJUH8bDa55pvhgm-H4MMuhq_yDga",
+      clientId: "1260815476695502848",
+      clientSecret: "3J48NXc4_h45KH1T9zzAMcg3WPgT5_fL",
       code,
-      scope: "identify+guilds+email+guilds.join",
+      scope: "identify+guilds",
       grantType: "authorization_code",
-      redirectUri: "https://Hydro.itztiva.com/api/oauth/discord/callback/",
+      redirectUri: "https://hydro.itztiva.com/api/oauth/discord/callback/",
     });
     const { access_token } = tokenResponse;
     const userResponse = await axios.get(
@@ -30,25 +30,22 @@ export default function () {
     const { id, avatar, username } = userResponse.data;
     const discordId = id;
     const guilds = await axios.get(
-      `https://discord.com/api/v10/guilds/1225132031365615678/members/${id}`,
+      `https://discord.com/api/v10/guilds/1260785136551596083/members/${discordId}`,
       {
-        headers: { Authorization: `Bot MTI1Nzg1NDgxMjc2NzEyNTUwNA.GPaydr.B4Aidg6dC_bDw0Wq8cT40zpIFHUbbTbQlz-jys` },
+        headers: { Authorization: `Bot MTI2MDgxNTQ3NjY5NTUwMjg0OA.GkCS_f.xCwSbQTHD_S2ZisS2wTW_8QF-G-KpqBWM5gbRQ` },
       }
     );
     const { roles } = guilds.data;
 
     const roleIds = {
-      '1225132031365615680': 0, // member
-      '1225145872535388180': 1, // private
-      '1225150047969345586': 2, // deluxe 
-      '1249316658468880495': 3, // Hydro
-      '1245853114288836719': 4, // support
-      '1257360998751404072': 5, // lead support
-      '1245853189035659445': 6, // moderator 
-      '1245853269163638844': 7, // admin
-      '1245873425982029885': 8, // developer
-      '1231811683412869210': 9, // co owner
-      '1225132031365615684': 10 // owner 
+      '1260791766601433269': 0, // member
+      '1260791529996550204': 2, // support
+      '1260791033009143859': 3, // moderator 
+      '1260790404123721769': 4, // admin
+      '1260816793660821514': 5, // manager
+      '1260789391027212381': 6, // developer
+      '1260791228233023591': 7, // co owner
+      '1260788909781155902': 8 // owner 
     } as any;
 
     let userrole = -1;
@@ -63,10 +60,10 @@ export default function () {
       }
     }
 
-    let user = (await User.findOne({ discordId })) as any;
-    if (user && Number(user.role) >= 6) {
-      await axios.post(`http://127.0.0.1:21491/Hydro/gift/fl/${user.accountId}`);
-    }
+     let user = (await User.findOne({ discordId })) as any;
+    // if (user && Number(user.role) >= 6) {
+    //   await axios.post(`http://127.0.0.1:21491/hydro/gift/fl/${user.accountId}`);
+    // }
 
     if (!user) {
       try {

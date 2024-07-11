@@ -5,7 +5,7 @@ import axios from "axios"
 let athena = require("../../../static/profiles/athena.json");
 
 export default function () {
-    app.post("/Hydro/gift/fl/:accountId", async (c) => {
+    app.post("/hydro/gift/fl/:accountId", async (c) => {
         const fixedBackendValues = {
             "AthenaEmoji": "AthenaDance",
             "AthenaSpray": "AthenaDance",
