@@ -1,2 +1,2 @@
 # Solara
-Solara Rewrite - Backend for Hydro
+Solara Rewrite - Backend for Celestia

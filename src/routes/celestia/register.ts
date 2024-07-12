@@ -75,7 +75,7 @@ export default async function () {
         let password;
         
         if (body.email) email = body.email;
-        if (!body.email) email = `${Math.floor(1000000 + Math.random() * 9000000)}@Hydrofn.org`
+        if (!body.email) email = `${Math.floor(1000000 + Math.random() * 9000000)}@Celestiafn.org`
         if (body.password) password = body.password;
         if (!body.password) password = generateRandomPassword();
 

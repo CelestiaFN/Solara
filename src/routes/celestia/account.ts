@@ -64,7 +64,7 @@ export default function () {
         "0": "Member",
         "1": "Private",
         "2": "Deluxe",
-        "3": "Hydro",
+        "3": "Celestia",
         "4": "Support",
         "5": "Lead Support",
         "6": "Moderator",

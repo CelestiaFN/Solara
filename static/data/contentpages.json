@@ -55,7 +55,7 @@
           "_type": "CommonUI Simple Message Base",
           "image": "https://i.kinja-img.com/image/upload/c_fill,h_675,pg_1,q_80,w_1200/ul3hgtdd7wzo9esjdriu.png",
           "subgame": "br",
-          "title": "Hydro",
+          "title": "Celestia",
           "body": "Chapter 2: Season 3, also known as Season 13 in the game files, with the slogan \"Splashdown!\", was the thirteenth season of Fortnite: Battle Royale, which started on June 17th 2020, and ended on August 26th 2020."
         },
         {
@@ -1451,7 +1451,7 @@
         },
         {
           "image": "https://cdn2.unrealengine.com/14br-marveltakeoverltm-playlisttile-1024x512-1024x512-081336658.jpg",
-          "playlist_name": "Playlist_HighTower_Hydro",
+          "playlist_name": "Playlist_HighTower_Celestia",
           "hidden": false,
           "violator": "",
           "_type": "FortPlaylistInfo",
@@ -1461,7 +1461,7 @@
         },
         {
           "image": "https://cdn2.unrealengine.com/14br-marveltakeoverltm-playlisttile-1024x512-1024x512-081332895.jpg",
-          "playlist_name": "Playlist_HighTower_Hydro_12v12",
+          "playlist_name": "Playlist_HighTower_Celestia_12v12",
           "violator": "",
           "hidden": false,
           "_type": "FortPlaylistInfo",
@@ -16241,7 +16241,7 @@
           "resourceID": "PcQCHxHkBsmjSneR",
           "stationImage": "https://cdn2.unrealengine.com/s13-radio-power-play-256x256-256x256-2f3bacc8ecbf.png",
           "_type": "RadioStationItem",
-          "title": "Power Play"
+          "title": "Tiva Is Too Sigma"
         }
       ]
     },

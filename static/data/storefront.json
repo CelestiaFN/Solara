@@ -12,14 +12,14 @@
             "devName": "[VIRTUAL]1x AthenaCharacter:CID_047_Athena_Commando_F_HolidayReindeer for 1200 MtxCurrency",
             "itemGrants": [
               {
-                "templateId": "AthenaCharacter:CID_047_Athena_Commando_F_HolidayReindeer",
+                "templateId": "AthenaDance:EID_999",
                 "quantity": 1
               }
             ],
             "requirements": [
               {
                 "requirementType": "DenyOnItemOwnership",
-                "requiredId": "AthenaCharacter:CID_047_Athena_Commando_F_HolidayReindeer",
+                "requiredId": "AthenaDance:EID_999",
                 "minQuantity": 1
               }
             ],
