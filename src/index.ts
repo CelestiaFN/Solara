@@ -4,6 +4,7 @@ import path from 'node:path';
 import EnvBuilder from './builders/environment/Builder';
 import { cors } from 'hono/cors';
 import logger from './utils/logger/logger';
+import { Solara } from './utils/errors/Solara';
 
 const app = new Hono({ strict: false })
 
@@ -21,6 +22,12 @@ app.use(async (c, next) => {
     }
     await next();
 });
+
+app.use(async (c, next) => {
+    if (c.res.status == 404) {
+        return c.json(Solara.basic.notFound, 400)
+    }
+})
 
 await import('./database/connect');
 

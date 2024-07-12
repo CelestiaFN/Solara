@@ -12,21 +12,11 @@ export default function () {
         let profile = profiles?.profiles[c.req.query("profileId") as string];
         let athena = profiles?.profiles["athena"];
 
-        let multiUpdates: any[] = [{
-            profileRevision: athena?.rvn || 0,
-            profileId: "athena",
-            profileChangesBaseRevision: athena?.rvn || 0,
-            profileChanges: [],
-            profileCommandRevision: athena?.commandRevision || 0,
-        }];
-
         const ver = getVersion(c);
         const body = await c.req.json();
-
-        let lootResult: any[] = [
-            { items: [] }
-        ];
-        let profileChanges: Object[] = [];
+        const applyProfileChanges: any[] = [];
+        const notifications: any[] = [];
+        const multiUpdates: any[] = [];
         let BaseRevision = profile.rvn;
         let ProfileRevisionCheck =
             ver.build >= 12.2 ? profile.commandRevision : profile.rvn;
@@ -63,18 +53,17 @@ export default function () {
 
                 athena.items[ID] = Item;
 
-                multiUpdates[0].profileChanges.push({
+                applyProfileChanges.push({
                     changeType: "itemAdded",
                     itemId: ID,
                     item: athena.items[ID],
                 });
 
-                lootResult[0].items.push({
-                    itemType: Item.templateId,
-                    itemGuid: ID,
-                    itemProfile: "athena",
-                    quantity: 1,
-                });
+                multiUpdates.push({
+                    changeType: "itemAdded",
+                    itemId: ID,
+                    item: athena.items[ID],
+                  });
             }
 
             const ID = v4();
@@ -116,11 +105,11 @@ export default function () {
 
                     profile.items[key].quantity -= findOfferId.offerId.prices[0].finalPrice;
 
-                    profileChanges.push({
+                    applyProfileChanges.push({
                         changeType: "itemQuantityChanged",
-                        itemId: key,
-                        quantity: profile.items[key].quantity,
-                    });
+                        itemId: "Currency:MtxPurchased",
+                        quantity: profiles.profiles.common_core.items["Currency:MtxPurchased"].quantity,
+                      });
 
                     paid = true;
                     break;
@@ -130,19 +119,11 @@ export default function () {
                     return c.json(Solara.storefront.currencyInsufficient, 400);
                 }
             }
-            profiles?.updateOne({
-                $set: {
-                    [`profiles.${c.req.query("profileId")}`]: profile,
-                    [`profiles.athena`]: athena,
-                }
-            });
         }
 
         profile.rvn += 1;
         profile.commandRevision += 1;
         profile.updated = new Date().toISOString();
-        multiUpdates[0].profileRevision = athena.rvn;
-        multiUpdates[0].profileCommandRevision = athena.commandRevision;
         profiles?.updateOne({
             $set: {
                 [`profiles.${c.req.query("profileId")}`]: profile,
@@ -150,27 +131,31 @@ export default function () {
             }
         });
 
-    //    if (QueryRevision != ProfileRevisionCheck) {
-      //      profileChanges = [{ changeType: "fullProfileUpdate", profile }];
-      //  }
-
         return c.json({
             profileRevision: profile.rvn || 0,
             profileId: c.req.query("profileId"),
             profileChangesBaseRevision: BaseRevision,
-            profileChanges: profileChanges,
+            profileChanges: applyProfileChanges,
             notifications: [
                 {
-                    type: "CatalogPurchase",
-                    primary: true,
-                    lootResult: {
-                        items: lootResult[0].items,
-                    },
+                  type: "CatalogPurchase",
+                  primary: true,
+                  lootResult: {
+                    items: notifications,
+                  },
                 },
-            ],
+              ],
             profileCommandRevision: profile.commandRevision || 0,
             serverTime: new Date().toISOString(),
-            multiUpdates: multiUpdates,
+            multiUpdate: [
+                {
+                  profileRevision: athena.rvn,
+                  profileId: "athena",
+                  profileChangesBaseRevision: BaseRevision,
+                  profileChanges: multiUpdates,
+                  profileCommandRevision: athena.commandRevision,
+                },
+              ],
             responseVersion: 1,
         });
     });

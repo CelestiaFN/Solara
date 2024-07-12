@@ -7,6 +7,7 @@ export const ConfigSchema = z.object({
     MAINTENANCE: z.string(),
     PUBLICVER: z.string(),
     SEASON: z.string(),
+    WL: z.string(),
     EMERGENCY_NOTICE_TITLE: z.string(),
     EMERGENCY_NOTICE_BODY: z.string(),
     SERVICETYPE: z.string(),

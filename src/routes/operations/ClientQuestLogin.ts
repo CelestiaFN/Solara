@@ -13,6 +13,10 @@ export default function () {
             const profile = profiles?.profiles.athena;
             if (!profile) return c.json(Solara.mcp.profileNotFound, 404);
 
+            if (await c.req.json()) {
+                console.log(await c.req.json())
+            }
+
             let profileChanges = [];
             let BaseRevision = profile.rvn;
 

@@ -90,6 +90,30 @@ function getEvents(ver: any) {
       events.push(createEvent("FLA01"));
     }
 
+    if (ver.season == 13) {
+      if (Number(Bun.env.WL) == 1) {
+        events.push(createEvent("WL1"));
+      }
+      if (Number(Bun.env.WL) == 2) {
+        events.push(createEvent("WL2"));
+      }
+      if (Number(Bun.env.WL) == 3) {
+        events.push(createEvent("WL3"));
+      }
+      if (Number(Bun.env.WL) == 4) {
+        events.push(createEvent("WL4"));
+      }
+      if (Number(Bun.env.WL) == 5) {
+        events.push(createEvent("WL5"));
+      }
+      if (Number(Bun.env.WL) == 6) {
+        events.push(createEvent("WL6"));
+      }
+      if (Number(Bun.env.WL) == 7) {
+        events.push(createEvent("WL7"));
+      }
+    }
+
     if (ver.build == 13.4) {
       events.push(createEvent("SM1"));
     }

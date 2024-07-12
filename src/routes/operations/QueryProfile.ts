@@ -75,6 +75,9 @@ export default function () {
                 }
             }
 
+            if (await c.req.json()) {
+                console.log(await c.req.json())
+            }
 
             if (QueryRevision != ProfileRevisionCheck) {
                 profileChanges = [

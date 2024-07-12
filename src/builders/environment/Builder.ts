@@ -16,6 +16,7 @@ export default class EnvBuilder {
     const MAINTENANCE = Bun.env.MAINTENANCE
     const PUBLICVER = Bun.env.PUBLICVER
     const SEASON = Bun.env.SEASON
+    const WL = Bun.env.WL
     const EMERGENCY_NOTICE_TITLE = Bun.env.EMERGENCY_NOTICE_TITLE
     const EMERGENCY_NOTICE_BODY = Bun.env.EMERGENCY_NOTICE_BODY
     const DB_URL = Bun.env.DB_URL
@@ -30,6 +31,7 @@ export default class EnvBuilder {
       MAINTENANCE,
       PUBLICVER,
       SEASON,
+      WL,
       EMERGENCY_NOTICE_TITLE,
       EMERGENCY_NOTICE_BODY,
       SERVICETYPE,
