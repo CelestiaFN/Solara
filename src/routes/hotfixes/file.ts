@@ -28,51 +28,50 @@ export default function () {
             if (file === "DefaultGame.ini") {
                 output += `
             
-      [VoiceChatManager]
-      bEnabled=true
-      bEnableOnLoadingScreen=false
-      bObtainJoinTokenFromPartyService=true
-      bAllowStateTransitionOnLoadingScreen=false
-      MaxRetries=5
-      RetryTimeJitter=1.0
-      RetryTimeBase=3.0
-      RetryTimeMultiplier=1.0
-      MaxRetryDelay=240.0
-      RequestJoinTokenTimeout=10.0
-      JoinChannelTimeout=120.0
-      VoiceChatImplementation=EOSVoiceChat
-      NetworkTypePollingDelay=0.0
-      PlayJoinSoundRecentLeaverDelaySeconds=30.0
-      DefaultInputVolume=1.0
-      DefaultOutputVolume=1.0
-      JoinTimeoutRecoveryMethod=Reinitialize
-      JoinErrorWorkaroundMethod=ResetConnection
-      NetworkChangeRecoveryMethod=ResetConnection
-      bEnableBluetoothMicrophone=false
-      VideoPreferredFramerate=0
-      bEnableEOSReservedAudioStreams=true
-            
-      [VoiceChat.EOS]
-      bEnabled=true
+[VoiceChatManager]
+bEnabled=true
+bEnableOnLoadingScreen=false
+bObtainJoinTokenFromPartyService=true
+bAllowStateTransitionOnLoadingScreen=false
+MaxRetries=5
+RetryTimeJitter=1.0
+RetryTimeBase=3.0
+RetryTimeMultiplier=1.0
+MaxRetryDelay=240.0
+RequestJoinTokenTimeout=10.0
+JoinChannelTimeout=120.0
+VoiceChatImplementation=EOSVoiceChat
+NetworkTypePollingDelay=0.0
+PlayJoinSoundRecentLeaverDelaySeconds=30.0
+DefaultInputVolume=1.0
+DefaultOutputVolume=1.0
+JoinTimeoutRecoveryMethod=Reinitialize
+JoinErrorWorkaroundMethod=ResetConnection
+NetworkChangeRecoveryMethod=ResetConnection
+bEnableBluetoothMicrophone=false
+VideoPreferredFramerate=0
+bEnableEOSReservedAudioStreams=true
+
+[VoiceChat.EOS]
+bEnabled=true
+
+[VoiceChat.Vivox]
+bEnabled=true
+ServerUrl=${conf.SERVERURL}
+ServiceUrl=${conf.SERVERURL}
+Domain=${conf.DOMAIN}
+Issuer=${conf.ISSUER}
+Key=${conf.SECRET}
+SecretKey=${conf.SECRET}
       
-      [VoiceChat.Vivox]
-      bEnabled=true
-      ServerUrl=${conf.SERVERURL}
-      ServiceUrl=${conf.SERVERURL}
-      Domain=${conf.DOMAIN}
-      Issuer=${conf.ISSUER}
-      Key=${conf.SECRET}
-      SecretKey=${conf.SECRET}
-      
-      [EOSSDK]
-      ProductName=VoicePlugin
-      ProductVersion=0.1
-      ProductId=${conf.PROD_ID}
-      SandboxId=${conf.SANDBOX_ID}
-      DeploymentId=${conf.DEPLOYMENT_ID}
-      ClientId=${conf.CLIENT_ID}
-      ClientSecret=${conf.CLIENT_SECRET}
-      
+[EOSSDK]
+ProductName=VoicePlugin
+ProductVersion=0.1
+ProductId=${conf.PROD_ID}
+SandboxId=${conf.SANDBOX_ID}
+DeploymentId=${conf.DEPLOYMENT_ID}
+ClientId=${conf.CLIENT_ID}
+ClientSecret=${conf.CLIENT_SECRET}
       `;
             }
 

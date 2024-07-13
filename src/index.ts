@@ -23,12 +23,6 @@ app.use(async (c, next) => {
     await next();
 });
 
-app.use(async (c, next) => {
-    if (c.res.status == 404) {
-        return c.json(Solara.basic.notFound, 400)
-    }
-})
-
 await import('./database/connect');
 
 await routes.loadRoutes(path.join(__dirname, "routes"), app);

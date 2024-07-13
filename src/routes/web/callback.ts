@@ -18,7 +18,7 @@ export default function () {
       code,
       scope: "identify+guilds",
       grantType: "authorization_code",
-      redirectUri: "https://hydro.itztiva.com/api/oauth/discord/callback/",
+      redirectUri: "https://celestia.itztiva.com/api/oauth/discord/callback/",
     });
     const { access_token } = tokenResponse;
     const userResponse = await axios.get(
@@ -61,13 +61,13 @@ export default function () {
     }
 
      let user = (await User.findOne({ discordId })) as any;
-    // if (user && Number(user.role) >= 6) {
-    //   await axios.post(`http://127.0.0.1:21491/hydro/gift/fl/${user.accountId}`);
-    // }
+     if (user && Number(user.role) >= 3) {
+       await axios.post(`http://127.0.0.1:21491/celestia/gift/fl/${user.accountId}`);
+     }
 
     if (!user) {
       try {
-        await axios.post("https://Hydro.itztiva.com/register", {
+        await axios.post("https://celestia.itztiva.com/register", {
           username: username,
           discordId: discordId,
         });
@@ -79,7 +79,7 @@ export default function () {
       updateTokens(user.accountId, "exchange_code", exchangecode, [
         "exchange:code DELETE",
       ]);
-      return c.redirect("Hydro://" + exchangecode);
+      return c.redirect("celestia://" + exchangecode);
     } else {
       user.role = userrole
       user.save()
@@ -88,7 +88,7 @@ export default function () {
       updateTokens(user.accountId, "exchange_code", exchangecode, [
         "exchange:code DELETE",
       ]);
-      return c.redirect("Hydro://" + exchangecode);
+      return c.redirect("celestia://" + exchangecode);
     }
   });
 }
