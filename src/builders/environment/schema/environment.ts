@@ -6,6 +6,7 @@ export const ConfigSchema = z.object({
     DB_URL: z.string(),
     MAINTENANCE: z.string(),
     PUBLICVER: z.string(),
+    BOT_TOKEN: z.string(),
     SEASON: z.string(),
     WL: z.string(),
     EMERGENCY_NOTICE_TITLE: z.string(),

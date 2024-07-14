@@ -3,6 +3,7 @@ import { Document, Schema, model } from "mongoose";
 export interface IUser extends Document {
     created: Date;
     banned: boolean;
+    banhistory: any;
     discordId: string;
     accountId: string;
     username: string;
@@ -20,6 +21,7 @@ export interface IUser extends Document {
 const UserSchema: Schema<IUser> = new Schema({
     created: { type: Date, required: true },
     banned: { type: Boolean, default: false },
+    banhistory: { type: Array, required: false, default: {} },
     discordId: { type: String, required: true, unique: true },
     accountId: { type: String, required: true, unique: true },
     username: { type: String, required: true, unique: true },

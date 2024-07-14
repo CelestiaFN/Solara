@@ -12,6 +12,7 @@ export default class EnvBuilder {
     dotenv.config({ path: resolve(process.cwd(), ".env") });
 
     const PORT = parseInt(Bun.env.PORT as string, 10);
+    const BOT_TOKEN = Bun.env.BOT_TOKEN
     const JWTSECRET = Bun.env.JWTSECRET
     const MAINTENANCE = Bun.env.MAINTENANCE
     const PUBLICVER = Bun.env.PUBLICVER
@@ -32,6 +33,7 @@ export default class EnvBuilder {
       PUBLICVER,
       SEASON,
       WL,
+      BOT_TOKEN,
       EMERGENCY_NOTICE_TITLE,
       EMERGENCY_NOTICE_BODY,
       SERVICETYPE,
