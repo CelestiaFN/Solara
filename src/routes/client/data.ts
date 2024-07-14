@@ -1,10 +1,12 @@
 import app from "../..";
 import getVersion from "../../utils/functions/getVersion";
+import fs from 'node:fs'
+import path from 'node:path'
 
 export default function () {
     app.get("/content/api/pages/fortnite-game", async (c) => {
         const ver = getVersion(c);
-        const contentpages = require("../../../static/data/contentpages.json");
+        const contentpages = JSON.parse(fs.readFileSync(path.join(__dirname, "../../../static/data/contentpages.json"), "utf-8"));
 
         contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].stage = `season${ver.season}`;
         contentpages.dynamicbackgrounds.backgrounds.backgrounds[1].stage = `season${ver.season}`;

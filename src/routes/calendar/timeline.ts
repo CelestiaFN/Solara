@@ -69,8 +69,8 @@ export default function () {
       if (Number(Bun.env.WL) === 6) {
         events.push(eventsManager.createEvent("WL6"));
       }
-        if (Number(Bun.env.WL) === 7) {
-      events.push(eventsManager.createEvent("WL7"));
+      if (Number(Bun.env.WL) === 7) {
+        events.push(eventsManager.createEvent("WL7"));
       }
     }
 
@@ -88,8 +88,6 @@ export default function () {
       events.push(eventsManager.createEvent("EventFlag.Event_OperationSnowdown"))
       events.push(eventsManager.createEvent("EventFlag.Event_PlumRetro"))
     }
-
-    console.log(events)
 
     const storefrontDate = new Date();
     const dUTC = new Date(

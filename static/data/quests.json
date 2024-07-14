@@ -1,0 +1,323 @@
+{
+    "Daily": [
+      {
+        "templateId": "Quest:AthenaDaily_Outlive_Solo",
+        "objectives": [
+          "daily_athena_outlive_solo_players"
+        ]
+      },
+      {
+        "templateId": "Quest:AthenaDaily_Outlive_Squad",
+        "objectives": [
+          "daily_athena_outlive_squad_players_v2"
+        ]
+      },
+      {
+        "templateId": "Quest:AthenaDaily_Outlive",
+        "objectives": [
+          "daily_athena_outlive_players_v3"
+        ]
+      },
+      {
+        "templateId": "Quest:AthenaDaily_PlayMatches",
+        "objectives": [
+          "daily_athena_play_matches_v3"
+        ]
+      },
+      {
+        "templateId": "Quest:AthenaDaily_Solo_Top25",
+        "objectives": [
+          "daily_athena_solo_top25_v2"
+        ]
+      },
+      {
+        "templateId": "Quest:AthenaDaily_Squad_Top6",
+        "objectives": [
+          "daily_athena_squad_top6_v2"
+        ]
+      },
+      {
+        "templateId": "Quest:AthenaDailyQuest_InteractAmmoCrate",
+        "objectives": [
+          "athena_daily_loot_ammobox_v2"
+        ]
+      },
+      {
+        "templateId": "Quest:AthenaDailyQuest_InteractTreasureChest",
+        "objectives": [
+          "daily_athena_loot_chest_v2"
+        ]
+      },
+      {
+        "templateId": "Quest:AthenaDailyQuest_PlayerElimination",
+        "objectives": [
+          "athena_daily_kill_players_v2"
+        ]
+      },
+      {
+        "templateId": "Quest:AthenaDailyQuest_PlayerEliminationAssaultRifles",
+        "objectives": [
+          "athena_daily_kill_players_assault_rifles"
+        ]
+      },
+      {
+        "templateId": "Quest:AthenaDailyQuest_PlayerEliminationPistols",
+        "objectives": [
+          "athena_daily_kill_players_pistol_v3"
+        ]
+      },
+      {
+        "templateId": "Quest:AthenaDailyQuest_PlayerEliminationShotguns",
+        "objectives": [
+          "athena_daily_kill_players_shotgun_v2"
+        ]
+      },
+      {
+        "templateId": "Quest:AthenaDailyQuest_PlayerEliminationSMGs",
+        "objectives": [
+          "athena_daily_kill_players_smg_v2"
+        ]
+      },
+      {
+        "templateId": "Quest:AthenaDailyQuest_PlayerEliminationSniperRifles",
+        "objectives": [
+          "athena_daily_kill_players_sniper_v2"
+        ]
+      }
+    ],
+    "Season13": {
+      "ChallengeBundleSchedules": {
+        "QS13-Season13_Mission_Schedule": {
+          "templateId": "ChallengeBundleSchedule:season13_mission_schedule",
+          "granted_bundles": [
+            "QS13-MissionBundle_S13_Week_01"
+          ]
+        }
+      },
+      "ChallengeBundles": {
+        "QS13-MissionBundle_S13_Week_01": {
+          "templateId": "ChallengeBundle:missionbundle_s13_week_01",
+          "challenge_bundle_schedule_id": "QS13-Season13_Mission_Schedule",
+          "grantedquestinstanceids": [
+            "QS13-quest_s13_w1_q01",
+            "QS13-quest_s13_w1_q02",
+            "QS13-quest_s13_w1_q03",
+            "QS13-quest_s13_w1_q04",
+            "QS13-quest_s13_w1_q05",
+            "QS13-quest_s13_w1_q06",
+            "QS13-quest_s13_w1_q07"
+          ],
+          "completionRewards": {
+            "1": [
+              {
+                "templateId": "Token:athenabattlepass_weeklychallenge_token",
+                "quantity": 1,
+                "giftBoxToUse": {}
+              },
+              {
+                "templateId": "Token:athenabattlepass_s13_w01",
+                "quantity": 1,
+                "giftBoxToUse": {}
+              }
+            ],
+            "2": [
+              {
+                "templateId": "Token:athenabattlepass_weeklychallenge_token",
+                "quantity": 1,
+                "giftBoxToUse": {}
+              },
+              {
+                "templateId": "Token:athenabattlepass_s13_w01",
+                "quantity": 1,
+                "giftBoxToUse": {}
+              }
+            ],
+            "3": [
+              {
+                "templateId": "Token:athenabattlepass_weeklychallenge_token",
+                "quantity": 1,
+                "giftBoxToUse": {}
+              },
+              {
+                "templateId": "Token:athenabattlepass_s13_w01",
+                "quantity": 1,
+                "giftBoxToUse": {}
+              }
+            ],
+            "4": [
+              {
+                "templateId": "Token:athenabattlepass_weeklychallenge_token",
+                "quantity": 1,
+                "giftBoxToUse": {}
+              },
+              {
+                "templateId": "Token:athenabattlepass_s13_w01",
+                "quantity": 1,
+                "giftBoxToUse": {}
+              }
+            ],
+            "5": [
+              {
+                "templateId": "Token:athenabattlepass_weeklychallenge_token",
+                "quantity": 1,
+                "giftBoxToUse": {}
+              },
+              {
+                "templateId": "Token:athenabattlepass_s13_w01",
+                "quantity": 1,
+                "giftBoxToUse": {}
+              }
+            ],
+            "6": [
+              {
+                "templateId": "Token:athenabattlepass_weeklychallenge_token",
+                "quantity": 1,
+                "giftBoxToUse": {}
+              },
+              {
+                "templateId": "Token:athenabattlepass_s13_w01",
+                "quantity": 1,
+                "giftBoxToUse": {}
+              }
+            ],
+            "7": [
+              {
+                "templateId": "Token:athenabattlepass_weeklychallenge_token",
+                "quantity": 1,
+                "giftBoxToUse": {}
+              },
+              {
+                "templateId": "Token:athenabattlepass_weeklybundle_token",
+                "quantity": 1,
+                "giftBoxToUse": {}
+              },
+              {
+                "templateId": "Token:athenabattlepass_s13_w01",
+                "quantity": 1,
+                "giftBoxToUse": {}
+              }
+            ]
+          }
+        }
+      },
+      "Quests": {
+        "QS13-quest_s13_w1_q01": {
+            "templateId": "Quest:quest_s13_w1_q01",
+            "challenge_bundle_id": "QS13-MissionBundle_S13_Week_01",
+            "objectives": {
+              "quest_s13_w1_q01_obj0": 200
+            },
+            "objectiveCompletionCount": 1,
+            "rewards": [
+              {
+                "templateId": "AccountResource:athenaseasonalxp",
+                "quantity": 35000
+              }
+            ],
+            "hiddenRewards": [],
+            "giftBoxToUse": {}
+          },
+          "QS13-quest_s13_w1_q02": {
+            "templateId": "Quest:quest_s13_w1_q02",
+            "challenge_bundle_id": "QS13-MissionBundle_S13_Week_01",
+            "objectives": {
+              "quest_s13_w1_q02_obj0": 1
+            },
+            "objectiveCompletionCount": 1,
+            "rewards": [
+              {
+                "templateId": "AccountResource:athenaseasonalxp",
+                "quantity": 35000
+              }
+            ],
+            "hiddenRewards": [],
+            "giftBoxToUse": {}
+          },
+          "QS13-quest_s13_w1_q03": {
+            "templateId": "Quest:quest_s13_w1_q03",
+            "challenge_bundle_id": "QS13-MissionBundle_S13_Week_01",
+            "objectives": {
+              "quest_s13_w1_q03_obj0": 1
+            },
+            "objectiveCompletionCount": 1,
+            "rewards": [
+              {
+                "templateId": "AccountResource:athenaseasonalxp",
+                "quantity": 35000
+              }
+            ],
+            "hiddenRewards": [],
+            "giftBoxToUse": {}
+          },
+          "QS13-quest_s13_w1_q04": {
+            "templateId": "Quest:quest_s13_w1_q04",
+            "challenge_bundle_id": "QS13-MissionBundle_S13_Week_01",
+            "objectives": {
+              "quest_s13_w1_q04_obj0": 1,
+              "quest_s13_w1_q04_obj1": 1,
+              "quest_s13_w1_q04_obj2": 1,
+              "quest_s13_w1_q04_obj3": 1,
+              "quest_s13_w1_q04_obj4": 1
+            },
+            "objectiveCompletionCount": 3,
+            "rewards": [
+              {
+                "templateId": "AccountResource:athenaseasonalxp",
+                "quantity": 35000
+              }
+            ],
+            "hiddenRewards": [],
+            "giftBoxToUse": {}
+          },
+          "QS13-quest_s13_w1_q05": {
+            "templateId": "Quest:quest_s13_w1_q05",
+            "challenge_bundle_id": "QS13-MissionBundle_S13_Week_01",
+            "objectives": {
+              "quest_s13_w1_q05_obj0": 7
+            },
+            "objectiveCompletionCount": 1,
+            "rewards": [
+              {
+                "templateId": "AccountResource:athenaseasonalxp",
+                "quantity": 35000
+              }
+            ],
+            "hiddenRewards": [],
+            "giftBoxToUse": {}
+          },
+          "QS13-quest_s13_w1_q06": {
+            "templateId": "Quest:quest_s13_w1_q06",
+            "challenge_bundle_id": "QS13-MissionBundle_S13_Week_01",
+            "objectives": {
+              "quest_s13_w1_q06_obj0": 1,
+              "quest_s13_w1_q06_obj1": 1
+            },
+            "objectiveCompletionCount": 2,
+            "rewards": [
+              {
+                "templateId": "AccountResource:athenaseasonalxp",
+                "quantity": 35000
+              }
+            ],
+            "hiddenRewards": [],
+            "giftBoxToUse": {}
+          },
+          "QS13-quest_s13_w1_q07": {
+            "templateId": "Quest:quest_s13_w1_q07",
+            "challenge_bundle_id": "QS13-MissionBundle_S13_Week_01",
+            "objectives": {
+              "quest_s13_w1_q07_obj0": 3
+            },
+            "objectiveCompletionCount": 1,
+            "rewards": [
+              {
+                "templateId": "AccountResource:athenaseasonalxp",
+                "quantity": 35000
+              }
+            ],
+            "hiddenRewards": [],
+            "giftBoxToUse": {}
+          }
+      }
+    }
+  }
