@@ -75,6 +75,7 @@ export default class DisplaySecretCommand extends BaseCommand {
             await interaction.reply(`Banned \`${user?.username}\` from Celestia for reason \`${banReason.value}\`!`);
         } catch (error) {
             console.error(error)
+            await interaction.reply(`An error has occured!`);
          }
     }
 }
