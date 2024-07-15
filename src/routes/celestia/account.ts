@@ -95,12 +95,25 @@ export default function () {
         success: true,
         user: userData,
         accessToken: t,
-        athena: { XP: xpAmount, Level: lvl },
+        season: {
+          bookLevel: `${athena.stats.attributes.book_level}`,
+          book_xp: athena.stats.attributes.book_xp,
+          level: athena.stats.attributes.level,
+          xp: athena.stats.attributes.xp,
+          bookowned: athena.stats.attributes.book_purchased
+        },
+        pastseasons: athena.stats.attributes.past_seasons,
+        athena: { 
+          XP: xpAmount, 
+        },
+        level: athena.stats.attributes.level,
         character: {
           templateId: selectedSkin,
           rarity: "rare",
         },
-        common_core: { VBucks: vBucks },
+        common_core: { 
+          VBucks: vBucks 
+        },
         rolename: role,
         rolecolor: roleColor,
       });

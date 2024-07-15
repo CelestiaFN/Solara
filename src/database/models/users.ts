@@ -21,7 +21,7 @@ export interface IUser extends Document {
 const UserSchema: Schema<IUser> = new Schema({
     created: { type: Date, required: true },
     banned: { type: Boolean, default: false },
-    banhistory: { type: Array, required: false, default: {} },
+    banhistory: { type: Object, required: false, default: [] },
     discordId: { type: String, required: true, unique: true },
     accountId: { type: String, required: true, unique: true },
     username: { type: String, required: true, unique: true },

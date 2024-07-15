@@ -15,7 +15,7 @@ export default function () {
                 profile.items = {};
             }
 
-            let profileChanges = [];
+            let profileChanges: any = [];
             const BaseRevision = profile.rvn;
             const QueryRevision = c.req.query("rvn") || -1;
 

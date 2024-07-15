@@ -18,7 +18,7 @@ export default function () {
       code,
       scope: "identify+guilds",
       grantType: "authorization_code",
-      redirectUri: "https://celestia.itztiva.com/api/oauth/discord/callback/",
+      redirectUri: "https://kys.itztiva.com/api/oauth/discord/callback/",
     });
     const { access_token } = tokenResponse;
     const userResponse = await axios.get(
@@ -67,11 +67,12 @@ export default function () {
 
     if (!user) {
       try {
-        await axios.post("https://celestia.itztiva.com/register", {
+        await axios.post("http://127.0.0.1:21491/register", {
           username: username,
           discordId: discordId,
         });
       } catch (error) {
+
       }
       let user = (await User.findOne({ discordId })) as any;
       const exchangecode = uuidv4().replace(/-/gi, "");

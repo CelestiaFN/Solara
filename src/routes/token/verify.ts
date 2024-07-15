@@ -53,7 +53,7 @@ export default function () {
             app: "fortnite",
             in_app_id: user.accountId,
             device_id: deviceId,
-           // perms: []
+            perms: token.permissions
         });
     })
 }
