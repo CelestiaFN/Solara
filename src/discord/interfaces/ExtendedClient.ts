@@ -5,7 +5,7 @@ export interface Command {
     name: string;
     description: string;
     options?: any[];
-    defaultMemberPermissions?: string;
+    defaultMemberPermissions?: any;
     dmPermission?: boolean;
   };
   execute(

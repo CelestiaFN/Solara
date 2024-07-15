@@ -3,11 +3,13 @@ import {
     CommandInteraction,
     type CacheType,
     ApplicationCommandOptionType,
+    PermissionFlagsBits,
+    PermissionsBitField,
 } from "discord.js";
 import User from "../../database/models/users";
 import { v4 } from 'uuid'
 
-export default class DisplaySecretCommand extends BaseCommand {
+export default class BanCommand extends BaseCommand {
     data = {
         name: "ban",
         description: "Bans a user's account!",
@@ -24,7 +26,7 @@ export default class DisplaySecretCommand extends BaseCommand {
                 description: "The reason that the user will be banned!",
                 required: true,
             },
-        ]
+        ],
     };
 
     async execute(interaction: CommandInteraction<CacheType>) {
@@ -35,6 +37,13 @@ export default class DisplaySecretCommand extends BaseCommand {
 
             const user = await User.findOne({ discordId: userId });
 
+            const perms = interaction.memberPermissions as PermissionsBitField;
+
+            if (!perms || !perms.has(PermissionFlagsBits.BanMembers)) {
+                await interaction.reply("You do not have permission to use this command.");
+                return;
+            }
+            
             if (userId === "942494965219610717" || userId === "1015001768725323837") {
                 await interaction.reply(`${targetUser.user?.username} can not be banned by \`${interaction.user.username}\` `);
                 return;
@@ -56,7 +65,7 @@ export default class DisplaySecretCommand extends BaseCommand {
                 if (!user.banhistory) {
                     user.banhistory = []
                 }
-                
+
                 user.banhistory.push({
                     Expiry: new Date(new Date().setFullYear(new Date().getFullYear() + 80)).toISOString(),
                     Id: v4(),
@@ -76,6 +85,6 @@ export default class DisplaySecretCommand extends BaseCommand {
         } catch (error) {
             console.error(error)
             await interaction.reply(`An error has occured!`);
-         }
+        }
     }
 }
