@@ -62,30 +62,26 @@ export default function () {
 
       const roleNames = {
         "0": "Member",
-        "1": "Private",
-        "2": "Deluxe",
-        "3": "Celestia",
-        "4": "Support",
-        "5": "Lead Support",
-        "6": "Moderator",
-        "7": "Admin",
-        "8": "Developer",
-        "9": "Co Owner",
-        "10": "Owner",
+        "1": "Server Booster",
+        "2": "Helper",
+        "3": "Moderator",
+        "4": "Admin",
+        "5": "Manager",
+        "6": "Developer",
+        "7": "Co Owner",
+        "8": "Owner",
       } as any;
 
       const roleColors = {
         "0": "#333",
-        "1": "#83bfa4",
-        "2": "#de1313",
-        "3": "#c700ff",
-        "4": "#dd1bca",
-        "5": "#9d9d9d",
-        "6": "#7bc2f3",
-        "7": "#9655da",
-        "8": "#20f00b",
-        "9": "#df8f4f",
-        "10": "#d1484a",
+        "1": "#f47fff",
+        "2": "#bb1481",
+        "3": "#27b5d1",
+        "4": "#c31432",
+        "5": "#3f00bb",
+        "6": "#366e5d",
+        "7": "#f38246",
+        "8": "#0d97c5",
       } as any;
 
       const role = roleNames[userData.role];
