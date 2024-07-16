@@ -74,11 +74,7 @@ export default function () {
                     profiles.profiles.athena.stats.attributes.book_xp = 0
                 }
             }
-
-            if (await c.req.json()) {
-                console.log(await c.req.json())
-            }
-
+            
             if (QueryRevision != ProfileRevisionCheck) {
                 profileChanges = [
                     {

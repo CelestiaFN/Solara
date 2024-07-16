@@ -20,12 +20,20 @@ export default function () {
             return c.json([], 404)
         }
 
-        user.username = username;
+        const existinguser = await User.findOne({ username: username })
 
-        await user.save()
+        if (!existinguser) {
+            user.username = username;
 
-        return c.json({
-            sucess: true
-        })
+            await user.save()
+
+            return c.json({
+                sucess: true
+            })
+        } else {
+            return c.json({
+                sucess: false
+            })
+        }
     })
 }
