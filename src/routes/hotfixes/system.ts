@@ -7,7 +7,7 @@ import verifyAuth from "../../utils/handlers/verifyAuth";
 
 
 export default function () {
-    app.get("/fortnite/api/cloudstorage/system", verifyAuth, async (c) => {
+    app.get("/fortnite/api/cloudstorage/system", async (c) => {
         try {
           const csFile = await hotfixes.findOne({ method: "cloudstorage" });
       
@@ -41,7 +41,7 @@ export default function () {
         }
       });
       
-      app.get("/fortnite/api/cloudstorage/system/config", verifyAuth, async (c) => {
+      app.get("/fortnite/api/cloudstorage/system/config", async (c) => {
         try {
           const csFile = await hotfixes.findOne({ method: "cloudstorage" });
       

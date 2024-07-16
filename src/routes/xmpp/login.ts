@@ -22,6 +22,6 @@ export default function () {
         }
         xmlRes += "</friends></success>";
 
-        c.text(xmlRes);
+        return c.text(xmlRes);
     });
 }

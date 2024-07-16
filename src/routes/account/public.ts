@@ -1,5 +1,6 @@
 import app from "../..";
 import User from "../../database/models/users";
+import { Solara } from "../../utils/errors/Solara";
 import verifyAuth from "../../utils/handlers/verifyAuth";
 
 export default function () {
@@ -20,6 +21,10 @@ export default function () {
 
     app.get("/account/api/public/account/displayName/:username", verifyAuth, async (c) => {
         var user: any = await User.findOne({ username: c.req.param("username") });
+
+        if (!user) {
+            return c.json(Solara.friends.accountNotFound, 404)
+        }
 
         return c.json({
             id: user.accountId,
