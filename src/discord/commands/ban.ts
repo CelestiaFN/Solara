@@ -43,7 +43,7 @@ export default class BanCommand extends BaseCommand {
                 await interaction.reply("You do not have permission to use this command.");
                 return;
             }
-            
+
             if (userId === "942494965219610717" || userId === "1015001768725323837") {
                 await interaction.reply(`${targetUser.user?.username} can not be banned by \`${interaction.user.username}\` `);
                 return;
@@ -72,8 +72,7 @@ export default class BanCommand extends BaseCommand {
                     IssuedBy: interaction.user.id,
                     Reason: banReason.value
                 })
-
-                await user.save()
+                await user.updateOne(user);
             }
             try {
                 await targetUser?.user?.send(`You have been banned from Celestia for reason \`${banReason.value}\`!`);
