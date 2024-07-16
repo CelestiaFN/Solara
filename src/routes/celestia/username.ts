@@ -22,6 +22,21 @@ export default function () {
 
         const existinguser = await User.findOne({ username: username })
 
+        const blacklisted_words = [
+            "TIVA",
+            "Itztiva",
+            "ltztiva",
+            "Ltztiva",
+            "ltztiva  ",
+            
+        ]
+
+        if (blacklisted_words.some(word => username.toUpperCase().includes(word))) {
+            return c.json({
+                sucess: false
+            })
+        }
+
         if (!existinguser) {
             user.username = username;
 

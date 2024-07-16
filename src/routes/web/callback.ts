@@ -50,7 +50,6 @@ export default function () {
 
     let userrole = -1;
 
-
     for (const roleId of roles) {
       if (roleIds.hasOwnProperty(roleId)) {
         const role = roleIds[roleId];
@@ -60,10 +59,10 @@ export default function () {
       }
     }
 
-     let user = (await User.findOne({ discordId })) as any;
-     if (user && Number(user.role) >= 3) {
-       await axios.post(`http://127.0.0.1:21491/celestia/gift/fl/${user.accountId}`);
-     }
+    let user = (await User.findOne({ discordId })) as any;
+    if (user && Number(user.role) >= 3) {
+      await axios.post(`http://127.0.0.1:21491/celestia/gift/fl/${user.accountId}`);
+    }
 
     if (!user) {
       try {
@@ -76,6 +75,9 @@ export default function () {
       }
       let user = (await User.findOne({ discordId })) as any;
       const exchangecode = uuidv4().replace(/-/gi, "");
+
+      user.role = userrole
+      user.save()
 
       updateTokens(user.accountId, "exchange_code", exchangecode, [
         "exchange:code DELETE",
