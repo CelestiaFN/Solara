@@ -6,9 +6,11 @@ interface Friend {
     accountId: string;
 }
 export default function () {
-    app.post("/api/xmpp/auth", async (c) => {
-        let headertoken = c.req.header("authorization")!.replace("bearer ", "");
-        let token = await Tokens.findOne({ token: headertoken })
+    app.get("/api/xmpp/auth", async (c) => {
+        const authHeader = c.req.header("authorization");
+        if (authHeader == null) return c.text("<failure/>");
+        const headertoken = authHeader.replace("bearer ", "");
+        const token = await Tokens.findOne({ token: headertoken });
 
         if (!token) return c.text("<failure/>");
 
