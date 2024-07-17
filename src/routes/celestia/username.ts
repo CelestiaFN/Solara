@@ -31,6 +31,13 @@ export default function () {
             
         ]
 
+        if (username.length > 24) {
+            return c.json({
+                success: false,
+                message: "Username must be 24 characters or less.",
+            });
+        }
+        
         if (blacklisted_words.some(word => username.toUpperCase().includes(word))) {
             return c.json({
                 sucess: false
