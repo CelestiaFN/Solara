@@ -3,6 +3,7 @@ import jwt from 'jsonwebtoken'
 import Tokens from "../../database/models/tokens";
 import { v4 } from 'uuid'
 import User from "../../database/models/users";
+import verifyAuth from "../../utils/handlers/verifyAuth";
 import { Solara } from "../../utils/errors/Solara";
 
 export default function () {
@@ -14,7 +15,7 @@ export default function () {
         return c.json([]);
     });
 
-    app.get("/account/api/oauth/verify", async (c) => {
+    app.get("/account/api/oauth/verify", verifyAuth, async (c) => {
         let headertoken = c.req.header("authorization")!.replace("bearer ", "");
         let token = await Tokens.findOne({ token: headertoken })
 
@@ -39,7 +40,7 @@ export default function () {
         }
 
         return c.json({
-            token: token,
+            token: token.token,
             session_id: decodedToken.jti,
             token_type: "bearer",
             client_id: decodedToken.clid,

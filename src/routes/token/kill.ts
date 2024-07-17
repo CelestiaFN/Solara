@@ -7,8 +7,4 @@ export default function () {
         await Tokens.findOneAndDelete({ token: token });
         return c.json([]);
     });
-
-    app.delete("/account/api/oauth/sessions/kill", async (c) => {
-        return c.json([]);
-    });
 }

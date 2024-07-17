@@ -105,7 +105,6 @@ export default async function () {
             await Stats.create({
                 created: new Date().toISOString(),
                 accountId: user.accountId,
-                gamemodes: {},
             });
         });
 

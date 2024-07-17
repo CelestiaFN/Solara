@@ -3,7 +3,6 @@ import { Document, Schema, model} from 'mongoose';
 interface IStats extends Document {
     created: Date;
     accountId: string;
-    gamemodes: object;
     MatchesPlayed: number;
     solos: {
         kills: number;
@@ -25,12 +24,17 @@ interface IStats extends Document {
         matchplayed: number;
         wins: number;
     };
+    arena: {
+        hype: number;
+        kills: number;
+        matchplayed: number;
+        wins: number;
+    };
 }
 
 const statsSchema: Schema = new Schema({
     created: { type: Date, required: true },
     accountId: { type: String, required: true, unique: true },
-    gamemodes: { type: Object, required: true },
     MatchesPlayed: { type: Number, required: true, default: 0 },
     solos: {
         kills: { type: Number, required: true, default: 0 },
@@ -48,6 +52,12 @@ const statsSchema: Schema = new Schema({
         wins: { type: Number, required: true, default: 0 }
     },
     ltm: {
+        kills: { type: Number, required: true, default: 0 },
+        matchplayed: { type: Number, required: true, default: 0 },
+        wins: { type: Number, required: true, default: 0 }
+    },
+    arena: {
+        hype: { type: Number, required: true, default: 0 },
         kills: { type: Number, required: true, default: 0 },
         matchplayed: { type: Number, required: true, default: 0 },
         wins: { type: Number, required: true, default: 0 }
