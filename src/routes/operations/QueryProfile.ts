@@ -8,9 +8,11 @@ export default function () {
     app.post("/fortnite/api/game/v2/profile/:accountId/client/QueryProfile", verifyAuth, async (c) => {
         try {
             const { profileId, rvn } = c.req.query()
+            const accountId = c.req.param("accountId")
             var profiles: any = await Profile.findOne({ accountId: c.req.param("accountId") });
+            if (!profiles) return c.json(Solara.account.accountNotFound, 404)
             let profile = profiles?.profiles[profileId];
-            if (!profile) return c.json(Solara.mcp.profileNotFound, 404)
+            if (!profile) return c.json(Solara.mcp.profileNotFound.variable([accountId]), 404)
             if (profile.rvn == profile.commandRevision) {
                 profile.rvn += 1;
                 if (profileId == "athena") {

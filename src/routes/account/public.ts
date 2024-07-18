@@ -33,7 +33,7 @@ export default function () {
         });
     });
 
-    app.post("/account/api/public/account/:accountId", verifyAuth, async (c) => {
+    app.post("/account/api/public/account/:accountId", async (c) => {
         var user: any = await User.findOne({ accountId: c.req.param("accountId") });
 
         return c.json({
