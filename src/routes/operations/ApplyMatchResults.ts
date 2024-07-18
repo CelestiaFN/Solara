@@ -7,14 +7,30 @@ import { Solara } from "../../utils/errors/Solara"
 export default function () {
     app.post("/celestia/api/:username/dedicated_server/ApplyMatchResults", async (c) => {
         const { Playlist, Position, XP, Eliminations, ChallengeUpdates } = await c.req.json();
-        if (!Playlist || !Position || !XP || !Eliminations || ChallengeUpdates) return c.json(Solara.internal.jsonParsingFailed, 400);
+        console.log({
+            Playlist,
+            Position,
+            XP,
+            Eliminations,
+            ChallengeUpdates
+        })
+
+        if (!Playlist || !Position || !ChallengeUpdates) {
+            return c.json(Solara.internal.jsonParsingFailed, 400);
+        }
 
         const user = await User.findOne({ username: c.req.param("username") });
-        if (!user) return c.json(Solara.account.accountNotFound, 404);
+        if (!user) {
+            return c.json(Solara.account.accountNotFound, 404);
+        }
         const profile = await Profile.findOne({ accountId: user.accountId });
-        if (!profile) return c.json(Solara.account.accountNotFound, 404);
+        if (!profile) {
+            return c.json(Solara.account.accountNotFound, 404);
+        }
         const stats = await Stats.findOne({ accountId: user.accountId })
-        if (!stats) return c.json(Solara.account.accountNotFound, 404);
+        if (!stats) {
+            return c.json(Solara.account.accountNotFound, 404);
+        }
 
         profile.profiles.athena.stats.attributes.xp += XP;
         stats.MatchesPlayed += 1;
@@ -26,6 +42,11 @@ export default function () {
             if (Position == 1) {
                 stats.solos.wins += 1;
             }
+
+            await Profile.updateOne({ accountId: user.accountId }, { $set: profile });
+            await Stats.updateOne({ accountId: user.accountId }, { $set: stats });
+    
+            return c.json({})
         }
 
         if (Playlist.includes("DefaultDuo")) {
@@ -35,6 +56,11 @@ export default function () {
             if (Position == 1) {
                 stats.duos.wins += 1;
             }
+
+            await Profile.updateOne({ accountId: user.accountId }, { $set: profile });
+            await Stats.updateOne({ accountId: user.accountId }, { $set: stats });
+    
+            return c.json({})
         }
 
         if (Playlist.includes("DefaultSquad")) {
@@ -44,18 +70,11 @@ export default function () {
             if (Position == 1) {
                 stats.squads.wins += 1;
             }
+            await Profile.updateOne({ accountId: user.accountId }, { $set: profile });
+            await Stats.updateOne({ accountId: user.accountId }, { $set: stats });
+    
+            return c.json({})
         }
-
-        await profile.updateOne({ $set: profile });
-        await stats.updateOne({ $set: stats });
-
-        console.log({
-            Playlist,
-            Position,
-            XP,
-            Eliminations,
-            ChallengeUpdates,
-        })
 
         return c.json({})
     })
