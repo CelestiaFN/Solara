@@ -1,8 +1,9 @@
 import app from "../..";
 import Profile from "../../database/models/profiles";
+import verifyAuth from "../../utils/handlers/verifyAuth";
 
 export default function () {
-    app.post("/fortnite/api/game/v2/profile/:accountId/dedicated_server/*", async (c) => {
+    app.post("/fortnite/api/game/v2/profile/:accountId/dedicated_server/*", verifyAuth, async (c) => {
         var profiles = await Profile.findOne({ accountId: c.req.param("accountId") }).lean();
         const profileId = c.req.query("profileId") as any;
         if (!profiles) return c.json({}, 400);
