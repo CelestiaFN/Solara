@@ -35,6 +35,7 @@ export default function () {
         headers: { Authorization: `Bot MTI2MDgxNTQ3NjY5NTUwMjg0OA.GkCS_f.xCwSbQTHD_S2ZisS2wTW_8QF-G-KpqBWM5gbRQ` },
       }
     );
+    
     const { roles } = guilds.data;
 
     const roleIds = {

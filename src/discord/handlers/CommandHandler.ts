@@ -27,17 +27,19 @@ import {
   
     client.on("interactionCreate" as any, async (interaction: CommandInteraction) => {
       if (!interaction.isCommand()) return;
-  
+    
       const { commandName } = interaction;
       const command = client.commands.get(commandName);
-  
+    
       if (!command) return;
-  
+    
       try {
-        await command.execute(interaction, {});
+        if (!interaction.deferred && !interaction.replied) {
+          await command.execute(interaction, {});
+        }
       } catch (error) {
         console.error(error);
         interaction.reply("There was an error executing that command!");
       }
     });
-  }
+  }    
