@@ -15,12 +15,7 @@ export default function () {
             if (!profile) {
                 return c.json(Solara.mcp.profileNotFound, 404);
             }
-
-            const body = await c.req.json();
-            if (body) {
-                console.log(body);
-            }
-
+            
             const quests = JSON.parse(JSON.stringify(require("../../../static/data/quests.json")));
             const ver = getVersion(c);
             const DateFormat = (new Date().toISOString()).split("T")[0];

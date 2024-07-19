@@ -7,7 +7,6 @@ export default function () {
         const profileId = c.req.query("profileId") as any;
         if (!profiles) return c.json({}, 400);
         const body = await c.req.json()
-        console.log(body, c.req.param("accountId"))
 
         let profile = profiles.profiles[profileId];
 

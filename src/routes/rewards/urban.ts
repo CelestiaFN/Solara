@@ -39,7 +39,6 @@ export default function () {
                 "AthenaCharacter:CID_353_Athena_Commando_F_Bandolier",
                 "AthenaPickaxe:Pickaxe_ID_140_StreetGoth",
                 "AthenaPickaxe:Pickaxe_ID_017_Shark",
-                "AthenaPickaxe:Pickaxe_ID_140_StreetGoth",
                 "AthenaGlider:Glider_ID_068_GarageBand",
                 "Currency:MtxGiveaway",
             ];
