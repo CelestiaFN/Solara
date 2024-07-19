@@ -9,6 +9,10 @@ export interface IUser extends Document {
     username: string;
     email: string;
     role: string;
+    isLegacy: boolean;
+    isUrban: boolean;
+    isGlimmer: boolean;
+    isHarvester: boolean;
     password: string;
     isServer: boolean;
     hasFL: boolean;
@@ -27,6 +31,10 @@ const UserSchema: Schema<IUser> = new Schema({
     username: { type: String, required: true, unique: true },
     email: { type: String, required: true, unique: true },
     role: { type: String, default: "0" },
+    isLegacy: { type: Boolean, required: false, default: false },
+    isUrban: { type: Boolean, required: false, default: false },
+    isGlimmer: { type: Boolean, required: false, default: false },
+    isHarvester: { type: Boolean, required: false, default: false },
     password: { type: String, required: true },
     isServer: { type: Boolean, default: false },
     hasFL: { type: Boolean, default: false },

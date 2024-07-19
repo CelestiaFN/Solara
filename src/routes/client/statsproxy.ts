@@ -12,7 +12,7 @@ export default function () {
 
         const stats = await Stats.findOne({ accountId });
 
-        if (!stats) return c.json(Solara.account.accountNotFound, 400);
+        if (!stats) return c.json(Solara.account.accountNotFound.variable([accountId]), 400);
         
         return c.json({
             startTime,

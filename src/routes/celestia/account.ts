@@ -37,15 +37,16 @@ export default function () {
 
       const athena = profiles.profiles.athena;
 
-      const selectedSkin =
-        athena.stats.attributes.favorite_character || "AthenaCharacter:CID_557_Athena_Commando_F_RebirthDefaultB";
+      const fav_character = athena.stats.attributes.favorite_character;
+
+      const selectedSkin = athena.items[fav_character]?.templateId || "AthenaCharacter:CID_557_Athena_Commando_F_RebirthDefaultB";
 
       const xpAmount = athena.stats.attributes.xp;
       const lvl = athena.stats.attributes.level;
       const vBucks =
         profiles.profiles.common_core.items["Currency:MtxPurchased"].quantity;
 
-      let userData = user
+      let userData = user;
 
       let t = jwt.sign(
         JSON.stringify({
@@ -63,25 +64,35 @@ export default function () {
       const roleNames = {
         "0": "Member",
         "1": "Server Booster",
-        "2": "Helper",
-        "3": "Moderator",
-        "4": "Admin",
-        "5": "Manager",
-        "6": "Developer",
-        "7": "Co Owner",
-        "8": "Owner",
+        "2": "Urban Donator",
+        "3": "Glimmer Donator",
+        "4": "Harvester Donator",
+        "5": "Legacy Donator",
+        "6": "Content Creator",
+        "7": "Helper",
+        "8": "Moderator",
+        "9": "Admin",
+        "10": "Manager",
+        "11": "Developer",
+        "12": "Co Owner",
+        "13": "Owner",
       } as any;
 
       const roleColors = {
         "0": "#333",
         "1": "#f47fff",
-        "2": "#bb1481",
-        "3": "#27b5d1",
-        "4": "#c31432",
-        "5": "#3f00bb",
-        "6": "#366e5d",
-        "7": "#f38246",
-        "8": "#0d97c5",
+        "2": "#ff00ca",
+        "3": "#09004e",
+        "4": "#14b47b",
+        "5": "#cf480e",
+        "6": "#410fc2",
+        "7": "#bb1481",
+        "8": "#27b5d1",
+        "9": "#c31432",
+        "10": "#3f00bb",
+        "11": "#366e5d",
+        "12": "#f38246",
+        "13": "#0d97c5",
       } as any;
 
       const role = roleNames[userData.role];
@@ -102,7 +113,7 @@ export default function () {
         athena: { 
           XP: xpAmount, 
         },
-        level: athena.stats.attributes.level,
+        level: lvl,
         character: {
           templateId: selectedSkin,
           rarity: "rare",

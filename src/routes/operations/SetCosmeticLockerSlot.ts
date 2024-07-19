@@ -35,7 +35,7 @@ export default function () {
     
         if (body.itemToSlot) {
             for (let itemId in profile.items) {
-                if (profile.items[itemId].templateId.toLowerCase() == body.itemToSlot.toLowerCase()) { itemToSlotID = itemId; break; };
+            if (profile.items[itemId]?.templateId?.toLowerCase() == body.itemToSlot.toLowerCase()) { itemToSlotID = itemId; break; };
             }
         }
     

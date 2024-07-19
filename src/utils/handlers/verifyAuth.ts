@@ -1,4 +1,5 @@
 import Tokens from "../../database/models/tokens";
+import User from "../../database/models/users";
 import { Solara } from "../../utils/errors/Solara";
 
 export default async function verifyAuth(c: any, next: any) {
@@ -16,9 +17,17 @@ export default async function verifyAuth(c: any, next: any) {
             return c.json(Solara.authentication.invalidToken.variable([tokenStr]), 401);
         }
 
-        const accountId = c.req.param("accountId");
-        if (accountId && token.accountId !== accountId) {
+        const user = await User.findOne({ accountId: token.accountId });
+
+        if (!user) {
             return c.json(Solara.authentication.invalidToken.variable([token.token]), 401);
+        }
+
+        if (!user.isServer) {
+            const accountId = c.req.param("accountId");
+            if (accountId && token.accountId !== accountId) {
+                return c.json(Solara.authentication.invalidToken.variable([token.token]), 401);
+            }
         }
 
         await next();

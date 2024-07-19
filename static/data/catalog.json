@@ -5,80 +5,11 @@
     "expiration": "2024-01-22T04:59:00.000Z",
     "storefronts": [
         {
-            "name": "CurrencyStorefront",
             "catalogEntries": [
                 {
                     "appStoreId": [
                         "",
-                        "money://74c4fd4e05f18fa41b751df55eef4e9e7cf07a86e6763de0643ab64abf7667dc"
-                    ],
-                    "bannerOverride": "",
-                    "catalogGroupPriority": 0,
-                    "categories": [],
-                    "dailyLimit": -1,
-                    "description": "Buy 13,500 Fortnite V-Bucks, the in-game currency that can be spent in Fortnite Battle Royale and Creative modes. You can purchase new customization items like Outfits, Gliders, Pickaxes, Emotes, Wraps and the latest season's Battle Pass! Gliders and Contrails may not be used in Save the World mode.",
-                    "devName": "[CURRENCY] 13,500 V-Bucks",
-                    "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_MtxPack13500.DA_MtxPack13500",
-                    "filterWeight": 0,
-                    "fulfillmentIds": [
-                        "money://74c4fd4e05f18fa41b751df55eef4e9e7cf07a86e6763de0643ab64abf7667dc"
-                    ],
-                    "giftInfo": {
-                        "bIsEnabled": false,
-                        "forcedGiftBoxTemplateId": "",
-                        "giftRecordIds": [],
-                        "purchaseRequirements": []
-                    },
-                    "itemGrants": [],
-                    "meta": {
-                        "CurrencyAnalyticsName": "MtxPack13500",
-                        "DisplayAssetPath": "/Game/Catalog/DisplayAssets/DA_MtxPack13500.DA_MtxPack13500",
-                        "MtxBonus": 3500,
-                        "MtxQuantity": 13500
-                    },
-                    "metaInfo": [
-                        {
-                            "Key": "DisplayAssetPath",
-                            "Value": "/Game/Catalog/DisplayAssets/DA_MtxPack13500.DA_MtxPack13500"
-                        },
-                        {
-                            "Key": "MtxQuantity",
-                            "Value": 13500
-                        },
-                        {
-                            "Key": "MtxBonus",
-                            "Value": 3500
-                        },
-                        {
-                            "Key": "CurrencyAnalyticsName",
-                            "Value": "MtxPack13500"
-                        }
-                    ],
-                    "monthlyLimit": -1,
-                    "offerId": "money://74c4fd4e05f18fa41b751df55eef4e9e7cf07a86e6763de0643ab64abf7667dc",
-                    "offerType": "StaticPrice",
-                    "prices": [
-                        {
-                            "basePrice": -1,
-                            "currencySubType": "",
-                            "currencyType": "RealMoney",
-                            "dynamicRegularPrice": -1,
-                            "finalPrice": -1,
-                            "regularPrice": -1,
-                            "saleExpiration": "9999-12-31T23:59:59.999Z"
-                        }
-                    ],
-                    "refundable": false,
-                    "requirements": [],
-                    "shortDescription": "",
-                    "sortPriority": 0,
-                    "title": "13,500 V-Bucks",
-                    "weeklyLimit": -1
-                },
-                {
-                    "appStoreId": [
-                        "",
-                        "money://272aa8fdfc672af77592e869cc432daa269f456ee95201132959acc9a4a2d59b"
+                        "money://02ab71137028cc69bf85de20d4f88e37eb5c7b0a6b1917ffa1e850c2b66eaf63"
                     ],
                     "bannerOverride": "",
                     "catalogGroupPriority": 0,
@@ -89,7 +20,7 @@
                     "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_MtxPack7500.DA_MtxPack7500",
                     "filterWeight": 0,
                     "fulfillmentIds": [
-                        "money://272aa8fdfc672af77592e869cc432daa269f456ee95201132959acc9a4a2d59b"
+                        "money://02ab71137028cc69bf85de20d4f88e37eb5c7b0a6b1917ffa1e850c2b66eaf63"
                     ],
                     "giftInfo": {
                         "bIsEnabled": false,
@@ -123,7 +54,7 @@
                         }
                     ],
                     "monthlyLimit": -1,
-                    "offerId": "money://272aa8fdfc672af77592e869cc432daa269f456ee95201132959acc9a4a2d59b",
+                    "offerId": "money://02ab71137028cc69bf85de20d4f88e37eb5c7b0a6b1917ffa1e850c2b66eaf63",
                     "offerType": "StaticPrice",
                     "prices": [
                         {
@@ -146,7 +77,7 @@
                 {
                     "appStoreId": [
                         "",
-                        "money://83cce06313e7c69bbb2e35773bbffd3467c21086d5f73f3b3b7dc06133912f82"
+                        "money://27c129b15962a53a3d8eb1ba77b12fcb1af861bc0f0d479848adb282d2fe0dbb"
                     ],
                     "bannerOverride": "",
                     "catalogGroupPriority": 0,
@@ -157,7 +88,7 @@
                     "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_MtxPack2800.DA_MtxPack2800",
                     "filterWeight": 0,
                     "fulfillmentIds": [
-                        "money://83cce06313e7c69bbb2e35773bbffd3467c21086d5f73f3b3b7dc06133912f82"
+                        "money://27c129b15962a53a3d8eb1ba77b12fcb1af861bc0f0d479848adb282d2fe0dbb"
                     ],
                     "giftInfo": {
                         "bIsEnabled": false,
@@ -191,7 +122,7 @@
                         }
                     ],
                     "monthlyLimit": -1,
-                    "offerId": "money://83cce06313e7c69bbb2e35773bbffd3467c21086d5f73f3b3b7dc06133912f82",
+                    "offerId": "money://27c129b15962a53a3d8eb1ba77b12fcb1af861bc0f0d479848adb282d2fe0dbb",
                     "offerType": "StaticPrice",
                     "prices": [
                         {
@@ -214,7 +145,7 @@
                 {
                     "appStoreId": [
                         "",
-                        "money://7d38fdd4c6cfe511dbeb123ccd9563559a36a6e316a9d5a5387938f829790d91"
+                        "money://cc25b286447a772e7d6a0945c82c53c42917dbd71c16c780c091a41a85673b0d"
                     ],
                     "bannerOverride": "",
                     "catalogGroupPriority": 0,
@@ -225,7 +156,7 @@
                     "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_MtxPack1000.DA_MtxPack1000",
                     "filterWeight": 0,
                     "fulfillmentIds": [
-                        "money://7d38fdd4c6cfe511dbeb123ccd9563559a36a6e316a9d5a5387938f829790d91"
+                        "money://cc25b286447a772e7d6a0945c82c53c42917dbd71c16c780c091a41a85673b0d"
                     ],
                     "giftInfo": {
                         "bIsEnabled": false,
@@ -254,7 +185,7 @@
                         }
                     ],
                     "monthlyLimit": -1,
-                    "offerId": "money://7d38fdd4c6cfe511dbeb123ccd9563559a36a6e316a9d5a5387938f829790d91",
+                    "offerId": "money://cc25b286447a772e7d6a0945c82c53c42917dbd71c16c780c091a41a85673b0d",
                     "offerType": "StaticPrice",
                     "prices": [
                         {
@@ -273,8 +204,77 @@
                     "sortPriority": 3,
                     "title": "1,000 V-Bucks",
                     "weeklyLimit": -1
+                },
+                {
+                    "appStoreId": [
+                        "",
+                        "money://c357b77b10cdd66249587851352d15126c56cd1373ee9baa786b59ee05917e8b"
+                    ],
+                    "bannerOverride": "",
+                    "catalogGroupPriority": 0,
+                    "categories": [],
+                    "dailyLimit": -1,
+                    "description": "Buy 13,500 Fortnite V-Bucks, the in-game currency that can be spent in Fortnite Battle Royale and Creative modes. You can purchase new customization items like Outfits, Gliders, Pickaxes, Emotes, Wraps and the latest season's Battle Pass! Gliders and Contrails may not be used in Save the World mode.",
+                    "devName": "[CURRENCY] 13,500 V-Bucks",
+                    "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_MtxPack13500.DA_MtxPack13500",
+                    "filterWeight": 0,
+                    "fulfillmentIds": [
+                        "money://c357b77b10cdd66249587851352d15126c56cd1373ee9baa786b59ee05917e8b"
+                    ],
+                    "giftInfo": {
+                        "bIsEnabled": false,
+                        "forcedGiftBoxTemplateId": "",
+                        "giftRecordIds": [],
+                        "purchaseRequirements": []
+                    },
+                    "itemGrants": [],
+                    "meta": {
+                        "CurrencyAnalyticsName": "MtxPack13500",
+                        "DisplayAssetPath": "/Game/Catalog/DisplayAssets/DA_MtxPack13500.DA_MtxPack13500",
+                        "MtxBonus": 3500,
+                        "MtxQuantity": 13500
+                    },
+                    "metaInfo": [
+                        {
+                            "Key": "DisplayAssetPath",
+                            "Value": "/Game/Catalog/DisplayAssets/DA_MtxPack13500.DA_MtxPack13500"
+                        },
+                        {
+                            "Key": "MtxQuantity",
+                            "Value": 13500
+                        },
+                        {
+                            "Key": "MtxBonus",
+                            "Value": 3500
+                        },
+                        {
+                            "Key": "CurrencyAnalyticsName",
+                            "Value": "MtxPack13500"
+                        }
+                    ],
+                    "monthlyLimit": -1,
+                    "offerId": "money://c357b77b10cdd66249587851352d15126c56cd1373ee9baa786b59ee05917e8b",
+                    "offerType": "StaticPrice",
+                    "prices": [
+                        {
+                            "basePrice": -1,
+                            "currencySubType": "",
+                            "currencyType": "RealMoney",
+                            "dynamicRegularPrice": -1,
+                            "finalPrice": -1,
+                            "regularPrice": -1,
+                            "saleExpiration": "9999-12-31T23:59:59.999Z"
+                        }
+                    ],
+                    "refundable": false,
+                    "requirements": [],
+                    "shortDescription": "",
+                    "sortPriority": 0,
+                    "title": "13,500 V-Bucks",
+                    "weeklyLimit": -1
                 }
-            ]
+            ],
+            "name": "CurrencyStorefront"
         },
         {
             "name": "BRDailyStorefront",

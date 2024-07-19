@@ -3,7 +3,6 @@ import fs from "fs";
 import getVersion from "../../utils/functions/getVersion";
 import verifyAuth from "../../utils/handlers/verifyAuth";
 import path from "node:path";
-import { Solara } from "../../utils/errors/Solara";
 
 export default function () {
   app.get("/fortnite/api/storefront/v2/catalog", verifyAuth, async (c) => {

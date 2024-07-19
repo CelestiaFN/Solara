@@ -4,7 +4,7 @@ import verifyAuth from "../../utils/handlers/verifyAuth";
 let athena = require("../../../static/profiles/athena.json");
 
 export default function () {
-    app.post("/celestia/reset/account/:accountId", verifyAuth, async (c: any) => {
+    app.post("/celestia/reset/account/:accountId", async (c: any) => {
         const profile = await Profile.findOne({ accountId: c.req.param("accountId") })
 
         if (profile) {

@@ -39,13 +39,19 @@ export default function () {
 
     const roleIds = {
       '1260791766601433269': 0, // member
-      '1260791529996550204': 2, // support
-      '1260791033009143859': 3, // moderator 
-      '1260790404123721769': 4, // admin
-      '1260816793660821514': 5, // manager
-      '1260789391027212381': 6, // developer
-      '1260791228233023591': 7, // co owner
-      '1260788909781155902': 8 // owner 
+      '1260793622648062063': 1, // server booster
+      '1263582817242189914': 2, // urban donator
+      '1263562145048690728': 3, // glimmer donator
+      '1263577060555886614': 4, // harvester donator
+      '1263573060234248253': 5, // legacy donator
+      '1260967561911336970': 6, // content creator
+      '1260791529996550204': 7, // support
+      '1260791033009143859': 8, // moderator 
+      '1260790404123721769': 9, // admin
+      '1260816793660821514': 10, // manager
+      '1260789391027212381': 11, // developer
+      '1260791228233023591': 12, // co owner
+      '1260788909781155902': 13 // owner 
     } as any;
 
     let userrole = -1;
@@ -60,8 +66,12 @@ export default function () {
     }
 
     let user = (await User.findOne({ discordId })) as any;
-    if (user && Number(user.role) >= 3) {
-      await axios.post(`http://127.0.0.1:21491/celestia/gift/fl/${user.accountId}`);
+    // mod+ fl
+
+    if (user && Number(userrole) >= 8) {
+      if (user.hasFL == false) {
+        await axios.post(`http://127.0.0.1:21491/celestia/gift/fl/${user.accountId}`);
+      }
     }
 
     if (!user) {
@@ -84,6 +94,44 @@ export default function () {
       ]);
       return c.redirect("celestia://" + exchangecode);
     } else {
+
+      if (!user.isHarvester || !user.isLegacy || !user.isGlimmer || !user.isUrban) {
+        user.isHarvester = false;
+        user.isLegacy = false;
+        user.isGlimmer = false;
+        user.isUrban = false;
+      }
+  
+      // donator stuff
+  
+      if (roles.includes("1263582817242189914")) {
+        if (user.isUrban == false) {
+          user.isUrban = true
+          await axios.post(`http://127.0.0.1:21491/celestia/grant/donator/urban/${user.accountId}`);
+        }
+      }
+  
+      if (roles.includes("1263562145048690728")) {
+        if (user.isGlimmer == false) {
+          user.isGlimmer = true
+          await axios.post(`http://127.0.0.1:21491/celestia/grant/donator/glimmer/${user.accountId}`);
+        }
+      }
+  
+      if (roles.includes("1263577060555886614")) {
+        if (user.isHarvester == false) {
+          user.isHarvester = true
+          await axios.post(`http://127.0.0.1:21491/celestia/grant/donator/harvester/${user.accountId}`);
+        }
+      }
+  
+      if (roles.includes("1263573060234248253")) {
+        if (user.isLegacy == false) {
+          user.isLegacy = true
+          await axios.post(`http://127.0.0.1:21491/celestia/grant/donator/legacy/${user.accountId}`);
+        }
+      }
+
       user.role = userrole
       user.save()
       const exchangecode = uuidv4().replace(/-/gi, "");
