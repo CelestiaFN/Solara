@@ -9,7 +9,7 @@ import {
 import User from "../../database/models/users";
 
 interface BanEntry {
-    Expiry: string; 
+    Expiry: string;
     Id: string;
     IssuedBy: string;
     Reason: string;
@@ -86,22 +86,22 @@ export default class UnbanCommand extends BaseCommand {
                         fields: [
                             {
                                 name: "User",
-                                value: `<@${user?.discordId}>`,
+                                value: `<@${user?.discordId}>`, 
                                 inline: false,
                             },
                             {
                                 name: "Account ID",
-                                value: user?.accountId,
+                                value: user?.accountId || "N/A", 
                                 inline: false,
                             },
                             {
                                 name: "HWID",
-                                value: user?.hwid,
+                                value: user?.hwid || "N/A",  
                                 inline: false,
                             },
                             {
                                 name: "Issuer",
-                                value: `<@${interaction.user.id}>`,
+                                value: `<@${interaction.user.id}>`, 
                                 inline: false,
                             },
                         ],

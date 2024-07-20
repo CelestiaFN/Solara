@@ -91,22 +91,22 @@ export default class BanCommand extends BaseCommand {
                         fields: [
                             {
                                 name: "User",
-                                value: `<@${user?.discordId}>`,
+                                value: `<@${user?.discordId}>`, 
                                 inline: false,
                             },
                             {
                                 name: "Account ID",
-                                value: user?.accountId,
+                                value: user?.accountId || "N/A", 
                                 inline: false,
                             },
                             {
                                 name: "HWID",
-                                value: user?.hwid,
+                                value: user?.hwid || "N/A",  
                                 inline: false,
                             },
                             {
                                 name: "Issuer",
-                                value: `<@${interaction.user.id}>`,
+                                value: `<@${interaction.user.id}>`, 
                                 inline: false,
                             },
                         ],
