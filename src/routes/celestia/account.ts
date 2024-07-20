@@ -10,7 +10,7 @@ import { Solara } from "../../utils/errors/Solara";
 export default function () {
   app.post("/api/launcher/account", async (c) => {
     try {
-      const { exchange_code } = await c.req.json();
+      const { exchange_code, hwid } = await c.req.json();
       if (!exchange_code) {
         return c.text("No exchange code in body!");
       }
@@ -34,6 +34,9 @@ export default function () {
       if (!profiles) {
         return c.json({ message: "Profile not found" });
       }
+
+      user.hwid = hwid
+      await user.save()
 
       const athena = profiles.profiles.athena;
 
