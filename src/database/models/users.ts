@@ -13,6 +13,7 @@ export interface IUser extends Document {
     isUrban: boolean;
     isGlimmer: boolean;
     isHarvester: boolean;
+    isBooster: boolean;
     password: string;
     isServer: boolean;
     hasFL: boolean;
@@ -35,6 +36,7 @@ const UserSchema: Schema<IUser> = new Schema({
     isUrban: { type: Boolean, required: false, default: false },
     isGlimmer: { type: Boolean, required: false, default: false },
     isHarvester: { type: Boolean, required: false, default: false },
+    isBooster: { type: Boolean, required: false, default: false },
     password: { type: String, required: true },
     isServer: { type: Boolean, default: false },
     hasFL: { type: Boolean, default: false },

@@ -22,22 +22,25 @@ export async function createItemTemplate(templateId: any) {
     const cleanedTemplateId = templateId.replace(/(AthenaCharacter|AthenaPickaxe|AthenaGlider|AthenaDance):/, '');
 
     try {
-        const resp = await axios.get(`https://fortnite-api.com/v2/cosmetics/br/${cleanedTemplateId}`);
-        const data = resp.data.data;
         let variants: any = [];
-    
-        if (!data) {
-            return null;
-        }
-    
-        if (data.variants) {
-            data.variants.forEach((obj: any) => {
-                variants.push({
-                    "channel": obj.channel || "",
-                    "active": obj.options[0].tag || "",
-                    "owned": obj.options.map((variant: any) => variant.tag || "")
+        if (templateId.includes("AthenaCharacter") || templateId.includes("AthenaBackpack")) {
+            const resp = await axios.get(`https://fortnite-api.com/v2/cosmetics/br/${cleanedTemplateId}`);
+            const data = resp.data.data;
+            let variants: any = [];
+        
+            if (!data) {
+                return null;
+            }
+        
+            if (data.variants) {
+                data.variants.forEach((obj: any) => {
+                    variants.push({
+                        "channel": obj.channel || "",
+                        "active": obj.options[0].tag || "",
+                        "owned": obj.options.map((variant: any) => variant.tag || "")
+                    });
                 });
-            });
+            }
         }
     
         const template = {
