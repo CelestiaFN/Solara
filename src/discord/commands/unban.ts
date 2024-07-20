@@ -75,6 +75,40 @@ export default class UnbanCommand extends BaseCommand {
                 await interaction.reply(`Unbanned \`${user?.username}\` from Celestia, but failed to notify them.`);
             }
 
+            const channelId = "1264229342842716241";
+            const channel = interaction.guild?.channels.cache.get(channelId) as any | undefined;
+            if (channel) {
+                await channel.send({
+                    embeds: [{
+                        title: "User Unbanned",
+                        description: `\`${user?.username}\` has been unbanned from Celestia!`,
+                        color: 0x19C41C,
+                        fields: [
+                            {
+                                name: "User",
+                                value: `<@${user?.discordId}>`,
+                                inline: false,
+                            },
+                            {
+                                name: "Account ID",
+                                value: user?.accountId,
+                                inline: false,
+                            },
+                            {
+                                name: "HWID",
+                                value: user?.hwid,
+                                inline: false,
+                            },
+                            {
+                                name: "Issuer",
+                                value: `<@${interaction.user.id}>`,
+                                inline: false,
+                            },
+                        ],
+                    }],
+                });
+            }
+
             await interaction.reply(`Unbanned \`${user?.username}\` from Celestia!`);
         } catch (error) {
             console.error(error);

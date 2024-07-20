@@ -27,7 +27,7 @@ try {
   try {
     const currentUser = (await rest.get(Routes.user())) as APIUser;
 
-    const endpoint = Routes.applicationGuildCommands(currentUser.id, "1259947691769856031");
+    const endpoint = Routes.applicationGuildCommands(currentUser.id, "1260785136551596083");
     await rest.put(endpoint, { body: commandData });
   } catch (error) {
     logger.error(`Error refreshing commands: ${error}`);
