@@ -75,7 +75,7 @@ export default function () {
     }
 
     if (Number(ver.build) === 13.4) {
-      events.push(eventsManager.createEvent("SM1"));
+    events.push(eventsManager.createEvent("SM1"));
     }
 
     if (Number(ver.build) === 14.6) {

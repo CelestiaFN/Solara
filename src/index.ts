@@ -26,6 +26,7 @@ app.use(async (c, next) => {
 await import('./database/connect');
 await import('./discord/setup');
 await import('./discord/deploy');
+await import('./websocket/servers')
 
 await routes.loadRoutes(path.join(__dirname, "routes"), app);
 
