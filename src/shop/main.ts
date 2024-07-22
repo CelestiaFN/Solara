@@ -5,6 +5,7 @@ import { prices } from './types/prices';
 import { v4 } from 'uuid';
 
 interface Item {
+    set: any;
     id: string;
     shopHistory?: any[];
     type: string;
@@ -42,7 +43,7 @@ async function createShopConfig() {
         item.rarity === 'epic' || item.rarity === 'legendary'
     );
 
-    while (featuredItems.length < 2) {
+    while (featuredItems.length < 1) {
         const randomIndex = Math.floor(Math.random() * epicAndLegendarySkins.length);
         if (!usedIndices.has(randomIndex)) {
             featuredItems.push(epicAndLegendarySkins[randomIndex]);
@@ -50,22 +51,7 @@ async function createShopConfig() {
         }
     }
 
-    const includeThirdSkin = Math.random() < 0.09;
-    if (includeThirdSkin && featuredItems.length < 3) {
-        const randomIndex = Math.floor(Math.random() * epicAndLegendarySkins.length);
-        if (!usedIndices.has(randomIndex)) {
-            featuredItems.push(epicAndLegendarySkins[randomIndex]);
-            usedIndices.add(randomIndex);
-        }
-    }
-
-    const includePickaxe = Math.random() < 0.5;
-    if (includePickaxe) {
-        const randomPickaxeIndex = Math.floor(Math.random() * pickaxeItems.length);
-        featuredItems.push(pickaxeItems[randomPickaxeIndex]);
-    }
-
-    const includeGlider = Math.random() < 0.5;
+    const includeGlider = Math.random() < 0;
     if (includeGlider) {
         const randomGliderIndex = Math.floor(Math.random() * gliderItems.length);
         featuredItems.push(gliderItems[randomGliderIndex]);
@@ -201,78 +187,103 @@ async function createShopConfig() {
         dailyStorefront.catalogEntries.push(entry);
     });
 
-    featuredItems.forEach((item) => {
-        const itemType: ItemType = item.type as ItemType;
-        const itemRarity: ItemRarity = item.rarity as ItemRarity;
-        const price = prices[itemType][itemRarity];
-        const displayAssets = require("../../static/storefront/displayassets.json")
-        const displayAssetPath = "/Game/Catalog/DisplayAssets/" + displayAssets[item.id] + "." + displayAssets[item.id];
+    const setGroups: { [key: string]: Item[] } = {};
+    eligibleItems.forEach(item => {
+        if (item.set && item.set.value) {
+            if (!setGroups[item.set.value]) {
+                setGroups[item.set.value] = [];
+            }
+            setGroups[item.set.value].push(item);
+        }
+    });
 
-        const entry = {
-            offerId: "v2:/" + v4(),
-            offerType: "StaticPrice",
-            devName: `[VIRTUAL]1x ${item.type}:${item.id} for ${price} MtxCurrency`,
-            itemGrants: [
-                {
-                    templateId: `${item.type}:${item.id}`,
-                    quantity: 1
-                },
-                ...(item.backpack ? [
+    const setKeys = Object.keys(setGroups);
+    const sortedkeys = setKeys.sort(() => Math.random() - 0.5); 
+    const selectedKeys = sortedkeys.slice(0, 4); 
+    selectedKeys.forEach(setValue => {
+        const groupItems = setGroups[setValue];
+        if (groupItems.length < 1) {
+            return; 
+        }
+        groupItems.forEach(item => {
+            const itemType: ItemType = item.type as ItemType;
+            const itemRarity: ItemRarity = item.rarity as ItemRarity;
+            const displayAssets = require("../../static/storefront/displayassets.json")
+            const displayAssetPath = "/Game/Catalog/DisplayAssets/" + displayAssets[item.id] + "." + displayAssets[item.id];    
+            const price = prices[itemType]?.[itemRarity];
+    
+            if (price === undefined) {
+                return; 
+            }
+
+            if (itemType == "AthenaBackpack") {
+                return;
+            }
+    
+            const entry = {
+                offerId: "v2:/" + v4(),
+                offerType: "StaticPrice",
+                devName: `[VIRTUAL]1x ${item.type}:${item.id} for ${price} MtxCurrency`,
+                itemGrants: [
                     {
-                        templateId: `${item.backpack.type.backendValue}:${item.backpack.id}`,
+                        templateId: `${item.type}:${item.id}`,
                         quantity: 1
-                    }
-                ] : []),
-            ],
-            requirements: [
-                {
-                    requirementType: "DenyOnItemOwnership",
-                    requiredId: `${item.type}:${item.id}`,
-                    minQuantity: 1
-                },
-                ...(item.backpack ? [
+                    },
+                    ...(item.backpack ? [
+                        {
+                            templateId: `${item.backpack.type.backendValue}:${item.backpack.id}`,
+                            quantity: 1
+                        }
+                    ] : []),
+                ],
+                requirements: [
                     {
                         requirementType: "DenyOnItemOwnership",
-                        requiredId: `${item.backpack.type.backendValue}:${item.backpack.id}`,
+                        requiredId: `${item.type}:${item.id}`,
                         minQuantity: 1
+                    },
+                    ...(item.backpack ? [
+                        {
+                            requirementType: "DenyOnItemOwnership",
+                            requiredId: `${item.backpack.type.backendValue}:${item.backpack.id}`,
+                            minQuantity: 1
+                        }
+                    ] : [])
+                ],
+                categories: item.set ? [`${item.set.value}`] : [], 
+                metaInfo: [
+                    { Key: "TileSize", Value: "Normal" },
+                    { Key: "SectionId", Value: "Featured" },
+                    { Key: "DisplayAssetPath", Value: displayAssetPath ? displayAssetPath : `` },
+                    { Key: "BannerOverride", Value: "" }
+                ],
+                prices: [
+                    {
+                        currencyType: "MtxCurrency",
+                        currencySubType: "Currency",
+                        regularPrice: price,
+                        dynamicRegularPrice: -1,
+                        finalPrice: price,
                     }
-                ] : [])
-            ],
-            categories: [],
-            metaInfo: [
-                { Key: "TileSize", Value: "Normal" },
-                { Key: "SectionId", Value: "Featured" },
-                { Key: "DisplayAssetPath", Value: displayAssetPath ? displayAssetPath : `/Game/Catalog/DisplayAssets/DA_Featured_${item.id}.DA_Featured_${item.id}` },
-                { Key: "BannerOverride", Value: "" }
-            ],
-            prices: [
-                {
-                    currencyType: "MtxCurrency",
-                    currencySubType: "Currency",
-                    regularPrice: price,
-                    dynamicRegularPrice: -1,
-                    finalPrice: price,
-                    basePrice: price,
-                    saleExpiration: "9999-12-31T23:59:59.999Z"
-                }
-            ],
-            bannerOverride: "",
-            displayAssetPath: displayAssetPath ? displayAssetPath : `/Game/Catalog/DisplayAssets/DA_Featured_${item.id}.DA_Featured_${item.id}`,
-            refundable: true,
-            title: "",
-            description: "",
-            shortDescription: "",
-            appStoreId: [],
-            fulfillmentIds: [],
-            dailyLimit: -1,
-            weeklyLimit: -1,
-            monthlyLimit: -1,
-            sortPriority: 0,
-            catalogGroupPriority: 0,
-            filterWeight: 0
-        };
+                ],
+                bannerOverride: "",
+                displayAssetPath: displayAssetPath ? displayAssetPath : ``,
+                refundable: true,
+                title: "",
+                description: "",
+                shortDescription: "",
+                appStoreId: [],
+                fulfillmentIds: [],
+                dailyLimit: -1,
+                weeklyLimit: -1,
+                monthlyLimit: -1,
+                sortPriority: 0,
+                catalogGroupPriority: 0,
+                filterWeight: 0
+            };
 
-        weeklyStorefront[0].catalogEntries.push(entry);
+            weeklyStorefront[0].catalogEntries.push(entry);
+        });
     });
 
     shopConfig.storefronts.push(dailyStorefront as never);

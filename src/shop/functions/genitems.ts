@@ -21,44 +21,39 @@ const CosmeticTypes = {
     AthenaBackpack: "AthenaBackpack",
     AthenaGlider: "AthenaGlider",
     AthenaPickaxe: "AthenaPickaxe",
-    AthenaLoadingScreen: "AthenaLoaadingScreen",
+    AthenaLoadingScreen: "AthenaLoadingScreen",
     AthenaDance: "AthenaDance"
 } as any
 
 const url = "https://fortnite-api.com/v2/cosmetics/br";
 
 function getRandomSet(item: any) {
-    const sets = [];
-
-    const randomSet: any[] = [];
+    const sets: any[] = [];
+    const randomSet: { [key: string]: any } = {};
 
     if (!randomSet[item.backendValue]) {
         randomSet[item.backendValue] = {
-            backendName: item.value,
-            displayName: item.text,
-            items: []
+            value: item.set?.value || '',
+            text: item.set?.text || '',
+            backendValue: item.backendValue,
         }
     }
-
-    randomSet[item.backendValue].items.push(item);
-
 
     for (const key in randomSet) {
         const set = randomSet[key];
 
-        if (set.backendName === "") continue;
+        if (set.value === "") continue;
 
         sets.push(set);
     }
 
     sets.sort((a, b) => {
-        return a.backendName.localeCompare(b.backendName);
+        return a.value.localeCompare(b.value);
     })
 
+    const randomInt = (min: number, max: number) => Math.floor(Math.random() * (max - min + 1)) + min;
 
-    const randomInt = (min: any, max: any) => Math.floor(Math.random() * (max - min + 1)) + min;
-
-    return sets[randomInt(0, sets.length)];
+    return sets[randomInt(0, sets.length - 1)];
 }
 
 axios.get(url)
@@ -119,13 +114,13 @@ axios.get(url)
                     displayAssetPath: fullDisplayAssetPath,
                     backpack: CosmeticItems[item.id]?.backpack, 
                     shopHistory: item.shopHistory,
-                    set,
+                    set: set
                 };
                 Vitems.push(validItem);
             }
         });
 
-        const output = path.join(__dirname, '..', '..', '..','static', 'storefront', 'items.json');
+        const output = path.join(__dirname, '..', '..', '..', 'static', 'storefront', 'items.json');
         fs.writeFileSync(output, JSON.stringify(Vitems, null, 4));
     })
     .catch(error => {
