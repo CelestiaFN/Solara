@@ -28,21 +28,23 @@ export default async function CommandHandler(client: ExtendedClient) {
 
   client.on("interactionCreate" as any, async (interaction: CommandInteraction) => {
     if (!interaction.isCommand()) return;
-
+  
     const { commandName } = interaction;
     const command = client.commands.get(commandName);
-
+  
     if (!command) return;
-
+  
     try {
       if (!interaction.deferred && !interaction.replied) {
         await command.execute(interaction, {});
+        interaction.replied = true;
       }
     } catch (error) {
       console.error(error);
       interaction.reply("There was an error executing that command!");
     }
   });
+  
 
   client.on('guildMemberUpdate', async (oldMember, newMember) => {
     const oldRoles = oldMember.roles.cache.map(role => role.id);
