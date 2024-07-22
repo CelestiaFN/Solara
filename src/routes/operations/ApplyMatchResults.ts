@@ -45,7 +45,6 @@ export default function () {
         if (profile.profiles.athena.stats.attributes.book_purchased == false) {
             const lootList: any[] = [];
             const rewardList = bpdata.rewards[0];
-            console.log(rewardList)
 
             for (const [item, quantity] of Object.entries(rewardList)) {
                 lootList.push({
@@ -65,7 +64,6 @@ export default function () {
                         xp: 0
                     },
                 };
-                console.log(profile.profiles.athena.items[item])
             }
 
 
