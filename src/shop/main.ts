@@ -108,10 +108,10 @@ async function createShopConfig() {
         catalogEntries: [] as any[]
     };
 
-    const weeklyStorefront = [{
+    const weeklyStorefront = {
         name: "BRWeeklyStorefront",
         catalogEntries: [] as any[]
-    }];
+    };
 
     dailyItems.forEach((item) => {
         const itemType: ItemType = item.type as ItemType;
@@ -282,7 +282,7 @@ async function createShopConfig() {
                 filterWeight: 0
             };
 
-            weeklyStorefront[0].catalogEntries.push(entry);
+            weeklyStorefront.catalogEntries.push(entry);
         });
     });
 

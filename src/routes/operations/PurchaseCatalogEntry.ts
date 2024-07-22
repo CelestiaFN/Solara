@@ -3,6 +3,7 @@ import { v4 as uuidv4 } from "uuid";
 import getVersion from "../../utils/functions/getVersion";
 import verifyAuth from "../../utils/handlers/verifyAuth";
 import Profile from "../../database/models/profiles";
+import axios from "axios";
 import { Solara } from "../../utils/errors/Solara";
 
 export default function () {
@@ -62,17 +63,39 @@ export default function () {
         for (let value of findOfferId.offerId.itemGrants) {
           const ID = uuidv4();
 
-          let itemExists = Object.values(athena.items).some(
+            let itemExists = Object.values(athena.items).some(
             (item: any) =>
-              item.templateId.toLowerCase() === value.templateId.toLowerCase()
-          );
+              item && item.templateId && item.templateId.toLowerCase() === value.templateId.toLowerCase()
+            );
+          
           if (itemExists) return c.json(Solara.storefront.alreadyOwned, 400);
+          const cleanedTemplateId = value.templateId.toLowerCase().replace(/(athenacharacter|athenabackpack|athenapickaxe|athenaglider|athenadance):/, '');
+          let variants: any = [];
+
+          if (value.templateId.includes("AthenaCharacter") || value.templateId.includes("AthenaBackpack")) {
+            const resp = await axios.get(`https://fortnite-api.com/v2/cosmetics/br/${cleanedTemplateId}`);
+            const data = resp.data.data;
+        
+            if (!data) {
+                return null;
+            }
+        
+            if (data.variants) {
+                data.variants.forEach((obj: any) => {
+                    variants.push({
+                        "channel": obj.channel || "",
+                        "active": obj.options[0].tag || "",
+                        "owned": obj.options.map((variant: any) => variant.tag || "")
+                    });
+                });
+            }
+          }
 
           const Item = {
             templateId: value.templateId,
             attributes: {
               item_seen: false,
-              variants: [],
+              variants: variants,
             },
             quantity: 1,
           };

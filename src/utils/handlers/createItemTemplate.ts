@@ -26,7 +26,6 @@ export async function createItemTemplate(templateId: any) {
         if (templateId.includes("AthenaCharacter") || templateId.includes("AthenaBackpack")) {
             const resp = await axios.get(`https://fortnite-api.com/v2/cosmetics/br/${cleanedTemplateId}`);
             const data = resp.data.data;
-            let variants: any = [];
         
             if (!data) {
                 return null;
@@ -56,6 +55,7 @@ export async function createItemTemplate(templateId: any) {
             quantity: 1,
         };
     
+        console.log(template)
         results.push(template);
     
     } catch (error) {

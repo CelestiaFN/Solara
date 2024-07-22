@@ -5,23 +5,17 @@ export type ItemType = {
 
 };
 
-
-
 export type CosmeticItemType = {
 
     [key: string]: any;
 
 };
 
-
-
 export type ApartType = {
 
     [key: string]: any;
 
 };
-
-
 
 export const TypedItems: ItemType = {};
 
