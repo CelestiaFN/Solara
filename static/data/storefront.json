@@ -1,25 +1,430 @@
 {
-    "refreshIntervalHrs": 24,
-    "dailyPurchaseHrs": 24,
-    "expiration": "2024-05-27T00:00:00.000Z",
-    "storefronts": [
+  "refreshIntervalHrs": 24,
+  "dailyPurchaseHrs": 24,
+  "expiration": "2024-07-22T00:00:00.000Z",
+  "storefronts": [
+    {
+      "name": "BRDailyStorefront",
+      "catalogEntries": [
+        {
+          "offerId": "v2:/5249644f-6926-4ffd-a493-20313656d82d",
+          "offerType": "StaticPrice",
+          "devName": "[VIRTUAL]1x AthenaCharacter:CID_220_Athena_Commando_F_Clown for 1500 MtxCurrency",
+          "itemGrants": [
+            {
+              "templateId": "AthenaCharacter:CID_220_Athena_Commando_F_Clown",
+              "quantity": 1
+            },
+            {
+              "templateId": "AthenaBackpack:BID_111_ClownFemale",
+              "quantity": 1
+            }
+          ],
+          "requirements": [
+            {
+              "requirementType": "DenyOnItemOwnership",
+              "requiredId": "AthenaCharacter:CID_220_Athena_Commando_F_Clown",
+              "minQuantity": 1
+            },
+            {
+              "requirementType": "DenyOnItemOwnership",
+              "requiredId": "AthenaBackpack:BID_111_ClownFemale",
+              "minQuantity": 1
+            }
+          ],
+          "categories": [],
+          "metaInfo": [
+            {
+              "Key": "TileSize",
+              "Value": "Normal"
+            },
+            {
+              "Key": "SectionId",
+              "Value": "Daily"
+            },
+            {
+              "Key": "DisplayAssetPath",
+              "Value": "DA_Featured_CID_220_Athena_Commando_F_Clown"
+            },
+            {
+              "Key": "BannerOverride",
+              "Value": ""
+            }
+          ],
+          "prices": [
+            {
+              "currencyType": "MtxCurrency",
+              "currencySubType": "Currency",
+              "regularPrice": 1500,
+              "dynamicRegularPrice": -1,
+              "finalPrice": 1500,
+              "basePrice": 1500,
+              "saleExpiration": "9999-12-31T23:59:59.999Z"
+            }
+          ],
+          "bannerOverride": "",
+          "displayAssetPath": "DA_Featured_CID_220_Athena_Commando_F_Clown",
+          "refundable": true,
+          "title": "",
+          "description": "",
+          "shortDescription": "",
+          "appStoreId": [],
+          "fulfillmentIds": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "sortPriority": 0,
+          "catalogGroupPriority": 0,
+          "filterWeight": 0
+        },
+        {
+          "offerId": "v2:/dbf09112-6000-425e-bb59-ff905a464ec2",
+          "offerType": "StaticPrice",
+          "devName": "[VIRTUAL]1x AthenaCharacter:CID_451_Athena_Commando_M_Caterpillar for 1200 MtxCurrency",
+          "itemGrants": [
+            {
+              "templateId": "AthenaCharacter:CID_451_Athena_Commando_M_Caterpillar",
+              "quantity": 1
+            },
+            {
+              "templateId": "AthenaBackpack:BID_291_Caterpillar",
+              "quantity": 1
+            }
+          ],
+          "requirements": [
+            {
+              "requirementType": "DenyOnItemOwnership",
+              "requiredId": "AthenaCharacter:CID_451_Athena_Commando_M_Caterpillar",
+              "minQuantity": 1
+            },
+            {
+              "requirementType": "DenyOnItemOwnership",
+              "requiredId": "AthenaBackpack:BID_291_Caterpillar",
+              "minQuantity": 1
+            }
+          ],
+          "categories": [],
+          "metaInfo": [
+            {
+              "Key": "TileSize",
+              "Value": "Normal"
+            },
+            {
+              "Key": "SectionId",
+              "Value": "Daily"
+            },
+            {
+              "Key": "DisplayAssetPath",
+              "Value": "DA_Featured_CID_451_Athena_Commando_M_Caterpillar"
+            },
+            {
+              "Key": "BannerOverride",
+              "Value": ""
+            }
+          ],
+          "prices": [
+            {
+              "currencyType": "MtxCurrency",
+              "currencySubType": "Currency",
+              "regularPrice": 1200,
+              "dynamicRegularPrice": -1,
+              "finalPrice": 1200,
+              "basePrice": 1200,
+              "saleExpiration": "9999-12-31T23:59:59.999Z"
+            }
+          ],
+          "bannerOverride": "",
+          "displayAssetPath": "DA_Featured_CID_451_Athena_Commando_M_Caterpillar",
+          "refundable": true,
+          "title": "",
+          "description": "",
+          "shortDescription": "",
+          "appStoreId": [],
+          "fulfillmentIds": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "sortPriority": 0,
+          "catalogGroupPriority": 0,
+          "filterWeight": 0
+        },
+        {
+          "offerId": "v2:/8ef40194-7f9d-4717-a5d6-12108cf24060",
+          "offerType": "StaticPrice",
+          "devName": "[VIRTUAL]1x AthenaDance:EID_Flapper for 500 MtxCurrency",
+          "itemGrants": [
+            {
+              "templateId": "AthenaDance:EID_Flapper",
+              "quantity": 1
+            }
+          ],
+          "requirements": [
+            {
+              "requirementType": "DenyOnItemOwnership",
+              "requiredId": "AthenaDance:EID_Flapper",
+              "minQuantity": 1
+            }
+          ],
+          "categories": [],
+          "metaInfo": [
+            {
+              "Key": "TileSize",
+              "Value": "Normal"
+            },
+            {
+              "Key": "SectionId",
+              "Value": "Daily"
+            },
+            {
+              "Key": "DisplayAssetPath",
+              "Value": "/Game/Catalog/DisplayAssets/DA_Featured_EID_Flapper.DA_Featured_EID_Flapper"
+            },
+            {
+              "Key": "BannerOverride",
+              "Value": ""
+            }
+          ],
+          "prices": [
+            {
+              "currencyType": "MtxCurrency",
+              "currencySubType": "Currency",
+              "regularPrice": 500,
+              "dynamicRegularPrice": -1,
+              "finalPrice": 500,
+              "basePrice": 500,
+              "saleExpiration": "9999-12-31T23:59:59.999Z"
+            }
+          ],
+          "bannerOverride": "",
+          "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_Featured_EID_Flapper.DA_Featured_EID_Flapper",
+          "refundable": true,
+          "title": "",
+          "description": "",
+          "shortDescription": "",
+          "appStoreId": [],
+          "fulfillmentIds": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "sortPriority": 0,
+          "catalogGroupPriority": 0,
+          "filterWeight": 0
+        },
+        {
+          "offerId": "v2:/b2c870ea-50cd-4a74-b906-0b4536cf03aa",
+          "offerType": "StaticPrice",
+          "devName": "[VIRTUAL]1x AthenaDance:EID_AirHorn for 200 MtxCurrency",
+          "itemGrants": [
+            {
+              "templateId": "AthenaDance:EID_AirHorn",
+              "quantity": 1
+            }
+          ],
+          "requirements": [
+            {
+              "requirementType": "DenyOnItemOwnership",
+              "requiredId": "AthenaDance:EID_AirHorn",
+              "minQuantity": 1
+            }
+          ],
+          "categories": [],
+          "metaInfo": [
+            {
+              "Key": "TileSize",
+              "Value": "Normal"
+            },
+            {
+              "Key": "SectionId",
+              "Value": "Daily"
+            },
+            {
+              "Key": "DisplayAssetPath",
+              "Value": "/Game/Catalog/DisplayAssets/DA_Featured_EID_AirHorn.DA_Featured_EID_AirHorn"
+            },
+            {
+              "Key": "BannerOverride",
+              "Value": ""
+            }
+          ],
+          "prices": [
+            {
+              "currencyType": "MtxCurrency",
+              "currencySubType": "Currency",
+              "regularPrice": 200,
+              "dynamicRegularPrice": -1,
+              "finalPrice": 200,
+              "basePrice": 200,
+              "saleExpiration": "9999-12-31T23:59:59.999Z"
+            }
+          ],
+          "bannerOverride": "",
+          "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_Featured_EID_AirHorn.DA_Featured_EID_AirHorn",
+          "refundable": true,
+          "title": "",
+          "description": "",
+          "shortDescription": "",
+          "appStoreId": [],
+          "fulfillmentIds": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "sortPriority": 0,
+          "catalogGroupPriority": 0,
+          "filterWeight": 0
+        },
+        {
+          "offerId": "v2:/aed46352-c68d-412d-a54f-e7dc5c6b5f94",
+          "offerType": "StaticPrice",
+          "devName": "[VIRTUAL]1x AthenaPickaxe:Pickaxe_ID_190_GolfClub for 500 MtxCurrency",
+          "itemGrants": [
+            {
+              "templateId": "AthenaPickaxe:Pickaxe_ID_190_GolfClub",
+              "quantity": 1
+            }
+          ],
+          "requirements": [
+            {
+              "requirementType": "DenyOnItemOwnership",
+              "requiredId": "AthenaPickaxe:Pickaxe_ID_190_GolfClub",
+              "minQuantity": 1
+            }
+          ],
+          "categories": [],
+          "metaInfo": [
+            {
+              "Key": "TileSize",
+              "Value": "Normal"
+            },
+            {
+              "Key": "SectionId",
+              "Value": "Daily"
+            },
+            {
+              "Key": "DisplayAssetPath",
+              "Value": "DA_Featured_Pickaxe_ID_190_GolfClub"
+            },
+            {
+              "Key": "BannerOverride",
+              "Value": ""
+            }
+          ],
+          "prices": [
+            {
+              "currencyType": "MtxCurrency",
+              "currencySubType": "Currency",
+              "regularPrice": 500,
+              "dynamicRegularPrice": -1,
+              "finalPrice": 500,
+              "basePrice": 500,
+              "saleExpiration": "9999-12-31T23:59:59.999Z"
+            }
+          ],
+          "bannerOverride": "",
+          "displayAssetPath": "DA_Featured_Pickaxe_ID_190_GolfClub",
+          "refundable": true,
+          "title": "",
+          "description": "",
+          "shortDescription": "",
+          "appStoreId": [],
+          "fulfillmentIds": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "sortPriority": 0,
+          "catalogGroupPriority": 0,
+          "filterWeight": 0
+        },
+        {
+          "offerId": "v2:/7a552335-0fe6-446e-bde1-5d09fc123624",
+          "offerType": "StaticPrice",
+          "devName": "[VIRTUAL]1x AthenaGlider:Glider_ID_153_Banner for 500 MtxCurrency",
+          "itemGrants": [
+            {
+              "templateId": "AthenaGlider:Glider_ID_153_Banner",
+              "quantity": 1
+            }
+          ],
+          "requirements": [
+            {
+              "requirementType": "DenyOnItemOwnership",
+              "requiredId": "AthenaGlider:Glider_ID_153_Banner",
+              "minQuantity": 1
+            }
+          ],
+          "categories": [],
+          "metaInfo": [
+            {
+              "Key": "TileSize",
+              "Value": "Normal"
+            },
+            {
+              "Key": "SectionId",
+              "Value": "Daily"
+            },
+            {
+              "Key": "DisplayAssetPath",
+              "Value": "DA_Featured_Glider_ID_153_Banner"
+            },
+            {
+              "Key": "BannerOverride",
+              "Value": ""
+            }
+          ],
+          "prices": [
+            {
+              "currencyType": "MtxCurrency",
+              "currencySubType": "Currency",
+              "regularPrice": 500,
+              "dynamicRegularPrice": -1,
+              "finalPrice": 500,
+              "basePrice": 500,
+              "saleExpiration": "9999-12-31T23:59:59.999Z"
+            }
+          ],
+          "bannerOverride": "",
+          "displayAssetPath": "DA_Featured_Glider_ID_153_Banner",
+          "refundable": true,
+          "title": "",
+          "description": "",
+          "shortDescription": "",
+          "appStoreId": [],
+          "fulfillmentIds": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "sortPriority": 0,
+          "catalogGroupPriority": 0,
+          "filterWeight": 0
+        }
+      ]
+    },
+    [
       {
-        "name": "BRDailyStorefront",
+        "name": "BRWeeklyStorefront",
         "catalogEntries": [
           {
-            "offerId": "c806bebc-9fe7-40bd-92ee-6d0b18058396",
+            "offerId": "v2:/7ee3cc2c-fb12-4352-b8d9-c89445a8341a",
             "offerType": "StaticPrice",
-            "devName": "[VIRTUAL]1x AthenaCharacter:CID_047_Athena_Commando_F_HolidayReindeer for 1200 MtxCurrency",
+            "devName": "[VIRTUAL]1x AthenaCharacter:CID_099_Athena_Commando_F_Scathach for 1500 MtxCurrency",
             "itemGrants": [
               {
-                "templateId": "AthenaDance:EID_999",
+                "templateId": "AthenaCharacter:CID_099_Athena_Commando_F_Scathach",
+                "quantity": 1
+              },
+              {
+                "templateId": "AthenaBackpack:BID_035_Scathach",
                 "quantity": 1
               }
             ],
             "requirements": [
               {
                 "requirementType": "DenyOnItemOwnership",
-                "requiredId": "AthenaDance:EID_999",
+                "requiredId": "AthenaCharacter:CID_099_Athena_Commando_F_Scathach",
+                "minQuantity": 1
+              },
+              {
+                "requirementType": "DenyOnItemOwnership",
+                "requiredId": "AthenaBackpack:BID_035_Scathach",
                 "minQuantity": 1
               }
             ],
@@ -31,11 +436,11 @@
               },
               {
                 "Key": "SectionId",
-                "Value": "Daily"
+                "Value": "Featured"
               },
               {
                 "Key": "DisplayAssetPath",
-                "Value": "/Game/Catalog/DisplayAssets/DA_Featured_CID_047_Athena_Commando_F_HolidayReindeer.DA_Featured_CID_047_Athena_Commando_F_HolidayReindeer"
+                "Value": "/Game/Catalog/DisplayAssets/DA_Featured_CID_099_Athena_Commando_F_Scathach.DA_Featured_CID_099_Athena_Commando_F_Scathach"
               },
               {
                 "Key": "BannerOverride",
@@ -46,15 +451,15 @@
               {
                 "currencyType": "MtxCurrency",
                 "currencySubType": "Currency",
-                "regularPrice": 1200,
+                "regularPrice": 1500,
                 "dynamicRegularPrice": -1,
-                "finalPrice": 1200,
-                "basePrice": 1200,
+                "finalPrice": 1500,
+                "basePrice": 1500,
                 "saleExpiration": "9999-12-31T23:59:59.999Z"
               }
             ],
             "bannerOverride": "",
-            "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_Featured_CID_047_Athena_Commando_F_HolidayReindeer.DA_Featured_CID_047_Athena_Commando_F_HolidayReindeer",
+            "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_Featured_CID_099_Athena_Commando_F_Scathach.DA_Featured_CID_099_Athena_Commando_F_Scathach",
             "refundable": true,
             "title": "",
             "description": "",
@@ -69,19 +474,28 @@
             "filterWeight": 0
           },
           {
-            "offerId": "214a8600-1004-4e79-b813-0069b421a90f",
+            "offerId": "v2:/3ae05d8b-e976-4c6a-a220-2ca7ba524516",
             "offerType": "StaticPrice",
-            "devName": "[VIRTUAL]1x AthenaCharacter:CID_268_Athena_Commando_M_RockerPunk for 1200 MtxCurrency",
+            "devName": "[VIRTUAL]1x AthenaCharacter:CID_808_Athena_Commando_F_ConstellationSun for 1500 MtxCurrency",
             "itemGrants": [
               {
-                "templateId": "AthenaCharacter:CID_268_Athena_Commando_M_RockerPunk",
+                "templateId": "AthenaCharacter:CID_808_Athena_Commando_F_ConstellationSun",
+                "quantity": 1
+              },
+              {
+                "templateId": "AthenaBackpack:BID_552_ConstellationSun",
                 "quantity": 1
               }
             ],
             "requirements": [
               {
                 "requirementType": "DenyOnItemOwnership",
-                "requiredId": "AthenaCharacter:CID_268_Athena_Commando_M_RockerPunk",
+                "requiredId": "AthenaCharacter:CID_808_Athena_Commando_F_ConstellationSun",
+                "minQuantity": 1
+              },
+              {
+                "requirementType": "DenyOnItemOwnership",
+                "requiredId": "AthenaBackpack:BID_552_ConstellationSun",
                 "minQuantity": 1
               }
             ],
@@ -93,11 +507,11 @@
               },
               {
                 "Key": "SectionId",
-                "Value": "Daily"
+                "Value": "Featured"
               },
               {
                 "Key": "DisplayAssetPath",
-                "Value": "/Game/Catalog/DisplayAssets/DA_Featured_CID_268_Athena_Commando_M_RockerPunk.DA_Featured_CID_268_Athena_Commando_M_RockerPunk"
+                "Value": "/Game/Catalog/DisplayAssets/DA_Featured_CID_808_Athena_Commando_F_ConstellationSun.DA_Featured_CID_808_Athena_Commando_F_ConstellationSun"
               },
               {
                 "Key": "BannerOverride",
@@ -108,15 +522,15 @@
               {
                 "currencyType": "MtxCurrency",
                 "currencySubType": "Currency",
-                "regularPrice": 1200,
+                "regularPrice": 1500,
                 "dynamicRegularPrice": -1,
-                "finalPrice": 1200,
-                "basePrice": 1200,
+                "finalPrice": 1500,
+                "basePrice": 1500,
                 "saleExpiration": "9999-12-31T23:59:59.999Z"
               }
             ],
             "bannerOverride": "",
-            "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_Featured_CID_268_Athena_Commando_M_RockerPunk.DA_Featured_CID_268_Athena_Commando_M_RockerPunk",
+            "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_Featured_CID_808_Athena_Commando_F_ConstellationSun.DA_Featured_CID_808_Athena_Commando_F_ConstellationSun",
             "refundable": true,
             "title": "",
             "description": "",
@@ -131,19 +545,19 @@
             "filterWeight": 0
           },
           {
-            "offerId": "0f0d9f26-f6a8-4b49-b17a-37c78bff90aa",
+            "offerId": "v2:/a532186e-29bc-453e-b32f-a98d43c57594",
             "offerType": "StaticPrice",
-            "devName": "[VIRTUAL]1x AthenaDance:EID_SomethingStinks for 500 MtxCurrency",
+            "devName": "[VIRTUAL]1x AthenaPickaxe:Pickaxe_ID_199_ShinyHammer for 800 MtxCurrency",
             "itemGrants": [
               {
-                "templateId": "AthenaDance:EID_SomethingStinks",
+                "templateId": "AthenaPickaxe:Pickaxe_ID_199_ShinyHammer",
                 "quantity": 1
               }
             ],
             "requirements": [
               {
                 "requirementType": "DenyOnItemOwnership",
-                "requiredId": "AthenaDance:EID_SomethingStinks",
+                "requiredId": "AthenaPickaxe:Pickaxe_ID_199_ShinyHammer",
                 "minQuantity": 1
               }
             ],
@@ -155,135 +569,11 @@
               },
               {
                 "Key": "SectionId",
-                "Value": "Daily"
+                "Value": "Featured"
               },
               {
                 "Key": "DisplayAssetPath",
-                "Value": "/Game/Catalog/DisplayAssets/DA_Featured_EID_SomethingStinks.DA_Featured_EID_SomethingStinks"
-              },
-              {
-                "Key": "BannerOverride",
-                "Value": ""
-              }
-            ],
-            "prices": [
-              {
-                "currencyType": "MtxCurrency",
-                "currencySubType": "Currency",
-                "regularPrice": 500,
-                "dynamicRegularPrice": -1,
-                "finalPrice": 500,
-                "basePrice": 500,
-                "saleExpiration": "9999-12-31T23:59:59.999Z"
-              }
-            ],
-            "bannerOverride": "",
-            "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_Featured_EID_SomethingStinks.DA_Featured_EID_SomethingStinks",
-            "refundable": true,
-            "title": "",
-            "description": "",
-            "shortDescription": "",
-            "appStoreId": [],
-            "fulfillmentIds": [],
-            "dailyLimit": -1,
-            "weeklyLimit": -1,
-            "monthlyLimit": -1,
-            "sortPriority": 0,
-            "catalogGroupPriority": 0,
-            "filterWeight": 0
-          },
-          {
-            "offerId": "5b521a9c-cb0d-4879-acb2-a6e6b568c953",
-            "offerType": "StaticPrice",
-            "devName": "[VIRTUAL]1x AthenaDance:EID_Mime for 500 MtxCurrency",
-            "itemGrants": [
-              {
-                "templateId": "AthenaDance:EID_Mime",
-                "quantity": 1
-              }
-            ],
-            "requirements": [
-              {
-                "requirementType": "DenyOnItemOwnership",
-                "requiredId": "AthenaDance:EID_Mime",
-                "minQuantity": 1
-              }
-            ],
-            "categories": [],
-            "metaInfo": [
-              {
-                "Key": "TileSize",
-                "Value": "Normal"
-              },
-              {
-                "Key": "SectionId",
-                "Value": "Daily"
-              },
-              {
-                "Key": "DisplayAssetPath",
-                "Value": "/Game/Catalog/DisplayAssets/DA_Featured_EID_Mime.DA_Featured_EID_Mime"
-              },
-              {
-                "Key": "BannerOverride",
-                "Value": ""
-              }
-            ],
-            "prices": [
-              {
-                "currencyType": "MtxCurrency",
-                "currencySubType": "Currency",
-                "regularPrice": 500,
-                "dynamicRegularPrice": -1,
-                "finalPrice": 500,
-                "basePrice": 500,
-                "saleExpiration": "9999-12-31T23:59:59.999Z"
-              }
-            ],
-            "bannerOverride": "",
-            "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_Featured_EID_Mime.DA_Featured_EID_Mime",
-            "refundable": true,
-            "title": "",
-            "description": "",
-            "shortDescription": "",
-            "appStoreId": [],
-            "fulfillmentIds": [],
-            "dailyLimit": -1,
-            "weeklyLimit": -1,
-            "monthlyLimit": -1,
-            "sortPriority": 0,
-            "catalogGroupPriority": 0,
-            "filterWeight": 0
-          },
-          {
-            "offerId": "ea2053d8-0c5c-431b-acde-3c3a98f6cc6b",
-            "offerType": "StaticPrice",
-            "devName": "[VIRTUAL]1x AthenaPickaxe:Pickaxe_ID_120_SamuraiUltraArmor for 800 MtxCurrency",
-            "itemGrants": [
-              {
-                "templateId": "AthenaPickaxe:Pickaxe_ID_120_SamuraiUltraArmor",
-                "quantity": 1
-              }
-            ],
-            "requirements": [
-              {
-                "requirementType": "DenyOnItemOwnership",
-                "requiredId": "AthenaPickaxe:Pickaxe_ID_120_SamuraiUltraArmor",
-                "minQuantity": 1
-              }
-            ],
-            "categories": [],
-            "metaInfo": [
-              {
-                "Key": "TileSize",
-                "Value": "Normal"
-              },
-              {
-                "Key": "SectionId",
-                "Value": "Daily"
-              },
-              {
-                "Key": "DisplayAssetPath",
-                "Value": "/Game/Catalog/DisplayAssets/DA_Featured_Pickaxe_ID_120_SamuraiUltraArmor.DA_Featured_Pickaxe_ID_120_SamuraiUltraArmor"
+                "Value": "/Game/Catalog/DisplayAssets/DA_Featured_Pickaxe_ID_199_ShinyHammer.DA_Featured_Pickaxe_ID_199_ShinyHammer"
               },
               {
                 "Key": "BannerOverride",
@@ -302,207 +592,7 @@
               }
             ],
             "bannerOverride": "",
-            "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_Featured_Pickaxe_ID_120_SamuraiUltraArmor.DA_Featured_Pickaxe_ID_120_SamuraiUltraArmor",
-            "refundable": true,
-            "title": "",
-            "description": "",
-            "shortDescription": "",
-            "appStoreId": [],
-            "fulfillmentIds": [],
-            "dailyLimit": -1,
-            "weeklyLimit": -1,
-            "monthlyLimit": -1,
-            "sortPriority": 0,
-            "catalogGroupPriority": 0,
-            "filterWeight": 0
-          },
-          {
-            "offerId": "7af700b9-e439-4578-ad4b-85246ed562a9",
-            "offerType": "StaticPrice",
-            "devName": "[VIRTUAL]1x AthenaGlider:Glider_ID_039_Venus for 1200 MtxCurrency",
-            "itemGrants": [
-              {
-                "templateId": "AthenaGlider:Glider_ID_039_Venus",
-                "quantity": 1
-              }
-            ],
-            "requirements": [
-              {
-                "requirementType": "DenyOnItemOwnership",
-                "requiredId": "AthenaGlider:Glider_ID_039_Venus",
-                "minQuantity": 1
-              }
-            ],
-            "categories": [],
-            "metaInfo": [
-              {
-                "Key": "TileSize",
-                "Value": "Normal"
-              },
-              {
-                "Key": "SectionId",
-                "Value": "Daily"
-              },
-              {
-                "Key": "DisplayAssetPath",
-                "Value": "/Game/Catalog/DisplayAssets/DA_Featured_Glider_ID_039_Venus.DA_Featured_Glider_ID_039_Venus"
-              },
-              {
-                "Key": "BannerOverride",
-                "Value": ""
-              }
-            ],
-            "prices": [
-              {
-                "currencyType": "MtxCurrency",
-                "currencySubType": "Currency",
-                "regularPrice": 1200,
-                "dynamicRegularPrice": -1,
-                "finalPrice": 1200,
-                "basePrice": 1200,
-                "saleExpiration": "9999-12-31T23:59:59.999Z"
-              }
-            ],
-            "bannerOverride": "",
-            "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_Featured_Glider_ID_039_Venus.DA_Featured_Glider_ID_039_Venus",
-            "refundable": true,
-            "title": "",
-            "description": "",
-            "shortDescription": "",
-            "appStoreId": [],
-            "fulfillmentIds": [],
-            "dailyLimit": -1,
-            "weeklyLimit": -1,
-            "monthlyLimit": -1,
-            "sortPriority": 0,
-            "catalogGroupPriority": 0,
-            "filterWeight": 0
-          }
-        ]
-      },
-      {
-        "name": "BRWeeklyStorefront",
-        "catalogEntries": [
-          {
-            "offerId": "79049d37-a4e9-4b6d-8e31-6663d61c81c5",
-            "offerType": "StaticPrice",
-            "devName": "[VIRTUAL]1x AthenaCharacter:CID_066_Athena_Commando_F_SkiGirl_GER for 1500 MtxCurrency",
-            "itemGrants": [
-              {
-                "templateId": "AthenaCharacter:CID_066_Athena_Commando_F_SkiGirl_GER",
-                "quantity": 1
-              },
-              {
-                "templateId": "AthenaBackpack:BID_019_SkiGirl_GER",
-                "quantity": 1
-              }
-            ],
-            "requirements": [
-              {
-                "requirementType": "DenyOnItemOwnership",
-                "requiredId": "AthenaCharacter:CID_066_Athena_Commando_F_SkiGirl_GER",
-                "minQuantity": 1
-              },
-              {
-                "requirementType": "DenyOnItemOwnership",
-                "requiredId": "AthenaBackpack:BID_019_SkiGirl_GER",
-                "minQuantity": 1
-              }
-            ],
-            "categories": [],
-            "metaInfo": [
-              {
-                "Key": "TileSize",
-                "Value": "Normal"
-              },
-              {
-                "Key": "SectionId",
-                "Value": "Featured"
-              },
-              {
-                "Key": "DisplayAssetPath",
-                "Value": "/Game/Catalog/DisplayAssets/DA_Featured_CID_066_Athena_Commando_F_SkiGirl_GER.DA_Featured_CID_066_Athena_Commando_F_SkiGirl_GER"
-              },
-              {
-                "Key": "BannerOverride",
-                "Value": ""
-              }
-            ],
-            "prices": [
-              {
-                "currencyType": "MtxCurrency",
-                "currencySubType": "Currency",
-                "regularPrice": 1500,
-                "dynamicRegularPrice": -1,
-                "finalPrice": 1500,
-                "basePrice": 1500,
-                "saleExpiration": "9999-12-31T23:59:59.999Z"
-              }
-            ],
-            "bannerOverride": "",
-            "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_Featured_CID_066_Athena_Commando_F_SkiGirl_GER.DA_Featured_CID_066_Athena_Commando_F_SkiGirl_GER",
-            "refundable": true,
-            "title": "",
-            "description": "",
-            "shortDescription": "",
-            "appStoreId": [],
-            "fulfillmentIds": [],
-            "dailyLimit": -1,
-            "weeklyLimit": -1,
-            "monthlyLimit": -1,
-            "sortPriority": 0,
-            "catalogGroupPriority": 0,
-            "filterWeight": 0
-          },
-          {
-            "offerId": "8ffc309c-a23c-4bce-8405-7ef472786264",
-            "offerType": "StaticPrice",
-            "devName": "[VIRTUAL]1x AthenaCharacter:CID_177_Athena_Commando_M_StreetRacerCobra for 1500 MtxCurrency",
-            "itemGrants": [
-              {
-                "templateId": "AthenaCharacter:CID_177_Athena_Commando_M_StreetRacerCobra",
-                "quantity": 1
-              }
-            ],
-            "requirements": [
-              {
-                "requirementType": "DenyOnItemOwnership",
-                "requiredId": "AthenaCharacter:CID_177_Athena_Commando_M_StreetRacerCobra",
-                "minQuantity": 1
-              }
-            ],
-            "categories": [],
-            "metaInfo": [
-              {
-                "Key": "TileSize",
-                "Value": "Normal"
-              },
-              {
-                "Key": "SectionId",
-                "Value": "Featured"
-              },
-              {
-                "Key": "DisplayAssetPath",
-                "Value": "/Game/Catalog/DisplayAssets/DA_Featured_CID_177_Athena_Commando_M_StreetRacerCobra.DA_Featured_CID_177_Athena_Commando_M_StreetRacerCobra"
-              },
-              {
-                "Key": "BannerOverride",
-                "Value": ""
-              }
-            ],
-            "prices": [
-              {
-                "currencyType": "MtxCurrency",
-                "currencySubType": "Currency",
-                "regularPrice": 1500,
-                "dynamicRegularPrice": -1,
-                "finalPrice": 1500,
-                "basePrice": 1500,
-                "saleExpiration": "9999-12-31T23:59:59.999Z"
-              }
-            ],
-            "bannerOverride": "",
-            "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_Featured_CID_177_Athena_Commando_M_StreetRacerCobra.DA_Featured_CID_177_Athena_Commando_M_StreetRacerCobra",
+            "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_Featured_Pickaxe_ID_199_ShinyHammer.DA_Featured_Pickaxe_ID_199_ShinyHammer",
             "refundable": true,
             "title": "",
             "description": "",
@@ -519,4 +609,5 @@
         ]
       }
     ]
-  }
+  ]
+}
