@@ -4,6 +4,7 @@ import Profile from "../../database/models/profiles";
 import verifyAuth from "../../utils/handlers/verifyAuth";
 import { Solara } from "../../utils/errors/Solara";
 import { v4 as uuidv4, v4 } from "uuid";
+const quests = require("../../../static/data/quests.json");
 
 export default function () {
     app.post("/fortnite/api/game/v2/profile/:accountId/client/ClientQuestLogin", verifyAuth, async (c) => {
@@ -14,17 +15,15 @@ export default function () {
             });
             const profile = profiles?.profiles?.athena;
 
-            if (!profile) {
+            if (!profiles) {
                 return c.json(Solara.mcp.profileNotFound, 404);
             }
 
-            const quests = require("../../../static/data/quests.json");
             const ver = getVersion(c);
             let profileChanges = [];
             let questIds: any;
             let ShouldGiveQuest = true;
             const DateFormat = (new Date().toISOString()).split("T")[0];
-
             if (profileId === "athena" && quests[`Season${ver.season < 10 ? `0${ver.season}` : ver.season}`]) {
                 questIds = quests[`Season${ver.season < 10 ? `0${ver.season}` : ver.season}`];
             }
@@ -157,29 +156,31 @@ export default function () {
                         });
                     }
 
-                    profile.items[QuestID] = {
-                        templateId: Quest.templateId,
-                        attributes: {
-                            creation_time: new Date().toISOString(),
-                            level: -1,
-                            item_seen: true,
-                            sent_new_notification: true,
-                            challenge_bundle_id: Quest.challenge_bundle_id || "",
-                            xp_reward_scalar: 1,
-                            quest_state: "Active",
-                            last_state_change_time: new Date().toISOString(),
-                            max_level_bonus: 0,
-                            xp: 0,
-                            favorite: false,
-                        },
-                        quantity: 1,
-                    };
+                    if (profiles?.profiles?.athena) {
+                        profiles.profiles.athena.items[QuestID] = {
+                            templateId: Quest.templateId,
+                            attributes: {
+                                creation_time: new Date().toISOString(),
+                                level: -1,
+                                item_seen: true,
+                                sent_new_notification: true,
+                                challenge_bundle_id: Quest.challenge_bundle_id || "",
+                                xp_reward_scalar: 1,
+                                quest_state: "Active",
+                                last_state_change_time: new Date().toISOString(),
+                                max_level_bonus: 0,
+                                xp: 0,
+                                favorite: false,
+                            },
+                            quantity: 1,
+                        };
 
-                    profileChanges.push({
-                        changeType: "itemAdded",
-                        itemId: QuestID,
-                        item: profile.items[QuestID],
-                    });
+                        profileChanges.push({
+                            changeType: "itemAdded",
+                            itemId: QuestID,
+                            item: profile.items[QuestID],
+                        });
+                    }
                 }
 
                 for (var Quest in QuestsToAdd) {
@@ -191,11 +192,8 @@ export default function () {
             profile.commandRevision += 1;
             profile.updated = new Date().toISOString();
 
-            if (profileChanges.length === 0) {
+            if (profileChanges.length > 0) {
                 profileChanges = [{ changeType: "fullProfileUpdate", profile }];
-                await profiles.updateOne({
-                    $set: { [`profiles.${profileId} `]: profile },
-                });
             }
 
             await profiles.updateOne({
@@ -215,6 +213,5 @@ export default function () {
             console.error(error);
             return c.json({ error: "Internal Server Error" }, 500);
         }
-    }
-    );
+    });
 }
