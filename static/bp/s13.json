@@ -1,0 +1,306 @@
+{
+    "rewards": [
+      {
+        "AthenaCharacter:CID_771_Athena_Commando_F_OceanRider": 1,
+        "AthenaCharacter:CID_777_Athena_Commando_M_RacerZero": 1
+      },
+      {
+        "AthenaDance:EID_SuperheroBackflip": 1
+      },
+      {
+        "AthenaSkyDiveContrail:Trails_ID_092_SchoolOfFish": 1
+      },
+      {
+        "Currency:MtxGiveaway": 100
+      },
+      {
+        "AthenaGlider:Umbrella_BuildABrella": 1
+      },
+      {
+        "AthenaBackpack:BID_534_OceanRider": 1
+      },
+      {
+        "AthenaItemWrap:Wrap_245_OceanRider": 1
+      },
+      {
+        "AthenaMusicPack:MusicPack_052_S13Cine": 1
+      },
+      {
+        "AthenaLoadingScreen:LSID_236_OceanRider": 1
+      },
+      {
+        "AthenaPickaxe:Pickaxe_ID_410_OceanRiderFemale1H": 1
+      },
+      {
+        "HomebaseBannerIcon:brs13_oceanrider": 1
+      },
+      {
+        "Currency:MtxGiveaway": 100
+      },
+      {
+        "AthenaDance:Emoji_S13_OceanRider": 1
+      },
+      {
+        "AthenaGlider:Glider_ID_219_OceanRiderFemale": 1
+      },
+      {
+        "AthenaToken_BRS13_UmbrellaSelection_01_Token": 1
+      },
+      {
+        "AthenaLoadingScreen:LSID_241_TacticalScuba": 1
+      },
+      {
+        "AthenaDance:SPID_209_OceanRider": 1
+      },
+      {
+        "AthenaItemWrap:Wrap_250_TacticalScuba": 1
+      },
+      {
+        "Currency:MtxGiveaway": 100
+      },
+      {
+        "AthenaCharacter:CID_774_Athena_Commando_M_TacticalScuba": 1
+      },
+      {
+        "AthenaDance:EID_AirGuitar": 1
+      },
+      {
+        "AthenaDance:Emoji_S13_TacticalScuba": 1
+      },
+      {
+        "AthenaBackpack:BID_537_TacticalScuba": 1
+      },
+      {
+        "AthenaSkyDiveContrail:Trails_ID_094_WaterSpray": 1
+      },
+      {
+        "HomebaseBannerIcon:brs13_racer-zero": 1
+      },
+      {
+        "Currency:MtxGiveaway": 100
+      },
+      {
+        "AthenaGlider:Glider_ID_225_TacticalScubaMale": 1
+      },
+      {
+        "AthenaDance:SPID_213_SeasonSpray1": 1
+      },
+      {
+        "AthenaLoadingScreen:LSID_242_Valet": 1
+      },
+      {
+        "AthenaPickaxe:Pickaxe_ID_414_RacerZero": 1
+      },
+      {
+        "HomebaseBannerIcon:brs13_tacticalscuba": 1
+      },
+      {
+        "Currency:MtxGiveaway": 100
+      },
+      {
+        "AthenaDance:EID_DontBeSquare": 1
+      },
+      {
+        "AthenaDance:SPID_214_SeasonSpray2": 1
+      },
+      {
+        "AthenaToken_BRS13_UmbrellaSelection_02_Token": 1
+      },
+      {
+        "AthenaGlider:Glider_ID_222_RacerZeroMale": 1
+      },
+      {
+        "AthenaDance:Emoji_S13_RacerZero": 1
+      },
+      {
+        "AthenaPickaxe:Pickaxe_ID_417_TacticalScubaMale1H": 1
+      },
+      {
+        "Currency:MtxGiveaway": 100
+      },
+      {
+        "AthenaCharacter:CID_770_Athena_Commando_F_MechanicalEngineer": 1
+      },
+      {
+        "AthenaDance:SPID_208_MechanicalEngineer": 1
+      },
+      {
+        "AthenaBackpack:BID_533_MechanicalEngineer": 1
+      },
+      {
+        "AthenaSkyDiveContrail:Trails_ID_090_Constellation": 1
+      },
+      {
+        "AthenaLoadingScreen:LSID_235_MechanicalEngineer": 1
+      },
+      {
+        "AthenaItemWrap:Wrap_244_MechanicalEngineer": 1
+      },
+      {
+        "AthenaPickaxe:Pickaxe_ID_409_MechanicalEngineer1H": 1
+      },
+      {
+        "Currency:MtxGiveaway": 100
+      },
+      {
+        "AthenaMusicPack:MusicPack_051_Headbanger": 1
+      },
+      {
+        "AthenaGlider:Glider_ID_218_MechanicalEngineerFemale": 1
+      },
+      {
+        "CosmeticVariantToken:VTID_655_RazerZero_StyleB": 1
+      },
+      {
+        "AthenaLoadingScreen:LSID_237_ProfessorPup": 1
+      },
+      {
+        "AthenaDance:Emoji_S13_MechanicalEngineer": 1
+      },
+      {
+        "Currency:MtxGiveaway": 100
+      },
+      {
+        "AthenaDance:EID_PartyJazzTwinkleToes": 1
+      },
+      {
+        "AthenaToken_BRS13_UmbrellaSelection_03_Token": 1
+      },
+      {
+        "HomebaseBannerIcon:brs13_mechanicalengineer": 1
+      },
+      {
+        "AthenaDance:SPID_210_ProfessorPup": 1
+      },
+      {
+        "AthenaLoadingScreen:LSID_243_Floatilla": 1
+      },
+      {
+        "Currency:MtxGiveaway": 100
+      },
+      {
+        "AthenaCharacter:CID_776_Athena_Commando_M_ProfessorPup": 1
+      },
+      {
+        "AthenaGlider:Glider_ID_220_ProfessorPup": 1
+      },
+      {
+        "AthenaDance:Emoji_S13_ProfessorPup": 1
+      },
+      {
+        "AthenaBackpack:BID_539_RacerZero": 1
+      },
+      {
+        "AthenaItemWrap:Wrap_246_ProfessorPup": 1
+      },
+      {
+        "Currency:MtxGiveaway": 100
+      },
+      {
+        "AthenaSkyDiveContrail:Trails_ID_093_SpaceWanderer": 1
+      },
+      {
+        "AthenaDance:EID_MonteKeyboard": 1
+      },
+      {
+        "HomebaseBannerIcon:brs13_professorpup": 1
+      },
+      {
+        "AthenaLoadingScreen:LSID_244_RollerDerby": 1
+      },
+      {
+        "AthenaPickaxe:Pickaxe_ID_412_ProfessorPupMale1H": 1
+      },
+      {
+        "AthenaItemWrap:Wrap_249_SpaceWanderer": 1
+      },
+      {
+        "Currency:MtxGiveaway": 100
+      },
+      {
+        "AthenaGlider:Glider_ID_223_SpaceSuit": 1
+      },
+      {
+        "AthenaLoadingScreen:LSID_238_RacerZero": 1
+      },
+      {
+        "AthenaToken_BRS13_UmbrellaSelection_04_Token": 1
+      },
+      {
+        "AthenaDance:SPID_211_RacerZero": 1
+      },
+      {
+        "AthenaBackpack:BID_528_SpaceWanderer": 1
+      },
+      {
+        "HomebaseBannerIcon:brs13_spacewanderer": 1
+      },
+      {
+        "Currency:MtxGiveaway": 100
+      },
+      {
+        "AthenaCharacter:CID_765_Athena_Commando_F_SpaceWanderer": 1
+      },
+      {
+        "AthenaLoadingScreen:LSID_240_SpaceWanderer": 1
+      },
+      {
+        "AthenaPickaxe:Pickaxe_ID_416_SpaceWandererFemale1H": 1
+      },
+      {
+        "AthenaDance:Emoji_S13_BlackKnight": 1
+      },
+      {
+        "AthenaDance:EID_HandsUp": 1
+      },
+      {
+        "AthenaDance:SPID_207_BlackKnight": 1
+      },
+      {
+        "Currency:MtxGiveaway": 100
+      },
+      {
+        "AthenaSkyDiveContrail:Trails_ID_089_BlackKnight": 1
+      },
+      {
+        "AthenaLoadingScreen:LSID_234_BlackKnight": 1
+      },
+      {
+        "AthenaMusicPack:MusicPack_050_BillyBounce": 1
+      },
+      {
+        "AthenaGlider:Glider_ID_224_SpaceWandererFemale": 1
+      },
+      {
+        "AthenaPickaxe:Pickaxe_ID_402_BlackKnightFemale1H": 1
+      },
+      {
+        "AthenaItemWrap:Wrap_241_BlackKnightFemale": 1
+      },
+      {
+        "Currency:MtxGiveaway": 100
+      },
+      {
+        "AthenaDance:EID_BadMood": 1
+      },
+      {
+        "AthenaToken_BRS13_UmbrellaSelection_05_Token": 1
+      },
+      {
+        "AthenaGlider:Glider_ID_213_BlackKnightFemale": 1
+      },
+      {
+        "HomebaseBannerIcon:brs13_blackknight": 1
+      },
+      {
+        "AthenaBackpack:BID_530_BlackKnightFemale": 1
+      },
+      {
+        "Currency:MtxGiveaway": 100
+      },
+      {
+        "AthenaCharacter:CID_767_Athena_Commando_F_BlackKnight": 1,
+        "CosmeticVariantToken:VTID_656_RazerZero_StyleC": 1
+      }
+    ]
+  }

@@ -49,7 +49,6 @@ export default async function CommandHandler(client: ExtendedClient) {
     const newRoles = newMember.roles.cache.map(role => role.id);
   
     const addedRoles = newRoles.filter(role => !oldRoles.includes(role));
-    console.log("hehe")
     const removedRoles = oldRoles.filter(role => !newRoles.includes(role));
   
     if (addedRoles.length > 0 || removedRoles.length > 0) {

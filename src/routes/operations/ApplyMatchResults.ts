@@ -1,10 +1,10 @@
-import app from "../../"
-import Profile from "../../database/models/profiles"
-import User from "../../database/models/users"
-import fs from 'node:fs'
-import path from 'node:path'
-import Stats from "../../database/models/stats"
-import { Solara } from "../../utils/errors/Solara"
+import app from "../../";
+import Profile from "../../database/models/profiles";
+import User from "../../database/models/users";
+import fs from "node:fs";
+import path from "node:path";
+import Stats from "../../database/models/stats";
+import { Solara } from "../../utils/errors/Solara";
 
 export default function () {
     app.post("/celestia/api/:username/dedicated_server/ApplyMatchResults", async (c) => {
@@ -20,6 +20,13 @@ export default function () {
 
         const xpdata = JSON.parse(xpJson);
 
+        const bp = await fs.promises.readFile(
+            path.join(__dirname, "..", "..", "..", "static", "bp", `s13.json`),
+            "utf8"
+        );
+
+        const bpdata = JSON.parse(bp);
+
         const user = await User.findOne({ username: c.req.param("username") });
         if (!user) {
             return c.json(Solara.account.accountNotFound, 404);
@@ -28,21 +35,63 @@ export default function () {
         if (!profile) {
             return c.json(Solara.account.accountNotFound, 404);
         }
-        const stats = await Stats.findOne({ accountId: user.accountId })
+        const stats = await Stats.findOne({ accountId: user.accountId });
         if (!stats) {
             return c.json(Solara.account.accountNotFound, 404);
         }
 
-        const newXp = profile.profiles.athena.stats.attributes.xp += XP;
+        const newXp = (profile.profiles.athena.stats.attributes.xp += XP);
+
+        if (profile.profiles.athena.stats.attributes.book_purchased == false) {
+            const lootList: any[] = [];
+            const rewardList = bpdata.rewards[0];
+            console.log(rewardList)
+
+            for (const [item, quantity] of Object.entries(rewardList)) {
+                lootList.push({
+                    itemType: item,
+                    itemGuid: item,
+                    quantity
+                });
+                profile.profiles.athena.items[item] = {
+                    templateId: item,
+                    attributes: {
+                        favorite: false,
+                        item_seen: true,
+                        level: 0,
+                        max_level_bonus: 0,
+                        rnd_sel_cnt: 0,
+                        variants: [],
+                        xp: 0
+                    },
+                };
+                console.log(profile.profiles.athena.items[item])
+            }
+
+
+            profile.profiles.common_core.items["GiftBox:gb_battlepasspurchased"] = {
+                templateId: "GiftBox:gb_battlepasspurchased",
+                attributes: {
+                    max_level_bonus: 0,
+                    fromAccountId: "",
+                    lootList: lootList,
+                },
+            };
+
+            profile.profiles.athena.stats.attributes.book_level = 1
+            profile.profiles.athena.stats.attributes.book_purchased = true;
+        }
 
         for (const level of xpdata) {
             if (newXp >= level.XpToNextLevel) {
                 profile.profiles.athena.stats.attributes.level += level.Level;
                 profile.profiles.athena.stats.attributes.book_level += level.Level;
-                profile.profiles.athena.stats.attributes.book_xp -= level.XpToNextLevel;
+                profile.profiles.athena.stats.attributes.book_xp -=
+                    level.XpToNextLevel;
                 profile.profiles.athena.stats.attributes.xp -= level.XpToNextLevel;
 
-                if (profile.profiles.athena.stats.attributes.book_level >= 100) profile.profiles.athena.stats.attributes.book_level = 100;
+                if (profile.profiles.athena.stats.attributes.book_level >= 100)
+                    profile.profiles.athena.stats.attributes.book_level = 100;
             } else {
                 profile.profiles.athena.stats.attributes.book_xp += XP;
                 profile.profiles.athena.stats.attributes.xp += XP;
@@ -60,10 +109,14 @@ export default function () {
                 stats.solos.wins += 1;
             }
 
-            await Profile.updateOne({ accountId: user.accountId }, { $set: profile });
+            await Profile.updateOne(
+                { accountId: user.accountId },
+                { $set: profile }
+            );
+
             await Stats.updateOne({ accountId: user.accountId }, { $set: stats });
 
-            return c.json({})
+            return c.json({});
         }
 
         if (Playlist.includes("DefaultDuo")) {
@@ -74,10 +127,13 @@ export default function () {
                 stats.duos.wins += 1;
             }
 
-            await Profile.updateOne({ accountId: user.accountId }, { $set: profile });
+            await Profile.updateOne(
+                { accountId: user.accountId },
+                { $set: profile }
+            );
             await Stats.updateOne({ accountId: user.accountId }, { $set: stats });
 
-            return c.json({})
+            return c.json({});
         }
 
         if (Playlist.includes("DefaultSquad")) {
@@ -87,12 +143,16 @@ export default function () {
             if (Position == 1) {
                 stats.squads.wins += 1;
             }
-            await Profile.updateOne({ accountId: user.accountId }, { $set: profile });
+            await Profile.updateOne(
+                { accountId: user.accountId },
+                { $set: profile }
+            );
             await Stats.updateOne({ accountId: user.accountId }, { $set: stats });
 
-            return c.json({})
+            return c.json({});
         }
 
-        return c.json({})
-    })
+        return c.json({});
+    }
+    );
 }
