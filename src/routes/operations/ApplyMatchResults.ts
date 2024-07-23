@@ -29,6 +29,12 @@ export default function () {
 
         const bpdata = JSON.parse(bp);
 
+        let xpBody = XP
+
+        if (!XP) {
+            xpBody = 1
+        }
+
         const user = await User.findOne({ username: c.req.param("username") });
         if (!user) {
             return c.json(Solara.account.accountNotFound, 404);
@@ -145,16 +151,58 @@ export default function () {
         for (const level of xpdata) {
             if (newXp >= level.XpToNextLevel) {
                 profile.profiles.athena.stats.attributes.level += level.Level;
-                profile.profiles.athena.stats.attributes.book_level += level.Level;
-                profile.profiles.athena.stats.attributes.book_xp -=
-                    level.XpToNextLevel;
+                profile.profiles.athena.stats.attributes.book_level = profile.profiles.athena.stats.attributes.level;
+                profile.profiles.athena.stats.attributes.book_xp = 0;
                 profile.profiles.athena.stats.attributes.xp -= level.XpToNextLevel;
+                const lootList: any[] = [];
+                const rewardList = bpdata.rewards[profile.profiles.athena.stats.attributes.level -= 1];
 
+                for (const [item, quantity] of Object.entries(rewardList)) {
+                    lootList.push({
+                        itemType: item,
+                        itemGuid: item,
+                        quantity
+                    });
+                    if (item.toLowerCase().includes("athena")) {
+                        profile.profiles.athena.items[item] = {
+                            templateId: item,
+                            attributes: {
+                                favorite: false,
+                                item_seen: true,
+                                level: 0,
+                                max_level_bonus: 0,
+                                rnd_sel_cnt: 0,
+                                variants: [],
+                                xp: 0
+                            },
+                        };
+                    }
+                    if (item.toLowerCase().includes("currency:mtx")) {
+                        profile.profiles.common_core.items["Currency:MtxPurchased"].quantity += quantity
+                    }
+                    if (item.toLowerCase().includes("homebasebannericon")) {
+                        profile.profiles.common_core.items[item] = {
+                            templateId: item,
+                            attributes: {
+                                item_seen: true
+                            },
+                            quantity: 1
+                        }
+                    }
+                }
+                profile.profiles.common_core.items["GiftBox:GB_BattlePass"] = {
+                    templateId: "GiftBox:GB_BattlePass",
+                    attributes: {
+                        max_level_bonus: 0,
+                        fromAccountId: "",
+                        lootList: lootList,
+                    },
+                };
                 if (profile.profiles.athena.stats.attributes.book_level >= 100)
                     profile.profiles.athena.stats.attributes.book_level = 100;
             } else {
-                profile.profiles.athena.stats.attributes.book_xp += XP;
-                profile.profiles.athena.stats.attributes.xp += XP;
+                profile.profiles.athena.stats.attributes.book_xp += 0;
+                profile.profiles.athena.stats.attributes.xp += xpBody;
                 break;
             }
         }
@@ -217,7 +265,7 @@ export default function () {
             { $set: profile }
         );
         await Stats.updateOne({ accountId: user.accountId }, { $set: stats });
-        
+
         return c.json({});
     });
 }
