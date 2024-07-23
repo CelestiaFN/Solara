@@ -5,10 +5,12 @@ import fs from "node:fs";
 import path from "node:path";
 import Stats from "../../database/models/stats";
 import { Solara } from "../../utils/errors/Solara";
+import { v4 } from "uuid";
 
 export default function () {
     app.post("/celestia/api/:username/dedicated_server/ApplyMatchResults", async (c) => {
         const { Playlist, Position, XP, Eliminations, ChallengeUpdates } = await c.req.json();
+
         if (!Playlist || !Position || !ChallengeUpdates) {
             return c.json(Solara.internal.jsonParsingFailed, 400);
         }
@@ -42,6 +44,67 @@ export default function () {
 
         const newXp = (profile.profiles.athena.stats.attributes.xp += XP);
 
+        const vKill = 150;
+
+        const vWin = 400;
+
+        if (Position == 1) {
+            profile.profiles.common_core.items["Currency:MtxPurchased"].quantity += vWin;
+            const reward = "AthenaGlider:Umbrella_Season_13";
+
+            const giftBoxId = v4();
+
+            const lootList = [
+                { itemType: reward, itemGuid: reward, quantity: 1 },
+                {
+                    itemType: "AthenaGlider:Solo_Umbrella",
+                    itemGuid: "AthenaGlider:Solo_Umbrella",
+                    quantity: 1,
+                },
+            ];
+
+            const giftBoxItemTemplate = {
+                templateId: "GiftBox:GB_SeasonFirstWin",
+                attributes: { max_level_bonus: 0, fromAccountId: "Server", lootList },
+            };
+
+            const seasonUmbrellaTemplate = {
+                templateId: reward,
+                attributes: {
+                    max_level_bonus: 0,
+                    level: 1,
+                    item_seen: false,
+                    xp: 0,
+                    variants: [],
+                    favorite: false,
+                },
+                quantity: 1,
+            };
+
+            const theUmbrellaTemplate = {
+                templateId: "AthenaGlider:Solo_Umbrella",
+                attributes: {
+                    max_level_bonus: 0,
+                    level: 1,
+                    item_seen: false,
+                    xp: 0,
+                    variants: [],
+                    favorite: false,
+                },
+                quantity: 1,
+            };
+
+            if (!profile.profiles.athena.items["AthenaGlider:Solo_Umbrella"]) {
+                profile.profiles.common_core.items[giftBoxId] = giftBoxItemTemplate;
+                profile.profiles.athena.items[reward] = seasonUmbrellaTemplate;
+                profile.profiles.athena.items["AthenaGlider:Solo_Umbrella"] = theUmbrellaTemplate;
+            }
+        }
+
+        if (Eliminations > 0) {
+            profile.profiles.common_core.items["Currency:MtxPurchased"].quantity += vKill * Eliminations;
+        }
+
         if (profile.profiles.athena.stats.attributes.book_purchased == false) {
             const lootList: any[] = [];
             const rewardList = bpdata.rewards[0];
@@ -65,7 +128,6 @@ export default function () {
                     },
                 };
             }
-
 
             profile.profiles.common_core.items["GiftBox:gb_battlepasspurchased"] = {
                 templateId: "GiftBox:gb_battlepasspurchased",
@@ -150,7 +212,12 @@ export default function () {
             return c.json({});
         }
 
+        await Profile.updateOne(
+            { accountId: user.accountId },
+            { $set: profile }
+        );
+        await Stats.updateOne({ accountId: user.accountId }, { $set: stats });
+        
         return c.json({});
-    }
-    );
+    });
 }
