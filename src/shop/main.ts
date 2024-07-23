@@ -168,6 +168,25 @@ async function createShopConfig() {
                     saleExpiration: "9999-12-31T23:59:59.999Z"
                 }
             ],
+            giftInfo: {
+                bIsEnabled: true,
+                forcedGiftBoxTemplateId: "",
+                giftRecordIds: [],
+                purchaseRequirements: [
+                    {
+                        requirementType: "DenyOnItemOwnership",
+                        requiredId: `${item.type}:${item.id}`,
+                        minQuantity: 1
+                    },
+                    ...(item.backpack ? [
+                        {
+                            requirementType: "DenyOnItemOwnership",
+                            requiredId: `${item.backpack.type.backendValue}:${item.backpack.id}`,
+                            minQuantity: 1
+                        }
+                    ] : [])
+                ]
+            },
             bannerOverride: "",
             displayAssetPath: displayAssetPath ? displayAssetPath : `/Game/Catalog/DisplayAssets/DA_Featured_${item.id}.DA_Featured_${item.id}`,
             refundable: true,
@@ -199,7 +218,7 @@ async function createShopConfig() {
 
     const setKeys = Object.keys(setGroups);
     const sortedkeys = setKeys.sort(() => Math.random() - 0.5); 
-    const selectedKeys = sortedkeys.slice(0, 4); 
+    const selectedKeys = sortedkeys.slice(0, 5); 
     selectedKeys.forEach(setValue => {
         const groupItems = setGroups[setValue];
         if (groupItems.length < 1) {
@@ -266,6 +285,25 @@ async function createShopConfig() {
                         finalPrice: price,
                     }
                 ],
+                giftInfo: {
+                    bIsEnabled: true,
+                    forcedGiftBoxTemplateId: "",
+                    giftRecordIds: [],
+                    purchaseRequirements: [
+                        {
+                            requirementType: "DenyOnItemOwnership",
+                            requiredId: `${item.type}:${item.id}`,
+                            minQuantity: 1
+                        },
+                        ...(item.backpack ? [
+                            {
+                                requirementType: "DenyOnItemOwnership",
+                                requiredId: `${item.backpack.type.backendValue}:${item.backpack.id}`,
+                                minQuantity: 1
+                            }
+                        ] : [])
+                    ]
+                },
                 bannerOverride: "",
                 displayAssetPath: displayAssetPath ? displayAssetPath : ``,
                 refundable: true,

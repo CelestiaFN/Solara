@@ -55,7 +55,6 @@ export async function createItemTemplate(templateId: any) {
             quantity: 1,
         };
     
-        console.log(template)
         results.push(template);
     
     } catch (error) {

@@ -13,8 +13,8 @@ export default function () {
             const profiles = await Profile.findOne({
                 accountId: c.req.param("accountId"),
             });
-            const profile = profiles?.profiles?.athena;
 
+            const profile = profiles?.profiles?.athena;
             if (!profiles) {
                 return c.json(Solara.mcp.profileNotFound, 404);
             }
@@ -155,31 +155,29 @@ export default function () {
                         });
                     }
 
-                    if (profiles?.profiles?.athena) {
-                        profiles.profiles.athena.items[QuestID] = {
-                            templateId: Quest.templateId,
-                            attributes: {
-                                creation_time: new Date().toISOString(),
-                                level: -1,
-                                item_seen: true,
-                                sent_new_notification: true,
-                                challenge_bundle_id: Quest.challenge_bundle_id || "",
-                                xp_reward_scalar: 1,
-                                quest_state: "Active",
-                                last_state_change_time: new Date().toISOString(),
-                                max_level_bonus: 0,
-                                xp: 0,
-                                favorite: false,
-                            },
-                            quantity: 1,
-                        };
+                    profile.items[QuestID] = {
+                        templateId: Quest.templateId,
+                        attributes: {
+                            creation_time: new Date().toISOString(),
+                            level: -1,
+                            item_seen: true,
+                            sent_new_notification: true,
+                            challenge_bundle_id: Quest.challenge_bundle_id || "",
+                            xp_reward_scalar: 1,
+                            quest_state: "Active",
+                            last_state_change_time: new Date().toISOString(),
+                            max_level_bonus: 0,
+                            xp: 0,
+                            favorite: false,
+                        },
+                        quantity: 1,
+                    };
 
-                        profileChanges.push({
-                            changeType: "itemAdded",
-                            itemId: QuestID,
-                            item: profile.items[QuestID],
-                        });
-                    }
+                    profileChanges.push({
+                        changeType: "itemAdded",
+                        itemId: QuestID,
+                        item: profile.items[QuestID],
+                    });
                 }
 
                 for (var Quest in QuestsToAdd) {
@@ -192,12 +190,13 @@ export default function () {
             profile.updated = new Date().toISOString();
 
             if (profileChanges.length > 0) {
-                profileChanges = [{ changeType: "fullProfileUpdate", profile }];
+                profileChanges.push({ changeType: "fullProfileUpdate", profile });
             }
 
-            await profiles.updateOne({
-                $set: { [`profiles.${profileId} `]: profile },
-            });
+            await Profile.updateOne(
+                { accountId: c.req.param("accountId") },
+                { $set: { "profiles.athena": profile } }
+            );
 
             return c.json({
                 profileRevision: profile.rvn || 0,
