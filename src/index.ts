@@ -26,13 +26,11 @@ app.use(async (c, next) => {
 
 app.use(async (c, next) => {
     if (c.req.path.startsWith("/party/") || c.req.path.startsWith("/friends/api/")) {
-        console.log("http://34.150.153.214:6969" + c.req.path);
         try {
             const h = c.req.header();
             delete h['content-length'];
             
             const data = c.req.method !== "GET" ? await c.req.parseBody() : undefined;
-            console.log(data)
             const response = await axios({
                 url: "http://34.150.153.214:6969" + c.req.path,
                 method: c.req.method,
