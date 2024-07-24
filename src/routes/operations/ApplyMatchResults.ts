@@ -11,6 +11,8 @@ export default function () {
     app.post("/celestia/api/:username/dedicated_server/ApplyMatchResults", async (c) => {
         const { Playlist, Position, XP, Eliminations, ChallengeUpdates } = await c.req.json();
 
+        console.log(await c.req.json())
+        
         if (!Playlist || !Position || !ChallengeUpdates) {
             return c.json(Solara.internal.jsonParsingFailed, 400);
         }

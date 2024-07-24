@@ -17,6 +17,8 @@ export default function () {
 
         rPlayer.Reports += 1
 
+        await rPlayer.save()
+
         console.log(reason, details)
 
         return c.json({

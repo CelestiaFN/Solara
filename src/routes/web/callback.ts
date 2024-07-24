@@ -35,7 +35,7 @@ export default function () {
         headers: { Authorization: `Bot MTI2MDgxNTQ3NjY5NTUwMjg0OA.GkCS_f.xCwSbQTHD_S2ZisS2wTW_8QF-G-KpqBWM5gbRQ` },
       }
     );
-    
+
     const { roles } = guilds.data;
 
     const roleIds = {
@@ -102,30 +102,38 @@ export default function () {
         user.isGlimmer = false;
         user.isUrban = false;
       }
-  
+
+      // booster
+      if (roles.includes("1260793622648062063")) {
+        if (user.isBooster == false) {
+          user.isBooster = true
+          await axios.post(`http://127.0.0.1:21491/celestia/grant/donator/booster/${user.accountId}`);
+        }
+      }
+
       // donator stuff
-  
+
       if (roles.includes("1263582817242189914")) {
         if (user.isUrban == false) {
           user.isUrban = true
           await axios.post(`http://127.0.0.1:21491/celestia/grant/donator/urban/${user.accountId}`);
         }
       }
-  
+
       if (roles.includes("1263562145048690728")) {
         if (user.isGlimmer == false) {
           user.isGlimmer = true
           await axios.post(`http://127.0.0.1:21491/celestia/grant/donator/glimmer/${user.accountId}`);
         }
       }
-  
+
       if (roles.includes("1263577060555886614")) {
         if (user.isHarvester == false) {
           user.isHarvester = true
           await axios.post(`http://127.0.0.1:21491/celestia/grant/donator/harvester/${user.accountId}`);
         }
       }
-  
+
       if (roles.includes("1263573060234248253")) {
         if (user.isLegacy == false) {
           user.isLegacy = true
