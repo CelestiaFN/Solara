@@ -1,5 +1,8 @@
 import app from "../..";
 import Tokens from "../../database/models/tokens";
+import User from "../../database/models/users";
+import logger from "../../utils/logger/logger";
+import jwt from "jsonwebtoken";
 
 // note: replace with schema
 interface Friend {
@@ -24,4 +27,29 @@ export default function () {
 
         return c.text(xmlRes);
     });
+
+    app.post("/xmpp/api/token", async (c, next) => {
+        const body = await c.req.json()
+        const token: any = await jwt.decode(body.token)
+        try {
+          var userass = await User.findOne({
+            email: token?.email,
+          });
+          if (userass !== null) {
+            const user = await User.findOne({ accountId: userass.accountId });
+            if (user) {
+              logger.auth(`Logged in ${user.username}`);
+            }
+            return c.json({
+                accountId: userass.accountId,
+                token: body.token,
+              });
+          } else {
+           return c.json({ error: "User not found" });
+          }
+        } catch (err) {
+          console.error(err);
+          next();
+        }
+      });
 }

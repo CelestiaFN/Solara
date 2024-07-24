@@ -28,7 +28,10 @@ export default function () {
             "ltztiva",
             "Ltztiva",
             "ltztiva  ",
-            
+            "Niggas",
+            "Niggers",
+            "Nigger",
+            "Nigga"
         ]
 
         if (username.length > 24) {
@@ -40,7 +43,7 @@ export default function () {
         
         if (blacklisted_words.some(word => username.toUpperCase().includes(word))) {
             return c.json({
-                sucess: false
+                success: false
             })
         }
 

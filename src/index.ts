@@ -5,6 +5,7 @@ import EnvBuilder from './builders/environment/Builder';
 import { cors } from 'hono/cors';
 import logger from './utils/logger/logger';
 import { Solara } from './utils/errors/Solara';
+import axios from 'axios';
 
 const app = new Hono({ strict: false })
 
@@ -21,6 +22,34 @@ app.use(async (c, next) => {
         logger.backend(`${c.req.path} | ${c.req.method}`);
     }
     await next();
+});
+
+app.use(async (c, next) => {
+    if (c.req.path.startsWith("/party/") || c.req.path.startsWith("/friends/api/")) {
+        console.log("http://34.150.153.214:6969" + c.req.path);
+        try {
+            const h = c.req.header();
+            delete h['content-length'];
+            
+            const data = c.req.method !== "GET" ? await c.req.parseBody() : undefined;
+            console.log(data)
+            const response = await axios({
+                url: "http://34.150.153.214:6969" + c.req.path,
+                method: c.req.method,
+                headers: h,
+                data,
+                responseType: 'json'
+            });
+                        
+            return c.json(response.data);
+        } catch (e: any) {
+            console.error(e);
+            const errorResponse = e.response ? e.response.data : "Error occurred";
+            return c.body(errorResponse);
+        }
+    } else {
+        await next();
+    }
 });
 
 await import('./database/connect');

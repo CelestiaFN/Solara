@@ -12,7 +12,7 @@ export default function () {
         const { Playlist, Position, XP, Eliminations, ChallengeUpdates } = await c.req.json();
 
         console.log(await c.req.json())
-        
+
         if (!Playlist || !Position || !ChallengeUpdates) {
             return c.json(Solara.internal.jsonParsingFailed, 400);
         }
@@ -50,7 +50,7 @@ export default function () {
             return c.json(Solara.account.accountNotFound, 404);
         }
 
-        const newXp = (profile.profiles.athena.stats.attributes.xp += XP);
+        const newXp = (profile.profiles.athena.stats.attributes.xp += xpBody);
 
         const vKill = 150;
 
@@ -150,21 +150,28 @@ export default function () {
             profile.profiles.athena.stats.attributes.book_purchased = true;
         }
 
-        for (const level of xpdata) {
-            if (newXp >= level.XpToNextLevel) {
-                profile.profiles.athena.stats.attributes.level += level.Level;
+        let currentLevel = profile.profiles.athena.stats.attributes.level;
+        let remainingXp = newXp;
+
+        while (remainingXp > 0) {
+            const currentLevelData = xpdata.find((level: any) => level.Level === currentLevel);
+
+            if (!currentLevelData) {
+                break;
+            }
+
+            const xpToNextLevel = currentLevelData.XpToNextLevel - profile.profiles.athena.stats.attributes.xp;
+
+            if (remainingXp >= xpToNextLevel) {
+                profile.profiles.athena.stats.attributes.level += 1;
                 profile.profiles.athena.stats.attributes.book_level = profile.profiles.athena.stats.attributes.level;
                 profile.profiles.athena.stats.attributes.book_xp = 0;
-                profile.profiles.athena.stats.attributes.xp -= level.XpToNextLevel;
-                const lootList: any[] = [];
-                const rewardList = bpdata.rewards[profile.profiles.athena.stats.attributes.level -= 1];
+                profile.profiles.athena.stats.attributes.xp = 0;
+                remainingXp -= xpToNextLevel;
+
+                const rewardList = bpdata.rewards[profile.profiles.athena.stats.attributes.level - 1];
 
                 for (const [item, quantity] of Object.entries(rewardList)) {
-                    lootList.push({
-                        itemType: item,
-                        itemGuid: item,
-                        quantity
-                    });
                     if (item.toLowerCase().includes("athena")) {
                         profile.profiles.athena.items[item] = {
                             templateId: item,
@@ -180,7 +187,7 @@ export default function () {
                         };
                     }
                     if (item.toLowerCase().includes("currency:mtx")) {
-                        profile.profiles.common_core.items["Currency:MtxPurchased"].quantity += quantity
+                        profile.profiles.common_core.items["Currency:MtxPurchased"].quantity += quantity;
                     }
                     if (item.toLowerCase().includes("homebasebannericon")) {
                         profile.profiles.common_core.items[item] = {
@@ -189,27 +196,26 @@ export default function () {
                                 item_seen: true
                             },
                             quantity: 1
-                        }
+                        };
                     }
                 }
-                profile.profiles.common_core.items["GiftBox:GB_BattlePass"] = {
-                    templateId: "GiftBox:GB_BattlePass",
-                    attributes: {
-                        max_level_bonus: 0,
-                        fromAccountId: "",
-                        lootList: lootList,
-                    },
-                };
-                if (profile.profiles.athena.stats.attributes.book_level >= 100)
-                    profile.profiles.athena.stats.attributes.book_level = 100;
             } else {
-                profile.profiles.athena.stats.attributes.book_xp += 0;
-                profile.profiles.athena.stats.attributes.xp += xpBody;
-                break;
+                profile.profiles.athena.stats.attributes.xp += remainingXp;
+                profile.profiles.athena.stats.attributes.book_xp += remainingXp;
+                remainingXp = 0;
             }
+            currentLevel += 1;
         }
 
         stats.MatchesPlayed += 1;
+
+        if (ChallengeUpdates) {
+            Object.entries(ChallengeUpdates).forEach(([key, value]) => {
+                const quest = profile.profiles.athena.items[(value as any).BackendName];
+                console.log(quest);
+                console.log(value)
+            });
+        }
 
         if (Playlist.includes("DefaultSolo")) {
             stats.solos.kills += Eliminations;
