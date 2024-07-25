@@ -3,7 +3,7 @@ import { config } from "../..";
 
 export default function () {
     app.get("/api/oauth/discord", async (c) => {
-        if (Boolean(config.MAINTENANCE) === true) {
+        if (config.MAINTENANCE === `true`) {
             return c.html(`
                 <!DOCTYPE html>
                 <html lang="en">

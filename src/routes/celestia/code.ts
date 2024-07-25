@@ -28,7 +28,7 @@ export default function () {
     if (!user || !user.accountId) {
       return c.text("Invalid token!");
     }
-    if (Boolean(config.MAINTENANCE) == true) {
+    if (config.MAINTENANCE === `true`) {
       return c.json(Solara.authentication.authenticationFailed, 404)
     }
     const existingCode = await Tokens.findOne({ accountId: user.accountId, type: "launcher_code" });

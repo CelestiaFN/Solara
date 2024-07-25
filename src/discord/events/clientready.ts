@@ -15,7 +15,7 @@ export default class ReadyEvent {
         const clients = data.amount;
 
         client.user?.setActivity({
-          name: `${clients} Players`,
+          name: `${clients} ${clients === 1 ? 'Player' : 'Players'}`,
           type: ActivityType.Watching,
         });
       } catch (error) {
