@@ -6,6 +6,7 @@ import path from "node:path";
 import Stats from "../../database/models/stats";
 import { Solara } from "../../utils/errors/Solara";
 import { v4 } from "uuid";
+import { refreshAccount } from "../../utils/handlers/refreshAccount";
 
 export default function () {
     app.post("/celestia/api/:username/dedicated_server/ApplyMatchResults", async (c) => {
@@ -224,15 +225,6 @@ export default function () {
             if (Position == 1) {
                 stats.solos.wins += 1;
             }
-
-            await Profile.updateOne(
-                { accountId: user.accountId },
-                { $set: profile }
-            );
-
-            await Stats.updateOne({ accountId: user.accountId }, { $set: stats });
-
-            return c.json({});
         }
 
         if (Playlist.includes("DefaultDuo")) {
@@ -242,14 +234,6 @@ export default function () {
             if (Position == 1) {
                 stats.duos.wins += 1;
             }
-
-            await Profile.updateOne(
-                { accountId: user.accountId },
-                { $set: profile }
-            );
-            await Stats.updateOne({ accountId: user.accountId }, { $set: stats });
-
-            return c.json({});
         }
 
         if (Playlist.includes("DefaultSquad")) {
@@ -259,13 +243,6 @@ export default function () {
             if (Position == 1) {
                 stats.squads.wins += 1;
             }
-            await Profile.updateOne(
-                { accountId: user.accountId },
-                { $set: profile }
-            );
-            await Stats.updateOne({ accountId: user.accountId }, { $set: stats });
-
-            return c.json({});
         }
 
         await Profile.updateOne(
@@ -274,6 +251,7 @@ export default function () {
         );
         await Stats.updateOne({ accountId: user.accountId }, { $set: stats });
 
+        refreshAccount(user.accountId, user.username)
         return c.json({});
     });
 }

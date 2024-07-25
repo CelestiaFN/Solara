@@ -4,8 +4,8 @@ import User from "../../database/models/users";
 import { updateTokens } from "../../utils/functions/updateTokens";
 import { v4 as uuidv4 } from "uuid";
 import jwt from "jsonwebtoken";
-import axios from "axios"
 import { Solara } from "../../utils/errors/Solara";
+import { config } from "../..";
 
 export default function () {
   app.post("/api/launcher/code", async (c) => {
@@ -27,6 +27,9 @@ export default function () {
     }
     if (!user || !user.accountId) {
       return c.text("Invalid token!");
+    }
+    if (Boolean(config.MAINTENANCE) == true) {
+      return c.json(Solara.authentication.authenticationFailed, 404)
     }
     const existingCode = await Tokens.findOne({ accountId: user.accountId, type: "launcher_code" });
     if (existingCode) {
