@@ -25,7 +25,7 @@ app.use(async (c, next) => {
 });
 
 app.use(async (c, next) => {
-    if (c.req.path.startsWith("/party/") || c.req.path.startsWith("/friends/api/")) {
+    if (c.req.path.includes("/party") || c.req.path.startsWith("/friends/api/")) {
         try {
             const h = c.req.header();
             delete h['content-length'];
