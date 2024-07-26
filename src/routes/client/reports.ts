@@ -19,7 +19,7 @@ export default function () {
 
         await rPlayer.save()
 
-        console.log(reason, details)
+       // console.log(reason, details)
 
         return c.json({
             success: true,
