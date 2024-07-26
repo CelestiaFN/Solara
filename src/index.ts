@@ -4,9 +4,8 @@ import path from 'node:path';
 import EnvBuilder from './builders/environment/Builder';
 import { cors } from 'hono/cors';
 import logger from './utils/logger/logger';
-import { Solara } from './utils/errors/Solara';
 import axios from 'axios';
-import { CommandInteractionOptionResolver } from 'discord.js';
+import { startHttps } from './https/setup';
 
 const app = new Hono({ strict: false })
 
@@ -19,8 +18,10 @@ export const config = EnvBuilder.Register();
 app.use(cors());
 
 app.use(async (c, next) => {
-    if (c.req.path !== "/images/icons/gear.png" && c.req.path !== "/favicon.ico") {
-        logger.backend(`${c.req.path} | ${c.req.method}`);
+    if (config.isProd == 'false') {
+        if (c.req.path !== "/images/icons/gear.png" && c.req.path !== "/favicon.ico") {
+            logger.backend(`${c.req.path} | ${c.req.method}`);
+        }
     }
     await next();
 });
@@ -35,10 +36,6 @@ app.use(async (c, next) => {
             delete h['content-length'];
 
             let data = c.req.method !== "GET" ? await c.req.parseBody() || await c.req.json() : undefined;
-            if (data == undefined && c.req.path.includes("/party")) {
-                data = await c.req.parseBody()
-                console.log(data)
-            }
             const response = await axios({
                 url: "http://34.150.153.214:6969" + c.req.path,
                 method: c.req.method,
@@ -64,6 +61,7 @@ await import('./discord/deploy');
 await import('./websocket/servers')
 await import('./shop/main')
 
+await startHttps();
 await routes.loadRoutes(path.join(__dirname, "routes"), app);
 
 app.use(async (c, next) => {

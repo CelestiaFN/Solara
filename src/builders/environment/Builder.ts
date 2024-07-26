@@ -13,6 +13,7 @@ export default class EnvBuilder {
 
     const PORT = parseInt(Bun.env.PORT as string, 10);
     const BOT_TOKEN = Bun.env.BOT_TOKEN
+    const isProd = Bun.env.isProd
     const JWTSECRET = Bun.env.JWTSECRET
     const MAINTENANCE = Bun.env.MAINTENANCE
     const PUBLICVER = Bun.env.PUBLICVER
@@ -30,6 +31,7 @@ export default class EnvBuilder {
       PORT,
       JWTSECRET,
       ElixionIP,
+      isProd,
       DB_URL,
       MAINTENANCE,
       PUBLICVER,

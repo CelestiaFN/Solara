@@ -10,6 +10,7 @@ export const ConfigSchema = z.object({
     SEASON: z.string(),
     WL: z.string(),
     ElixionIP: z.string(),
+    isProd: z.string(),
     EMERGENCY_NOTICE_TITLE: z.string(),
     EMERGENCY_NOTICE_BODY: z.string(),
     SERVICETYPE: z.string(),
