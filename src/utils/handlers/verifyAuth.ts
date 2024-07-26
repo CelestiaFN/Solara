@@ -24,6 +24,14 @@ export default async function verifyAuth(c: any, next: any) {
         }
 
         if (!user.isServer) {
+            const hwidchecks = await User.find({ hwid: user.hwid });
+
+            if (hwidchecks.some((hwidcheck) => hwidcheck.banned)) {
+                return c.json(Solara.account.disabledAccount, 404);
+            }
+        }
+
+        if (!user.isServer) {
             const accountId = c.req.param("accountId");
             if (accountId && token.accountId !== accountId) {
                 return c.json(Solara.authentication.invalidToken.variable([token.token]), 401);

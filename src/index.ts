@@ -64,10 +64,10 @@ await import('./shop/main')
 await startHttps();
 await routes.loadRoutes(path.join(__dirname, "routes"), app);
 
-app.use(async (c, next) => {
-    logger.error(c.req.method + c.req.path);
-    await next();
-});
+// app.use(async (c, next) => {
+//     logger.error(c.req.method + c.req.path);
+//     await next();
+// });
 
 
 logger.startup(`Solara started on port ${config.PORT}!`);

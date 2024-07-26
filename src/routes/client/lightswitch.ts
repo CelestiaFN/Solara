@@ -6,29 +6,74 @@ import { Solara } from "../../utils/errors/Solara";
 
 export default function () {
   app.get("/lightswitch/api/service/Fortnite/status", verifyAuth, async (c) => {
-    const token = await Tokens.findOne({ token: c.req.header("authorzation") })
+    const token = await Tokens.findOne({ token: c.req.header("authorization") })
 
     if (!token) return c.json(Solara.authentication.invalidHeader, 400)
 
     const user = await User.findOne({ accountId: token.accountId })
+
+    if (user?.banned == true ) {
+      return c.json([
+        {
+          serviceInstanceId: "fortnite",
+          status: "DOWN",
+          message: "fortnite is DOWN.",
+          maintenanceUri: null,
+          overrideCatalogIds: ["a7f138b2e51945ffbfdacc1af0541053"],
+          allowedActions: [],
+          banned: true,
+          launcherInfoDTO: {
+            appName: "Fortnite",
+            catalogItemId: "4fe75bbc5a674f4f9b356b5c90567da5",
+            namespace: "fn",
+          },
+        },
+      ]);
+    }
     
     return c.json({
       serviceInstanceId: "fortnite",
       status: "UP",
-      message: "Fortnite is online",   
+      message: "Fortnite is online",
       maintenanceUri: null,
       overrideCatalogIds: ["a7f138b2e51945ffbfdacc1af0541053"],
       allowedActions: [],
       banned: user?.banned,
       launcherInfoDTO: {
-        appName: "Fortnite",  
+        appName: "Fortnite",
         catalogItemId: "4fe75bbc5a674f4f9b356b5c90567da5",
         namespace: "fn",
       },
     });
   });
 
-  app.get("/lightswitch/api/service/bulk/status", async (c) => {
+  app.get("/lightswitch/api/service/bulk/status", verifyAuth, async (c) => {
+    const ah = c.req.header("authorization");
+    const token = await Tokens.findOne({ token: ah?.replace("bearer ", "") })
+
+    if (!token) return c.json(Solara.authentication.invalidHeader, 400)
+
+    const user = await User.findOne({ accountId: token.accountId })
+
+    if (user?.banned == true) {
+      return c.json([
+        {
+          serviceInstanceId: "fortnite",
+          status: "DOWN",
+          message: "fortnite is DOWN.",
+          maintenanceUri: null,
+          overrideCatalogIds: ["a7f138b2e51945ffbfdacc1af0541053"],
+          allowedActions: [],
+          banned: true,
+          launcherInfoDTO: {
+            appName: "Fortnite",
+            catalogItemId: "4fe75bbc5a674f4f9b356b5c90567da5",
+            namespace: "fn",
+          },
+        },
+      ]);
+    }
+
     return c.json([
       {
         serviceInstanceId: "fortnite",
@@ -37,7 +82,7 @@ export default function () {
         maintenanceUri: null,
         overrideCatalogIds: ["a7f138b2e51945ffbfdacc1af0541053"],
         allowedActions: ["PLAY", "DOWNLOAD"],
-        banned: false,
+        banned: user?.banned,
         launcherInfoDTO: {
           appName: "Fortnite",
           catalogItemId: "4fe75bbc5a674f4f9b356b5c90567da5",

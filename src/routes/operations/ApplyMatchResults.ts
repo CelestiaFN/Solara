@@ -226,8 +226,8 @@ export default function () {
         if (ChallengeUpdates) {
             Object.entries(ChallengeUpdates).forEach(([key, value]) => {
                 const quest = profile.profiles.athena.items[(value as any).BackendName];
-                console.log(quest);
-                console.log(value)
+           //     console.log(quest);
+             //   console.log(value)
             });
         }
 
