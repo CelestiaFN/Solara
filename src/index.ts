@@ -6,6 +6,7 @@ import { cors } from 'hono/cors';
 import logger from './utils/logger/logger';
 import { Solara } from './utils/errors/Solara';
 import axios from 'axios';
+import { CommandInteractionOptionResolver } from 'discord.js';
 
 const app = new Hono({ strict: false })
 
@@ -25,20 +26,27 @@ app.use(async (c, next) => {
 });
 
 app.use(async (c, next) => {
-    if (c.req.path.includes("/party") || c.req.path.startsWith("/friends/api/")) {
+    if (c.req.path.startsWith("/friends/api/")) {
+        if (c.req.path === "/party/api/v1/Fortnite/parties") {
+            await next()
+        }
         try {
             const h = c.req.header();
             delete h['content-length'];
-            
-            const data = c.req.method !== "GET" ? await c.req.parseBody() : undefined;
+
+            let data = c.req.method !== "GET" ? await c.req.parseBody() || await c.req.json() : undefined;
+            if (data == undefined && c.req.path.includes("/party")) {
+                data = await c.req.parseBody()
+                console.log(data)
+            }
             const response = await axios({
                 url: "http://34.150.153.214:6969" + c.req.path,
                 method: c.req.method,
                 headers: h,
-                data,
+                data: data,
                 responseType: 'json'
             });
-                        
+
             return c.json(response.data);
         } catch (e: any) {
             console.error(e);
@@ -57,6 +65,12 @@ await import('./websocket/servers')
 await import('./shop/main')
 
 await routes.loadRoutes(path.join(__dirname, "routes"), app);
+
+app.use(async (c, next) => {
+    logger.error(c.req.method + c.req.path);
+    await next();
+});
+
 
 logger.startup(`Solara started on port ${config.PORT}!`);
 

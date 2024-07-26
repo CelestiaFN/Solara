@@ -24,10 +24,12 @@ export default class EnvBuilder {
     const SERVICETYPE = Bun.env.SERVICETYPE
     const MMIP = Bun.env.MMIP
     const LYRASECURE = Bun.env.LYRASECURE
+    const ElixionIP = Bun.env.ElixionIP
 
     const unsafeConfig = ConfigSchema.safeParse({
       PORT,
       JWTSECRET,
+      ElixionIP,
       DB_URL,
       MAINTENANCE,
       PUBLICVER,

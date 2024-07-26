@@ -9,6 +9,7 @@ export const ConfigSchema = z.object({
     BOT_TOKEN: z.string(),
     SEASON: z.string(),
     WL: z.string(),
+    ElixionIP: z.string(),
     EMERGENCY_NOTICE_TITLE: z.string(),
     EMERGENCY_NOTICE_BODY: z.string(),
     SERVICETYPE: z.string(),
