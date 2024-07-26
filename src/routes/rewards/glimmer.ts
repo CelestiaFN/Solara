@@ -42,8 +42,20 @@ export default function () {
             ];
 
             itemIds.forEach((itemType) => {
-                const itemTemplate = createItemTemplate(itemType);
-                athena.items[itemType] = itemTemplate;
+                const template = {
+                    templateId: itemType,
+                    attributes: {
+                        max_level_bonus: 0,
+                        level: 1,
+                        item_seen: false,
+                        xp: 0,
+                        variants: [],
+                        favorite: false,
+                    },
+                    quantity: 1,
+                };
+                athena.items[itemType] = template;
+                
                 lootList.push({
                     itemType: itemType,
                     itemGuid: itemType,
