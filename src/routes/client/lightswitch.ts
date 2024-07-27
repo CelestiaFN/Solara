@@ -12,25 +12,6 @@ export default function () {
 
     const user = await User.findOne({ accountId: token.accountId })
 
-    if (user?.banned == true ) {
-      return c.json([
-        {
-          serviceInstanceId: "fortnite",
-          status: "DOWN",
-          message: "fortnite is DOWN.",
-          maintenanceUri: null,
-          overrideCatalogIds: ["a7f138b2e51945ffbfdacc1af0541053"],
-          allowedActions: [],
-          banned: true,
-          launcherInfoDTO: {
-            appName: "Fortnite",
-            catalogItemId: "4fe75bbc5a674f4f9b356b5c90567da5",
-            namespace: "fn",
-          },
-        },
-      ]);
-    }
-    
     return c.json({
       serviceInstanceId: "fortnite",
       status: "UP",
@@ -54,25 +35,6 @@ export default function () {
     if (!token) return c.json(Solara.authentication.invalidHeader, 400)
 
     const user = await User.findOne({ accountId: token.accountId })
-
-    if (user?.banned == true) {
-      return c.json([
-        {
-          serviceInstanceId: "fortnite",
-          status: "DOWN",
-          message: "fortnite is DOWN.",
-          maintenanceUri: null,
-          overrideCatalogIds: ["a7f138b2e51945ffbfdacc1af0541053"],
-          allowedActions: [],
-          banned: true,
-          launcherInfoDTO: {
-            appName: "Fortnite",
-            catalogItemId: "4fe75bbc5a674f4f9b356b5c90567da5",
-            namespace: "fn",
-          },
-        },
-      ]);
-    }
 
     return c.json([
       {
