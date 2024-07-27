@@ -15,7 +15,7 @@
           "image": "https://cdn2.unrealengine.com/17br-cosmicsummer-outfits-beachbomber-motd-1920x1080-1920x1080-7ba592780fbc.jpg",
           "tileImage": "https://cdn2.unrealengine.com/17br-cosmicsummer-outfits-beachbomber-motd-1024x512-1024x512-a3717e82142e.jpg",
           "videoMute": false,
-          "hidden": false,
+          "hidden": true,
           "tabTitleOverride": "Beach Bomber Returns",
           "_type": "CommonUI Simple Message MOTD",
           "title": "Beach Bomber",
