@@ -218,7 +218,6 @@ export default function () {
                 profile.profiles.athena.stats.attributes.book_xp += remainingXp;
                 remainingXp = 0;
             }
-            currentLevel += 1;
         }
 
         stats.MatchesPlayed += 1;
