@@ -41,11 +41,13 @@ export default async function CommandHandler(client: ExtendedClient) {
       }
     } catch (error) {
       console.error(error);
-      interaction.reply("There was an error executing that command!");
+      if (!interaction.replied) { 
+        interaction.reply("There was an error executing that command!");
+        interaction.replied = true; 
+      }
     }
   });
   
-
   client.on('guildMemberUpdate', async (oldMember, newMember) => {
     const oldRoles = oldMember.roles.cache.map(role => role.id);
     const newRoles = newMember.roles.cache.map(role => role.id);
