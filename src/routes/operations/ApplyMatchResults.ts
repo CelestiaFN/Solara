@@ -167,7 +167,7 @@ export default function () {
                 profile.profiles.athena.stats.attributes.book_xp = 0;
                 profile.profiles.athena.stats.attributes.xp = 0;
                 remainingXp -= xpToNextLevel;
-                const lootList: any[] = [];
+                const lootList: any[] = []
                 const rewardList = bpdata.rewards[profile.profiles.athena.stats.attributes.level - 1];
 
                 for (const [item, quantity] of Object.entries(rewardList)) {
@@ -202,20 +202,21 @@ export default function () {
                             quantity: 1
                         };
                     }
+                    profile.profiles.common_core.items["GiftBox:gb_battlepass"] = {
+                        templateId: "GiftBox:gb_battlepass",
+                        attributes: {
+                            max_level_bonus: 0,
+                            fromAccountId: "",
+                            lootList: lootList,
+                        },
+                    };
                 }
-                profile.profiles.common_core.items["GiftBox:gb_battlepass"] = {
-                    templateId: "GiftBox:gb_battlepass",
-                    attributes: {
-                        max_level_bonus: 0,
-                        fromAccountId: "",
-                        lootList: lootList,
-                    },
-                };
-
             } else {
                 profile.profiles.athena.stats.attributes.xp += remainingXp;
                 profile.profiles.athena.stats.attributes.book_xp += remainingXp;
+                remainingXp = 0;
             }
+            currentLevel += 1;
         }
 
         stats.MatchesPlayed += 1;
