@@ -171,6 +171,8 @@ export default function () {
                 const lootList: any[] = []
                 const rewardList = bpdata.rewards[profile.profiles.athena.stats.attributes.level - 1];
 
+                if (!rewardList) break;
+
                 for (const [item, quantity] of Object.entries(rewardList)) {
                     lootList.push({
                         itemType: item,
