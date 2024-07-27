@@ -163,6 +163,7 @@ export default function () {
 
             if (remainingXp >= xpToNextLevel) {
                 profile.profiles.athena.stats.attributes.level += 1;
+                profile.profiles.athena.stats.attributes.accountLevel += profile.profiles.athena.stats.attributes.level;
                 profile.profiles.athena.stats.attributes.book_level = profile.profiles.athena.stats.attributes.level;
                 profile.profiles.athena.stats.attributes.book_xp = 0;
                 profile.profiles.athena.stats.attributes.xp = 0;
