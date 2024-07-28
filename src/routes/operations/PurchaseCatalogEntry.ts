@@ -5,6 +5,7 @@ import verifyAuth from "../../utils/handlers/verifyAuth";
 import Profile from "../../database/models/profiles";
 import axios from "axios";
 import { Solara } from "../../utils/errors/Solara";
+import fs from "node:fs";
 
 export default function () {
   app.post("/fortnite/api/game/v2/profile/:accountId/client/PurchaseCatalogEntry", verifyAuth, async (c) => {
@@ -35,7 +36,7 @@ export default function () {
     if (!profile.items) profile.items = {};
     if (!athena.items) athena.items = {};
 
-    const catalog = require("../../../static/data/storefront.json");
+    const catalog = JSON.parse(fs.readFileSync("static/data/storefront.json", "utf8"));
 
     function findOffer(offerId: any) {
       for (let storefront of catalog.storefronts) {
