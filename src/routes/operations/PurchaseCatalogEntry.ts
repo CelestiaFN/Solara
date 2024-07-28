@@ -64,31 +64,37 @@ export default function () {
         for (let value of findOfferId.offerId.itemGrants) {
           const ID = uuidv4();
 
-            let itemExists = Object.values(athena.items).some(
+          let itemExists = Object.values(athena.items).some(
             (item: any) =>
               item && item.templateId && item.templateId.toLowerCase() === value.templateId.toLowerCase()
-            );
-          
+          );
+
           if (itemExists) return c.json(Solara.storefront.alreadyOwned, 400);
           const cleanedTemplateId = value.templateId.toLowerCase().replace(/(athenacharacter|athenabackpack|athenapickaxe|athenaglider|athenadance):/, '');
           let variants: any = [];
 
-          if (value.templateId.includes("AthenaCharacter") || value.templateId.includes("AthenaBackpack")) {
+          if (value.templateId.includes("_Celestia") && value.templateId.includes("AthenaCharacter")) {
+            const styles = JSON.parse(fs.readFileSync("static/cosmetics/variants.json", "utf8"));
+            const variant = styles[value.templateId].variants;
+            variants = variant
+          }
+
+          if (!value.templateId.includes("_Celestia") && (value.templateId.includes("AthenaCharacter") || value.templateId.includes("AthenaBackpack"))) {
             const resp = await axios.get(`https://fortnite-api.com/v2/cosmetics/br/${cleanedTemplateId}`);
             const data = resp.data.data;
-        
+
             if (!data) {
-                return null;
+              return null;
             }
-        
+
             if (data.variants) {
-                data.variants.forEach((obj: any) => {
-                    variants.push({
-                        "channel": obj.channel || "",
-                        "active": obj.options[0].tag || "",
-                        "owned": obj.options.map((variant: any) => variant.tag || "")
-                    });
+              data.variants.forEach((obj: any) => {
+                variants.push({
+                  channel: obj.channel || "",
+                  active: obj.options[0].tag || "",
+                  owned: obj.options.map((variant: any) => variant.tag || "")
                 });
+              });
             }
           }
 
@@ -158,7 +164,7 @@ export default function () {
             let currencyPlatform = profile.items[key].attributes.platform;
             if (
               currencyPlatform.toLowerCase() !==
-                profile.stats.attributes.current_mtx_platform.toLowerCase() &&
+              profile.stats.attributes.current_mtx_platform.toLowerCase() &&
               currencyPlatform.toLowerCase() !== "shared"
             )
               continue;

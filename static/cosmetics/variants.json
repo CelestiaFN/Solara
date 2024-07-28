@@ -1,0 +1,27 @@
+{
+    "AthenaCharacter:CID_A_202_Athena_Commando_F_Division_Celestia": {
+      "variants": [
+        {
+          "channel": "Progressive",
+          "active": "Stage1",
+          "owned": [
+            "Stage1",
+            "Stage2"
+          ]
+        },
+        {
+          "channel": "Material",
+          "active": "Mat3",
+          "owned": [
+            "Mat1",
+            "Mat2",
+            "Mat3",
+            "Mat4",
+            "Mat5",
+            "Mat6"
+          ]
+        }
+      ]
+    }
+  }
+  
