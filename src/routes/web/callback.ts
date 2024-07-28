@@ -16,9 +16,9 @@ export default function () {
       clientId: "1260815476695502848",
       clientSecret: "3J48NXc4_h45KH1T9zzAMcg3WPgT5_fL",
       code,
-      scope: "identify+guilds",
+      scope: "identify+email+guilds",
       grantType: "authorization_code",
-      redirectUri: "https://kys.itztiva.com/api/oauth/discord/callback/",
+      redirectUri: "https://celestiafn.com/api/oauth/discord/callback/",
     });
     const { access_token } = tokenResponse;
     const userResponse = await axios.get(
