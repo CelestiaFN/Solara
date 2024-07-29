@@ -9,29 +9,7 @@
     "news": {
       "platform_messages": [],
       "_type": "Battle Royale News",
-      "motds": [
-        {
-          "entryType": "Item",
-          "image": "https://cdn2.unrealengine.com/17br-cosmicsummer-outfits-beachbomber-motd-1920x1080-1920x1080-7ba592780fbc.jpg",
-          "tileImage": "https://cdn2.unrealengine.com/17br-cosmicsummer-outfits-beachbomber-motd-1024x512-1024x512-a3717e82142e.jpg",
-          "videoMute": false,
-          "hidden": true,
-          "tabTitleOverride": "Beach Bomber Returns",
-          "_type": "CommonUI Simple Message MOTD",
-          "title": "Beach Bomber",
-          "body": "Ready for a summer party at the beach, the queen of sunshine is back to take on the summer by storm!",
-          "offerAction": "ShowOfferDetails",
-          "videoLoop": false,
-          "videoStreamingEnabled": false,
-          "sortingPriority": 70,
-          "buttonTextOverride": "Check It Out",
-          "offerId": "79049d37-a4e9-4b6d-8e31-6663d61c81c5",
-          "id": "MOTD_PUB_SHOP_FN-BR_BEACH-BOMBER-RF_0621",
-          "videoAutoplay": false,
-          "videoFullscreen": false,
-          "spotlight": false
-        }
-      ],
+      "motds": [],
       "messages": [
         {
           "hidden": false,
