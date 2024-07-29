@@ -217,8 +217,8 @@ async function createShopConfig() {
     });
 
     const setKeys = Object.keys(setGroups);
-    const sortedkeys = setKeys.sort(() => Math.random() - 0.5); 
-    const selectedKeys = sortedkeys.slice(0, 5); 
+    const shuffledKeys = setKeys.sort(() => Math.random() - 0.5); 
+    const selectedKeys = shuffledKeys.slice(0, 5); 
     selectedKeys.forEach(setValue => {
         const groupItems = setGroups[setValue];
         if (groupItems.length < 1) {
