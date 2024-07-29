@@ -1,24 +1,42 @@
 {
     "AthenaCharacter": [
         {
-            "CID_A_202_Athena_Commando_F_Division_Celestia": true
+            "CID_A_202_Athena_Commando_F_Division_Celestia": {
+                "active": true,
+                "price": 6500
+            }
         },
         {
-            "CID_A_040_Athena_Commando_F_Temple_Celestia": false
+            "CID_A_040_Athena_Commando_F_Temple_Celestia": {
+                "active": false,
+                "price": 6500
+            }
         }
     ],
     "AthenaDance": [
         {
-            "EID_Deceiver_Celestia": true
+            "EID_Deceiver_Celestia": {
+                "active": true,
+                "price": 1500
+            }
         },
         {
-            "EID_RelayStick_Carmine_Celestia": false
+            "EID_RelayStick_Carmine_Celestia": {
+                "active": false,
+                "price": 1500
+            }
         },
         {
-            "EID_Shimmy_Celestia": false
+            "EID_Shimmy_Celestia": {
+                "active": false,
+                "price": 1500
+            }
         },
         {
-            "EID_Trajectory_Celestia": false
+            "EID_Trajectory_Celestia": {
+                "active": false,
+                "price": 1500
+            }
         }
     ]
 }

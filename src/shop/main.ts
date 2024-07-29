@@ -3,6 +3,7 @@ import fs from 'fs';
 import logger from '../utils/logger/logger';
 import { prices } from './types/prices';
 import { v4 } from 'uuid';
+import { config } from '..';
 
 interface Item {
     set: any;
@@ -89,6 +90,26 @@ async function createShopConfig() {
         dailyItems.push(gliderItems[randomGliderIndexDaily]);
     }
 
+    const specialItems: Item[] = [];
+
+    const specialJson = JSON.parse(fs.readFileSync("static/cosmetics/special.json", "utf8"));
+
+    for (const [type, items] of Object.entries(specialJson)) {
+        (items as any[]).forEach((item: any) => {
+            const [key, value]: [string, { active: boolean, price: number }] = Object.entries(item)[0] as [string, { active: boolean, price: number }];
+            if (value.active) {
+                specialItems.push({
+                    id: key,
+                    type,
+                    set: null,
+                    rarity: undefined,
+                    shopHistory: undefined,
+                    backpack: undefined
+                });
+            }
+        });
+    }
+
     const todayAtMidnight = new Date();
     todayAtMidnight.setHours(0, 0, 0, 0);
     const isoDate = todayAtMidnight.toISOString();
@@ -108,10 +129,90 @@ async function createShopConfig() {
         catalogEntries: [] as any[]
     };
 
+    const specialStorefront = {
+        name: "BRSpecialFeatured",
+        catalogEntries: [] as any[]
+    };
+
     const weeklyStorefront = {
         name: "BRWeeklyStorefront",
         catalogEntries: [] as any[]
     };
+
+    if (config.SPECIALSHOP == 'true') {
+        specialItems.forEach((item) => {
+            const itemType: ItemType = item.type as ItemType;
+            const itemRarity: ItemRarity = item.rarity as ItemRarity;
+            const price = prices[itemType][itemRarity];
+            const displayAssets = require("../../static/storefront/displayassets.json")
+            const displayAssetPath = displayAssets[item.id];
+
+            const entry = {
+                offerId: "v2:/" + v4(),
+                offerType: "StaticPrice",
+                devName: `[VIRTUAL]1x ${item.type}:${item.id} for ${price} MtxCurrency`,
+                itemGrants: [
+                    {
+                        templateId: `${item.type}:${item.id}`,
+                        quantity: 1
+                    },
+                ],
+                requirements: [
+                    {
+                        requirementType: "DenyOnItemOwnership",
+                        requiredId: `${item.type}:${item.id}`,
+                        minQuantity: 1
+                    },
+                ],
+                categories: [],
+                metaInfo: [
+                    { Key: "TileSize", Value: "Normal" },
+                    { Key: "SectionId", Value: "Daily" },
+                    { Key: "DisplayAssetPath", Value: displayAssetPath ? displayAssetPath : `/Game/Catalog/DisplayAssets/DA_Featured_${item.id}.DA_Featured_${item.id}` },
+                    { Key: "BannerOverride", Value: "" }
+                ],
+                prices: [
+                    {
+                        currencyType: "MtxCurrency",
+                        currencySubType: "Currency",
+                        regularPrice: price,
+                        dynamicRegularPrice: -1,
+                        finalPrice: price,
+                        basePrice: price,
+                        saleExpiration: "9999-12-31T23:59:59.999Z"
+                    }
+                ],
+                giftInfo: {
+                    bIsEnabled: true,
+                    forcedGiftBoxTemplateId: "",
+                    giftRecordIds: [],
+                    purchaseRequirements: [
+                        {
+                            requirementType: "DenyOnItemOwnership",
+                            requiredId: `${item.type}:${item.id}`,
+                            minQuantity: 1
+                        }
+                    ]
+                },
+                bannerOverride: "",
+                displayAssetPath: displayAssetPath ? displayAssetPath : `/Game/Catalog/DisplayAssets/DA_Featured_${item.id}.DA_Featured_${item.id}`,
+                refundable: true,
+                title: "",
+                description: "",
+                shortDescription: "",
+                appStoreId: [],
+                fulfillmentIds: [],
+                dailyLimit: -1,
+                weeklyLimit: -1,
+                monthlyLimit: -1,
+                sortPriority: 0,
+                catalogGroupPriority: 0,
+                filterWeight: 0
+            };
+
+            specialStorefront.catalogEntries.push(entry);
+        });
+    }
 
     dailyItems.forEach((item) => {
         const itemType: ItemType = item.type as ItemType;
@@ -217,28 +318,28 @@ async function createShopConfig() {
     });
 
     const setKeys = Object.keys(setGroups);
-    const shuffledKeys = setKeys.sort(() => Math.random() - 0.5); 
-    const selectedKeys = shuffledKeys.slice(0, 5); 
+    const shuffledKeys = setKeys.sort(() => Math.random() - 0.5);
+    const selectedKeys = shuffledKeys.slice(0, 5);
     selectedKeys.forEach(setValue => {
         const groupItems = setGroups[setValue];
         if (groupItems.length < 1) {
-            return; 
+            return;
         }
         groupItems.forEach(item => {
             const itemType: ItemType = item.type as ItemType;
             const itemRarity: ItemRarity = item.rarity as ItemRarity;
             const displayAssets = require("../../static/storefront/displayassets.json")
-            const displayAssetPath = "/Game/Catalog/DisplayAssets/" + displayAssets[item.id] + "." + displayAssets[item.id];    
+            const displayAssetPath = "/Game/Catalog/DisplayAssets/" + displayAssets[item.id] + "." + displayAssets[item.id];
             const price = prices[itemType]?.[itemRarity];
-    
+
             if (price === undefined) {
-                return; 
+                return;
             }
 
             if (itemType == "AthenaBackpack") {
                 return;
             }
-    
+
             const entry = {
                 offerId: "v2:/" + v4(),
                 offerType: "StaticPrice",
@@ -269,7 +370,7 @@ async function createShopConfig() {
                         }
                     ] : [])
                 ],
-                categories: item.set ? [`${item.set.value}`] : [], 
+                categories: item.set ? [`${item.set.value}`] : [],
                 metaInfo: [
                     { Key: "TileSize", Value: "Normal" },
                     { Key: "SectionId", Value: "Featured" },
@@ -326,8 +427,11 @@ async function createShopConfig() {
 
     shopConfig.storefronts.push(dailyStorefront as never);
     shopConfig.storefronts.push(weeklyStorefront as never);
+    if (config.SPECIALSHOP == 'true') {
+        shopConfig.storefronts.push(specialStorefront as never);
+    }
 
-    fs.writeFile('static/data/storefront.json', JSON.stringify(shopConfig, null, 2), 'utf-8', async (err: any) => {
+    fs.writeFile('static/data/storefronttest.json', JSON.stringify(shopConfig, null, 2), 'utf-8', async (err: any) => {
         if (err) {
             console.error(err);
             return;

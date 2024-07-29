@@ -25,6 +25,7 @@ export default class EnvBuilder {
     const SERVICETYPE = Bun.env.SERVICETYPE
     const MMIP = Bun.env.MMIP
     const LYRASECURE = Bun.env.LYRASECURE
+    const SPECIALSHOP = Bun.env.SPECIALSHOP
     const ElixionIP = Bun.env.ElixionIP
 
     const unsafeConfig = ConfigSchema.safeParse({
@@ -32,6 +33,7 @@ export default class EnvBuilder {
       JWTSECRET,
       ElixionIP,
       isProd,
+      SPECIALSHOP,
       DB_URL,
       MAINTENANCE,
       PUBLICVER,

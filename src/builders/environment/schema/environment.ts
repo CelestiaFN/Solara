@@ -7,6 +7,7 @@ export const ConfigSchema = z.object({
     MAINTENANCE: z.string(),
     PUBLICVER: z.string(),
     BOT_TOKEN: z.string(),
+    SPECIALSHOP: z.string(),
     SEASON: z.string(),
     WL: z.string(),
     ElixionIP: z.string(),
