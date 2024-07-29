@@ -141,9 +141,8 @@ async function createShopConfig() {
 
     if (config.SPECIALSHOP == 'true') {
         specialItems.forEach((item) => {
-            const itemType: ItemType = item.type as ItemType;
-            const itemRarity: ItemRarity = item.rarity as ItemRarity;
-            const price = prices[itemType][itemRarity];
+            const specialItemData = specialJson[item.type].find((i: any) => i[item.id]);
+            const price = specialItemData[item.id].price; 
             const displayAssets = require("../../static/storefront/displayassets.json")
             const displayAssetPath = displayAssets[item.id];
 
