@@ -241,7 +241,6 @@ export default function () {
             }
 
             refreshAccount(user.accountId, user.username)
-            return c.json({});
         }
 
         if (Playlist.includes("DefaultDuo")) {
@@ -253,7 +252,6 @@ export default function () {
             }
 
             refreshAccount(user.accountId, user.username)
-            return c.json({});
         }
 
         if (Playlist.includes("DefaultSquad")) {
@@ -265,7 +263,6 @@ export default function () {
             }
 
             refreshAccount(user.accountId, user.username)
-            return c.json({});
         }
         await Profile.updateOne(
             { accountId: user.accountId },
