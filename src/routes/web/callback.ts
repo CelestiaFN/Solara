@@ -96,10 +96,19 @@ export default function () {
       return c.redirect("celestia://" + exchangecode);
     } else {
 
-      if (!user.isHarvester || !user.isLegacy || !user.isGlimmer || !user.isUrban) {
+      if (!user.isHarvester) {
         user.isHarvester = false;
+      }
+
+      if (!user.isLegacy) {
         user.isLegacy = false;
+      }
+
+      if (!user.isGlimmer) {
         user.isGlimmer = false;
+      }
+
+      if (!user.isUrban) {
         user.isUrban = false;
       }
 
