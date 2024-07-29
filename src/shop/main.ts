@@ -431,7 +431,7 @@ async function createShopConfig() {
         shopConfig.storefronts.push(specialStorefront as never);
     }
 
-    fs.writeFile('static/data/storefronttest.json', JSON.stringify(shopConfig, null, 2), 'utf-8', async (err: any) => {
+    fs.writeFile('static/data/storefront.json', JSON.stringify(shopConfig, null, 2), 'utf-8', async (err: any) => {
         if (err) {
             console.error(err);
             return;
