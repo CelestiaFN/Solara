@@ -240,12 +240,6 @@ export default function () {
                 stats.solos.wins += 1;
             }
 
-            await Profile.updateOne(
-                { accountId: user.accountId },
-                { $set: profile }
-            );
-            await Stats.updateOne({ accountId: user.accountId }, { $set: stats });
-
             refreshAccount(user.accountId, user.username)
             return c.json({});
         }
@@ -257,12 +251,6 @@ export default function () {
             if (Position == 1) {
                 stats.duos.wins += 1;
             }
-
-            await Profile.updateOne(
-                { accountId: user.accountId },
-                { $set: profile }
-            );
-            await Stats.updateOne({ accountId: user.accountId }, { $set: stats });
 
             refreshAccount(user.accountId, user.username)
             return c.json({});
@@ -276,22 +264,14 @@ export default function () {
                 stats.squads.wins += 1;
             }
 
-            await Profile.updateOne(
-                { accountId: user.accountId },
-                { $set: profile }
-            );
-            await Stats.updateOne({ accountId: user.accountId }, { $set: stats });
-
             refreshAccount(user.accountId, user.username)
             return c.json({});
         }
-
         await Profile.updateOne(
             { accountId: user.accountId },
             { $set: profile }
         );
         await Stats.updateOne({ accountId: user.accountId }, { $set: stats });
-
         refreshAccount(user.accountId, user.username)
         return c.json({});
     });

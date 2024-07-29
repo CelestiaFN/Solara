@@ -5,8 +5,8 @@ export default function () {
         return c.json({
             success: true,
             files: {
-                "pakchunkCelestia-WindowsClient.pak": 48774023,
-                "pakchunkCelestia-WindowsClient.sig": 4872,
+                "pakchunkCelestia0001-WindowsClient.pak": 48774023,
+                "pakchunkCelestia0001-WindowsClient.sig": 4872,
             },
         });
     });

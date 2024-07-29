@@ -26,7 +26,6 @@ export default function () {
     );
 
     let catalog: any = {};
-
     const catalogData: any = fs.readFileSync(catalogPath);
     const storefrontData: any = fs.readFileSync(storefrontPath);
 
