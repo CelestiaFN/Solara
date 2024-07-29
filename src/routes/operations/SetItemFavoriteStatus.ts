@@ -42,6 +42,7 @@ export default function () {
                 },
             ];
         }
+        await profiles?.updateOne({ $set: { [`profiles.${c.req.query("profileId")}`]: profile } });
 
         return c.json({
             profileRevision: profile.rvn || 0,

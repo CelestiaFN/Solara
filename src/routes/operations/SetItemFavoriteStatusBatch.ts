@@ -35,6 +35,7 @@ export default function () {
 
       profile.rvn += 1;
       profile.commandRevision += 1;
+      await profiles?.updateOne({ $set: { [`profiles.${c.req.query("profileId")}`]: profile } });
 
       if (rvn != profile.rvn) {
         profileChanges = [
