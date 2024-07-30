@@ -140,7 +140,7 @@ export default function () {
                 quantity: 1,
               },
             ],
-            totalMtxPaid: findOfferId.offerId.prices[0].originalPrice,
+            totalMtxPaid: findOfferId.offerId.prices[0].finalPrice,
             metadata: {},
             gameContext: "",
           }
