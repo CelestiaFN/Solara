@@ -27,7 +27,7 @@ app.use(async (c, next) => {
 });
 
 app.use(async (c, next) => {
-    if (c.req.path.startsWith("/friends/api/")) {
+    if (c.req.path.startsWith("/friends/api/") && c.req.path.includes("/friends")) {
         if (c.req.path === "/party/api/v1/Fortnite/parties") {
             await next()
         }

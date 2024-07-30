@@ -35,16 +35,15 @@ export default function () {
 
     if (!profile.items) profile.items = {};
     if (!athena.items) athena.items = {};
-
     const catalog = JSON.parse(fs.readFileSync("static/data/storefront.json", "utf8"));
 
     function findOffer(offerId: any) {
       for (let storefront of catalog.storefronts) {
-        let findOfferId = storefront.catalogEntries.find(
-          (i: any) => i.offerId == offerId
-        );
-        if (findOfferId)
-          return { name: storefront.name, offerId: findOfferId };
+      let findOfferId = storefront.catalogEntries.find(
+        (i: any) => i.offerId == offerId
+      );
+      if (findOfferId)
+        return { name: storefront.name, offerId: findOfferId };
       }
     }
 
@@ -52,7 +51,7 @@ export default function () {
     if (!findOfferId) return c.json(Solara.storefront.invalidItem, 400);
 
     switch (true) {
-      case /^BR(Daily|Weekly|Season)Storefront$/.test(findOfferId.name):
+      case /^BR(Daily|Weekly|Season)Storefront$|^BRSpecialFeatured$/.test(findOfferId.name):
         let notification: any = {
           type: "CatalogPurchase",
           primary: true,
