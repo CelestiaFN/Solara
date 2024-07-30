@@ -12,7 +12,7 @@ export default function () {
     app.post("/celestia/api/:username/dedicated_server/ApplyMatchResults", async (c) => {
         const { Playlist, Position, XP, Eliminations, ChallengeUpdates } = await c.req.json();
 
-        if (!Playlist || !Position || !ChallengeUpdates) {
+        if (!Playlist || !Position) {
             return c.json(Solara.internal.jsonParsingFailed, 400);
         }
 
@@ -124,7 +124,7 @@ export default function () {
                     templateId: item,
                     attributes: {
                         favorite: false,
-                        item_seen: true,
+                        item_seen: false,
                         level: 0,
                         max_level_bonus: 0,
                         rnd_sel_cnt: 0,
@@ -182,7 +182,7 @@ export default function () {
                             templateId: item,
                             attributes: {
                                 favorite: false,
-                                item_seen: true,
+                                item_seen: false,
                                 level: 0,
                                 max_level_bonus: 0,
                                 rnd_sel_cnt: 0,
@@ -198,7 +198,7 @@ export default function () {
                         profile.profiles.common_core.items[item] = {
                             templateId: item,
                             attributes: {
-                                item_seen: true
+                                item_seen: false
                             },
                             quantity: 1
                         };
