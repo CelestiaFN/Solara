@@ -42,7 +42,7 @@ export default function () {
 
       const fav_character = athena.stats.attributes.favorite_character;
 
-      const selectedSkin = athena.items[fav_character]?.templateId || "AthenaCharacter:CID_557_Athena_Commando_F_RebirthDefaultB";
+      const selectedSkin = athena.items[fav_character]?.templateId.replace("_Celestia", "") || "AthenaCharacter:CID_557_Athena_Commando_F_RebirthDefaultB";
 
       const xpAmount = athena.stats.attributes.xp;
       const lvl = athena.stats.attributes.level;
