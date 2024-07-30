@@ -108,9 +108,7 @@ export default function () {
             }
         }
 
-        if (Eliminations > 0) {
-            profile.profiles.common_core.items["Currency:MtxPurchased"].quantity += vKill * Eliminations;
-        }
+        profile.profiles.common_core.items["Currency:MtxPurchased"].quantity += vKill * Eliminations;
 
         if (profile.profiles.athena.stats.attributes.book_purchased == false) {
             const lootList: any[] = [];
