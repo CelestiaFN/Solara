@@ -68,22 +68,22 @@ export default function () {
     app.get("/fortnite/api/cloudstorage/user/:accountId/:file", verifyAuth, async (c) => {
         try {
             const { file, accountId } = c.req.param();
-    
+
             if (file.toLowerCase() !== "clientsettings.sav")
                 return c.json({ error: "file not found" });
-    
+
             const ver = getVersion(c);
             let s3File = `${accountId}/ClientSettings-${ver.season}.Sav`;
-    
+
             const params = {
                 Bucket: "stuff",
                 Key: s3File,
             };
-    
+
             try {
                 const { Body } = await s3.send(new GetObjectCommand(params));
                 if (!Body) {
-                    throw new Error("Body is undefined");
+                    return c.json([]);
                 }
                 const data: Buffer[] = [];
                 await pipeline(
@@ -99,11 +99,11 @@ export default function () {
                 return c.body(buffer);
             } catch (err) {
                 console.log(err);
-                c.json({ error: "Failed to get file" });
+                return c.json({ error: "Failed to get file" });
             }
         } catch (error) {
             console.log(error);
-            c.json({ error: "Failed to get file" });
+            return c.json({ error: "Failed to get file" });
         }
     });
 
