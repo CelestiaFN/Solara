@@ -28,26 +28,35 @@ export default async function CommandHandler(client: ExtendedClient) {
 
   client.on("interactionCreate" as any, async (interaction: CommandInteraction) => {
     if (!interaction.isCommand()) return;
-  
+
     const { commandName } = interaction;
     const command = client.commands.get(commandName);
-  
+
     if (!command) return;
-  
+
     try {
       if (!interaction.deferred && !interaction.replied) {
         await command.execute(interaction, {});
         interaction.replied = true;
       }
-    } catch (error) {
-      console.error(error);
-      if (!interaction.replied) { 
-        interaction.reply("There was an error executing that command!");
-        interaction.replied = true; 
+    } catch (error: any) {
+      console.error('Error handling interaction:', {
+        interactionId: interaction.id,
+        commandName: interaction.commandName,
+        error: error.message,
+      });
+
+      if (error.code === 10062) {
+        console.error('Unknown interaction. The interaction ID might be invalid or expired.');
+      }
+
+      if (!interaction.replied) {
+        await interaction.reply("There was an error executing that command!");
+        interaction.replied = true;
       }
     }
   });
-  
+
   client.on('guildMemberUpdate', async (oldMember, newMember) => {
     const oldRoles = oldMember.roles.cache.map(role => role.id);
     const newRoles = newMember.roles.cache.map(role => role.id);

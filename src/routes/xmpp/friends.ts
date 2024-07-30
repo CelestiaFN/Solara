@@ -29,10 +29,7 @@ export default function () {
             "incoming": [],
             "outgoing": [],
             "suggested": [],
-            "blocklist": [],
-            "settings": {
-                "acceptInvites": "public"
-            }
+            "blocklist": []
         } as any;
         const friends = await Friends.findOne({ accountId: c.req.param("accountId") });
         if (!friends) return c.json(Solara.friends.invalidData, 404)
@@ -47,7 +44,7 @@ export default function () {
                     "alias": acceptedFriend.alias ? acceptedFriend.alias : "",
                     "note": "",
                     "favorite": false,
-                    "created": DateTime.fromISO(acceptedFriend.created).toUTC().toFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"),
+                    "created": "2024-07-27T20:59:45+02:00",
                 });
             }
         });
@@ -59,7 +56,7 @@ export default function () {
                     "accountId": incomingFriend?.accountId,
                     "mutual": 0,
                     "favorite": false,
-                    "created": DateTime.fromISO(incomingFriend.created).toUTC().toFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"),
+                    "created": "2024-07-27T20:59:45+02:00",
                 });
             }
         });
@@ -92,54 +89,6 @@ export default function () {
 
         try {
             const req = await axios.post(`http://${config.ElixionIP}:6969/friends/api/public/friends/${c.req.param("accountId")}`, { headers });
-            return c.json(req.data);
-        } catch (error) {
-            console.error(error);
-            return c.json({}, 500);
-        }
-    });
-
-    app.get("/friends/api/v1/:accountId/blocklist", async (c) => {
-        const headers = await c.req.header();
-
-        if (!headers) {
-            return c.json({}, 204);
-        }
-
-        try {
-            const req = await axios.get(`http://${config.ElixionIP}:6969/friends/api/v1/${c.req.param("accountId")}/blocklist`, { headers });
-            return c.json(req.data);
-        } catch (error) {
-            console.error(error);
-            return c.json({}, 500);
-        }
-    });
-
-    app.get("/friends/api/v1/:accountId/recent/fortnite", async (c) => {
-        const headers = await c.req.header();
-
-        if (!headers) {
-            return c.json({}, 204);
-        }
-
-        try {
-            const req = await axios.get(`http://${config.ElixionIP}:6969/friends/api/v1/${c.req.param("accountId")}/recent/fortnite`, { headers });
-            return c.json(req.data);
-        } catch (error) {
-            console.error(error);
-            return c.json({}, 500);
-        }
-    });
-
-    app.get("/friends/api/v1/:accountId/settings", async (c) => {
-        const headers = await c.req.header();
-
-        if (!headers) {
-            return c.json({}, 204);
-        }
-
-        try {
-            const req = await axios.get(`http://${config.ElixionIP}:6969/friends/api/v1/${c.req.param("accountId")}/settings`, { headers });
             return c.json(req.data);
         } catch (error) {
             console.error(error);
