@@ -317,8 +317,16 @@ async function createShopConfig() {
     });
 
     const setKeys = Object.keys(setGroups);
-    const shuffledKeys = setKeys.sort(() => Math.random() - 0.5);
+    const shuffledKeys = shuffleSets(setKeys);
     const selectedKeys = shuffledKeys.slice(0, 5);
+
+    function shuffleSets(array: any[]) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    }
     selectedKeys.forEach(setValue => {
         const groupItems = setGroups[setValue];
         if (groupItems.length < 1) {
