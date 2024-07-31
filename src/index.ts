@@ -6,6 +6,7 @@ import { cors } from 'hono/cors';
 import logger from './utils/logger/logger';
 import axios from 'axios';
 import { startHttps } from './https/setup';
+import fs from 'node:fs'
 
 const app = new Hono({ strict: false })
 
@@ -18,7 +19,15 @@ export const config = EnvBuilder.Register();
 app.use(cors());
 
 app.use(async (c, next) => {
-    if (config.isProd == 'false') {
+    if (c.req.path !== "/images/icons/gear.png" && c.req.path !== "/favicon.ico") {
+        const log = `${c.req.path} | ${c.req.method}\n`;
+        fs.appendFile('static/logs/routes.txt', log, (err) => {
+            if (err) {
+                console.error(err);
+            }
+        });
+    }
+    if (config.isProd === 'false') {
         if (c.req.path !== "/images/icons/gear.png" && c.req.path !== "/favicon.ico") {
             logger.backend(`${c.req.path} | ${c.req.method}`);
         }
