@@ -98,11 +98,9 @@ export default function () {
                 const buffer: any = Buffer.concat(data);
                 return c.body(buffer);
             } catch (err) {
-                console.log(err);
                 return c.json({ error: "Failed to get file" });
             }
         } catch (error) {
-            console.log(error);
             return c.json({ error: "Failed to get file" });
         }
     });
@@ -154,11 +152,9 @@ export default function () {
                         },
                     ]);
                 } catch (err) {
-                    console.log(err);
                     return c.json([]);
                 }
             } catch (error) {
-                console.log(error);
                 return c.json([]);
             }
         }

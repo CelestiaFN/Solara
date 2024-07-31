@@ -101,6 +101,7 @@ export default function () {
         0
       )
     );
+
     const midnight = new Date(dUTC.getTime() - 60000);
     const storefrontFixed = midnight.toISOString();
 
