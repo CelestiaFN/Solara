@@ -10,6 +10,10 @@ export default function () {
             return c.json(Solara.internal.jsonParsingFailed, 404)
         }
 
+        if (State == "ENDED") {
+            await Servers.deleteOne({ sessionId: SessionId })
+        }
+
         await Servers.findOneAndUpdate(
             { sessionId: SessionId },
             {
