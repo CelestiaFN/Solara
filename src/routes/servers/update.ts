@@ -4,20 +4,20 @@ import Servers from "../../database/models/servers";
 
 export default function () {
     app.post("/celestia/api/server/update", async (c) => {
-        const { State, Region, Playlist, Players, SessionId } = await c.req.json();
+        const { State, Region, Playlist, Players, Session } = await c.req.json();
 
-        if (!Region || !Playlist || !SessionId) {
+        if (!Region || !Playlist || !Session) {
             return c.json(Solara.internal.jsonParsingFailed, 404)
         }
 
-        if (State == "ENDED") {
-            await Servers.deleteOne({ sessionId: SessionId })
+        if (State === "ENDED") {
+            await Servers.deleteOne({ sessionId: Session })
         }
 
         await Servers.findOneAndUpdate(
-            { sessionId: SessionId },
+            { sessionId: Session },
             {
-                sessionId: SessionId,
+                sessionId: Session,
                 region: Region,
                 playlist: Playlist,
                 state: State || "AVAILABLE",
@@ -28,6 +28,6 @@ export default function () {
             { upsert: true, new: true }
         );
 
-        return c.json(await Servers.findOne({ sessionId: SessionId }), 200)
+        return c.json(await Servers.findOne({ sessionId: Session }), 200)
     })
 }

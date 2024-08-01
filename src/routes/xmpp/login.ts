@@ -36,10 +36,6 @@ export default function () {
             email: token?.email,
           });
           if (userass !== null) {
-            const user = await User.findOne({ accountId: userass.accountId });
-            if (user) {
-              logger.auth(`Logged in ${user.username}`);
-            }
             return c.json({
                 accountId: userass.accountId,
                 token: body.token,

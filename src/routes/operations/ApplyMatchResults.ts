@@ -37,8 +37,6 @@ export default function () {
                 xpBody = 1;
             }
 
-            console.log(xpBody);
-
             const user = await User.findOne({ username: c.req.param("username") });
             if (!user) {
                 return c.json(Solara.account.accountNotFound, 404);
