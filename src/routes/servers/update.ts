@@ -11,7 +11,8 @@ export default function () {
         }
 
         if (State === "ENDED") {
-            await Servers.deleteOne({ sessionId: Session })
+            await Servers.deleteOne({ sessionId: Session });
+            return c.json({ message: "Server deleted" }, 200);
         }
 
         await Servers.findOneAndUpdate(
