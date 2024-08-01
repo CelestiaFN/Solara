@@ -122,6 +122,13 @@ export default async function CommandHandler(client: ExtendedClient) {
             await axios.post(`http://127.0.0.1:21491/celestia/grant/donator/booster/${user.accountId}`);
           }
         }
+
+        if (addedRoles.includes("1260791033009143859")) {
+          if (user.isBooster == false) {
+            user.isBooster = true;
+            await axios.post(`http://127.0.0.1:21491/celestia/gift/fl/${user.accountId}`);
+          }
+        }
         
         if (addedRoles.includes("1263582817242189914")) {
           if (user.isUrban == false) {
