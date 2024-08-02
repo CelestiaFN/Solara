@@ -1,10 +1,10 @@
 import BaseCommand from "../helpers/BaseCommand";
 import {
-    CommandInteraction,
+CommandInteraction,
     type CacheType,
-    ApplicationCommandOptionType,
-    PermissionsBitField,
-    PermissionFlagsBits,
+        ApplicationCommandOptionType,
+        PermissionsBitField,
+        PermissionFlagsBits,
 } from "discord.js";
 import User from "../../database/models/users";
 
@@ -72,7 +72,9 @@ export default class UnbanCommand extends BaseCommand {
             try {
                 await targetUser?.user?.send(`You have been unbanned from Celestia!`);
             } catch (error) {
+                console.error(error);
                 await interaction.reply(`Unbanned \`${user?.username}\` from Celestia, but failed to notify them.`);
+                return;
             }
 
             const channelId = "1264229342842716241";
@@ -86,22 +88,22 @@ export default class UnbanCommand extends BaseCommand {
                         fields: [
                             {
                                 name: "User",
-                                value: `<@${user?.discordId}>`, 
+                                value: `<@${user?.discordId}>`,
                                 inline: false,
                             },
                             {
                                 name: "Account ID",
-                                value: user?.accountId || "N/A", 
+                                value: user?.accountId || "N/A",
                                 inline: false,
                             },
                             {
                                 name: "HWID",
-                                value: user?.hwid || "N/A",  
+                                value: user?.hwid || "N/A",
                                 inline: false,
                             },
                             {
                                 name: "Issuer",
-                                value: `<@${interaction.user.id}>`, 
+                                value: `<@${interaction.user.id}>`,
                                 inline: false,
                             },
                         ],

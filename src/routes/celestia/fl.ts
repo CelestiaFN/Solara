@@ -23,6 +23,7 @@ export default function () {
 
             for (var mode in data) {
                 if (mode == "lego") continue;
+                if (mode == "beans") continue;
 
                 data[mode].forEach((item: any) => {
                     if (item.id.toLowerCase().includes("random")) return;
@@ -83,4 +84,3 @@ export default function () {
         }
     });
 }
-

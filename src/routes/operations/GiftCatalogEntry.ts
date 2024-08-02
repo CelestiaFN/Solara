@@ -142,6 +142,7 @@ export default function () {
                             });
                           }
                         }
+                        
                         const ID = v4();
                         const Item = {
                             templateId: value.templateId,
