@@ -1,4 +1,4 @@
-import app from "../..";
+import app, { config } from "../..";
 import { Solara } from "../../utils/errors/Solara";
 import Matchmaking from "../../database/models/matchmakingsessions";
 import axios from "axios";
@@ -14,7 +14,7 @@ export default function () {
         const session = await Matchmaking.findOne({ sessionId: sessionId }) as any;
         try {
             let response = await axios.get(
-                `http://34.150.153.214:21009/session/${sessionId}`
+                `http://${config.ElixionIP}:21009/session/${sessionId}`
             );
             serverAddress = response.data.ip;
             serverPort = response.data.port;

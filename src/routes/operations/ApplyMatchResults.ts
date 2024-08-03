@@ -9,7 +9,7 @@ import { v4 } from "uuid";
 import { refreshAccount } from "../../utils/handlers/refreshAccount";
 
 export default function () {
-    app.post("/celestia/api/:username/dedicated_server/ApplyMatchResults", async (c) => {
+    app.post("/celestia/api/:accountId/dedicated_server/ApplyMatchResults", async (c) => {
         try {
             const { Playlist, Position, XP, Eliminations, ChallengeUpdates } = await c.req.json();
 
@@ -37,7 +37,7 @@ export default function () {
                 xpBody = 1;
             }
 
-            const user = await User.findOne({ username: c.req.param("username") });
+            const user = await User.findOne({ username: c.req.param("accountId") });
             if (!user) {
                 return c.json(Solara.account.accountNotFound, 404);
             }

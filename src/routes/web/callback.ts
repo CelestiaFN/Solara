@@ -1,7 +1,7 @@
 import app from "../..";
 import Tokens from "../../database/models/tokens";
 import User from "../../database/models/users";
-import axios from "axios";
+import axios, { AxiosError, type AxiosResponse } from "axios";
 import { v4 as uuidv4 } from "uuid";
 import DiscordOAuth2 from "discord-oauth2";
 import jwt from "jsonwebtoken";
@@ -21,22 +21,30 @@ export default function () {
       redirectUri: "https://celestiafn.com/api/oauth/discord/callback/",
     });
     const { access_token } = tokenResponse;
-    const userResponse = await axios.get(
+    const userResponse = await axios.get<any, AxiosResponse<any, any>>(
       "https://discord.com/api/v10/users/@me",
       {
         headers: { Authorization: `Bearer ${access_token}` },
       }
-    );
-    const { id, avatar, username } = userResponse.data;
-    const discordId = id;
-    const guilds = await axios.get(
-      `https://discord.com/api/v10/guilds/1260785136551596083/members/${discordId}`,
-      {
-        headers: { Authorization: `Bot MTI2MDgxNTQ3NjY5NTUwMjg0OA.GkCS_f.xCwSbQTHD_S2ZisS2wTW_8QF-G-KpqBWM5gbRQ` },
-      }
-    );
+    ).catch((error: AxiosError) => {
+      return c.body("Invalid User")
+    });
 
-    const { roles } = guilds.data;
+    const { id, avatar, username } = (userResponse as AxiosResponse<any, any>)?.data;
+    const discordId = id;
+    let guilds;
+    try {
+      guilds = await axios.get(
+        `https://discord.com/api/v10/guilds/1260785136551596083/members/${discordId}`,
+        {
+          headers: { Authorization: `Bot MTI2MDgxNTQ3NjY5NTUwMjg0OA.GkCS_f.xCwSbQTHD_S2ZisS2wTW_8QF-G-KpqBWM5gbRQ` },
+        }
+      );
+    } catch (error) {
+      return c.body("Join our discord to play!");
+    }
+
+    const { data: { roles } } = guilds as AxiosResponse<any, any>;
 
     const roleIds = {
       '1260791766601433269': 0, // member

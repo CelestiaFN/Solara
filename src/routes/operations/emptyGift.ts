@@ -1,4 +1,4 @@
-import app from "../../"
+import app, { config } from "../../"
 import Profile from "../../database/models/profiles"
 import User from "../../database/models/users";
 import { Solara } from "../../utils/errors/Solara";
@@ -47,7 +47,7 @@ export default function () {
             },
         });
         try {
-            await axios.get(`http://34.150.153.214:6969/sendGift/${receiverAccountId}`);
+            await axios.get(`http://${config.ElixionIP}:6969/sendGift/${receiverAccountId}`);
         } catch { }
         if (profileChanges.length > 0 && receiverAccountId !== senderAccountId) {
             profile.rvn += 1;
