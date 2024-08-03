@@ -1,7 +1,6 @@
 import { Client } from "discord.js";
 import { readdirSync } from "node:fs";
 import { join } from "node:path";
-
 import type { Event } from "../interfaces/Event";
 
 export default async function EventHandler(client: Client) {
@@ -10,7 +9,8 @@ export default async function EventHandler(client: Client) {
   );
 
   for (const event of events) {
-    const EventClass = require(join(__dirname, "..", "events", event)).default;
+    const EventModule = await import(join(__dirname, "..", "events", event));
+    const EventClass = EventModule.default;
     const EventInstance = new EventClass() as Event;
 
     if (EventInstance.once)

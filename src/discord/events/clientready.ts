@@ -1,5 +1,6 @@
 import { ActivityType, Client } from "discord.js";
 import logger from "../../utils/logger/logger";
+import { config } from "../..";
 
 export default class ReadyEvent {
   name = "ready";
@@ -10,7 +11,7 @@ export default class ReadyEvent {
 
     const updateActivity = async () => {
       try {
-        const response = await fetch("http://34.150.153.214:8080/clients");
+        const response = await fetch(`http://${config.ElixionIP}:8080/clients`);
         const data = await response.json();
         const clients = data.amount;
 

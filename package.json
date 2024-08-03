@@ -27,6 +27,7 @@
     "moment-timezone": "^0.5.45",
     "mongoose": "^8.4.4",
     "node-cache": "^5.1.2",
+    "node-cron": "^3.0.3",
     "speedgoose": "^2.0.13",
     "stream": "^0.0.3",
     "uuid": "^10.0.0",

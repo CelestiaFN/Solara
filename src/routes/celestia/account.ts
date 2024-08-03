@@ -6,6 +6,7 @@ import { v4 as uuidv4 } from "uuid";
 import jwt from "jsonwebtoken";
 import { updateTokens } from "../../utils/functions/updateTokens";
 import { Solara } from "../../utils/errors/Solara";
+import { config } from "../..";
 
 export default function () {
   app.post("/api/launcher/account", async (c) => {
@@ -33,6 +34,46 @@ export default function () {
 
       if (!profiles) {
         return c.json({ message: "Profile not found" });
+      }
+
+      if (config.MAINTENANCE === `true`) {
+        if (Number(user.role) <= 0) {
+          return c.html(`
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Maintenance</title>
+                <style>
+                    body {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100vh;
+                        margin: 0;
+                        font-family: Arial, sans-serif;
+                        background-color: #535252;
+                    }
+                    .container {
+                        text-align: center;
+                    }
+                    .message {
+                        font-size: 24px;
+                        color: white;
+                    }
+                </style>
+            </head>
+            <body>
+                <div class="container">
+                    <div class="message">
+                        Servers are offline for maintenance. Please check back later!
+                    </div>
+                </div>
+            </body>
+            </html>
+        `);
+        }
       }
 
       user.hwid = hwid
@@ -113,16 +154,16 @@ export default function () {
           bookowned: athena.stats.attributes.book_purchased
         },
         pastseasons: athena.stats.attributes.past_seasons,
-        athena: { 
-          XP: xpAmount, 
+        athena: {
+          XP: xpAmount,
         },
         level: lvl,
         character: {
           templateId: selectedSkin,
           rarity: "rare",
         },
-        common_core: { 
-          VBucks: vBucks 
+        common_core: {
+          VBucks: vBucks
         },
         rolename: role,
         rolecolor: roleColor,

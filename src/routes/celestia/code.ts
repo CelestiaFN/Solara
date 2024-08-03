@@ -29,7 +29,9 @@ export default function () {
       return c.text("Invalid token!");
     }
     if (config.MAINTENANCE === `true`) {
-      return c.json(Solara.authentication.authenticationFailed, 404)
+      if (Number(user.role) <= 0) {
+        return c.json(Solara.authentication.authenticationFailed, 404)
+      }
     }
     const existingCode = await Tokens.findOne({ accountId: user.accountId, type: "launcher_code" });
     if (existingCode) {

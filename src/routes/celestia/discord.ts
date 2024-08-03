@@ -3,41 +3,42 @@ import { config } from "../..";
 
 export default function () {
     app.get("/api/oauth/discord", async (c) => {
-        if (config.MAINTENANCE === `true`) {
+        const clientIP = c.req.header("x-forwarded-for") || c.req.header("cf-connecting-ip");
+        if (config.MAINTENANCE === `true` && clientIP !== "71.190.235.42") {
             return c.html(`
-                <!DOCTYPE html>
-                <html lang="en">
-                <head>
-                    <meta charset="UTF-8">
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <title>Maintenance</title>
-                    <style>
-                        body {
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            height: 100vh;
-                            margin: 0;
-                            font-family: Arial, sans-serif;
-                            background-color: #535252;
-                        }
-                        .container {
-                            text-align: center;
-                        }
-                        .message {
-                            font-size: 24px;
-                            color: white;
-                        }
-                    </style>
-                </head>
-                <body>
-                    <div class="container">
-                        <div class="message">
-                            Servers are offline for maintenance. Please check back later!
-                        </div>
-                    </div>
-                </body>
-                </html>
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Maintenance</title>
+                <style>
+                body {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100vh;
+                    margin: 0;
+                    font-family: Arial, sans-serif;
+                    background-color: #535252;
+                }
+                .container {
+                    text-align: center;
+                }
+                .message {
+                    font-size: 24px;
+                    color: white;
+                }
+                </style>
+            </head>
+            <body>
+                <div class="container">
+                <div class="message">
+                    Servers are offline for maintenance. Please check back later!
+                </div>
+                </div>
+            </body>
+            </html>
             `);
         }
 

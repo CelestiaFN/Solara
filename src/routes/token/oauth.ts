@@ -11,16 +11,22 @@ export default function () {
     app.post("/account/api/oauth/token", async (c: any) => {
         try {
             const body: any = await c.req.parseBody();
-
-            function base64Decode(str: any) {
-                return Buffer.from(str, "base64").toString();
-            }
-
             const tokenHeader = c.req.header("Authorization");
-            const useragent = c.req.header("User-Agent")
+            const useragent = c.req.header("User-Agent");
             let clientId;
 
-            clientId = base64Decode((tokenHeader || "").split(" ")[1]).split(":");
+            function base64Decode(str: string) {
+                if (!str) {
+                    return "0";
+                } else {
+                    return Buffer.from(str, "base64").toString();
+                }
+            }
+
+            if (tokenHeader) {
+                const token = tokenHeader.split(" ")[1];
+                clientId = base64Decode(token).split(":");
+            }
 
 
             if (body.grant_type === "password") {
@@ -122,7 +128,7 @@ export default function () {
                         return c.json([], 200)
                     }
                 }
-                
+
                 if (!user || !(await bcrypt.compare(body.password, user.password))) {
                     return c.json(
                         Solara.authentication.oauth.invalidAccountCredentials,

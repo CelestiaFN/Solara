@@ -2,7 +2,7 @@
     "AthenaCharacter": [
         {
             "CID_A_202_Athena_Commando_F_Division_Celestia": {
-                "active": false,
+                "active": true,
                 "price": 6500
             }
         }, 
@@ -16,19 +16,19 @@
     "AthenaDance": [
         {
             "EID_Deceiver_Celestia": {
-                "active": false,
+                "active": true,
                 "price": 1500
             }
         },
         {
             "EID_RelayStick_Carmine_Celestia": {
-                "active": false,
+                "active": true,
                 "price": 1500
             }
         },
         {
             "EID_Shimmy_Celestia": {
-                "active": false,
+                "active": true,
                 "price": 1500
             }
         },

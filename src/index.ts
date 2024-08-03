@@ -46,7 +46,7 @@ app.use(async (c, next) => {
 
             let data = c.req.method !== "GET" ? await c.req.parseBody() || await c.req.json() : undefined;
             const response = await axios({
-                url: "http://34.150.153.214:6969" + c.req.path,
+                url: `http://${config.ElixionIP}:6969` + c.req.path,
                 method: c.req.method,
                 headers: h,
                 data: data,
