@@ -7,6 +7,7 @@ import logger from './utils/logger/logger';
 import axios from 'axios';
 import { startHttps } from './https/setup';
 import fs from 'node:fs'
+import { HTTPException } from 'hono/http-exception';
 
 const app = new Hono({ strict: false })
 
@@ -63,6 +64,25 @@ app.use(async (c, next) => {
         await next();
     }
 });
+
+app.onError((err, c) => {
+    if (typeof err !== 'object') {
+        return c.json({
+            error: err,
+            status: 500
+        })
+    } else {
+        if (err instanceof HTTPException) {
+            console.log("HTTPException")
+            return err.getResponse()
+        }
+    }
+
+    return c.json({
+        error: err.message,
+        status: 500
+    })
+})
 
 await import('./database/connect');
 await import('./discord/setup');
