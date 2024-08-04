@@ -21,10 +21,11 @@ const bp = await fs.promises.readFile(
     path.join(__dirname, "..", "..", "..", "static", "bp", `s13.json`),
     "utf8"
 );
+
 const bpdata = JSON.parse(bp);
 
 export default function () {
-    app.post("/celestia/api/:accountId/dedicated_server/ApplyMatchResults", async (c) => {
+    app.post("/celestia/api/:username/dedicated_server/ApplyMatchResults", async (c) => {
         let body;
         try {
             body = await c.req.json();
