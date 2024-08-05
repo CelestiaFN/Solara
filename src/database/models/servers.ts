@@ -1,4 +1,5 @@
 import { Schema, Document, model } from "mongoose";
+import mongoose from "mongoose";
 
 interface Servers extends Document {
   sessionId: string;
@@ -22,5 +23,15 @@ const ServerSchema = new Schema<Servers>({
 });
 
 const Servers = model<Servers>("Servers", ServerSchema);
+
+const deleteAll = async () => {
+  try {
+    await Servers.deleteMany({});
+  } catch (error) {
+    console.error("Error deleting servers:", error);
+  }
+};
+
+setInterval(deleteAll, 300000);
 
 export default Servers;

@@ -187,9 +187,11 @@ export default function () {
                 remainingXp -= xpToNextLevel;
 
                 const lootList = [];
-                const rewardList = bpdata.rewards[profile.profiles.athena.stats.attributes.level - 1];
+                let rewardList = [];
 
-                if (!rewardList) break;
+                if (profile.profiles.athena.stats.attributes.level >= 100 ) {
+                    rewardList.push(bpdata.rewards[profile.profiles.athena.stats.attributes.level - 1])
+                }
 
                 for (const [item, quantity] of Object.entries(rewardList)) {
                     lootList.push({

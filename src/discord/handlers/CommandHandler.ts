@@ -72,7 +72,7 @@ export default async function CommandHandler(client: ExtendedClient) {
         "1263562145048690728": "3", // glimmer donator
         "1263577060555886614": "4", // harvester donator
         "1263573060234248253": "5", // legacy donator
-        "1260967561911336970": "6", // content creator
+        "1270055222105870468": "6", // galaxy donator
         "1260791529996550204": "7", // support
         "1260791033009143859": "8", // moderator 
         "1260790404123721769": "9", // admin
@@ -114,6 +114,12 @@ export default async function CommandHandler(client: ExtendedClient) {
           user.isGlimmer = false;
           user.isUrban = false;
           user.isBooster = false;
+        }
+
+        if (addedRoles.includes("1270055222105870468")) {
+          if (user.hasFL == false) {
+            await axios.post(`http://127.0.0.1:21491/celestia/gift/fl/${user.accountId}`);
+          }
         }
 
         if (addedRoles.includes("1260793622648062063")) {
