@@ -12,7 +12,18 @@ export default function () {
             var profiles: any = await Profile.findOne({ accountId: c.req.param("accountId") });
             if (!profiles) return c.json(Solara.account.accountNotFound, 404)
             let profile = profiles?.profiles[profileId];
-            if (!profile) return c.json(Solara.mcp.profileNotFound.variable([accountId]), 404)
+            if (!profile) {
+                return c.json({
+                    profileRevision: 0,
+                    profileId: profileId,
+                    profileChangesBaseRevision: 0,
+                    profileChanges: [],
+                    profileCommandRevision: 0,
+                    serverTime: new Date().toISOString(),
+                    multiUpdate: [],
+                    responseVersion: 1,
+                });
+            }
             if (profile.rvn == profile.commandRevision) {
                 profile.rvn += 1;
                 if (profileId == "athena") {

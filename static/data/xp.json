@@ -1,5096 +1,5996 @@
 [
-    {
+  {
       "Level": 1,
       "XpToNextLevel": 10000,
       "XpTotal": 0,
       "RowId": "1"
-    },
-    {
+  },
+  {
       "Level": 2,
       "XpToNextLevel": 20000,
       "XpTotal": 10000,
       "RowId": "2"
-    },
-    {
+  },
+  {
       "Level": 3,
       "XpToNextLevel": 40000,
       "XpTotal": 30000,
       "RowId": "3"
-    },
-    {
+  },
+  {
       "Level": 4,
       "XpToNextLevel": 40000,
       "XpTotal": 70000,
       "RowId": "4"
-    },
-    {
+  },
+  {
       "Level": 5,
       "XpToNextLevel": 40000,
       "XpTotal": 110000,
       "RowId": "5"
-    },
-    {
+  },
+  {
       "Level": 6,
       "XpToNextLevel": 40000,
       "XpTotal": 150000,
       "RowId": "6"
-    },
-    {
+  },
+  {
       "Level": 7,
       "XpToNextLevel": 50000,
       "XpTotal": 190000,
       "RowId": "7"
-    },
-    {
+  },
+  {
       "Level": 8,
       "XpToNextLevel": 60000,
       "XpTotal": 240000,
       "RowId": "8"
-    },
-    {
+  },
+  {
       "Level": 9,
       "XpToNextLevel": 70000,
       "XpTotal": 300000,
       "RowId": "9"
-    },
-    {
+  },
+  {
       "Level": 10,
       "XpToNextLevel": 80000,
       "XpTotal": 370000,
       "RowId": "10"
-    },
-    {
+  },
+  {
       "Level": 11,
       "XpToNextLevel": 80000,
       "XpTotal": 450000,
       "RowId": "11"
-    },
-    {
+  },
+  {
       "Level": 12,
       "XpToNextLevel": 80000,
       "XpTotal": 530000,
       "RowId": "12"
-    },
-    {
+  },
+  {
       "Level": 13,
       "XpToNextLevel": 80000,
       "XpTotal": 610000,
       "RowId": "13"
-    },
-    {
+  },
+  {
       "Level": 14,
       "XpToNextLevel": 80000,
       "XpTotal": 690000,
       "RowId": "14"
-    },
-    {
+  },
+  {
       "Level": 15,
       "XpToNextLevel": 80000,
       "XpTotal": 770000,
       "RowId": "15"
-    },
-    {
+  },
+  {
       "Level": 16,
       "XpToNextLevel": 80000,
       "XpTotal": 850000,
       "RowId": "16"
-    },
-    {
+  },
+  {
       "Level": 17,
       "XpToNextLevel": 80000,
       "XpTotal": 930000,
       "RowId": "17"
-    },
-    {
+  },
+  {
       "Level": 18,
       "XpToNextLevel": 80000,
       "XpTotal": 1010000,
       "RowId": "18"
-    },
-    {
+  },
+  {
       "Level": 19,
       "XpToNextLevel": 80000,
       "XpTotal": 1090000,
       "RowId": "19"
-    },
-    {
+  },
+  {
       "Level": 20,
       "XpToNextLevel": 80000,
       "XpTotal": 1170000,
       "RowId": "20"
-    },
-    {
+  },
+  {
       "Level": 21,
       "XpToNextLevel": 80000,
       "XpTotal": 1250000,
       "RowId": "21"
-    },
-    {
+  },
+  {
       "Level": 22,
       "XpToNextLevel": 80000,
       "XpTotal": 1330000,
       "RowId": "22"
-    },
-    {
+  },
+  {
       "Level": 23,
       "XpToNextLevel": 80000,
       "XpTotal": 1410000,
       "RowId": "23"
-    },
-    {
+  },
+  {
       "Level": 24,
       "XpToNextLevel": 80000,
       "XpTotal": 1490000,
       "RowId": "24"
-    },
-    {
+  },
+  {
       "Level": 25,
       "XpToNextLevel": 80000,
       "XpTotal": 1570000,
       "RowId": "25"
-    },
-    {
+  },
+  {
       "Level": 26,
       "XpToNextLevel": 80000,
       "XpTotal": 1650000,
       "RowId": "26"
-    },
-    {
+  },
+  {
       "Level": 27,
       "XpToNextLevel": 80000,
       "XpTotal": 1730000,
       "RowId": "27"
-    },
-    {
+  },
+  {
       "Level": 28,
       "XpToNextLevel": 80000,
       "XpTotal": 1810000,
       "RowId": "28"
-    },
-    {
+  },
+  {
       "Level": 29,
       "XpToNextLevel": 80000,
       "XpTotal": 1890000,
       "RowId": "29"
-    },
-    {
+  },
+  {
       "Level": 30,
       "XpToNextLevel": 80000,
       "XpTotal": 1970000,
       "RowId": "30"
-    },
-    {
+  },
+  {
       "Level": 31,
       "XpToNextLevel": 80000,
       "XpTotal": 2050000,
       "RowId": "31"
-    },
-    {
+  },
+  {
       "Level": 32,
       "XpToNextLevel": 80000,
       "XpTotal": 2130000,
       "RowId": "32"
-    },
-    {
+  },
+  {
       "Level": 33,
       "XpToNextLevel": 80000,
       "XpTotal": 2210000,
       "RowId": "33"
-    },
-    {
+  },
+  {
       "Level": 34,
       "XpToNextLevel": 80000,
       "XpTotal": 2290000,
       "RowId": "34"
-    },
-    {
+  },
+  {
       "Level": 35,
       "XpToNextLevel": 80000,
       "XpTotal": 2370000,
       "RowId": "35"
-    },
-    {
+  },
+  {
       "Level": 36,
       "XpToNextLevel": 80000,
       "XpTotal": 2450000,
       "RowId": "36"
-    },
-    {
+  },
+  {
       "Level": 37,
       "XpToNextLevel": 80000,
       "XpTotal": 2530000,
       "RowId": "37"
-    },
-    {
+  },
+  {
       "Level": 38,
       "XpToNextLevel": 80000,
       "XpTotal": 2610000,
       "RowId": "38"
-    },
-    {
+  },
+  {
       "Level": 39,
       "XpToNextLevel": 80000,
       "XpTotal": 2690000,
       "RowId": "39"
-    },
-    {
+  },
+  {
       "Level": 40,
       "XpToNextLevel": 80000,
       "XpTotal": 2770000,
       "RowId": "40"
-    },
-    {
+  },
+  {
       "Level": 41,
       "XpToNextLevel": 80000,
       "XpTotal": 2850000,
       "RowId": "41"
-    },
-    {
+  },
+  {
       "Level": 42,
       "XpToNextLevel": 80000,
       "XpTotal": 2930000,
       "RowId": "42"
-    },
-    {
+  },
+  {
       "Level": 43,
       "XpToNextLevel": 80000,
       "XpTotal": 3010000,
       "RowId": "43"
-    },
-    {
+  },
+  {
       "Level": 44,
       "XpToNextLevel": 80000,
       "XpTotal": 3090000,
       "RowId": "44"
-    },
-    {
+  },
+  {
       "Level": 45,
       "XpToNextLevel": 80000,
       "XpTotal": 3170000,
       "RowId": "45"
-    },
-    {
+  },
+  {
       "Level": 46,
       "XpToNextLevel": 80000,
       "XpTotal": 3250000,
       "RowId": "46"
-    },
-    {
+  },
+  {
       "Level": 47,
       "XpToNextLevel": 80000,
       "XpTotal": 3330000,
       "RowId": "47"
-    },
-    {
+  },
+  {
       "Level": 48,
       "XpToNextLevel": 80000,
       "XpTotal": 3410000,
       "RowId": "48"
-    },
-    {
+  },
+  {
       "Level": 49,
       "XpToNextLevel": 80000,
       "XpTotal": 3490000,
       "RowId": "49"
-    },
-    {
+  },
+  {
       "Level": 50,
       "XpToNextLevel": 80000,
       "XpTotal": 3570000,
       "RowId": "50"
-    },
-    {
+  },
+  {
       "Level": 51,
       "XpToNextLevel": 80000,
       "XpTotal": 3650000,
       "RowId": "51"
-    },
-    {
+  },
+  {
       "Level": 52,
       "XpToNextLevel": 80000,
       "XpTotal": 3730000,
       "RowId": "52"
-    },
-    {
+  },
+  {
       "Level": 53,
       "XpToNextLevel": 80000,
       "XpTotal": 3810000,
       "RowId": "53"
-    },
-    {
+  },
+  {
       "Level": 54,
       "XpToNextLevel": 80000,
       "XpTotal": 3890000,
       "RowId": "54"
-    },
-    {
+  },
+  {
       "Level": 55,
       "XpToNextLevel": 80000,
       "XpTotal": 3970000,
       "RowId": "55"
-    },
-    {
+  },
+  {
       "Level": 56,
       "XpToNextLevel": 80000,
       "XpTotal": 4050000,
       "RowId": "56"
-    },
-    {
+  },
+  {
       "Level": 57,
       "XpToNextLevel": 80000,
       "XpTotal": 4130000,
       "RowId": "57"
-    },
-    {
+  },
+  {
       "Level": 58,
       "XpToNextLevel": 80000,
       "XpTotal": 4210000,
       "RowId": "58"
-    },
-    {
+  },
+  {
       "Level": 59,
       "XpToNextLevel": 80000,
       "XpTotal": 4290000,
       "RowId": "59"
-    },
-    {
+  },
+  {
       "Level": 60,
       "XpToNextLevel": 80000,
       "XpTotal": 4370000,
       "RowId": "60"
-    },
-    {
+  },
+  {
       "Level": 61,
       "XpToNextLevel": 80000,
       "XpTotal": 4450000,
       "RowId": "61"
-    },
-    {
+  },
+  {
       "Level": 62,
       "XpToNextLevel": 80000,
       "XpTotal": 4530000,
       "RowId": "62"
-    },
-    {
+  },
+  {
       "Level": 63,
       "XpToNextLevel": 80000,
       "XpTotal": 4610000,
       "RowId": "63"
-    },
-    {
+  },
+  {
       "Level": 64,
       "XpToNextLevel": 80000,
       "XpTotal": 4690000,
       "RowId": "64"
-    },
-    {
+  },
+  {
       "Level": 65,
       "XpToNextLevel": 80000,
       "XpTotal": 4770000,
       "RowId": "65"
-    },
-    {
+  },
+  {
       "Level": 66,
       "XpToNextLevel": 80000,
       "XpTotal": 4850000,
       "RowId": "66"
-    },
-    {
+  },
+  {
       "Level": 67,
       "XpToNextLevel": 80000,
       "XpTotal": 4930000,
       "RowId": "67"
-    },
-    {
+  },
+  {
       "Level": 68,
       "XpToNextLevel": 80000,
       "XpTotal": 5010000,
       "RowId": "68"
-    },
-    {
+  },
+  {
       "Level": 69,
       "XpToNextLevel": 80000,
       "XpTotal": 5090000,
       "RowId": "69"
-    },
-    {
+  },
+  {
       "Level": 70,
       "XpToNextLevel": 80000,
       "XpTotal": 5170000,
       "RowId": "70"
-    },
-    {
+  },
+  {
       "Level": 71,
       "XpToNextLevel": 80000,
       "XpTotal": 5250000,
       "RowId": "71"
-    },
-    {
+  },
+  {
       "Level": 72,
       "XpToNextLevel": 80000,
       "XpTotal": 5330000,
       "RowId": "72"
-    },
-    {
+  },
+  {
       "Level": 73,
       "XpToNextLevel": 80000,
       "XpTotal": 5410000,
       "RowId": "73"
-    },
-    {
+  },
+  {
       "Level": 74,
       "XpToNextLevel": 80000,
       "XpTotal": 5490000,
       "RowId": "74"
-    },
-    {
+  },
+  {
       "Level": 75,
       "XpToNextLevel": 80000,
       "XpTotal": 5570000,
       "RowId": "75"
-    },
-    {
+  },
+  {
       "Level": 76,
       "XpToNextLevel": 80000,
       "XpTotal": 5650000,
       "RowId": "76"
-    },
-    {
+  },
+  {
       "Level": 77,
       "XpToNextLevel": 80000,
       "XpTotal": 5730000,
       "RowId": "77"
-    },
-    {
+  },
+  {
       "Level": 78,
       "XpToNextLevel": 80000,
       "XpTotal": 5810000,
       "RowId": "78"
-    },
-    {
+  },
+  {
       "Level": 79,
       "XpToNextLevel": 80000,
       "XpTotal": 5890000,
       "RowId": "79"
-    },
-    {
+  },
+  {
       "Level": 80,
       "XpToNextLevel": 80000,
       "XpTotal": 5970000,
       "RowId": "80"
-    },
-    {
+  },
+  {
       "Level": 81,
       "XpToNextLevel": 80000,
       "XpTotal": 6050000,
       "RowId": "81"
-    },
-    {
+  },
+  {
       "Level": 82,
       "XpToNextLevel": 80000,
       "XpTotal": 6130000,
       "RowId": "82"
-    },
-    {
+  },
+  {
       "Level": 83,
       "XpToNextLevel": 80000,
       "XpTotal": 6210000,
       "RowId": "83"
-    },
-    {
+  },
+  {
       "Level": 84,
       "XpToNextLevel": 80000,
       "XpTotal": 6290000,
       "RowId": "84"
-    },
-    {
+  },
+  {
       "Level": 85,
       "XpToNextLevel": 80000,
       "XpTotal": 6370000,
       "RowId": "85"
-    },
-    {
+  },
+  {
       "Level": 86,
       "XpToNextLevel": 80000,
       "XpTotal": 6450000,
       "RowId": "86"
-    },
-    {
+  },
+  {
       "Level": 87,
       "XpToNextLevel": 80000,
       "XpTotal": 6530000,
       "RowId": "87"
-    },
-    {
+  },
+  {
       "Level": 88,
       "XpToNextLevel": 80000,
       "XpTotal": 6610000,
       "RowId": "88"
-    },
-    {
+  },
+  {
       "Level": 89,
       "XpToNextLevel": 80000,
       "XpTotal": 6690000,
       "RowId": "89"
-    },
-    {
+  },
+  {
       "Level": 90,
       "XpToNextLevel": 80000,
       "XpTotal": 6770000,
       "RowId": "90"
-    },
-    {
+  },
+  {
       "Level": 91,
       "XpToNextLevel": 80000,
       "XpTotal": 6850000,
       "RowId": "91"
-    },
-    {
+  },
+  {
       "Level": 92,
       "XpToNextLevel": 80000,
       "XpTotal": 6930000,
       "RowId": "92"
-    },
-    {
+  },
+  {
       "Level": 93,
       "XpToNextLevel": 80000,
       "XpTotal": 7010000,
       "RowId": "93"
-    },
-    {
+  },
+  {
       "Level": 94,
       "XpToNextLevel": 80000,
       "XpTotal": 7090000,
       "RowId": "94"
-    },
-    {
+  },
+  {
       "Level": 95,
       "XpToNextLevel": 80000,
       "XpTotal": 7170000,
       "RowId": "95"
-    },
-    {
+  },
+  {
       "Level": 96,
       "XpToNextLevel": 80000,
       "XpTotal": 7250000,
       "RowId": "96"
-    },
-    {
+  },
+  {
       "Level": 97,
       "XpToNextLevel": 80000,
       "XpTotal": 7330000,
       "RowId": "97"
-    },
-    {
+  },
+  {
       "Level": 98,
       "XpToNextLevel": 80000,
       "XpTotal": 7410000,
       "RowId": "98"
-    },
-    {
+  },
+  {
       "Level": 99,
       "XpToNextLevel": 80000,
       "XpTotal": 7490000,
       "RowId": "99"
-    },
-    {
-      "XpPerLevel": 50000,
+  },
+  {
+      "Level": 100,
+      "XpToNextLevel": 50000,
       "UntilLevel": 101,
       "RowId": "100"
-    },
-    {
-      "XpPerLevel": 50250,
+  },
+  {
+      "Level": 101,
+      "XpToNextLevel": 50250,
       "UntilLevel": 102,
       "RowId": "101"
-    },
-    {
-      "XpPerLevel": 50500,
+  },
+  {
+      "XpToNextLevel": 50500,
       "UntilLevel": 103,
-      "RowId": "102"
-    },
-    {
-      "XpPerLevel": 50500,
+      "RowId": "102",
+      "Level": 102
+  },
+  {
+      "XpToNextLevel": 50500,
       "UntilLevel": 104,
-      "RowId": "103"
-    },
-    {
-      "XpPerLevel": 50750,
+      "RowId": "103",
+      "Level": 103
+  },
+  {
+      "XpToNextLevel": 50750,
       "UntilLevel": 105,
-      "RowId": "104"
-    },
-    {
-      "XpPerLevel": 51000,
+      "RowId": "104",
+      "Level": 104
+  },
+  {
+      "XpToNextLevel": 51000,
       "UntilLevel": 106,
-      "RowId": "105"
-    },
-    {
-      "XpPerLevel": 51250,
+      "RowId": "105",
+      "Level": 105
+  },
+  {
+      "XpToNextLevel": 51250,
       "UntilLevel": 107,
-      "RowId": "106"
-    },
-    {
-      "XpPerLevel": 51500,
+      "RowId": "106",
+      "Level": 106
+  },
+  {
+      "XpToNextLevel": 51500,
       "UntilLevel": 108,
-      "RowId": "107"
-    },
-    {
-      "XpPerLevel": 51750,
+      "RowId": "107",
+      "Level": 107
+  },
+  {
+      "XpToNextLevel": 51750,
       "UntilLevel": 109,
-      "RowId": "108"
-    },
-    {
-      "XpPerLevel": 52000,
+      "RowId": "108",
+      "Level": 108
+  },
+  {
+      "XpToNextLevel": 52000,
       "UntilLevel": 110,
-      "RowId": "109"
-    },
-    {
-      "XpPerLevel": 52000,
+      "RowId": "109",
+      "Level": 109
+  },
+  {
+      "XpToNextLevel": 52000,
       "UntilLevel": 111,
-      "RowId": "110"
-    },
-    {
-      "XpPerLevel": 52250,
+      "RowId": "110",
+      "Level": 110
+  },
+  {
+      "XpToNextLevel": 52250,
       "UntilLevel": 112,
-      "RowId": "111"
-    },
-    {
-      "XpPerLevel": 52500,
+      "RowId": "111",
+      "Level": 111
+  },
+  {
+      "XpToNextLevel": 52500,
       "UntilLevel": 113,
-      "RowId": "112"
-    },
-    {
-      "XpPerLevel": 52750,
+      "RowId": "112",
+      "Level": 112
+  },
+  {
+      "XpToNextLevel": 52750,
       "UntilLevel": 114,
-      "RowId": "113"
-    },
-    {
-      "XpPerLevel": 53000,
+      "RowId": "113",
+      "Level": 113
+  },
+  {
+      "XpToNextLevel": 53000,
       "UntilLevel": 115,
-      "RowId": "114"
-    },
-    {
-      "XpPerLevel": 53250,
+      "RowId": "114",
+      "Level": 114
+  },
+  {
+      "XpToNextLevel": 53250,
       "UntilLevel": 116,
-      "RowId": "115"
-    },
-    {
-      "XpPerLevel": 53500,
+      "RowId": "115",
+      "Level": 115
+  },
+  {
+      "XpToNextLevel": 53500,
       "UntilLevel": 117,
-      "RowId": "116"
-    },
-    {
-      "XpPerLevel": 53500,
+      "RowId": "116",
+      "Level": 116
+  },
+  {
+      "XpToNextLevel": 53500,
       "UntilLevel": 118,
-      "RowId": "117"
-    },
-    {
-      "XpPerLevel": 53750,
+      "RowId": "117",
+      "Level": 117
+  },
+  {
+      "XpToNextLevel": 53750,
       "UntilLevel": 119,
-      "RowId": "118"
-    },
-    {
-      "XpPerLevel": 54000,
+      "RowId": "118",
+      "Level": 118
+  },
+  {
+      "XpToNextLevel": 54000,
       "UntilLevel": 120,
-      "RowId": "119"
-    },
-    {
-      "XpPerLevel": 54250,
+      "RowId": "119",
+      "Level": 119
+  },
+  {
+      "XpToNextLevel": 54250,
       "UntilLevel": 121,
-      "RowId": "120"
-    },
-    {
-      "XpPerLevel": 54500,
+      "RowId": "120",
+      "Level": 120
+  },
+  {
+      "XpToNextLevel": 54500,
       "UntilLevel": 122,
-      "RowId": "121"
-    },
-    {
-      "XpPerLevel": 54750,
+      "RowId": "121",
+      "Level": 121
+  },
+  {
+      "XpToNextLevel": 54750,
       "UntilLevel": 123,
-      "RowId": "122"
-    },
-    {
-      "XpPerLevel": 55000,
+      "RowId": "122",
+      "Level": 122
+  },
+  {
+      "XpToNextLevel": 55000,
       "UntilLevel": 124,
-      "RowId": "123"
-    },
-    {
-      "XpPerLevel": 55250,
+      "RowId": "123",
+      "Level": 123
+  },
+  {
+      "XpToNextLevel": 55250,
       "UntilLevel": 125,
-      "RowId": "124"
-    },
-    {
-      "XpPerLevel": 55500,
+      "RowId": "124",
+      "Level": 124
+  },
+  {
+      "XpToNextLevel": 55500,
       "UntilLevel": 126,
-      "RowId": "125"
-    },
-    {
-      "XpPerLevel": 55750,
+      "RowId": "125",
+      "Level": 125
+  },
+  {
+      "XpToNextLevel": 55750,
       "UntilLevel": 127,
-      "RowId": "126"
-    },
-    {
-      "XpPerLevel": 55750,
+      "RowId": "126",
+      "Level": 126
+  },
+  {
+      "XpToNextLevel": 55750,
       "UntilLevel": 128,
-      "RowId": "127"
-    },
-    {
-      "XpPerLevel": 56000,
+      "RowId": "127",
+      "Level": 127
+  },
+  {
+      "XpToNextLevel": 56000,
       "UntilLevel": 129,
-      "RowId": "128"
-    },
-    {
-      "XpPerLevel": 56250,
+      "RowId": "128",
+      "Level": 128
+  },
+  {
+      "XpToNextLevel": 56250,
       "UntilLevel": 130,
-      "RowId": "129"
-    },
-    {
-      "XpPerLevel": 56500,
+      "RowId": "129",
+      "Level": 129
+  },
+  {
+      "XpToNextLevel": 56500,
       "UntilLevel": 131,
-      "RowId": "130"
-    },
-    {
-      "XpPerLevel": 56750,
+      "RowId": "130",
+      "Level": 130
+  },
+  {
+      "XpToNextLevel": 56750,
       "UntilLevel": 132,
-      "RowId": "131"
-    },
-    {
-      "XpPerLevel": 57000,
+      "RowId": "131",
+      "Level": 131
+  },
+  {
+      "XpToNextLevel": 57000,
       "UntilLevel": 133,
-      "RowId": "132"
-    },
-    {
-      "XpPerLevel": 57250,
+      "RowId": "132",
+      "Level": 132
+  },
+  {
+      "XpToNextLevel": 57250,
       "UntilLevel": 134,
-      "RowId": "133"
-    },
-    {
-      "XpPerLevel": 57500,
+      "RowId": "133",
+      "Level": 133
+  },
+  {
+      "XpToNextLevel": 57500,
       "UntilLevel": 135,
-      "RowId": "134"
-    },
-    {
-      "XpPerLevel": 57750,
+      "RowId": "134",
+      "Level": 134
+  },
+  {
+      "XpToNextLevel": 57750,
       "UntilLevel": 136,
-      "RowId": "135"
-    },
-    {
-      "XpPerLevel": 58000,
+      "RowId": "135",
+      "Level": 135
+  },
+  {
+      "XpToNextLevel": 58000,
       "UntilLevel": 137,
-      "RowId": "136"
-    },
-    {
-      "XpPerLevel": 58250,
+      "RowId": "136",
+      "Level": 136
+  },
+  {
+      "XpToNextLevel": 58250,
       "UntilLevel": 138,
-      "RowId": "137"
-    },
-    {
-      "XpPerLevel": 58500,
+      "RowId": "137",
+      "Level": 137
+  },
+  {
+      "XpToNextLevel": 58500,
       "UntilLevel": 139,
-      "RowId": "138"
-    },
-    {
-      "XpPerLevel": 58750,
+      "RowId": "138",
+      "Level": 138
+  },
+  {
+      "XpToNextLevel": 58750,
       "UntilLevel": 140,
-      "RowId": "139"
-    },
-    {
-      "XpPerLevel": 59000,
+      "RowId": "139",
+      "Level": 139
+  },
+  {
+      "XpToNextLevel": 59000,
       "UntilLevel": 141,
-      "RowId": "140"
-    },
-    {
-      "XpPerLevel": 59250,
+      "RowId": "140",
+      "Level": 140
+  },
+  {
+      "XpToNextLevel": 59250,
       "UntilLevel": 142,
-      "RowId": "141"
-    },
-    {
-      "XpPerLevel": 59500,
+      "RowId": "141",
+      "Level": 141
+  },
+  {
+      "XpToNextLevel": 59500,
       "UntilLevel": 143,
-      "RowId": "142"
-    },
-    {
-      "XpPerLevel": 59750,
+      "RowId": "142",
+      "Level": 142
+  },
+  {
+      "XpToNextLevel": 59750,
       "UntilLevel": 144,
-      "RowId": "143"
-    },
-    {
-      "XpPerLevel": 60000,
+      "RowId": "143",
+      "Level": 143
+  },
+  {
+      "XpToNextLevel": 60000,
       "UntilLevel": 145,
-      "RowId": "144"
-    },
-    {
-      "XpPerLevel": 60250,
+      "RowId": "144",
+      "Level": 144
+  },
+  {
+      "XpToNextLevel": 60250,
       "UntilLevel": 146,
-      "RowId": "145"
-    },
-    {
-      "XpPerLevel": 60500,
+      "RowId": "145",
+      "Level": 145
+  },
+  {
+      "XpToNextLevel": 60500,
       "UntilLevel": 147,
-      "RowId": "146"
-    },
-    {
-      "XpPerLevel": 60750,
+      "RowId": "146",
+      "Level": 146
+  },
+  {
+      "XpToNextLevel": 60750,
       "UntilLevel": 148,
-      "RowId": "147"
-    },
-    {
-      "XpPerLevel": 61000,
+      "RowId": "147",
+      "Level": 147
+  },
+  {
+      "XpToNextLevel": 61000,
       "UntilLevel": 149,
-      "RowId": "148"
-    },
-    {
-      "XpPerLevel": 61250,
+      "RowId": "148",
+      "Level": 148
+  },
+  {
+      "XpToNextLevel": 61250,
       "UntilLevel": 150,
-      "RowId": "149"
-    },
-    {
-      "XpPerLevel": 61500,
+      "RowId": "149",
+      "Level": 149
+  },
+  {
+      "XpToNextLevel": 61500,
       "UntilLevel": 151,
-      "RowId": "150"
-    },
-    {
-      "XpPerLevel": 61750,
+      "RowId": "150",
+      "Level": 150
+  },
+  {
+      "XpToNextLevel": 61750,
       "UntilLevel": 152,
-      "RowId": "151"
-    },
-    {
-      "XpPerLevel": 62000,
+      "RowId": "151",
+      "Level": 151
+  },
+  {
+      "XpToNextLevel": 62000,
       "UntilLevel": 153,
-      "RowId": "152"
-    },
-    {
-      "XpPerLevel": 62250,
+      "RowId": "152",
+      "Level": 152
+  },
+  {
+      "XpToNextLevel": 62250,
       "UntilLevel": 154,
-      "RowId": "153"
-    },
-    {
-      "XpPerLevel": 62500,
+      "RowId": "153",
+      "Level": 153
+  },
+  {
+      "XpToNextLevel": 62500,
       "UntilLevel": 155,
-      "RowId": "154"
-    },
-    {
-      "XpPerLevel": 62750,
+      "RowId": "154",
+      "Level": 154
+  },
+  {
+      "XpToNextLevel": 62750,
       "UntilLevel": 156,
-      "RowId": "155"
-    },
-    {
-      "XpPerLevel": 63000,
+      "RowId": "155",
+      "Level": 155
+  },
+  {
+      "XpToNextLevel": 63000,
       "UntilLevel": 157,
-      "RowId": "156"
-    },
-    {
-      "XpPerLevel": 63250,
+      "RowId": "156",
+      "Level": 156
+  },
+  {
+      "XpToNextLevel": 63250,
       "UntilLevel": 158,
-      "RowId": "157"
-    },
-    {
-      "XpPerLevel": 63500,
+      "RowId": "157",
+      "Level": 157
+  },
+  {
+      "XpToNextLevel": 63500,
       "UntilLevel": 159,
-      "RowId": "158"
-    },
-    {
-      "XpPerLevel": 63750,
+      "RowId": "158",
+      "Level": 158
+  },
+  {
+      "XpToNextLevel": 63750,
       "UntilLevel": 160,
-      "RowId": "159"
-    },
-    {
-      "XpPerLevel": 64000,
+      "RowId": "159",
+      "Level": 159
+  },
+  {
+      "XpToNextLevel": 64000,
       "UntilLevel": 161,
-      "RowId": "160"
-    },
-    {
-      "XpPerLevel": 64250,
+      "RowId": "160",
+      "Level": 160
+  },
+  {
+      "XpToNextLevel": 64250,
       "UntilLevel": 162,
-      "RowId": "161"
-    },
-    {
-      "XpPerLevel": 64500,
+      "RowId": "161",
+      "Level": 161
+  },
+  {
+      "XpToNextLevel": 64500,
       "UntilLevel": 163,
-      "RowId": "162"
-    },
-    {
-      "XpPerLevel": 64750,
+      "RowId": "162",
+      "Level": 162
+  },
+  {
+      "XpToNextLevel": 64750,
       "UntilLevel": 164,
-      "RowId": "163"
-    },
-    {
-      "XpPerLevel": 65000,
+      "RowId": "163",
+      "Level": 163
+  },
+  {
+      "XpToNextLevel": 65000,
       "UntilLevel": 165,
-      "RowId": "164"
-    },
-    {
-      "XpPerLevel": 65250,
+      "RowId": "164",
+      "Level": 164
+  },
+  {
+      "XpToNextLevel": 65250,
       "UntilLevel": 166,
-      "RowId": "165"
-    },
-    {
-      "XpPerLevel": 65500,
+      "RowId": "165",
+      "Level": 165
+  },
+  {
+      "XpToNextLevel": 65500,
       "UntilLevel": 167,
-      "RowId": "166"
-    },
-    {
-      "XpPerLevel": 65750,
+      "RowId": "166",
+      "Level": 166
+  },
+  {
+      "XpToNextLevel": 65750,
       "UntilLevel": 168,
-      "RowId": "167"
-    },
-    {
-      "XpPerLevel": 66000,
+      "RowId": "167",
+      "Level": 167
+  },
+  {
+      "XpToNextLevel": 66000,
       "UntilLevel": 169,
-      "RowId": "168"
-    },
-    {
-      "XpPerLevel": 66250,
+      "RowId": "168",
+      "Level": 168
+  },
+  {
+      "XpToNextLevel": 66250,
       "UntilLevel": 170,
-      "RowId": "169"
-    },
-    {
-      "XpPerLevel": 66750,
+      "RowId": "169",
+      "Level": 169
+  },
+  {
+      "XpToNextLevel": 66750,
       "UntilLevel": 171,
-      "RowId": "170"
-    },
-    {
-      "XpPerLevel": 67000,
+      "RowId": "170",
+      "Level": 170
+  },
+  {
+      "XpToNextLevel": 67000,
       "UntilLevel": 172,
-      "RowId": "171"
-    },
-    {
-      "XpPerLevel": 67250,
+      "RowId": "171",
+      "Level": 171
+  },
+  {
+      "XpToNextLevel": 67250,
       "UntilLevel": 173,
-      "RowId": "172"
-    },
-    {
-      "XpPerLevel": 67500,
+      "RowId": "172",
+      "Level": 172
+  },
+  {
+      "XpToNextLevel": 67500,
       "UntilLevel": 174,
-      "RowId": "173"
-    },
-    {
-      "XpPerLevel": 67750,
+      "RowId": "173",
+      "Level": 173
+  },
+  {
+      "XpToNextLevel": 67750,
       "UntilLevel": 175,
-      "RowId": "174"
-    },
-    {
-      "XpPerLevel": 68000,
+      "RowId": "174",
+      "Level": 174
+  },
+  {
+      "XpToNextLevel": 68000,
       "UntilLevel": 176,
-      "RowId": "175"
-    },
-    {
-      "XpPerLevel": 68250,
+      "RowId": "175",
+      "Level": 175
+  },
+  {
+      "XpToNextLevel": 68250,
       "UntilLevel": 177,
-      "RowId": "176"
-    },
-    {
-      "XpPerLevel": 68500,
+      "RowId": "176",
+      "Level": 176
+  },
+  {
+      "XpToNextLevel": 68500,
       "UntilLevel": 178,
-      "RowId": "177"
-    },
-    {
-      "XpPerLevel": 68750,
+      "RowId": "177",
+      "Level": 177
+  },
+  {
+      "XpToNextLevel": 68750,
       "UntilLevel": 179,
-      "RowId": "178"
-    },
-    {
-      "XpPerLevel": 69250,
+      "RowId": "178",
+      "Level": 178
+  },
+  {
+      "XpToNextLevel": 69250,
       "UntilLevel": 180,
-      "RowId": "179"
-    },
-    {
-      "XpPerLevel": 69500,
+      "RowId": "179",
+      "Level": 179
+  },
+  {
+      "XpToNextLevel": 69500,
       "UntilLevel": 181,
-      "RowId": "180"
-    },
-    {
-      "XpPerLevel": 69750,
+      "RowId": "180",
+      "Level": 180
+  },
+  {
+      "XpToNextLevel": 69750,
       "UntilLevel": 182,
-      "RowId": "181"
-    },
-    {
-      "XpPerLevel": 70000,
+      "RowId": "181",
+      "Level": 181
+  },
+  {
+      "XpToNextLevel": 70000,
       "UntilLevel": 183,
-      "RowId": "182"
-    },
-    {
-      "XpPerLevel": 70250,
+      "RowId": "182",
+      "Level": 182
+  },
+  {
+      "XpToNextLevel": 70250,
       "UntilLevel": 184,
-      "RowId": "183"
-    },
-    {
-      "XpPerLevel": 70500,
+      "RowId": "183",
+      "Level": 183
+  },
+  {
+      "XpToNextLevel": 70500,
       "UntilLevel": 185,
-      "RowId": "184"
-    },
-    {
-      "XpPerLevel": 70750,
+      "RowId": "184",
+      "Level": 184
+  },
+  {
+      "XpToNextLevel": 70750,
       "UntilLevel": 186,
-      "RowId": "185"
-    },
-    {
-      "XpPerLevel": 71250,
+      "RowId": "185",
+      "Level": 185
+  },
+  {
+      "XpToNextLevel": 71250,
       "UntilLevel": 187,
-      "RowId": "186"
-    },
-    {
-      "XpPerLevel": 71500,
+      "RowId": "186",
+      "Level": 186
+  },
+  {
+      "XpToNextLevel": 71500,
       "UntilLevel": 188,
-      "RowId": "187"
-    },
-    {
-      "XpPerLevel": 71750,
+      "RowId": "187",
+      "Level": 187
+  },
+  {
+      "XpToNextLevel": 71750,
       "UntilLevel": 189,
-      "RowId": "188"
-    },
-    {
-      "XpPerLevel": 72000,
+      "RowId": "188",
+      "Level": 188
+  },
+  {
+      "XpToNextLevel": 72000,
       "UntilLevel": 190,
-      "RowId": "189"
-    },
-    {
-      "XpPerLevel": 72250,
+      "RowId": "189",
+      "Level": 189
+  },
+  {
+      "XpToNextLevel": 72250,
       "UntilLevel": 191,
-      "RowId": "190"
-    },
-    {
-      "XpPerLevel": 72750,
+      "RowId": "190",
+      "Level": 190
+  },
+  {
+      "XpToNextLevel": 72750,
       "UntilLevel": 192,
-      "RowId": "191"
-    },
-    {
-      "XpPerLevel": 73000,
+      "RowId": "191",
+      "Level": 191
+  },
+  {
+      "XpToNextLevel": 73000,
       "UntilLevel": 193,
-      "RowId": "192"
-    },
-    {
-      "XpPerLevel": 73250,
+      "RowId": "192",
+      "Level": 192
+  },
+  {
+      "XpToNextLevel": 73250,
       "UntilLevel": 194,
-      "RowId": "193"
-    },
-    {
-      "XpPerLevel": 73500,
+      "RowId": "193",
+      "Level": 193
+  },
+  {
+      "XpToNextLevel": 73500,
       "UntilLevel": 195,
-      "RowId": "194"
-    },
-    {
-      "XpPerLevel": 73750,
+      "RowId": "194",
+      "Level": 194
+  },
+  {
+      "XpToNextLevel": 73750,
       "UntilLevel": 196,
-      "RowId": "195"
-    },
-    {
-      "XpPerLevel": 74250,
+      "RowId": "195",
+      "Level": 195
+  },
+  {
+      "XpToNextLevel": 74250,
       "UntilLevel": 197,
-      "RowId": "196"
-    },
-    {
-      "XpPerLevel": 74500,
+      "RowId": "196",
+      "Level": 196
+  },
+  {
+      "XpToNextLevel": 74500,
       "UntilLevel": 198,
-      "RowId": "197"
-    },
-    {
-      "XpPerLevel": 74750,
+      "RowId": "197",
+      "Level": 197
+  },
+  {
+      "XpToNextLevel": 74750,
       "UntilLevel": 199,
-      "RowId": "198"
-    },
-    {
-      "XpPerLevel": 75000,
+      "RowId": "198",
+      "Level": 198
+  },
+  {
+      "XpToNextLevel": 75000,
       "UntilLevel": 200,
-      "RowId": "199"
-    },
-    {
-      "XpPerLevel": 75250,
+      "RowId": "199",
+      "Level": 199
+  },
+  {
+      "XpToNextLevel": 75250,
       "UntilLevel": 201,
-      "RowId": "200"
-    },
-    {
-      "XpPerLevel": 75750,
+      "RowId": "200",
+      "Level": 200
+  },
+  {
+      "XpToNextLevel": 75750,
       "UntilLevel": 202,
-      "RowId": "201"
-    },
-    {
-      "XpPerLevel": 76000,
+      "RowId": "201",
+      "Level": 201
+  },
+  {
+      "XpToNextLevel": 76000,
       "UntilLevel": 203,
-      "RowId": "202"
-    },
-    {
-      "XpPerLevel": 76250,
+      "RowId": "202",
+      "Level": 202
+  },
+  {
+      "XpToNextLevel": 76250,
       "UntilLevel": 204,
-      "RowId": "203"
-    },
-    {
-      "XpPerLevel": 76500,
+      "RowId": "203",
+      "Level": 203
+  },
+  {
+      "XpToNextLevel": 76500,
       "UntilLevel": 205,
-      "RowId": "204"
-    },
-    {
-      "XpPerLevel": 77000,
+      "RowId": "204",
+      "Level": 204
+  },
+  {
+      "XpToNextLevel": 77000,
       "UntilLevel": 206,
-      "RowId": "205"
-    },
-    {
-      "XpPerLevel": 77250,
+      "RowId": "205",
+      "Level": 205
+  },
+  {
+      "XpToNextLevel": 77250,
       "UntilLevel": 207,
-      "RowId": "206"
-    },
-    {
-      "XpPerLevel": 77500,
+      "RowId": "206",
+      "Level": 206
+  },
+  {
+      "XpToNextLevel": 77500,
       "UntilLevel": 208,
-      "RowId": "207"
-    },
-    {
-      "XpPerLevel": 78000,
+      "RowId": "207",
+      "Level": 207
+  },
+  {
+      "XpToNextLevel": 78000,
       "UntilLevel": 209,
-      "RowId": "208"
-    },
-    {
-      "XpPerLevel": 78250,
+      "RowId": "208",
+      "Level": 208
+  },
+  {
+      "XpToNextLevel": 78250,
       "UntilLevel": 210,
-      "RowId": "209"
-    },
-    {
-      "XpPerLevel": 78500,
+      "RowId": "209",
+      "Level": 209
+  },
+  {
+      "XpToNextLevel": 78500,
       "UntilLevel": 211,
-      "RowId": "210"
-    },
-    {
-      "XpPerLevel": 78750,
+      "RowId": "210",
+      "Level": 210
+  },
+  {
+      "XpToNextLevel": 78750,
       "UntilLevel": 212,
-      "RowId": "211"
-    },
-    {
-      "XpPerLevel": 79250,
+      "RowId": "211",
+      "Level": 211
+  },
+  {
+      "XpToNextLevel": 79250,
       "UntilLevel": 213,
-      "RowId": "212"
-    },
-    {
-      "XpPerLevel": 79500,
+      "RowId": "212",
+      "Level": 212
+  },
+  {
+      "XpToNextLevel": 79500,
       "UntilLevel": 214,
-      "RowId": "213"
-    },
-    {
-      "XpPerLevel": 79750,
+      "RowId": "213",
+      "Level": 213
+  },
+  {
+      "XpToNextLevel": 79750,
       "UntilLevel": 215,
-      "RowId": "214"
-    },
-    {
-      "XpPerLevel": 80250,
+      "RowId": "214",
+      "Level": 214
+  },
+  {
+      "XpToNextLevel": 80250,
       "UntilLevel": 216,
-      "RowId": "215"
-    },
-    {
-      "XpPerLevel": 80500,
+      "RowId": "215",
+      "Level": 215
+  },
+  {
+      "XpToNextLevel": 80500,
       "UntilLevel": 217,
-      "RowId": "216"
-    },
-    {
-      "XpPerLevel": 80750,
+      "RowId": "216",
+      "Level": 216
+  },
+  {
+      "XpToNextLevel": 80750,
       "UntilLevel": 218,
-      "RowId": "217"
-    },
-    {
-      "XpPerLevel": 81250,
+      "RowId": "217",
+      "Level": 217
+  },
+  {
+      "XpToNextLevel": 81250,
       "UntilLevel": 219,
-      "RowId": "218"
-    },
-    {
-      "XpPerLevel": 81500,
+      "RowId": "218",
+      "Level": 218
+  },
+  {
+      "XpToNextLevel": 81500,
       "UntilLevel": 220,
-      "RowId": "219"
-    },
-    {
-      "XpPerLevel": 81750,
+      "RowId": "219",
+      "Level": 219
+  },
+  {
+      "XpToNextLevel": 81750,
       "UntilLevel": 221,
-      "RowId": "220"
-    },
-    {
-      "XpPerLevel": 82250,
+      "RowId": "220",
+      "Level": 220
+  },
+  {
+      "XpToNextLevel": 82250,
       "UntilLevel": 222,
-      "RowId": "221"
-    },
-    {
-      "XpPerLevel": 82500,
+      "RowId": "221",
+      "Level": 221
+  },
+  {
+      "XpToNextLevel": 82500,
       "UntilLevel": 223,
-      "RowId": "222"
-    },
-    {
-      "XpPerLevel": 82750,
+      "RowId": "222",
+      "Level": 222
+  },
+  {
+      "XpToNextLevel": 82750,
       "UntilLevel": 224,
-      "RowId": "223"
-    },
-    {
-      "XpPerLevel": 83250,
+      "RowId": "223",
+      "Level": 223
+  },
+  {
+      "XpToNextLevel": 83250,
       "UntilLevel": 225,
-      "RowId": "224"
-    },
-    {
-      "XpPerLevel": 83500,
+      "RowId": "224",
+      "Level": 224
+  },
+  {
+      "XpToNextLevel": 83500,
       "UntilLevel": 226,
-      "RowId": "225"
-    },
-    {
-      "XpPerLevel": 83750,
+      "RowId": "225",
+      "Level": 225
+  },
+  {
+      "XpToNextLevel": 83750,
       "UntilLevel": 227,
-      "RowId": "226"
-    },
-    {
-      "XpPerLevel": 84250,
+      "RowId": "226",
+      "Level": 226
+  },
+  {
+      "XpToNextLevel": 84250,
       "UntilLevel": 228,
-      "RowId": "227"
-    },
-    {
-      "XpPerLevel": 84500,
+      "RowId": "227",
+      "Level": 227
+  },
+  {
+      "XpToNextLevel": 84500,
       "UntilLevel": 229,
-      "RowId": "228"
-    },
-    {
-      "XpPerLevel": 85000,
+      "RowId": "228",
+      "Level": 228
+  },
+  {
+      "XpToNextLevel": 85000,
       "UntilLevel": 230,
-      "RowId": "229"
-    },
-    {
-      "XpPerLevel": 85250,
+      "RowId": "229",
+      "Level": 229
+  },
+  {
+      "XpToNextLevel": 85250,
       "UntilLevel": 231,
-      "RowId": "230"
-    },
-    {
-      "XpPerLevel": 85500,
+      "RowId": "230",
+      "Level": 230
+  },
+  {
+      "XpToNextLevel": 85500,
       "UntilLevel": 232,
-      "RowId": "231"
-    },
-    {
-      "XpPerLevel": 86000,
+      "RowId": "231",
+      "Level": 231
+  },
+  {
+      "XpToNextLevel": 86000,
       "UntilLevel": 233,
-      "RowId": "232"
-    },
-    {
-      "XpPerLevel": 86250,
+      "RowId": "232",
+      "Level": 232
+  },
+  {
+      "XpToNextLevel": 86250,
       "UntilLevel": 234,
-      "RowId": "233"
-    },
-    {
-      "XpPerLevel": 86750,
+      "RowId": "233",
+      "Level": 233
+  },
+  {
+      "XpToNextLevel": 86750,
       "UntilLevel": 235,
-      "RowId": "234"
-    },
-    {
-      "XpPerLevel": 87000,
+      "RowId": "234",
+      "Level": 234
+  },
+  {
+      "XpToNextLevel": 87000,
       "UntilLevel": 236,
-      "RowId": "235"
-    },
-    {
-      "XpPerLevel": 87250,
+      "RowId": "235",
+      "Level": 235
+  },
+  {
+      "XpToNextLevel": 87250,
       "UntilLevel": 237,
-      "RowId": "236"
-    },
-    {
-      "XpPerLevel": 87750,
+      "RowId": "236",
+      "Level": 236
+  },
+  {
+      "XpToNextLevel": 87750,
       "UntilLevel": 238,
-      "RowId": "237"
-    },
-    {
-      "XpPerLevel": 88000,
+      "RowId": "237",
+      "Level": 237
+  },
+  {
+      "XpToNextLevel": 88000,
       "UntilLevel": 239,
-      "RowId": "238"
-    },
-    {
-      "XpPerLevel": 88500,
+      "RowId": "238",
+      "Level": 238
+  },
+  {
+      "XpToNextLevel": 88500,
       "UntilLevel": 240,
-      "RowId": "239"
-    },
-    {
-      "XpPerLevel": 88750,
+      "RowId": "239",
+      "Level": 239
+  },
+  {
+      "XpToNextLevel": 88750,
       "UntilLevel": 241,
-      "RowId": "240"
-    },
-    {
-      "XpPerLevel": 89250,
+      "RowId": "240",
+      "Level": 240
+  },
+  {
+      "XpToNextLevel": 89250,
       "UntilLevel": 242,
-      "RowId": "241"
-    },
-    {
-      "XpPerLevel": 89500,
+      "RowId": "241",
+      "Level": 241
+  },
+  {
+      "XpToNextLevel": 89500,
       "UntilLevel": 243,
-      "RowId": "242"
-    },
-    {
-      "XpPerLevel": 90000,
+      "RowId": "242",
+      "Level": 242
+  },
+  {
+      "XpToNextLevel": 90000,
       "UntilLevel": 244,
-      "RowId": "243"
-    },
-    {
-      "XpPerLevel": 90250,
+      "RowId": "243",
+      "Level": 243
+  },
+  {
+      "XpToNextLevel": 90250,
       "UntilLevel": 245,
-      "RowId": "244"
-    },
-    {
-      "XpPerLevel": 90750,
+      "RowId": "244",
+      "Level": 244
+  },
+  {
+      "XpToNextLevel": 90750,
       "UntilLevel": 246,
-      "RowId": "245"
-    },
-    {
-      "XpPerLevel": 91000,
+      "RowId": "245",
+      "Level": 245
+  },
+  {
+      "XpToNextLevel": 91000,
       "UntilLevel": 247,
-      "RowId": "246"
-    },
-    {
-      "XpPerLevel": 91500,
+      "RowId": "246",
+      "Level": 246
+  },
+  {
+      "XpToNextLevel": 91500,
       "UntilLevel": 248,
-      "RowId": "247"
-    },
-    {
-      "XpPerLevel": 91750,
+      "RowId": "247",
+      "Level": 247
+  },
+  {
+      "XpToNextLevel": 91750,
       "UntilLevel": 249,
-      "RowId": "248"
-    },
-    {
-      "XpPerLevel": 92250,
+      "RowId": "248",
+      "Level": 248
+  },
+  {
+      "XpToNextLevel": 92250,
       "UntilLevel": 250,
-      "RowId": "249"
-    },
-    {
-      "XpPerLevel": 92500,
+      "RowId": "249",
+      "Level": 249
+  },
+  {
+      "XpToNextLevel": 92500,
       "UntilLevel": 251,
-      "RowId": "250"
-    },
-    {
-      "XpPerLevel": 93000,
+      "RowId": "250",
+      "Level": 250
+  },
+  {
+      "XpToNextLevel": 93000,
       "UntilLevel": 252,
-      "RowId": "251"
-    },
-    {
-      "XpPerLevel": 93250,
+      "RowId": "251",
+      "Level": 251
+  },
+  {
+      "XpToNextLevel": 93250,
       "UntilLevel": 253,
-      "RowId": "252"
-    },
-    {
-      "XpPerLevel": 93750,
+      "RowId": "252",
+      "Level": 252
+  },
+  {
+      "XpToNextLevel": 93750,
       "UntilLevel": 254,
-      "RowId": "253"
-    },
-    {
-      "XpPerLevel": 94000,
+      "RowId": "253",
+      "Level": 253
+  },
+  {
+      "XpToNextLevel": 94000,
       "UntilLevel": 255,
-      "RowId": "254"
-    },
-    {
-      "XpPerLevel": 94500,
+      "RowId": "254",
+      "Level": 254
+  },
+  {
+      "XpToNextLevel": 94500,
       "UntilLevel": 256,
-      "RowId": "255"
-    },
-    {
-      "XpPerLevel": 94750,
+      "RowId": "255",
+      "Level": 255
+  },
+  {
+      "XpToNextLevel": 94750,
       "UntilLevel": 257,
-      "RowId": "256"
-    },
-    {
-      "XpPerLevel": 95250,
+      "RowId": "256",
+      "Level": 256
+  },
+  {
+      "XpToNextLevel": 95250,
       "UntilLevel": 258,
-      "RowId": "257"
-    },
-    {
-      "XpPerLevel": 95500,
+      "RowId": "257",
+      "Level": 257
+  },
+  {
+      "XpToNextLevel": 95500,
       "UntilLevel": 259,
-      "RowId": "258"
-    },
-    {
-      "XpPerLevel": 96000,
+      "RowId": "258",
+      "Level": 258
+  },
+  {
+      "XpToNextLevel": 96000,
       "UntilLevel": 260,
-      "RowId": "259"
-    },
-    {
-      "XpPerLevel": 96500,
+      "RowId": "259",
+      "Level": 259
+  },
+  {
+      "XpToNextLevel": 96500,
       "UntilLevel": 261,
-      "RowId": "260"
-    },
-    {
-      "XpPerLevel": 96750,
+      "RowId": "260",
+      "Level": 260
+  },
+  {
+      "XpToNextLevel": 96750,
       "UntilLevel": 262,
-      "RowId": "261"
-    },
-    {
-      "XpPerLevel": 97250,
+      "RowId": "261",
+      "Level": 261
+  },
+  {
+      "XpToNextLevel": 97250,
       "UntilLevel": 263,
-      "RowId": "262"
-    },
-    {
-      "XpPerLevel": 97500,
+      "RowId": "262",
+      "Level": 262
+  },
+  {
+      "XpToNextLevel": 97500,
       "UntilLevel": 264,
-      "RowId": "263"
-    },
-    {
-      "XpPerLevel": 98000,
+      "RowId": "263",
+      "Level": 263
+  },
+  {
+      "XpToNextLevel": 98000,
       "UntilLevel": 265,
-      "RowId": "264"
-    },
-    {
-      "XpPerLevel": 98500,
+      "RowId": "264",
+      "Level": 264
+  },
+  {
+      "XpToNextLevel": 98500,
       "UntilLevel": 266,
-      "RowId": "265"
-    },
-    {
-      "XpPerLevel": 98750,
+      "RowId": "265",
+      "Level": 265
+  },
+  {
+      "XpToNextLevel": 98750,
       "UntilLevel": 267,
-      "RowId": "266"
-    },
-    {
-      "XpPerLevel": 99250,
+      "RowId": "266",
+      "Level": 266
+  },
+  {
+      "XpToNextLevel": 99250,
       "UntilLevel": 268,
-      "RowId": "267"
-    },
-    {
-      "XpPerLevel": 99500,
+      "RowId": "267",
+      "Level": 267
+  },
+  {
+      "XpToNextLevel": 99500,
       "UntilLevel": 269,
-      "RowId": "268"
-    },
-    {
-      "XpPerLevel": 100000,
+      "RowId": "268",
+      "Level": 268
+  },
+  {
+      "XpToNextLevel": 100000,
       "UntilLevel": 270,
-      "RowId": "269"
-    },
-    {
-      "XpPerLevel": 100500,
+      "RowId": "269",
+      "Level": 269
+  },
+  {
+      "XpToNextLevel": 100500,
       "UntilLevel": 271,
-      "RowId": "270"
-    },
-    {
-      "XpPerLevel": 100750,
+      "RowId": "270",
+      "Level": 270
+  },
+  {
+      "XpToNextLevel": 100750,
       "UntilLevel": 272,
-      "RowId": "271"
-    },
-    {
-      "XpPerLevel": 101250,
+      "RowId": "271",
+      "Level": 271
+  },
+  {
+      "XpToNextLevel": 101250,
       "UntilLevel": 273,
-      "RowId": "272"
-    },
-    {
-      "XpPerLevel": 101750,
+      "RowId": "272",
+      "Level": 272
+  },
+  {
+      "XpToNextLevel": 101750,
       "UntilLevel": 274,
-      "RowId": "273"
-    },
-    {
-      "XpPerLevel": 102000,
+      "RowId": "273",
+      "Level": 273
+  },
+  {
+      "XpToNextLevel": 102000,
       "UntilLevel": 275,
-      "RowId": "274"
-    },
-    {
-      "XpPerLevel": 102500,
+      "RowId": "274",
+      "Level": 274
+  },
+  {
+      "XpToNextLevel": 102500,
       "UntilLevel": 276,
-      "RowId": "275"
-    },
-    {
-      "XpPerLevel": 103000,
+      "RowId": "275",
+      "Level": 275
+  },
+  {
+      "XpToNextLevel": 103000,
       "UntilLevel": 277,
-      "RowId": "276"
-    },
-    {
-      "XpPerLevel": 103250,
+      "RowId": "276",
+      "Level": 276
+  },
+  {
+      "XpToNextLevel": 103250,
       "UntilLevel": 278,
-      "RowId": "277"
-    },
-    {
-      "XpPerLevel": 103750,
+      "RowId": "277",
+      "Level": 277
+  },
+  {
+      "XpToNextLevel": 103750,
       "UntilLevel": 279,
-      "RowId": "278"
-    },
-    {
-      "XpPerLevel": 104250,
+      "RowId": "278",
+      "Level": 278
+  },
+  {
+      "XpToNextLevel": 104250,
       "UntilLevel": 280,
-      "RowId": "279"
-    },
-    {
-      "XpPerLevel": 104750,
+      "RowId": "279",
+      "Level": 279
+  },
+  {
+      "XpToNextLevel": 104750,
       "UntilLevel": 281,
-      "RowId": "280"
-    },
-    {
-      "XpPerLevel": 105000,
+      "RowId": "280",
+      "Level": 280
+  },
+  {
+      "XpToNextLevel": 105000,
       "UntilLevel": 282,
-      "RowId": "281"
-    },
-    {
-      "XpPerLevel": 105500,
+      "RowId": "281",
+      "Level": 281
+  },
+  {
+      "XpToNextLevel": 105500,
       "UntilLevel": 283,
-      "RowId": "282"
-    },
-    {
-      "XpPerLevel": 106000,
+      "RowId": "282",
+      "Level": 282
+  },
+  {
+      "XpToNextLevel": 106000,
       "UntilLevel": 284,
-      "RowId": "283"
-    },
-    {
-      "XpPerLevel": 106500,
+      "RowId": "283",
+      "Level": 283
+  },
+  {
+      "XpToNextLevel": 106500,
       "UntilLevel": 285,
-      "RowId": "284"
-    },
-    {
-      "XpPerLevel": 106750,
+      "RowId": "284",
+      "Level": 284
+  },
+  {
+      "XpToNextLevel": 106750,
       "UntilLevel": 286,
-      "RowId": "285"
-    },
-    {
-      "XpPerLevel": 107250,
+      "RowId": "285",
+      "Level": 285
+  },
+  {
+      "XpToNextLevel": 107250,
       "UntilLevel": 287,
-      "RowId": "286"
-    },
-    {
-      "XpPerLevel": 107750,
+      "RowId": "286",
+      "Level": 286
+  },
+  {
+      "XpToNextLevel": 107750,
       "UntilLevel": 288,
-      "RowId": "287"
-    },
-    {
-      "XpPerLevel": 108250,
+      "RowId": "287",
+      "Level": 287
+  },
+  {
+      "XpToNextLevel": 108250,
       "UntilLevel": 289,
-      "RowId": "288"
-    },
-    {
-      "XpPerLevel": 108500,
+      "RowId": "288",
+      "Level": 288
+  },
+  {
+      "XpToNextLevel": 108500,
       "UntilLevel": 290,
-      "RowId": "289"
-    },
-    {
-      "XpPerLevel": 109000,
+      "RowId": "289",
+      "Level": 289
+  },
+  {
+      "XpToNextLevel": 109000,
       "UntilLevel": 291,
-      "RowId": "290"
-    },
-    {
-      "XpPerLevel": 109500,
+      "RowId": "290",
+      "Level": 290
+  },
+  {
+      "XpToNextLevel": 109500,
       "UntilLevel": 292,
-      "RowId": "291"
-    },
-    {
-      "XpPerLevel": 110000,
+      "RowId": "291",
+      "Level": 291
+  },
+  {
+      "XpToNextLevel": 110000,
       "UntilLevel": 293,
-      "RowId": "292"
-    },
-    {
-      "XpPerLevel": 110500,
+      "RowId": "292",
+      "Level": 292
+  },
+  {
+      "XpToNextLevel": 110500,
       "UntilLevel": 294,
-      "RowId": "293"
-    },
-    {
-      "XpPerLevel": 110750,
+      "RowId": "293",
+      "Level": 293
+  },
+  {
+      "XpToNextLevel": 110750,
       "UntilLevel": 295,
-      "RowId": "294"
-    },
-    {
-      "XpPerLevel": 111250,
+      "RowId": "294",
+      "Level": 294
+  },
+  {
+      "XpToNextLevel": 111250,
       "UntilLevel": 296,
-      "RowId": "295"
-    },
-    {
-      "XpPerLevel": 111750,
+      "RowId": "295",
+      "Level": 295
+  },
+  {
+      "XpToNextLevel": 111750,
       "UntilLevel": 297,
-      "RowId": "296"
-    },
-    {
-      "XpPerLevel": 112250,
+      "RowId": "296",
+      "Level": 296
+  },
+  {
+      "XpToNextLevel": 112250,
       "UntilLevel": 298,
-      "RowId": "297"
-    },
-    {
-      "XpPerLevel": 112750,
+      "RowId": "297",
+      "Level": 297
+  },
+  {
+      "XpToNextLevel": 112750,
       "UntilLevel": 299,
-      "RowId": "298"
-    },
-    {
-      "XpPerLevel": 113250,
+      "RowId": "298",
+      "Level": 298
+  },
+  {
+      "XpToNextLevel": 113250,
       "UntilLevel": 300,
-      "RowId": "299"
-    },
-    {
-      "XpPerLevel": 113500,
+      "RowId": "299",
+      "Level": 299
+  },
+  {
+      "XpToNextLevel": 113500,
       "UntilLevel": 301,
-      "RowId": "300"
-    },
-    {
-      "XpPerLevel": 114000,
+      "RowId": "300",
+      "Level": 300
+  },
+  {
+      "XpToNextLevel": 114000,
       "UntilLevel": 302,
-      "RowId": "301"
-    },
-    {
-      "XpPerLevel": 114500,
+      "RowId": "301",
+      "Level": 301
+  },
+  {
+      "XpToNextLevel": 114500,
       "UntilLevel": 303,
-      "RowId": "302"
-    },
-    {
-      "XpPerLevel": 115000,
+      "RowId": "302",
+      "Level": 302
+  },
+  {
+      "XpToNextLevel": 115000,
       "UntilLevel": 304,
-      "RowId": "303"
-    },
-    {
-      "XpPerLevel": 115500,
+      "RowId": "303",
+      "Level": 303
+  },
+  {
+      "XpToNextLevel": 115500,
       "UntilLevel": 305,
-      "RowId": "304"
-    },
-    {
-      "XpPerLevel": 116000,
+      "RowId": "304",
+      "Level": 304
+  },
+  {
+      "XpToNextLevel": 116000,
       "UntilLevel": 306,
-      "RowId": "305"
-    },
-    {
-      "XpPerLevel": 116500,
+      "RowId": "305",
+      "Level": 305
+  },
+  {
+      "XpToNextLevel": 116500,
       "UntilLevel": 307,
-      "RowId": "306"
-    },
-    {
-      "XpPerLevel": 117000,
+      "RowId": "306",
+      "Level": 306
+  },
+  {
+      "XpToNextLevel": 117000,
       "UntilLevel": 308,
-      "RowId": "307"
-    },
-    {
-      "XpPerLevel": 117500,
+      "RowId": "307",
+      "Level": 307
+  },
+  {
+      "XpToNextLevel": 117500,
       "UntilLevel": 309,
-      "RowId": "308"
-    },
-    {
-      "XpPerLevel": 117750,
+      "RowId": "308",
+      "Level": 308
+  },
+  {
+      "XpToNextLevel": 117750,
       "UntilLevel": 310,
-      "RowId": "309"
-    },
-    {
-      "XpPerLevel": 118250,
+      "RowId": "309",
+      "Level": 309
+  },
+  {
+      "XpToNextLevel": 118250,
       "UntilLevel": 311,
-      "RowId": "310"
-    },
-    {
-      "XpPerLevel": 118750,
+      "RowId": "310",
+      "Level": 310
+  },
+  {
+      "XpToNextLevel": 118750,
       "UntilLevel": 312,
-      "RowId": "311"
-    },
-    {
-      "XpPerLevel": 119250,
+      "RowId": "311",
+      "Level": 311
+  },
+  {
+      "XpToNextLevel": 119250,
       "UntilLevel": 313,
-      "RowId": "312"
-    },
-    {
-      "XpPerLevel": 119750,
+      "RowId": "312",
+      "Level": 312
+  },
+  {
+      "XpToNextLevel": 119750,
       "UntilLevel": 314,
-      "RowId": "313"
-    },
-    {
-      "XpPerLevel": 120250,
+      "RowId": "313",
+      "Level": 313
+  },
+  {
+      "XpToNextLevel": 120250,
       "UntilLevel": 315,
-      "RowId": "314"
-    },
-    {
-      "XpPerLevel": 120750,
+      "RowId": "314",
+      "Level": 314
+  },
+  {
+      "XpToNextLevel": 120750,
       "UntilLevel": 316,
-      "RowId": "315"
-    },
-    {
-      "XpPerLevel": 121250,
+      "RowId": "315",
+      "Level": 315
+  },
+  {
+      "XpToNextLevel": 121250,
       "UntilLevel": 317,
-      "RowId": "316"
-    },
-    {
-      "XpPerLevel": 121750,
+      "RowId": "316",
+      "Level": 316
+  },
+  {
+      "XpToNextLevel": 121750,
       "UntilLevel": 318,
-      "RowId": "317"
-    },
-    {
-      "XpPerLevel": 122250,
+      "RowId": "317",
+      "Level": 317
+  },
+  {
+      "XpToNextLevel": 122250,
       "UntilLevel": 319,
-      "RowId": "318"
-    },
-    {
-      "XpPerLevel": 122750,
+      "RowId": "318",
+      "Level": 318
+  },
+  {
+      "XpToNextLevel": 122750,
       "UntilLevel": 320,
-      "RowId": "319"
-    },
-    {
-      "XpPerLevel": 123250,
+      "RowId": "319",
+      "Level": 319
+  },
+  {
+      "XpToNextLevel": 123250,
       "UntilLevel": 321,
-      "RowId": "320"
-    },
-    {
-      "XpPerLevel": 123750,
+      "RowId": "320",
+      "Level": 320
+  },
+  {
+      "XpToNextLevel": 123750,
       "UntilLevel": 322,
-      "RowId": "321"
-    },
-    {
-      "XpPerLevel": 124250,
+      "RowId": "321",
+      "Level": 321
+  },
+  {
+      "XpToNextLevel": 124250,
       "UntilLevel": 323,
-      "RowId": "322"
-    },
-    {
-      "XpPerLevel": 124750,
+      "RowId": "322",
+      "Level": 322
+  },
+  {
+      "XpToNextLevel": 124750,
       "UntilLevel": 324,
-      "RowId": "323"
-    },
-    {
-      "XpPerLevel": 125250,
+      "RowId": "323",
+      "Level": 323
+  },
+  {
+      "XpToNextLevel": 125250,
       "UntilLevel": 325,
-      "RowId": "324"
-    },
-    {
-      "XpPerLevel": 125750,
+      "RowId": "324",
+      "Level": 324
+  },
+  {
+      "XpToNextLevel": 125750,
       "UntilLevel": 326,
-      "RowId": "325"
-    },
-    {
-      "XpPerLevel": 126500,
+      "RowId": "325",
+      "Level": 325
+  },
+  {
+      "XpToNextLevel": 126500,
       "UntilLevel": 327,
-      "RowId": "326"
-    },
-    {
-      "XpPerLevel": 127000,
+      "RowId": "326",
+      "Level": 326
+  },
+  {
+      "XpToNextLevel": 127000,
       "UntilLevel": 328,
-      "RowId": "327"
-    },
-    {
-      "XpPerLevel": 127500,
+      "RowId": "327",
+      "Level": 327
+  },
+  {
+      "XpToNextLevel": 127500,
       "UntilLevel": 329,
-      "RowId": "328"
-    },
-    {
-      "XpPerLevel": 128000,
+      "RowId": "328",
+      "Level": 328
+  },
+  {
+      "XpToNextLevel": 128000,
       "UntilLevel": 330,
-      "RowId": "329"
-    },
-    {
-      "XpPerLevel": 128500,
+      "RowId": "329",
+      "Level": 329
+  },
+  {
+      "XpToNextLevel": 128500,
       "UntilLevel": 331,
-      "RowId": "330"
-    },
-    {
-      "XpPerLevel": 129000,
+      "RowId": "330",
+      "Level": 330
+  },
+  {
+      "XpToNextLevel": 129000,
       "UntilLevel": 332,
-      "RowId": "331"
-    },
-    {
-      "XpPerLevel": 129500,
+      "RowId": "331",
+      "Level": 331
+  },
+  {
+      "XpToNextLevel": 129500,
       "UntilLevel": 333,
-      "RowId": "332"
-    },
-    {
-      "XpPerLevel": 130000,
+      "RowId": "332",
+      "Level": 332
+  },
+  {
+      "XpToNextLevel": 130000,
       "UntilLevel": 334,
-      "RowId": "333"
-    },
-    {
-      "XpPerLevel": 130500,
+      "RowId": "333",
+      "Level": 333
+  },
+  {
+      "XpToNextLevel": 130500,
       "UntilLevel": 335,
-      "RowId": "334"
-    },
-    {
-      "XpPerLevel": 131250,
+      "RowId": "334",
+      "Level": 334
+  },
+  {
+      "XpToNextLevel": 131250,
       "UntilLevel": 336,
-      "RowId": "335"
-    },
-    {
-      "XpPerLevel": 131750,
+      "RowId": "335",
+      "Level": 335
+  },
+  {
+      "XpToNextLevel": 131750,
       "UntilLevel": 337,
-      "RowId": "336"
-    },
-    {
-      "XpPerLevel": 132250,
+      "RowId": "336",
+      "Level": 336
+  },
+  {
+      "XpToNextLevel": 132250,
       "UntilLevel": 338,
-      "RowId": "337"
-    },
-    {
-      "XpPerLevel": 132750,
+      "RowId": "337",
+      "Level": 337
+  },
+  {
+      "XpToNextLevel": 132750,
       "UntilLevel": 339,
-      "RowId": "338"
-    },
-    {
-      "XpPerLevel": 133250,
+      "RowId": "338",
+      "Level": 338
+  },
+  {
+      "XpToNextLevel": 133250,
       "UntilLevel": 340,
-      "RowId": "339"
-    },
-    {
-      "XpPerLevel": 133750,
+      "RowId": "339",
+      "Level": 339
+  },
+  {
+      "XpToNextLevel": 133750,
       "UntilLevel": 341,
-      "RowId": "340"
-    },
-    {
-      "XpPerLevel": 134500,
+      "RowId": "340",
+      "Level": 340
+  },
+  {
+      "XpToNextLevel": 134500,
       "UntilLevel": 342,
-      "RowId": "341"
-    },
-    {
-      "XpPerLevel": 135000,
+      "RowId": "341",
+      "Level": 341
+  },
+  {
+      "XpToNextLevel": 135000,
       "UntilLevel": 343,
-      "RowId": "342"
-    },
-    {
-      "XpPerLevel": 135500,
+      "RowId": "342",
+      "Level": 342
+  },
+  {
+      "XpToNextLevel": 135500,
       "UntilLevel": 344,
-      "RowId": "343"
-    },
-    {
-      "XpPerLevel": 136000,
+      "RowId": "343",
+      "Level": 343
+  },
+  {
+      "XpToNextLevel": 136000,
       "UntilLevel": 345,
-      "RowId": "344"
-    },
-    {
-      "XpPerLevel": 136750,
+      "RowId": "344",
+      "Level": 344
+  },
+  {
+      "XpToNextLevel": 136750,
       "UntilLevel": 346,
-      "RowId": "345"
-    },
-    {
-      "XpPerLevel": 137250,
+      "RowId": "345",
+      "Level": 345
+  },
+  {
+      "XpToNextLevel": 137250,
       "UntilLevel": 347,
-      "RowId": "346"
-    },
-    {
-      "XpPerLevel": 137750,
+      "RowId": "346",
+      "Level": 346
+  },
+  {
+      "XpToNextLevel": 137750,
       "UntilLevel": 348,
-      "RowId": "347"
-    },
-    {
-      "XpPerLevel": 138250,
+      "RowId": "347",
+      "Level": 347
+  },
+  {
+      "XpToNextLevel": 138250,
       "UntilLevel": 349,
-      "RowId": "348"
-    },
-    {
-      "XpPerLevel": 139000,
+      "RowId": "348",
+      "Level": 348
+  },
+  {
+      "XpToNextLevel": 139000,
       "UntilLevel": 350,
-      "RowId": "349"
-    },
-    {
-      "XpPerLevel": 139500,
+      "RowId": "349",
+      "Level": 349
+  },
+  {
+      "XpToNextLevel": 139500,
       "UntilLevel": 351,
-      "RowId": "350"
-    },
-    {
-      "XpPerLevel": 140000,
+      "RowId": "350",
+      "Level": 350
+  },
+  {
+      "XpToNextLevel": 140000,
       "UntilLevel": 352,
-      "RowId": "351"
-    },
-    {
-      "XpPerLevel": 140500,
+      "RowId": "351",
+      "Level": 351
+  },
+  {
+      "XpToNextLevel": 140500,
       "UntilLevel": 353,
-      "RowId": "352"
-    },
-    {
-      "XpPerLevel": 141250,
+      "RowId": "352",
+      "Level": 352
+  },
+  {
+      "XpToNextLevel": 141250,
       "UntilLevel": 354,
-      "RowId": "353"
-    },
-    {
-      "XpPerLevel": 141750,
+      "RowId": "353",
+      "Level": 353
+  },
+  {
+      "XpToNextLevel": 141750,
       "UntilLevel": 355,
-      "RowId": "354"
-    },
-    {
-      "XpPerLevel": 142250,
+      "RowId": "354",
+      "Level": 354
+  },
+  {
+      "XpToNextLevel": 142250,
       "UntilLevel": 356,
-      "RowId": "355"
-    },
-    {
-      "XpPerLevel": 143000,
+      "RowId": "355",
+      "Level": 355
+  },
+  {
+      "XpToNextLevel": 143000,
       "UntilLevel": 357,
-      "RowId": "356"
-    },
-    {
-      "XpPerLevel": 143500,
+      "RowId": "356",
+      "Level": 356
+  },
+  {
+      "XpToNextLevel": 143500,
       "UntilLevel": 358,
-      "RowId": "357"
-    },
-    {
-      "XpPerLevel": 144000,
+      "RowId": "357",
+      "Level": 357
+  },
+  {
+      "XpToNextLevel": 144000,
       "UntilLevel": 359,
-      "RowId": "358"
-    },
-    {
-      "XpPerLevel": 144750,
+      "RowId": "358",
+      "Level": 358
+  },
+  {
+      "XpToNextLevel": 144750,
       "UntilLevel": 360,
-      "RowId": "359"
-    },
-    {
-      "XpPerLevel": 145250,
+      "RowId": "359",
+      "Level": 359
+  },
+  {
+      "XpToNextLevel": 145250,
       "UntilLevel": 361,
-      "RowId": "360"
-    },
-    {
-      "XpPerLevel": 146000,
+      "RowId": "360",
+      "Level": 360
+  },
+  {
+      "XpToNextLevel": 146000,
       "UntilLevel": 362,
-      "RowId": "361"
-    },
-    {
-      "XpPerLevel": 146500,
+      "RowId": "361",
+      "Level": 361
+  },
+  {
+      "XpToNextLevel": 146500,
       "UntilLevel": 363,
-      "RowId": "362"
-    },
-    {
-      "XpPerLevel": 147000,
+      "RowId": "362",
+      "Level": 362
+  },
+  {
+      "XpToNextLevel": 147000,
       "UntilLevel": 364,
-      "RowId": "363"
-    },
-    {
-      "XpPerLevel": 147750,
+      "RowId": "363",
+      "Level": 363
+  },
+  {
+      "XpToNextLevel": 147750,
       "UntilLevel": 365,
-      "RowId": "364"
-    },
-    {
-      "XpPerLevel": 148250,
+      "RowId": "364",
+      "Level": 364
+  },
+  {
+      "XpToNextLevel": 148250,
       "UntilLevel": 366,
-      "RowId": "365"
-    },
-    {
-      "XpPerLevel": 149000,
+      "RowId": "365",
+      "Level": 365
+  },
+  {
+      "XpToNextLevel": 149000,
       "UntilLevel": 367,
-      "RowId": "366"
-    },
-    {
-      "XpPerLevel": 149500,
+      "RowId": "366",
+      "Level": 366
+  },
+  {
+      "XpToNextLevel": 149500,
       "UntilLevel": 368,
-      "RowId": "367"
-    },
-    {
-      "XpPerLevel": 150250,
+      "RowId": "367",
+      "Level": 367
+  },
+  {
+      "XpToNextLevel": 150250,
       "UntilLevel": 369,
-      "RowId": "368"
-    },
-    {
-      "XpPerLevel": 150750,
+      "RowId": "368",
+      "Level": 368
+  },
+  {
+      "XpToNextLevel": 150750,
       "UntilLevel": 370,
-      "RowId": "369"
-    },
-    {
-      "XpPerLevel": 151500,
+      "RowId": "369",
+      "Level": 369
+  },
+  {
+      "XpToNextLevel": 151500,
       "UntilLevel": 371,
-      "RowId": "370"
-    },
-    {
-      "XpPerLevel": 152000,
+      "RowId": "370",
+      "Level": 370
+  },
+  {
+      "XpToNextLevel": 152000,
       "UntilLevel": 372,
-      "RowId": "371"
-    },
-    {
-      "XpPerLevel": 152750,
+      "RowId": "371",
+      "Level": 371
+  },
+  {
+      "XpToNextLevel": 152750,
       "UntilLevel": 373,
-      "RowId": "372"
-    },
-    {
-      "XpPerLevel": 153250,
+      "RowId": "372",
+      "Level": 372
+  },
+  {
+      "XpToNextLevel": 153250,
       "UntilLevel": 374,
-      "RowId": "373"
-    },
-    {
-      "XpPerLevel": 154000,
+      "RowId": "373",
+      "Level": 373
+  },
+  {
+      "XpToNextLevel": 154000,
       "UntilLevel": 375,
-      "RowId": "374"
-    },
-    {
-      "XpPerLevel": 154500,
+      "RowId": "374",
+      "Level": 374
+  },
+  {
+      "XpToNextLevel": 154500,
       "UntilLevel": 376,
-      "RowId": "375"
-    },
-    {
-      "XpPerLevel": 155250,
+      "RowId": "375",
+      "Level": 375
+  },
+  {
+      "XpToNextLevel": 155250,
       "UntilLevel": 377,
-      "RowId": "376"
-    },
-    {
-      "XpPerLevel": 155750,
+      "RowId": "376",
+      "Level": 376
+  },
+  {
+      "XpToNextLevel": 155750,
       "UntilLevel": 378,
-      "RowId": "377"
-    },
-    {
-      "XpPerLevel": 156500,
+      "RowId": "377",
+      "Level": 377
+  },
+  {
+      "XpToNextLevel": 156500,
       "UntilLevel": 379,
-      "RowId": "378"
-    },
-    {
-      "XpPerLevel": 157000,
+      "RowId": "378",
+      "Level": 378
+  },
+  {
+      "XpToNextLevel": 157000,
       "UntilLevel": 380,
-      "RowId": "379"
-    },
-    {
-      "XpPerLevel": 157750,
+      "RowId": "379",
+      "Level": 379
+  },
+  {
+      "XpToNextLevel": 157750,
       "UntilLevel": 381,
-      "RowId": "380"
-    },
-    {
-      "XpPerLevel": 158500,
+      "RowId": "380",
+      "Level": 380
+  },
+  {
+      "XpToNextLevel": 158500,
       "UntilLevel": 382,
-      "RowId": "381"
-    },
-    {
-      "XpPerLevel": 159000,
+      "RowId": "381",
+      "Level": 381
+  },
+  {
+      "XpToNextLevel": 159000,
       "UntilLevel": 383,
-      "RowId": "382"
-    },
-    {
-      "XpPerLevel": 159750,
+      "RowId": "382",
+      "Level": 382
+  },
+  {
+      "XpToNextLevel": 159750,
       "UntilLevel": 384,
-      "RowId": "383"
-    },
-    {
-      "XpPerLevel": 160250,
+      "RowId": "383",
+      "Level": 383
+  },
+  {
+      "XpToNextLevel": 160250,
       "UntilLevel": 385,
-      "RowId": "384"
-    },
-    {
-      "XpPerLevel": 161000,
+      "RowId": "384",
+      "Level": 384
+  },
+  {
+      "XpToNextLevel": 161000,
       "UntilLevel": 386,
-      "RowId": "385"
-    },
-    {
-      "XpPerLevel": 161750,
+      "RowId": "385",
+      "Level": 385
+  },
+  {
+      "XpToNextLevel": 161750,
       "UntilLevel": 387,
-      "RowId": "386"
-    },
-    {
-      "XpPerLevel": 162250,
+      "RowId": "386",
+      "Level": 386
+  },
+  {
+      "XpToNextLevel": 162250,
       "UntilLevel": 388,
-      "RowId": "387"
-    },
-    {
-      "XpPerLevel": 163000,
+      "RowId": "387",
+      "Level": 387
+  },
+  {
+      "XpToNextLevel": 163000,
       "UntilLevel": 389,
-      "RowId": "388"
-    },
-    {
-      "XpPerLevel": 163750,
+      "RowId": "388",
+      "Level": 388
+  },
+  {
+      "XpToNextLevel": 163750,
       "UntilLevel": 390,
-      "RowId": "389"
-    },
-    {
-      "XpPerLevel": 164250,
+      "RowId": "389",
+      "Level": 389
+  },
+  {
+      "XpToNextLevel": 164250,
       "UntilLevel": 391,
-      "RowId": "390"
-    },
-    {
-      "XpPerLevel": 165000,
+      "RowId": "390",
+      "Level": 390
+  },
+  {
+      "XpToNextLevel": 165000,
       "UntilLevel": 392,
-      "RowId": "391"
-    },
-    {
-      "XpPerLevel": 165750,
+      "RowId": "391",
+      "Level": 391
+  },
+  {
+      "XpToNextLevel": 165750,
       "UntilLevel": 393,
-      "RowId": "392"
-    },
-    {
-      "XpPerLevel": 166500,
+      "RowId": "392",
+      "Level": 392
+  },
+  {
+      "XpToNextLevel": 166500,
       "UntilLevel": 394,
-      "RowId": "393"
-    },
-    {
-      "XpPerLevel": 167000,
+      "RowId": "393",
+      "Level": 393
+  },
+  {
+      "XpToNextLevel": 167000,
       "UntilLevel": 395,
-      "RowId": "394"
-    },
-    {
-      "XpPerLevel": 167750,
+      "RowId": "394",
+      "Level": 394
+  },
+  {
+      "XpToNextLevel": 167750,
       "UntilLevel": 396,
-      "RowId": "395"
-    },
-    {
-      "XpPerLevel": 168500,
+      "RowId": "395",
+      "Level": 395
+  },
+  {
+      "XpToNextLevel": 168500,
       "UntilLevel": 397,
-      "RowId": "396"
-    },
-    {
-      "XpPerLevel": 169250,
+      "RowId": "396",
+      "Level": 396
+  },
+  {
+      "XpToNextLevel": 169250,
       "UntilLevel": 398,
-      "RowId": "397"
-    },
-    {
-      "XpPerLevel": 169750,
+      "RowId": "397",
+      "Level": 397
+  },
+  {
+      "XpToNextLevel": 169750,
       "UntilLevel": 399,
-      "RowId": "398"
-    },
-    {
-      "XpPerLevel": 170500,
+      "RowId": "398",
+      "Level": 398
+  },
+  {
+      "XpToNextLevel": 170500,
       "UntilLevel": 400,
-      "RowId": "399"
-    },
-    {
-      "XpPerLevel": 171250,
+      "RowId": "399",
+      "Level": 399
+  },
+  {
+      "XpToNextLevel": 171250,
       "UntilLevel": 401,
-      "RowId": "400"
-    },
-    {
-      "XpPerLevel": 172000,
+      "RowId": "400",
+      "Level": 400
+  },
+  {
+      "XpToNextLevel": 172000,
       "UntilLevel": 402,
-      "RowId": "401"
-    },
-    {
-      "XpPerLevel": 172750,
+      "RowId": "401",
+      "Level": 401
+  },
+  {
+      "XpToNextLevel": 172750,
       "UntilLevel": 403,
-      "RowId": "402"
-    },
-    {
-      "XpPerLevel": 173250,
+      "RowId": "402",
+      "Level": 402
+  },
+  {
+      "XpToNextLevel": 173250,
       "UntilLevel": 404,
-      "RowId": "403"
-    },
-    {
-      "XpPerLevel": 174000,
+      "RowId": "403",
+      "Level": 403
+  },
+  {
+      "XpToNextLevel": 174000,
       "UntilLevel": 405,
-      "RowId": "404"
-    },
-    {
-      "XpPerLevel": 174750,
+      "RowId": "404",
+      "Level": 404
+  },
+  {
+      "XpToNextLevel": 174750,
       "UntilLevel": 406,
-      "RowId": "405"
-    },
-    {
-      "XpPerLevel": 175500,
+      "RowId": "405",
+      "Level": 405
+  },
+  {
+      "XpToNextLevel": 175500,
       "UntilLevel": 407,
-      "RowId": "406"
-    },
-    {
-      "XpPerLevel": 176250,
+      "RowId": "406",
+      "Level": 406
+  },
+  {
+      "XpToNextLevel": 176250,
       "UntilLevel": 408,
-      "RowId": "407"
-    },
-    {
-      "XpPerLevel": 177000,
+      "RowId": "407",
+      "Level": 407
+  },
+  {
+      "XpToNextLevel": 177000,
       "UntilLevel": 409,
-      "RowId": "408"
-    },
-    {
-      "XpPerLevel": 177750,
+      "RowId": "408",
+      "Level": 408
+  },
+  {
+      "XpToNextLevel": 177750,
       "UntilLevel": 410,
-      "RowId": "409"
-    },
-    {
-      "XpPerLevel": 178500,
+      "RowId": "409",
+      "Level": 409
+  },
+  {
+      "XpToNextLevel": 178500,
       "UntilLevel": 411,
-      "RowId": "410"
-    },
-    {
-      "XpPerLevel": 179250,
+      "RowId": "410",
+      "Level": 410
+  },
+  {
+      "XpToNextLevel": 179250,
       "UntilLevel": 412,
-      "RowId": "411"
-    },
-    {
-      "XpPerLevel": 179750,
+      "RowId": "411",
+      "Level": 411
+  },
+  {
+      "XpToNextLevel": 179750,
       "UntilLevel": 413,
-      "RowId": "412"
-    },
-    {
-      "XpPerLevel": 180500,
+      "RowId": "412",
+      "Level": 412
+  },
+  {
+      "XpToNextLevel": 180500,
       "UntilLevel": 414,
-      "RowId": "413"
-    },
-    {
-      "XpPerLevel": 181250,
+      "RowId": "413",
+      "Level": 413
+  },
+  {
+      "XpToNextLevel": 181250,
       "UntilLevel": 415,
-      "RowId": "414"
-    },
-    {
-      "XpPerLevel": 182000,
+      "RowId": "414",
+      "Level": 414
+  },
+  {
+      "XpToNextLevel": 182000,
       "UntilLevel": 416,
-      "RowId": "415"
-    },
-    {
-      "XpPerLevel": 182750,
+      "RowId": "415",
+      "Level": 415
+  },
+  {
+      "XpToNextLevel": 182750,
       "UntilLevel": 417,
-      "RowId": "416"
-    },
-    {
-      "XpPerLevel": 183500,
+      "RowId": "416",
+      "Level": 416
+  },
+  {
+      "XpToNextLevel": 183500,
       "UntilLevel": 418,
-      "RowId": "417"
-    },
-    {
-      "XpPerLevel": 184250,
+      "RowId": "417",
+      "Level": 417
+  },
+  {
+      "XpToNextLevel": 184250,
       "UntilLevel": 419,
-      "RowId": "418"
-    },
-    {
-      "XpPerLevel": 185000,
+      "RowId": "418",
+      "Level": 418
+  },
+  {
+      "XpToNextLevel": 185000,
       "UntilLevel": 420,
-      "RowId": "419"
-    },
-    {
-      "XpPerLevel": 186000,
+      "RowId": "419",
+      "Level": 419
+  },
+  {
+      "XpToNextLevel": 186000,
       "UntilLevel": 421,
-      "RowId": "420"
-    },
-    {
-      "XpPerLevel": 186750,
+      "RowId": "420",
+      "Level": 420
+  },
+  {
+      "XpToNextLevel": 186750,
       "UntilLevel": 422,
-      "RowId": "421"
-    },
-    {
-      "XpPerLevel": 187500,
+      "RowId": "421",
+      "Level": 421
+  },
+  {
+      "XpToNextLevel": 187500,
       "UntilLevel": 423,
-      "RowId": "422"
-    },
-    {
-      "XpPerLevel": 188250,
+      "RowId": "422",
+      "Level": 422
+  },
+  {
+      "XpToNextLevel": 188250,
       "UntilLevel": 424,
-      "RowId": "423"
-    },
-    {
-      "XpPerLevel": 189000,
+      "RowId": "423",
+      "Level": 423
+  },
+  {
+      "XpToNextLevel": 189000,
       "UntilLevel": 425,
-      "RowId": "424"
-    },
-    {
-      "XpPerLevel": 189750,
+      "RowId": "424",
+      "Level": 424
+  },
+  {
+      "XpToNextLevel": 189750,
       "UntilLevel": 426,
-      "RowId": "425"
-    },
-    {
-      "XpPerLevel": 190500,
+      "RowId": "425",
+      "Level": 425
+  },
+  {
+      "XpToNextLevel": 190500,
       "UntilLevel": 427,
-      "RowId": "426"
-    },
-    {
-      "XpPerLevel": 191250,
+      "RowId": "426",
+      "Level": 426
+  },
+  {
+      "XpToNextLevel": 191250,
       "UntilLevel": 428,
-      "RowId": "427"
-    },
-    {
-      "XpPerLevel": 192000,
+      "RowId": "427",
+      "Level": 427
+  },
+  {
+      "XpToNextLevel": 192000,
       "UntilLevel": 429,
-      "RowId": "428"
-    },
-    {
-      "XpPerLevel": 192750,
+      "RowId": "428",
+      "Level": 428
+  },
+  {
+      "XpToNextLevel": 192750,
       "UntilLevel": 430,
-      "RowId": "429"
-    },
-    {
-      "XpPerLevel": 193750,
+      "RowId": "429",
+      "Level": 429
+  },
+  {
+      "XpToNextLevel": 193750,
       "UntilLevel": 431,
-      "RowId": "430"
-    },
-    {
-      "XpPerLevel": 194500,
+      "RowId": "430",
+      "Level": 430
+  },
+  {
+      "XpToNextLevel": 194500,
       "UntilLevel": 432,
-      "RowId": "431"
-    },
-    {
-      "XpPerLevel": 195250,
+      "RowId": "431",
+      "Level": 431
+  },
+  {
+      "XpToNextLevel": 195250,
       "UntilLevel": 433,
-      "RowId": "432"
-    },
-    {
-      "XpPerLevel": 196000,
+      "RowId": "432",
+      "Level": 432
+  },
+  {
+      "XpToNextLevel": 196000,
       "UntilLevel": 434,
-      "RowId": "433"
-    },
-    {
-      "XpPerLevel": 196750,
+      "RowId": "433",
+      "Level": 433
+  },
+  {
+      "XpToNextLevel": 196750,
       "UntilLevel": 435,
-      "RowId": "434"
-    },
-    {
-      "XpPerLevel": 197750,
+      "RowId": "434",
+      "Level": 434
+  },
+  {
+      "XpToNextLevel": 197750,
       "UntilLevel": 436,
-      "RowId": "435"
-    },
-    {
-      "XpPerLevel": 198500,
+      "RowId": "435",
+      "Level": 435
+  },
+  {
+      "XpToNextLevel": 198500,
       "UntilLevel": 437,
-      "RowId": "436"
-    },
-    {
-      "XpPerLevel": 199250,
+      "RowId": "436",
+      "Level": 436
+  },
+  {
+      "XpToNextLevel": 199250,
       "UntilLevel": 438,
-      "RowId": "437"
-    },
-    {
-      "XpPerLevel": 200250,
+      "RowId": "437",
+      "Level": 437
+  },
+  {
+      "XpToNextLevel": 200250,
       "UntilLevel": 439,
-      "RowId": "438"
-    },
-    {
-      "XpPerLevel": 201000,
+      "RowId": "438",
+      "Level": 438
+  },
+  {
+      "XpToNextLevel": 201000,
       "UntilLevel": 440,
-      "RowId": "439"
-    },
-    {
-      "XpPerLevel": 201750,
+      "RowId": "439",
+      "Level": 439
+  },
+  {
+      "XpToNextLevel": 201750,
       "UntilLevel": 441,
-      "RowId": "440"
-    },
-    {
-      "XpPerLevel": 202500,
+      "RowId": "440",
+      "Level": 440
+  },
+  {
+      "XpToNextLevel": 202500,
       "UntilLevel": 442,
-      "RowId": "441"
-    },
-    {
-      "XpPerLevel": 203500,
+      "RowId": "441",
+      "Level": 441
+  },
+  {
+      "XpToNextLevel": 203500,
       "UntilLevel": 443,
-      "RowId": "442"
-    },
-    {
-      "XpPerLevel": 204250,
+      "RowId": "442",
+      "Level": 442
+  },
+  {
+      "XpToNextLevel": 204250,
       "UntilLevel": 444,
-      "RowId": "443"
-    },
-    {
-      "XpPerLevel": 205000,
+      "RowId": "443",
+      "Level": 443
+  },
+  {
+      "XpToNextLevel": 205000,
       "UntilLevel": 445,
-      "RowId": "444"
-    },
-    {
-      "XpPerLevel": 206000,
+      "RowId": "444",
+      "Level": 444
+  },
+  {
+      "XpToNextLevel": 206000,
       "UntilLevel": 446,
-      "RowId": "445"
-    },
-    {
-      "XpPerLevel": 206750,
+      "RowId": "445",
+      "Level": 445
+  },
+  {
+      "XpToNextLevel": 206750,
       "UntilLevel": 447,
-      "RowId": "446"
-    },
-    {
-      "XpPerLevel": 207750,
+      "RowId": "446",
+      "Level": 446
+  },
+  {
+      "XpToNextLevel": 207750,
       "UntilLevel": 448,
-      "RowId": "447"
-    },
-    {
-      "XpPerLevel": 208500,
+      "RowId": "447",
+      "Level": 447
+  },
+  {
+      "XpToNextLevel": 208500,
       "UntilLevel": 449,
-      "RowId": "448"
-    },
-    {
-      "XpPerLevel": 209250,
+      "RowId": "448",
+      "Level": 448
+  },
+  {
+      "XpToNextLevel": 209250,
       "UntilLevel": 450,
-      "RowId": "449"
-    },
-    {
-      "XpPerLevel": 210250,
+      "RowId": "449",
+      "Level": 449
+  },
+  {
+      "XpToNextLevel": 210250,
       "UntilLevel": 451,
-      "RowId": "450"
-    },
-    {
-      "XpPerLevel": 211000,
+      "RowId": "450",
+      "Level": 450
+  },
+  {
+      "XpToNextLevel": 211000,
       "UntilLevel": 452,
-      "RowId": "451"
-    },
-    {
-      "XpPerLevel": 212000,
+      "RowId": "451",
+      "Level": 451
+  },
+  {
+      "XpToNextLevel": 212000,
       "UntilLevel": 453,
-      "RowId": "452"
-    },
-    {
-      "XpPerLevel": 212750,
+      "RowId": "452",
+      "Level": 452
+  },
+  {
+      "XpToNextLevel": 212750,
       "UntilLevel": 454,
-      "RowId": "453"
-    },
-    {
-      "XpPerLevel": 213750,
+      "RowId": "453",
+      "Level": 453
+  },
+  {
+      "XpToNextLevel": 213750,
       "UntilLevel": 455,
-      "RowId": "454"
-    },
-    {
-      "XpPerLevel": 214500,
+      "RowId": "454",
+      "Level": 454
+  },
+  {
+      "XpToNextLevel": 214500,
       "UntilLevel": 456,
-      "RowId": "455"
-    },
-    {
-      "XpPerLevel": 215500,
+      "RowId": "455",
+      "Level": 455
+  },
+  {
+      "XpToNextLevel": 215500,
       "UntilLevel": 457,
-      "RowId": "456"
-    },
-    {
-      "XpPerLevel": 216250,
+      "RowId": "456",
+      "Level": 456
+  },
+  {
+      "XpToNextLevel": 216250,
       "UntilLevel": 458,
-      "RowId": "457"
-    },
-    {
-      "XpPerLevel": 217250,
+      "RowId": "457",
+      "Level": 457
+  },
+  {
+      "XpToNextLevel": 217250,
       "UntilLevel": 459,
-      "RowId": "458"
-    },
-    {
-      "XpPerLevel": 218250,
+      "RowId": "458",
+      "Level": 458
+  },
+  {
+      "XpToNextLevel": 218250,
       "UntilLevel": 460,
-      "RowId": "459"
-    },
-    {
-      "XpPerLevel": 219000,
+      "RowId": "459",
+      "Level": 459
+  },
+  {
+      "XpToNextLevel": 219000,
       "UntilLevel": 461,
-      "RowId": "460"
-    },
-    {
-      "XpPerLevel": 220000,
+      "RowId": "460",
+      "Level": 460
+  },
+  {
+      "XpToNextLevel": 220000,
       "UntilLevel": 462,
-      "RowId": "461"
-    },
-    {
-      "XpPerLevel": 220750,
+      "RowId": "461",
+      "Level": 461
+  },
+  {
+      "XpToNextLevel": 220750,
       "UntilLevel": 463,
-      "RowId": "462"
-    },
-    {
-      "XpPerLevel": 221750,
+      "RowId": "462",
+      "Level": 462
+  },
+  {
+      "XpToNextLevel": 221750,
       "UntilLevel": 464,
-      "RowId": "463"
-    },
-    {
-      "XpPerLevel": 222750,
+      "RowId": "463",
+      "Level": 463
+  },
+  {
+      "XpToNextLevel": 222750,
       "UntilLevel": 465,
-      "RowId": "464"
-    },
-    {
-      "XpPerLevel": 223500,
+      "RowId": "464",
+      "Level": 464
+  },
+  {
+      "XpToNextLevel": 223500,
       "UntilLevel": 466,
-      "RowId": "465"
-    },
-    {
-      "XpPerLevel": 224500,
+      "RowId": "465",
+      "Level": 465
+  },
+  {
+      "XpToNextLevel": 224500,
       "UntilLevel": 467,
-      "RowId": "466"
-    },
-    {
-      "XpPerLevel": 225500,
+      "RowId": "466",
+      "Level": 466
+  },
+  {
+      "XpToNextLevel": 225500,
       "UntilLevel": 468,
-      "RowId": "467"
-    },
-    {
-      "XpPerLevel": 226250,
+      "RowId": "467",
+      "Level": 467
+  },
+  {
+      "XpToNextLevel": 226250,
       "UntilLevel": 469,
-      "RowId": "468"
-    },
-    {
-      "XpPerLevel": 227250,
+      "RowId": "468",
+      "Level": 468
+  },
+  {
+      "XpToNextLevel": 227250,
       "UntilLevel": 470,
-      "RowId": "469"
-    },
-    {
-      "XpPerLevel": 228250,
+      "RowId": "469",
+      "Level": 469
+  },
+  {
+      "XpToNextLevel": 228250,
       "UntilLevel": 471,
-      "RowId": "470"
-    },
-    {
-      "XpPerLevel": 229250,
+      "RowId": "470",
+      "Level": 470
+  },
+  {
+      "XpToNextLevel": 229250,
       "UntilLevel": 472,
-      "RowId": "471"
-    },
-    {
-      "XpPerLevel": 230000,
+      "RowId": "471",
+      "Level": 471
+  },
+  {
+      "XpToNextLevel": 230000,
       "UntilLevel": 473,
-      "RowId": "472"
-    },
-    {
-      "XpPerLevel": 231000,
+      "RowId": "472",
+      "Level": 472
+  },
+  {
+      "XpToNextLevel": 231000,
       "UntilLevel": 474,
-      "RowId": "473"
-    },
-    {
-      "XpPerLevel": 232000,
+      "RowId": "473",
+      "Level": 473
+  },
+  {
+      "XpToNextLevel": 232000,
       "UntilLevel": 475,
-      "RowId": "474"
-    },
-    {
-      "XpPerLevel": 233000,
+      "RowId": "474",
+      "Level": 474
+  },
+  {
+      "XpToNextLevel": 233000,
       "UntilLevel": 476,
-      "RowId": "475"
-    },
-    {
-      "XpPerLevel": 234000,
+      "RowId": "475",
+      "Level": 475
+  },
+  {
+      "XpToNextLevel": 234000,
       "UntilLevel": 477,
-      "RowId": "476"
-    },
-    {
-      "XpPerLevel": 234750,
+      "RowId": "476",
+      "Level": 476
+  },
+  {
+      "XpToNextLevel": 234750,
       "UntilLevel": 478,
-      "RowId": "477"
-    },
-    {
-      "XpPerLevel": 235750,
+      "RowId": "477",
+      "Level": 477
+  },
+  {
+      "XpToNextLevel": 235750,
       "UntilLevel": 479,
-      "RowId": "478"
-    },
-    {
-      "XpPerLevel": 236750,
+      "RowId": "478",
+      "Level": 478
+  },
+  {
+      "XpToNextLevel": 236750,
       "UntilLevel": 480,
-      "RowId": "479"
-    },
-    {
-      "XpPerLevel": 237750,
+      "RowId": "479",
+      "Level": 479
+  },
+  {
+      "XpToNextLevel": 237750,
       "UntilLevel": 481,
-      "RowId": "480"
-    },
-    {
-      "XpPerLevel": 238750,
+      "RowId": "480",
+      "Level": 480
+  },
+  {
+      "XpToNextLevel": 238750,
       "UntilLevel": 482,
-      "RowId": "481"
-    },
-    {
-      "XpPerLevel": 239750,
+      "RowId": "481",
+      "Level": 481
+  },
+  {
+      "XpToNextLevel": 239750,
       "UntilLevel": 483,
-      "RowId": "482"
-    },
-    {
-      "XpPerLevel": 240750,
+      "RowId": "482",
+      "Level": 482
+  },
+  {
+      "XpToNextLevel": 240750,
       "UntilLevel": 484,
-      "RowId": "483"
-    },
-    {
-      "XpPerLevel": 241750,
+      "RowId": "483",
+      "Level": 483
+  },
+  {
+      "XpToNextLevel": 241750,
       "UntilLevel": 485,
-      "RowId": "484"
-    },
-    {
-      "XpPerLevel": 242750,
+      "RowId": "484",
+      "Level": 484
+  },
+  {
+      "XpToNextLevel": 242750,
       "UntilLevel": 486,
-      "RowId": "485"
-    },
-    {
-      "XpPerLevel": 243750,
+      "RowId": "485",
+      "Level": 485
+  },
+  {
+      "XpToNextLevel": 243750,
       "UntilLevel": 487,
-      "RowId": "486"
-    },
-    {
-      "XpPerLevel": 244750,
+      "RowId": "486",
+      "Level": 486
+  },
+  {
+      "XpToNextLevel": 244750,
       "UntilLevel": 488,
-      "RowId": "487"
-    },
-    {
-      "XpPerLevel": 245750,
+      "RowId": "487",
+      "Level": 487
+  },
+  {
+      "XpToNextLevel": 245750,
       "UntilLevel": 489,
-      "RowId": "488"
-    },
-    {
-      "XpPerLevel": 246750,
+      "RowId": "488",
+      "Level": 488
+  },
+  {
+      "XpToNextLevel": 246750,
       "UntilLevel": 490,
-      "RowId": "489"
-    },
-    {
-      "XpPerLevel": 247750,
+      "RowId": "489",
+      "Level": 489
+  },
+  {
+      "XpToNextLevel": 247750,
       "UntilLevel": 491,
-      "RowId": "490"
-    },
-    {
-      "XpPerLevel": 248750,
+      "RowId": "490",
+      "Level": 490
+  },
+  {
+      "XpToNextLevel": 248750,
       "UntilLevel": 492,
-      "RowId": "491"
-    },
-    {
-      "XpPerLevel": 249750,
+      "RowId": "491",
+      "Level": 491
+  },
+  {
+      "XpToNextLevel": 249750,
       "UntilLevel": 493,
-      "RowId": "492"
-    },
-    {
-      "XpPerLevel": 250750,
+      "RowId": "492",
+      "Level": 492
+  },
+  {
+      "XpToNextLevel": 250750,
       "UntilLevel": 494,
-      "RowId": "493"
-    },
-    {
-      "XpPerLevel": 251750,
+      "RowId": "493",
+      "Level": 493
+  },
+  {
+      "XpToNextLevel": 251750,
       "UntilLevel": 495,
-      "RowId": "494"
-    },
-    {
-      "XpPerLevel": 252750,
+      "RowId": "494",
+      "Level": 494
+  },
+  {
+      "XpToNextLevel": 252750,
       "UntilLevel": 496,
-      "RowId": "495"
-    },
-    {
-      "XpPerLevel": 254000,
+      "RowId": "495",
+      "Level": 495
+  },
+  {
+      "XpToNextLevel": 254000,
       "UntilLevel": 497,
-      "RowId": "496"
-    },
-    {
-      "XpPerLevel": 255000,
+      "RowId": "496",
+      "Level": 496
+  },
+  {
+      "XpToNextLevel": 255000,
       "UntilLevel": 498,
-      "RowId": "497"
-    },
-    {
-      "XpPerLevel": 256000,
+      "RowId": "497",
+      "Level": 497
+  },
+  {
+      "XpToNextLevel": 256000,
       "UntilLevel": 499,
-      "RowId": "498"
-    },
-    {
-      "XpPerLevel": 257000,
+      "RowId": "498",
+      "Level": 498
+  },
+  {
+      "XpToNextLevel": 257000,
       "UntilLevel": 500,
-      "RowId": "499"
-    },
-    {
-      "XpPerLevel": 258000,
+      "RowId": "499",
+      "Level": 499
+  },
+  {
+      "XpToNextLevel": 258000,
       "UntilLevel": 501,
-      "RowId": "500"
-    },
-    {
-      "XpPerLevel": 259250,
+      "RowId": "500",
+      "Level": 500
+  },
+  {
+      "XpToNextLevel": 259250,
       "UntilLevel": 502,
-      "RowId": "501"
-    },
-    {
-      "XpPerLevel": 260250,
+      "RowId": "501",
+      "Level": 501
+  },
+  {
+      "XpToNextLevel": 260250,
       "UntilLevel": 503,
-      "RowId": "502"
-    },
-    {
-      "XpPerLevel": 261250,
+      "RowId": "502",
+      "Level": 502
+  },
+  {
+      "XpToNextLevel": 261250,
       "UntilLevel": 504,
-      "RowId": "503"
-    },
-    {
-      "XpPerLevel": 262250,
+      "RowId": "503",
+      "Level": 503
+  },
+  {
+      "XpToNextLevel": 262250,
       "UntilLevel": 505,
-      "RowId": "504"
-    },
-    {
-      "XpPerLevel": 263500,
+      "RowId": "504",
+      "Level": 504
+  },
+  {
+      "XpToNextLevel": 263500,
       "UntilLevel": 506,
-      "RowId": "505"
-    },
-    {
-      "XpPerLevel": 264500,
+      "RowId": "505",
+      "Level": 505
+  },
+  {
+      "XpToNextLevel": 264500,
       "UntilLevel": 507,
-      "RowId": "506"
-    },
-    {
-      "XpPerLevel": 265500,
+      "RowId": "506",
+      "Level": 506
+  },
+  {
+      "XpToNextLevel": 265500,
       "UntilLevel": 508,
-      "RowId": "507"
-    },
-    {
-      "XpPerLevel": 266750,
+      "RowId": "507",
+      "Level": 507
+  },
+  {
+      "XpToNextLevel": 266750,
       "UntilLevel": 509,
-      "RowId": "508"
-    },
-    {
-      "XpPerLevel": 267750,
+      "RowId": "508",
+      "Level": 508
+  },
+  {
+      "XpToNextLevel": 267750,
       "UntilLevel": 510,
-      "RowId": "509"
-    },
-    {
-      "XpPerLevel": 269000,
+      "RowId": "509",
+      "Level": 509
+  },
+  {
+      "XpToNextLevel": 269000,
       "UntilLevel": 511,
-      "RowId": "510"
-    },
-    {
-      "XpPerLevel": 270000,
+      "RowId": "510",
+      "Level": 510
+  },
+  {
+      "XpToNextLevel": 270000,
       "UntilLevel": 512,
-      "RowId": "511"
-    },
-    {
-      "XpPerLevel": 271250,
+      "RowId": "511",
+      "Level": 511
+  },
+  {
+      "XpToNextLevel": 271250,
       "UntilLevel": 513,
-      "RowId": "512"
-    },
-    {
-      "XpPerLevel": 272250,
+      "RowId": "512",
+      "Level": 512
+  },
+  {
+      "XpToNextLevel": 272250,
       "UntilLevel": 514,
-      "RowId": "513"
-    },
-    {
-      "XpPerLevel": 273250,
+      "RowId": "513",
+      "Level": 513
+  },
+  {
+      "XpToNextLevel": 273250,
       "UntilLevel": 515,
-      "RowId": "514"
-    },
-    {
-      "XpPerLevel": 274500,
+      "RowId": "514",
+      "Level": 514
+  },
+  {
+      "XpToNextLevel": 274500,
       "UntilLevel": 516,
-      "RowId": "515"
-    },
-    {
-      "XpPerLevel": 275500,
+      "RowId": "515",
+      "Level": 515
+  },
+  {
+      "XpToNextLevel": 275500,
       "UntilLevel": 517,
-      "RowId": "516"
-    },
-    {
-      "XpPerLevel": 276750,
+      "RowId": "516",
+      "Level": 516
+  },
+  {
+      "XpToNextLevel": 276750,
       "UntilLevel": 518,
-      "RowId": "517"
-    },
-    {
-      "XpPerLevel": 278000,
+      "RowId": "517",
+      "Level": 517
+  },
+  {
+      "XpToNextLevel": 278000,
       "UntilLevel": 519,
-      "RowId": "518"
-    },
-    {
-      "XpPerLevel": 279000,
+      "RowId": "518",
+      "Level": 518
+  },
+  {
+      "XpToNextLevel": 279000,
       "UntilLevel": 520,
-      "RowId": "519"
-    },
-    {
-      "XpPerLevel": 280250,
+      "RowId": "519",
+      "Level": 519
+  },
+  {
+      "XpToNextLevel": 280250,
       "UntilLevel": 521,
-      "RowId": "520"
-    },
-    {
-      "XpPerLevel": 281250,
+      "RowId": "520",
+      "Level": 520
+  },
+  {
+      "XpToNextLevel": 281250,
       "UntilLevel": 522,
-      "RowId": "521"
-    },
-    {
-      "XpPerLevel": 282500,
+      "RowId": "521",
+      "Level": 521
+  },
+  {
+      "XpToNextLevel": 282500,
       "UntilLevel": 523,
-      "RowId": "522"
-    },
-    {
-      "XpPerLevel": 283750,
+      "RowId": "522",
+      "Level": 522
+  },
+  {
+      "XpToNextLevel": 283750,
       "UntilLevel": 524,
-      "RowId": "523"
-    },
-    {
-      "XpPerLevel": 284750,
+      "RowId": "523",
+      "Level": 523
+  },
+  {
+      "XpToNextLevel": 284750,
       "UntilLevel": 525,
-      "RowId": "524"
-    },
-    {
-      "XpPerLevel": 286000,
+      "RowId": "524",
+      "Level": 524
+  },
+  {
+      "XpToNextLevel": 286000,
       "UntilLevel": 526,
-      "RowId": "525"
-    },
-    {
-      "XpPerLevel": 287250,
+      "RowId": "525",
+      "Level": 525
+  },
+  {
+      "XpToNextLevel": 287250,
       "UntilLevel": 527,
-      "RowId": "526"
-    },
-    {
-      "XpPerLevel": 288250,
+      "RowId": "526",
+      "Level": 526
+  },
+  {
+      "XpToNextLevel": 288250,
       "UntilLevel": 528,
-      "RowId": "527"
-    },
-    {
-      "XpPerLevel": 289500,
+      "RowId": "527",
+      "Level": 527
+  },
+  {
+      "XpToNextLevel": 289500,
       "UntilLevel": 529,
-      "RowId": "528"
-    },
-    {
-      "XpPerLevel": 290750,
+      "RowId": "528",
+      "Level": 528
+  },
+  {
+      "XpToNextLevel": 290750,
       "UntilLevel": 530,
-      "RowId": "529"
-    },
-    {
-      "XpPerLevel": 292000,
+      "RowId": "529",
+      "Level": 529
+  },
+  {
+      "XpToNextLevel": 292000,
       "UntilLevel": 531,
-      "RowId": "530"
-    },
-    {
-      "XpPerLevel": 293000,
+      "RowId": "530",
+      "Level": 530
+  },
+  {
+      "XpToNextLevel": 293000,
       "UntilLevel": 532,
-      "RowId": "531"
-    },
-    {
-      "XpPerLevel": 294250,
+      "RowId": "531",
+      "Level": 531
+  },
+  {
+      "XpToNextLevel": 294250,
       "UntilLevel": 533,
-      "RowId": "532"
-    },
-    {
-      "XpPerLevel": 295500,
+      "RowId": "532",
+      "Level": 532
+  },
+  {
+      "XpToNextLevel": 295500,
       "UntilLevel": 534,
-      "RowId": "533"
-    },
-    {
-      "XpPerLevel": 296750,
+      "RowId": "533",
+      "Level": 533
+  },
+  {
+      "XpToNextLevel": 296750,
       "UntilLevel": 535,
-      "RowId": "534"
-    },
-    {
-      "XpPerLevel": 298000,
+      "RowId": "534",
+      "Level": 534
+  },
+  {
+      "XpToNextLevel": 298000,
       "UntilLevel": 536,
-      "RowId": "535"
-    },
-    {
-      "XpPerLevel": 299250,
+      "RowId": "535",
+      "Level": 535
+  },
+  {
+      "XpToNextLevel": 299250,
       "UntilLevel": 537,
-      "RowId": "536"
-    },
-    {
-      "XpPerLevel": 300500,
+      "RowId": "536",
+      "Level": 536
+  },
+  {
+      "XpToNextLevel": 300500,
       "UntilLevel": 538,
-      "RowId": "537"
-    },
-    {
-      "XpPerLevel": 301750,
+      "RowId": "537",
+      "Level": 537
+  },
+  {
+      "XpToNextLevel": 301750,
       "UntilLevel": 539,
-      "RowId": "538"
-    },
-    {
-      "XpPerLevel": 303000,
+      "RowId": "538",
+      "Level": 538
+  },
+  {
+      "XpToNextLevel": 303000,
       "UntilLevel": 540,
-      "RowId": "539"
-    },
-    {
-      "XpPerLevel": 304250,
+      "RowId": "539",
+      "Level": 539
+  },
+  {
+      "XpToNextLevel": 304250,
       "UntilLevel": 541,
-      "RowId": "540"
-    },
-    {
-      "XpPerLevel": 305500,
+      "RowId": "540",
+      "Level": 540
+  },
+  {
+      "XpToNextLevel": 305500,
       "UntilLevel": 542,
-      "RowId": "541"
-    },
-    {
-      "XpPerLevel": 306750,
+      "RowId": "541",
+      "Level": 541
+  },
+  {
+      "XpToNextLevel": 306750,
       "UntilLevel": 543,
-      "RowId": "542"
-    },
-    {
-      "XpPerLevel": 308000,
+      "RowId": "542",
+      "Level": 542
+  },
+  {
+      "XpToNextLevel": 308000,
       "UntilLevel": 544,
-      "RowId": "543"
-    },
-    {
-      "XpPerLevel": 309250,
+      "RowId": "543",
+      "Level": 543
+  },
+  {
+      "XpToNextLevel": 309250,
       "UntilLevel": 545,
-      "RowId": "544"
-    },
-    {
-      "XpPerLevel": 310500,
+      "RowId": "544",
+      "Level": 544
+  },
+  {
+      "XpToNextLevel": 310500,
       "UntilLevel": 546,
-      "RowId": "545"
-    },
-    {
-      "XpPerLevel": 311750,
+      "RowId": "545",
+      "Level": 545
+  },
+  {
+      "XpToNextLevel": 311750,
       "UntilLevel": 547,
-      "RowId": "546"
-    },
-    {
-      "XpPerLevel": 313000,
+      "RowId": "546",
+      "Level": 546
+  },
+  {
+      "XpToNextLevel": 313000,
       "UntilLevel": 548,
-      "RowId": "547"
-    },
-    {
-      "XpPerLevel": 314250,
+      "RowId": "547",
+      "Level": 547
+  },
+  {
+      "XpToNextLevel": 314250,
       "UntilLevel": 549,
-      "RowId": "548"
-    },
-    {
-      "XpPerLevel": 315500,
+      "RowId": "548",
+      "Level": 548
+  },
+  {
+      "XpToNextLevel": 315500,
       "UntilLevel": 550,
-      "RowId": "549"
-    },
-    {
-      "XpPerLevel": 317000,
+      "RowId": "549",
+      "Level": 549
+  },
+  {
+      "XpToNextLevel": 317000,
       "UntilLevel": 551,
-      "RowId": "550"
-    },
-    {
-      "XpPerLevel": 318250,
+      "RowId": "550",
+      "Level": 550
+  },
+  {
+      "XpToNextLevel": 318250,
       "UntilLevel": 552,
-      "RowId": "551"
-    },
-    {
-      "XpPerLevel": 319500,
+      "RowId": "551",
+      "Level": 551
+  },
+  {
+      "XpToNextLevel": 319500,
       "UntilLevel": 553,
-      "RowId": "552"
-    },
-    {
-      "XpPerLevel": 320750,
+      "RowId": "552",
+      "Level": 552
+  },
+  {
+      "XpToNextLevel": 320750,
       "UntilLevel": 554,
-      "RowId": "553"
-    },
-    {
-      "XpPerLevel": 322000,
+      "RowId": "553",
+      "Level": 553
+  },
+  {
+      "XpToNextLevel": 322000,
       "UntilLevel": 555,
-      "RowId": "554"
-    },
-    {
-      "XpPerLevel": 323500,
+      "RowId": "554",
+      "Level": 554
+  },
+  {
+      "XpToNextLevel": 323500,
       "UntilLevel": 556,
-      "RowId": "555"
-    },
-    {
-      "XpPerLevel": 324750,
+      "RowId": "555",
+      "Level": 555
+  },
+  {
+      "XpToNextLevel": 324750,
       "UntilLevel": 557,
-      "RowId": "556"
-    },
-    {
-      "XpPerLevel": 326000,
+      "RowId": "556",
+      "Level": 556
+  },
+  {
+      "XpToNextLevel": 326000,
       "UntilLevel": 558,
-      "RowId": "557"
-    },
-    {
-      "XpPerLevel": 327500,
+      "RowId": "557",
+      "Level": 557
+  },
+  {
+      "XpToNextLevel": 327500,
       "UntilLevel": 559,
-      "RowId": "558"
-    },
-    {
-      "XpPerLevel": 328750,
+      "RowId": "558",
+      "Level": 558
+  },
+  {
+      "XpToNextLevel": 328750,
       "UntilLevel": 560,
-      "RowId": "559"
-    },
-    {
-      "XpPerLevel": 330250,
+      "RowId": "559",
+      "Level": 559
+  },
+  {
+      "XpToNextLevel": 330250,
       "UntilLevel": 561,
-      "RowId": "560"
-    },
-    {
-      "XpPerLevel": 331500,
+      "RowId": "560",
+      "Level": 560
+  },
+  {
+      "XpToNextLevel": 331500,
       "UntilLevel": 562,
-      "RowId": "561"
-    },
-    {
-      "XpPerLevel": 332750,
+      "RowId": "561",
+      "Level": 561
+  },
+  {
+      "XpToNextLevel": 332750,
       "UntilLevel": 563,
-      "RowId": "562"
-    },
-    {
-      "XpPerLevel": 334250,
+      "RowId": "562",
+      "Level": 562
+  },
+  {
+      "XpToNextLevel": 334250,
       "UntilLevel": 564,
-      "RowId": "563"
-    },
-    {
-      "XpPerLevel": 335500,
+      "RowId": "563",
+      "Level": 563
+  },
+  {
+      "XpToNextLevel": 335500,
       "UntilLevel": 565,
-      "RowId": "564"
-    },
-    {
-      "XpPerLevel": 337000,
+      "RowId": "564",
+      "Level": 564
+  },
+  {
+      "XpToNextLevel": 337000,
       "UntilLevel": 566,
-      "RowId": "565"
-    },
-    {
-      "XpPerLevel": 338500,
+      "RowId": "565",
+      "Level": 565
+  },
+  {
+      "XpToNextLevel": 338500,
       "UntilLevel": 567,
-      "RowId": "566"
-    },
-    {
-      "XpPerLevel": 339750,
+      "RowId": "566",
+      "Level": 566
+  },
+  {
+      "XpToNextLevel": 339750,
       "UntilLevel": 568,
-      "RowId": "567"
-    },
-    {
-      "XpPerLevel": 341250,
+      "RowId": "567",
+      "Level": 567
+  },
+  {
+      "XpToNextLevel": 341250,
       "UntilLevel": 569,
-      "RowId": "568"
-    },
-    {
-      "XpPerLevel": 342500,
+      "RowId": "568",
+      "Level": 568
+  },
+  {
+      "XpToNextLevel": 342500,
       "UntilLevel": 570,
-      "RowId": "569"
-    },
-    {
-      "XpPerLevel": 344000,
+      "RowId": "569",
+      "Level": 569
+  },
+  {
+      "XpToNextLevel": 344000,
       "UntilLevel": 571,
-      "RowId": "570"
-    },
-    {
-      "XpPerLevel": 345500,
+      "RowId": "570",
+      "Level": 570
+  },
+  {
+      "XpToNextLevel": 345500,
       "UntilLevel": 572,
-      "RowId": "571"
-    },
-    {
-      "XpPerLevel": 346750,
+      "RowId": "571",
+      "Level": 571
+  },
+  {
+      "XpToNextLevel": 346750,
       "UntilLevel": 573,
-      "RowId": "572"
-    },
-    {
-      "XpPerLevel": 348250,
+      "RowId": "572",
+      "Level": 572
+  },
+  {
+      "XpToNextLevel": 348250,
       "UntilLevel": 574,
-      "RowId": "573"
-    },
-    {
-      "XpPerLevel": 349750,
+      "RowId": "573",
+      "Level": 573
+  },
+  {
+      "XpToNextLevel": 349750,
       "UntilLevel": 575,
-      "RowId": "574"
-    },
-    {
-      "XpPerLevel": 351000,
+      "RowId": "574",
+      "Level": 574
+  },
+  {
+      "XpToNextLevel": 351000,
       "UntilLevel": 576,
-      "RowId": "575"
-    },
-    {
-      "XpPerLevel": 352500,
+      "RowId": "575",
+      "Level": 575
+  },
+  {
+      "XpToNextLevel": 352500,
       "UntilLevel": 577,
-      "RowId": "576"
-    },
-    {
-      "XpPerLevel": 354000,
+      "RowId": "576",
+      "Level": 576
+  },
+  {
+      "XpToNextLevel": 354000,
       "UntilLevel": 578,
-      "RowId": "577"
-    },
-    {
-      "XpPerLevel": 355500,
+      "RowId": "577",
+      "Level": 577
+  },
+  {
+      "XpToNextLevel": 355500,
       "UntilLevel": 579,
-      "RowId": "578"
-    },
-    {
-      "XpPerLevel": 357000,
+      "RowId": "578",
+      "Level": 578
+  },
+  {
+      "XpToNextLevel": 357000,
       "UntilLevel": 580,
-      "RowId": "579"
-    },
-    {
-      "XpPerLevel": 358500,
+      "RowId": "579",
+      "Level": 579
+  },
+  {
+      "XpToNextLevel": 358500,
       "UntilLevel": 581,
-      "RowId": "580"
-    },
-    {
-      "XpPerLevel": 359750,
+      "RowId": "580",
+      "Level": 580
+  },
+  {
+      "XpToNextLevel": 359750,
       "UntilLevel": 582,
-      "RowId": "581"
-    },
-    {
-      "XpPerLevel": 361250,
+      "RowId": "581",
+      "Level": 581
+  },
+  {
+      "XpToNextLevel": 361250,
       "UntilLevel": 583,
-      "RowId": "582"
-    },
-    {
-      "XpPerLevel": 362750,
+      "RowId": "582",
+      "Level": 582
+  },
+  {
+      "XpToNextLevel": 362750,
       "UntilLevel": 584,
-      "RowId": "583"
-    },
-    {
-      "XpPerLevel": 364250,
+      "RowId": "583",
+      "Level": 583
+  },
+  {
+      "XpToNextLevel": 364250,
       "UntilLevel": 585,
-      "RowId": "584"
-    },
-    {
-      "XpPerLevel": 365750,
+      "RowId": "584",
+      "Level": 584
+  },
+  {
+      "XpToNextLevel": 365750,
       "UntilLevel": 586,
-      "RowId": "585"
-    },
-    {
-      "XpPerLevel": 367250,
+      "RowId": "585",
+      "Level": 585
+  },
+  {
+      "XpToNextLevel": 367250,
       "UntilLevel": 587,
-      "RowId": "586"
-    },
-    {
-      "XpPerLevel": 368750,
+      "RowId": "586",
+      "Level": 586
+  },
+  {
+      "XpToNextLevel": 368750,
       "UntilLevel": 588,
-      "RowId": "587"
-    },
-    {
-      "XpPerLevel": 370250,
+      "RowId": "587",
+      "Level": 587
+  },
+  {
+      "XpToNextLevel": 370250,
       "UntilLevel": 589,
-      "RowId": "588"
-    },
-    {
-      "XpPerLevel": 371750,
+      "RowId": "588",
+      "Level": 588
+  },
+  {
+      "XpToNextLevel": 371750,
       "UntilLevel": 590,
-      "RowId": "589"
-    },
-    {
-      "XpPerLevel": 373500,
+      "RowId": "589",
+      "Level": 589
+  },
+  {
+      "XpToNextLevel": 373500,
       "UntilLevel": 591,
-      "RowId": "590"
-    },
-    {
-      "XpPerLevel": 375000,
+      "RowId": "590",
+      "Level": 590
+  },
+  {
+      "XpToNextLevel": 375000,
       "UntilLevel": 592,
-      "RowId": "591"
-    },
-    {
-      "XpPerLevel": 376500,
+      "RowId": "591",
+      "Level": 591
+  },
+  {
+      "XpToNextLevel": 376500,
       "UntilLevel": 593,
-      "RowId": "592"
-    },
-    {
-      "XpPerLevel": 378000,
+      "RowId": "592",
+      "Level": 592
+  },
+  {
+      "XpToNextLevel": 378000,
       "UntilLevel": 594,
-      "RowId": "593"
-    },
-    {
-      "XpPerLevel": 379500,
+      "RowId": "593",
+      "Level": 593
+  },
+  {
+      "XpToNextLevel": 379500,
       "UntilLevel": 595,
-      "RowId": "594"
-    },
-    {
-      "XpPerLevel": 381250,
+      "RowId": "594",
+      "Level": 594
+  },
+  {
+      "XpToNextLevel": 381250,
       "UntilLevel": 596,
-      "RowId": "595"
-    },
-    {
-      "XpPerLevel": 382750,
+      "RowId": "595",
+      "Level": 595
+  },
+  {
+      "XpToNextLevel": 382750,
       "UntilLevel": 597,
-      "RowId": "596"
-    },
-    {
-      "XpPerLevel": 384250,
+      "RowId": "596",
+      "Level": 596
+  },
+  {
+      "XpToNextLevel": 384250,
       "UntilLevel": 598,
-      "RowId": "597"
-    },
-    {
-      "XpPerLevel": 385750,
+      "RowId": "597",
+      "Level": 597
+  },
+  {
+      "XpToNextLevel": 385750,
       "UntilLevel": 599,
-      "RowId": "598"
-    },
-    {
-      "XpPerLevel": 387500,
+      "RowId": "598",
+      "Level": 598
+  },
+  {
+      "XpToNextLevel": 387500,
       "UntilLevel": 600,
-      "RowId": "599"
-    },
-    {
-      "XpPerLevel": 389000,
+      "RowId": "599",
+      "Level": 599
+  },
+  {
+      "XpToNextLevel": 389000,
       "UntilLevel": 601,
-      "RowId": "600"
-    },
-    {
-      "XpPerLevel": 390750,
+      "RowId": "600",
+      "Level": 600
+  },
+  {
+      "XpToNextLevel": 390750,
       "UntilLevel": 602,
-      "RowId": "601"
-    },
-    {
-      "XpPerLevel": 392250,
+      "RowId": "601",
+      "Level": 601
+  },
+  {
+      "XpToNextLevel": 392250,
       "UntilLevel": 603,
-      "RowId": "602"
-    },
-    {
-      "XpPerLevel": 393750,
+      "RowId": "602",
+      "Level": 602
+  },
+  {
+      "XpToNextLevel": 393750,
       "UntilLevel": 604,
-      "RowId": "603"
-    },
-    {
-      "XpPerLevel": 395500,
+      "RowId": "603",
+      "Level": 603
+  },
+  {
+      "XpToNextLevel": 395500,
       "UntilLevel": 605,
-      "RowId": "604"
-    },
-    {
-      "XpPerLevel": 397000,
+      "RowId": "604",
+      "Level": 604
+  },
+  {
+      "XpToNextLevel": 397000,
       "UntilLevel": 606,
-      "RowId": "605"
-    },
-    {
-      "XpPerLevel": 398750,
+      "RowId": "605",
+      "Level": 605
+  },
+  {
+      "XpToNextLevel": 398750,
       "UntilLevel": 607,
-      "RowId": "606"
-    },
-    {
-      "XpPerLevel": 400500,
+      "RowId": "606",
+      "Level": 606
+  },
+  {
+      "XpToNextLevel": 400500,
       "UntilLevel": 608,
-      "RowId": "607"
-    },
-    {
-      "XpPerLevel": 402000,
+      "RowId": "607",
+      "Level": 607
+  },
+  {
+      "XpToNextLevel": 402000,
       "UntilLevel": 609,
-      "RowId": "608"
-    },
-    {
-      "XpPerLevel": 403750,
+      "RowId": "608",
+      "Level": 608
+  },
+  {
+      "XpToNextLevel": 403750,
       "UntilLevel": 610,
-      "RowId": "609"
-    },
-    {
-      "XpPerLevel": 405250,
+      "RowId": "609",
+      "Level": 609
+  },
+  {
+      "XpToNextLevel": 405250,
       "UntilLevel": 611,
-      "RowId": "610"
-    },
-    {
-      "XpPerLevel": 407000,
+      "RowId": "610",
+      "Level": 610
+  },
+  {
+      "XpToNextLevel": 407000,
       "UntilLevel": 612,
-      "RowId": "611"
-    },
-    {
-      "XpPerLevel": 408750,
+      "RowId": "611",
+      "Level": 611
+  },
+  {
+      "XpToNextLevel": 408750,
       "UntilLevel": 613,
-      "RowId": "612"
-    },
-    {
-      "XpPerLevel": 410250,
+      "RowId": "612",
+      "Level": 612
+  },
+  {
+      "XpToNextLevel": 410250,
       "UntilLevel": 614,
-      "RowId": "613"
-    },
-    {
-      "XpPerLevel": 412000,
+      "RowId": "613",
+      "Level": 613
+  },
+  {
+      "XpToNextLevel": 412000,
       "UntilLevel": 615,
-      "RowId": "614"
-    },
-    {
-      "XpPerLevel": 413750,
+      "RowId": "614",
+      "Level": 614
+  },
+  {
+      "XpToNextLevel": 413750,
       "UntilLevel": 616,
-      "RowId": "615"
-    },
-    {
-      "XpPerLevel": 415500,
+      "RowId": "615",
+      "Level": 615
+  },
+  {
+      "XpToNextLevel": 415500,
       "UntilLevel": 617,
-      "RowId": "616"
-    },
-    {
-      "XpPerLevel": 417250,
+      "RowId": "616",
+      "Level": 616
+  },
+  {
+      "XpToNextLevel": 417250,
       "UntilLevel": 618,
-      "RowId": "617"
-    },
-    {
-      "XpPerLevel": 418750,
+      "RowId": "617",
+      "Level": 617
+  },
+  {
+      "XpToNextLevel": 418750,
       "UntilLevel": 619,
-      "RowId": "618"
-    },
-    {
-      "XpPerLevel": 420500,
+      "RowId": "618",
+      "Level": 618
+  },
+  {
+      "XpToNextLevel": 420500,
       "UntilLevel": 620,
-      "RowId": "619"
-    },
-    {
-      "XpPerLevel": 422250,
+      "RowId": "619",
+      "Level": 619
+  },
+  {
+      "XpToNextLevel": 422250,
       "UntilLevel": 621,
-      "RowId": "620"
-    },
-    {
-      "XpPerLevel": 424000,
+      "RowId": "620",
+      "Level": 620
+  },
+  {
+      "XpToNextLevel": 424000,
       "UntilLevel": 622,
-      "RowId": "621"
-    },
-    {
-      "XpPerLevel": 425750,
+      "RowId": "621",
+      "Level": 621
+  },
+  {
+      "XpToNextLevel": 425750,
       "UntilLevel": 623,
-      "RowId": "622"
-    },
-    {
-      "XpPerLevel": 427500,
+      "RowId": "622",
+      "Level": 622
+  },
+  {
+      "XpToNextLevel": 427500,
       "UntilLevel": 624,
-      "RowId": "623"
-    },
-    {
-      "XpPerLevel": 429250,
+      "RowId": "623",
+      "Level": 623
+  },
+  {
+      "XpToNextLevel": 429250,
       "UntilLevel": 625,
-      "RowId": "624"
-    },
-    {
-      "XpPerLevel": 431000,
+      "RowId": "624",
+      "Level": 624
+  },
+  {
+      "XpToNextLevel": 431000,
       "UntilLevel": 626,
-      "RowId": "625"
-    },
-    {
-      "XpPerLevel": 432750,
+      "RowId": "625",
+      "Level": 625
+  },
+  {
+      "XpToNextLevel": 432750,
       "UntilLevel": 627,
-      "RowId": "626"
-    },
-    {
-      "XpPerLevel": 434500,
+      "RowId": "626",
+      "Level": 626
+  },
+  {
+      "XpToNextLevel": 434500,
       "UntilLevel": 628,
-      "RowId": "627"
-    },
-    {
-      "XpPerLevel": 436500,
+      "RowId": "627",
+      "Level": 627
+  },
+  {
+      "XpToNextLevel": 436500,
       "UntilLevel": 629,
-      "RowId": "628"
-    },
-    {
-      "XpPerLevel": 438250,
+      "RowId": "628",
+      "Level": 628
+  },
+  {
+      "XpToNextLevel": 438250,
       "UntilLevel": 630,
-      "RowId": "629"
-    },
-    {
-      "XpPerLevel": 440000,
+      "RowId": "629",
+      "Level": 629
+  },
+  {
+      "XpToNextLevel": 440000,
       "UntilLevel": 631,
-      "RowId": "630"
-    },
-    {
-      "XpPerLevel": 441750,
+      "RowId": "630",
+      "Level": 630
+  },
+  {
+      "XpToNextLevel": 441750,
       "UntilLevel": 632,
-      "RowId": "631"
-    },
-    {
-      "XpPerLevel": 443750,
+      "RowId": "631",
+      "Level": 631
+  },
+  {
+      "XpToNextLevel": 443750,
       "UntilLevel": 633,
-      "RowId": "632"
-    },
-    {
-      "XpPerLevel": 445500,
+      "RowId": "632",
+      "Level": 632
+  },
+  {
+      "XpToNextLevel": 445500,
       "UntilLevel": 634,
-      "RowId": "633"
-    },
-    {
-      "XpPerLevel": 447250,
+      "RowId": "633",
+      "Level": 633
+  },
+  {
+      "XpToNextLevel": 447250,
       "UntilLevel": 635,
-      "RowId": "634"
-    },
-    {
-      "XpPerLevel": 449000,
+      "RowId": "634",
+      "Level": 634
+  },
+  {
+      "XpToNextLevel": 449000,
       "UntilLevel": 636,
-      "RowId": "635"
-    },
-    {
-      "XpPerLevel": 451000,
+      "RowId": "635",
+      "Level": 635
+  },
+  {
+      "XpToNextLevel": 451000,
       "UntilLevel": 637,
-      "RowId": "636"
-    },
-    {
-      "XpPerLevel": 452750,
+      "RowId": "636",
+      "Level": 636
+  },
+  {
+      "XpToNextLevel": 452750,
       "UntilLevel": 638,
-      "RowId": "637"
-    },
-    {
-      "XpPerLevel": 454750,
+      "RowId": "637",
+      "Level": 637
+  },
+  {
+      "XpToNextLevel": 454750,
       "UntilLevel": 639,
-      "RowId": "638"
-    },
-    {
-      "XpPerLevel": 456500,
+      "RowId": "638",
+      "Level": 638
+  },
+  {
+      "XpToNextLevel": 456500,
       "UntilLevel": 640,
-      "RowId": "639"
-    },
-    {
-      "XpPerLevel": 458500,
+      "RowId": "639",
+      "Level": 639
+  },
+  {
+      "XpToNextLevel": 458500,
       "UntilLevel": 641,
-      "RowId": "640"
-    },
-    {
-      "XpPerLevel": 460250,
+      "RowId": "640",
+      "Level": 640
+  },
+  {
+      "XpToNextLevel": 460250,
       "UntilLevel": 642,
-      "RowId": "641"
-    },
-    {
-      "XpPerLevel": 462250,
+      "RowId": "641",
+      "Level": 641
+  },
+  {
+      "XpToNextLevel": 462250,
       "UntilLevel": 643,
-      "RowId": "642"
-    },
-    {
-      "XpPerLevel": 464000,
+      "RowId": "642",
+      "Level": 642
+  },
+  {
+      "XpToNextLevel": 464000,
       "UntilLevel": 644,
-      "RowId": "643"
-    },
-    {
-      "XpPerLevel": 466000,
+      "RowId": "643",
+      "Level": 643
+  },
+  {
+      "XpToNextLevel": 466000,
       "UntilLevel": 645,
-      "RowId": "644"
-    },
-    {
-      "XpPerLevel": 468000,
+      "RowId": "644",
+      "Level": 644
+  },
+  {
+      "XpToNextLevel": 468000,
       "UntilLevel": 646,
-      "RowId": "645"
-    },
-    {
-      "XpPerLevel": 469750,
+      "RowId": "645",
+      "Level": 645
+  },
+  {
+      "XpToNextLevel": 469750,
       "UntilLevel": 647,
-      "RowId": "646"
-    },
-    {
-      "XpPerLevel": 471750,
+      "RowId": "646",
+      "Level": 646
+  },
+  {
+      "XpToNextLevel": 471750,
       "UntilLevel": 648,
-      "RowId": "647"
-    },
-    {
-      "XpPerLevel": 473750,
+      "RowId": "647",
+      "Level": 647
+  },
+  {
+      "XpToNextLevel": 473750,
       "UntilLevel": 649,
-      "RowId": "648"
-    },
-    {
-      "XpPerLevel": 475750,
+      "RowId": "648",
+      "Level": 648
+  },
+  {
+      "XpToNextLevel": 475750,
       "UntilLevel": 650,
-      "RowId": "649"
-    },
-    {
-      "XpPerLevel": 477750,
+      "RowId": "649",
+      "Level": 649
+  },
+  {
+      "XpToNextLevel": 477750,
       "UntilLevel": 651,
-      "RowId": "650"
-    },
-    {
-      "XpPerLevel": 479500,
+      "RowId": "650",
+      "Level": 650
+  },
+  {
+      "XpToNextLevel": 479500,
       "UntilLevel": 652,
-      "RowId": "651"
-    },
-    {
-      "XpPerLevel": 481500,
+      "RowId": "651",
+      "Level": 651
+  },
+  {
+      "XpToNextLevel": 481500,
       "UntilLevel": 653,
-      "RowId": "652"
-    },
-    {
-      "XpPerLevel": 483500,
+      "RowId": "652",
+      "Level": 652
+  },
+  {
+      "XpToNextLevel": 483500,
       "UntilLevel": 654,
-      "RowId": "653"
-    },
-    {
-      "XpPerLevel": 485500,
+      "RowId": "653",
+      "Level": 653
+  },
+  {
+      "XpToNextLevel": 485500,
       "UntilLevel": 655,
-      "RowId": "654"
-    },
-    {
-      "XpPerLevel": 487500,
+      "RowId": "654",
+      "Level": 654
+  },
+  {
+      "XpToNextLevel": 487500,
       "UntilLevel": 656,
-      "RowId": "655"
-    },
-    {
-      "XpPerLevel": 489500,
+      "RowId": "655",
+      "Level": 655
+  },
+  {
+      "XpToNextLevel": 489500,
       "UntilLevel": 657,
-      "RowId": "656"
-    },
-    {
-      "XpPerLevel": 491500,
+      "RowId": "656",
+      "Level": 656
+  },
+  {
+      "XpToNextLevel": 491500,
       "UntilLevel": 658,
-      "RowId": "657"
-    },
-    {
-      "XpPerLevel": 493500,
+      "RowId": "657",
+      "Level": 657
+  },
+  {
+      "XpToNextLevel": 493500,
       "UntilLevel": 659,
-      "RowId": "658"
-    },
-    {
-      "XpPerLevel": 495500,
+      "RowId": "658",
+      "Level": 658
+  },
+  {
+      "XpToNextLevel": 495500,
       "UntilLevel": 660,
-      "RowId": "659"
-    },
-    {
-      "XpPerLevel": 497750,
+      "RowId": "659",
+      "Level": 659
+  },
+  {
+      "XpToNextLevel": 497750,
       "UntilLevel": 661,
-      "RowId": "660"
-    },
-    {
-      "XpPerLevel": 499750,
+      "RowId": "660",
+      "Level": 660
+  },
+  {
+      "XpToNextLevel": 499750,
       "UntilLevel": 662,
-      "RowId": "661"
-    },
-    {
-      "XpPerLevel": 501750,
+      "RowId": "661",
+      "Level": 661
+  },
+  {
+      "XpToNextLevel": 501750,
       "UntilLevel": 663,
-      "RowId": "662"
-    },
-    {
-      "XpPerLevel": 503750,
+      "RowId": "662",
+      "Level": 662
+  },
+  {
+      "XpToNextLevel": 503750,
       "UntilLevel": 664,
-      "RowId": "663"
-    },
-    {
-      "XpPerLevel": 506000,
+      "RowId": "663",
+      "Level": 663
+  },
+  {
+      "XpToNextLevel": 506000,
       "UntilLevel": 665,
-      "RowId": "664"
-    },
-    {
-      "XpPerLevel": 508000,
+      "RowId": "664",
+      "Level": 664
+  },
+  {
+      "XpToNextLevel": 508000,
       "UntilLevel": 666,
-      "RowId": "665"
-    },
-    {
-      "XpPerLevel": 510000,
+      "RowId": "665",
+      "Level": 665
+  },
+  {
+      "XpToNextLevel": 510000,
       "UntilLevel": 667,
-      "RowId": "666"
-    },
-    {
-      "XpPerLevel": 512250,
+      "RowId": "666",
+      "Level": 666
+  },
+  {
+      "XpToNextLevel": 512250,
       "UntilLevel": 668,
-      "RowId": "667"
-    },
-    {
-      "XpPerLevel": 514250,
+      "RowId": "667",
+      "Level": 667
+  },
+  {
+      "XpToNextLevel": 514250,
       "UntilLevel": 669,
-      "RowId": "668"
-    },
-    {
-      "XpPerLevel": 516250,
+      "RowId": "668",
+      "Level": 668
+  },
+  {
+      "XpToNextLevel": 516250,
       "UntilLevel": 670,
-      "RowId": "669"
-    },
-    {
-      "XpPerLevel": 518500,
+      "RowId": "669",
+      "Level": 669
+  },
+  {
+      "XpToNextLevel": 518500,
       "UntilLevel": 671,
-      "RowId": "670"
-    },
-    {
-      "XpPerLevel": 520500,
+      "RowId": "670",
+      "Level": 670
+  },
+  {
+      "XpToNextLevel": 520500,
       "UntilLevel": 672,
-      "RowId": "671"
-    },
-    {
-      "XpPerLevel": 522750,
+      "RowId": "671",
+      "Level": 671
+  },
+  {
+      "XpToNextLevel": 522750,
       "UntilLevel": 673,
-      "RowId": "672"
-    },
-    {
-      "XpPerLevel": 525000,
+      "RowId": "672",
+      "Level": 672
+  },
+  {
+      "XpToNextLevel": 525000,
       "UntilLevel": 674,
-      "RowId": "673"
-    },
-    {
-      "XpPerLevel": 527000,
+      "RowId": "673",
+      "Level": 673
+  },
+  {
+      "XpToNextLevel": 527000,
       "UntilLevel": 675,
-      "RowId": "674"
-    },
-    {
-      "XpPerLevel": 529250,
+      "RowId": "674",
+      "Level": 674
+  },
+  {
+      "XpToNextLevel": 529250,
       "UntilLevel": 676,
-      "RowId": "675"
-    },
-    {
-      "XpPerLevel": 531500,
+      "RowId": "675",
+      "Level": 675
+  },
+  {
+      "XpToNextLevel": 531500,
       "UntilLevel": 677,
-      "RowId": "676"
-    },
-    {
-      "XpPerLevel": 533500,
+      "RowId": "676",
+      "Level": 676
+  },
+  {
+      "XpToNextLevel": 533500,
       "UntilLevel": 678,
-      "RowId": "677"
-    },
-    {
-      "XpPerLevel": 535750,
+      "RowId": "677",
+      "Level": 677
+  },
+  {
+      "XpToNextLevel": 535750,
       "UntilLevel": 679,
-      "RowId": "678"
-    },
-    {
-      "XpPerLevel": 538000,
+      "RowId": "678",
+      "Level": 678
+  },
+  {
+      "XpToNextLevel": 538000,
       "UntilLevel": 680,
-      "RowId": "679"
-    },
-    {
-      "XpPerLevel": 540250,
+      "RowId": "679",
+      "Level": 679
+  },
+  {
+      "XpToNextLevel": 540250,
       "UntilLevel": 681,
-      "RowId": "680"
-    },
-    {
-      "XpPerLevel": 542500,
+      "RowId": "680",
+      "Level": 680
+  },
+  {
+      "XpToNextLevel": 542500,
       "UntilLevel": 682,
-      "RowId": "681"
-    },
-    {
-      "XpPerLevel": 544750,
+      "RowId": "681",
+      "Level": 681
+  },
+  {
+      "XpToNextLevel": 544750,
       "UntilLevel": 683,
-      "RowId": "682"
-    },
-    {
-      "XpPerLevel": 547000,
+      "RowId": "682",
+      "Level": 682
+  },
+  {
+      "XpToNextLevel": 547000,
       "UntilLevel": 684,
-      "RowId": "683"
-    },
-    {
-      "XpPerLevel": 549250,
+      "RowId": "683",
+      "Level": 683
+  },
+  {
+      "XpToNextLevel": 549250,
       "UntilLevel": 685,
-      "RowId": "684"
-    },
-    {
-      "XpPerLevel": 551500,
+      "RowId": "684",
+      "Level": 684
+  },
+  {
+      "XpToNextLevel": 551500,
       "UntilLevel": 686,
-      "RowId": "685"
-    },
-    {
-      "XpPerLevel": 553750,
+      "RowId": "685",
+      "Level": 685
+  },
+  {
+      "XpToNextLevel": 553750,
       "UntilLevel": 687,
-      "RowId": "686"
-    },
-    {
-      "XpPerLevel": 556000,
+      "RowId": "686",
+      "Level": 686
+  },
+  {
+      "XpToNextLevel": 556000,
       "UntilLevel": 688,
-      "RowId": "687"
-    },
-    {
-      "XpPerLevel": 558250,
+      "RowId": "687",
+      "Level": 687
+  },
+  {
+      "XpToNextLevel": 558250,
       "UntilLevel": 689,
-      "RowId": "688"
-    },
-    {
-      "XpPerLevel": 560500,
+      "RowId": "688",
+      "Level": 688
+  },
+  {
+      "XpToNextLevel": 560500,
       "UntilLevel": 690,
-      "RowId": "689"
-    },
-    {
-      "XpPerLevel": 562750,
+      "RowId": "689",
+      "Level": 689
+  },
+  {
+      "XpToNextLevel": 562750,
       "UntilLevel": 691,
-      "RowId": "690"
-    },
-    {
-      "XpPerLevel": 565250,
+      "RowId": "690",
+      "Level": 690
+  },
+  {
+      "XpToNextLevel": 565250,
       "UntilLevel": 692,
-      "RowId": "691"
-    },
-    {
-      "XpPerLevel": 567500,
+      "RowId": "691",
+      "Level": 691
+  },
+  {
+      "XpToNextLevel": 567500,
       "UntilLevel": 693,
-      "RowId": "692"
-    },
-    {
-      "XpPerLevel": 569750,
+      "RowId": "692",
+      "Level": 692
+  },
+  {
+      "XpToNextLevel": 569750,
       "UntilLevel": 694,
-      "RowId": "693"
-    },
-    {
-      "XpPerLevel": 572250,
+      "RowId": "693",
+      "Level": 693
+  },
+  {
+      "XpToNextLevel": 572250,
       "UntilLevel": 695,
-      "RowId": "694"
-    },
-    {
-      "XpPerLevel": 574500,
+      "RowId": "694",
+      "Level": 694
+  },
+  {
+      "XpToNextLevel": 574500,
       "UntilLevel": 696,
-      "RowId": "695"
-    },
-    {
-      "XpPerLevel": 576750,
+      "RowId": "695",
+      "Level": 695
+  },
+  {
+      "XpToNextLevel": 576750,
       "UntilLevel": 697,
-      "RowId": "696"
-    },
-    {
-      "XpPerLevel": 579250,
+      "RowId": "696",
+      "Level": 696
+  },
+  {
+      "XpToNextLevel": 579250,
       "UntilLevel": 698,
-      "RowId": "697"
-    },
-    {
-      "XpPerLevel": 581500,
+      "RowId": "697",
+      "Level": 697
+  },
+  {
+      "XpToNextLevel": 581500,
       "UntilLevel": 699,
-      "RowId": "698"
-    },
-    {
-      "XpPerLevel": 584000,
+      "RowId": "698",
+      "Level": 698
+  },
+  {
+      "XpToNextLevel": 584000,
       "UntilLevel": 700,
-      "RowId": "699"
-    },
-    {
-      "XpPerLevel": 586500,
+      "RowId": "699",
+      "Level": 699
+  },
+  {
+      "XpToNextLevel": 586500,
       "UntilLevel": 701,
-      "RowId": "700"
-    },
-    {
-      "XpPerLevel": 588750,
+      "RowId": "700",
+      "Level": 700
+  },
+  {
+      "XpToNextLevel": 588750,
       "UntilLevel": 702,
-      "RowId": "701"
-    },
-    {
-      "XpPerLevel": 591250,
+      "RowId": "701",
+      "Level": 701
+  },
+  {
+      "XpToNextLevel": 591250,
       "UntilLevel": 703,
-      "RowId": "702"
-    },
-    {
-      "XpPerLevel": 593750,
+      "RowId": "702",
+      "Level": 702
+  },
+  {
+      "XpToNextLevel": 593750,
       "UntilLevel": 704,
-      "RowId": "703"
-    },
-    {
-      "XpPerLevel": 596000,
+      "RowId": "703",
+      "Level": 703
+  },
+  {
+      "XpToNextLevel": 596000,
       "UntilLevel": 705,
-      "RowId": "704"
-    },
-    {
-      "XpPerLevel": 598500,
+      "RowId": "704",
+      "Level": 704
+  },
+  {
+      "XpToNextLevel": 598500,
       "UntilLevel": 706,
-      "RowId": "705"
-    },
-    {
-      "XpPerLevel": 601000,
+      "RowId": "705",
+      "Level": 705
+  },
+  {
+      "XpToNextLevel": 601000,
       "UntilLevel": 707,
-      "RowId": "706"
-    },
-    {
-      "XpPerLevel": 603500,
+      "RowId": "706",
+      "Level": 706
+  },
+  {
+      "XpToNextLevel": 603500,
       "UntilLevel": 708,
-      "RowId": "707"
-    },
-    {
-      "XpPerLevel": 606000,
+      "RowId": "707",
+      "Level": 707
+  },
+  {
+      "XpToNextLevel": 606000,
       "UntilLevel": 709,
-      "RowId": "708"
-    },
-    {
-      "XpPerLevel": 608500,
+      "RowId": "708",
+      "Level": 708
+  },
+  {
+      "XpToNextLevel": 608500,
       "UntilLevel": 710,
-      "RowId": "709"
-    },
-    {
-      "XpPerLevel": 611000,
+      "RowId": "709",
+      "Level": 709
+  },
+  {
+      "XpToNextLevel": 611000,
       "UntilLevel": 711,
-      "RowId": "710"
-    },
-    {
-      "XpPerLevel": 613500,
+      "RowId": "710",
+      "Level": 710
+  },
+  {
+      "XpToNextLevel": 613500,
       "UntilLevel": 712,
-      "RowId": "711"
-    },
-    {
-      "XpPerLevel": 616000,
+      "RowId": "711",
+      "Level": 711
+  },
+  {
+      "XpToNextLevel": 616000,
       "UntilLevel": 713,
-      "RowId": "712"
-    },
-    {
-      "XpPerLevel": 618500,
+      "RowId": "712",
+      "Level": 712
+  },
+  {
+      "XpToNextLevel": 618500,
       "UntilLevel": 714,
-      "RowId": "713"
-    },
-    {
-      "XpPerLevel": 621000,
+      "RowId": "713",
+      "Level": 713
+  },
+  {
+      "XpToNextLevel": 621000,
       "UntilLevel": 715,
-      "RowId": "714"
-    },
-    {
-      "XpPerLevel": 623750,
+      "RowId": "714",
+      "Level": 714
+  },
+  {
+      "XpToNextLevel": 623750,
       "UntilLevel": 716,
-      "RowId": "715"
-    },
-    {
-      "XpPerLevel": 626250,
+      "RowId": "715",
+      "Level": 715
+  },
+  {
+      "XpToNextLevel": 626250,
       "UntilLevel": 717,
-      "RowId": "716"
-    },
-    {
-      "XpPerLevel": 628750,
+      "RowId": "716",
+      "Level": 716
+  },
+  {
+      "XpToNextLevel": 628750,
       "UntilLevel": 718,
-      "RowId": "717"
-    },
-    {
-      "XpPerLevel": 631250,
+      "RowId": "717",
+      "Level": 717
+  },
+  {
+      "XpToNextLevel": 631250,
       "UntilLevel": 719,
-      "RowId": "718"
-    },
-    {
-      "XpPerLevel": 634000,
+      "RowId": "718",
+      "Level": 718
+  },
+  {
+      "XpToNextLevel": 634000,
       "UntilLevel": 720,
-      "RowId": "719"
-    },
-    {
-      "XpPerLevel": 636500,
+      "RowId": "719",
+      "Level": 719
+  },
+  {
+      "XpToNextLevel": 636500,
       "UntilLevel": 721,
-      "RowId": "720"
-    },
-    {
-      "XpPerLevel": 639250,
+      "RowId": "720",
+      "Level": 720
+  },
+  {
+      "XpToNextLevel": 639250,
       "UntilLevel": 722,
-      "RowId": "721"
-    },
-    {
-      "XpPerLevel": 641750,
+      "RowId": "721",
+      "Level": 721
+  },
+  {
+      "XpToNextLevel": 641750,
       "UntilLevel": 723,
-      "RowId": "722"
-    },
-    {
-      "XpPerLevel": 644500,
+      "RowId": "722",
+      "Level": 722
+  },
+  {
+      "XpToNextLevel": 644500,
       "UntilLevel": 724,
-      "RowId": "723"
-    },
-    {
-      "XpPerLevel": 647000,
+      "RowId": "723",
+      "Level": 723
+  },
+  {
+      "XpToNextLevel": 647000,
       "UntilLevel": 725,
-      "RowId": "724"
-    },
-    {
-      "XpPerLevel": 649750,
+      "RowId": "724",
+      "Level": 724
+  },
+  {
+      "XpToNextLevel": 649750,
       "UntilLevel": 726,
-      "RowId": "725"
-    },
-    {
-      "XpPerLevel": 652500,
+      "RowId": "725",
+      "Level": 725
+  },
+  {
+      "XpToNextLevel": 652500,
       "UntilLevel": 727,
-      "RowId": "726"
-    },
-    {
-      "XpPerLevel": 655000,
+      "RowId": "726",
+      "Level": 726
+  },
+  {
+      "XpToNextLevel": 655000,
       "UntilLevel": 728,
-      "RowId": "727"
-    },
-    {
-      "XpPerLevel": 657750,
+      "RowId": "727",
+      "Level": 727
+  },
+  {
+      "XpToNextLevel": 657750,
       "UntilLevel": 729,
-      "RowId": "728"
-    },
-    {
-      "XpPerLevel": 660500,
+      "RowId": "728",
+      "Level": 728
+  },
+  {
+      "XpToNextLevel": 660500,
       "UntilLevel": 730,
-      "RowId": "729"
-    },
-    {
-      "XpPerLevel": 663250,
+      "RowId": "729",
+      "Level": 729
+  },
+  {
+      "XpToNextLevel": 663250,
       "UntilLevel": 731,
-      "RowId": "730"
-    },
-    {
-      "XpPerLevel": 666000,
+      "RowId": "730",
+      "Level": 730
+  },
+  {
+      "XpToNextLevel": 666000,
       "UntilLevel": 732,
-      "RowId": "731"
-    },
-    {
-      "XpPerLevel": 668750,
+      "RowId": "731",
+      "Level": 731
+  },
+  {
+      "XpToNextLevel": 668750,
       "UntilLevel": 733,
-      "RowId": "732"
-    },
-    {
-      "XpPerLevel": 671500,
+      "RowId": "732",
+      "Level": 732
+  },
+  {
+      "XpToNextLevel": 671500,
       "UntilLevel": 734,
-      "RowId": "733"
-    },
-    {
-      "XpPerLevel": 674250,
+      "RowId": "733",
+      "Level": 733
+  },
+  {
+      "XpToNextLevel": 674250,
       "UntilLevel": 735,
-      "RowId": "734"
-    },
-    {
-      "XpPerLevel": 677000,
+      "RowId": "734",
+      "Level": 734
+  },
+  {
+      "XpToNextLevel": 677000,
       "UntilLevel": 736,
-      "RowId": "735"
-    },
-    {
-      "XpPerLevel": 679750,
+      "RowId": "735",
+      "Level": 735
+  },
+  {
+      "XpToNextLevel": 679750,
       "UntilLevel": 737,
-      "RowId": "736"
-    },
-    {
-      "XpPerLevel": 682500,
+      "RowId": "736",
+      "Level": 736
+  },
+  {
+      "XpToNextLevel": 682500,
       "UntilLevel": 738,
-      "RowId": "737"
-    },
-    {
-      "XpPerLevel": 685250,
+      "RowId": "737",
+      "Level": 737
+  },
+  {
+      "XpToNextLevel": 685250,
       "UntilLevel": 739,
-      "RowId": "738"
-    },
-    {
-      "XpPerLevel": 688250,
+      "RowId": "738",
+      "Level": 738
+  },
+  {
+      "XpToNextLevel": 688250,
       "UntilLevel": 740,
-      "RowId": "739"
-    },
-    {
-      "XpPerLevel": 691000,
+      "RowId": "739",
+      "Level": 739
+  },
+  {
+      "XpToNextLevel": 691000,
       "UntilLevel": 741,
-      "RowId": "740"
-    },
-    {
-      "XpPerLevel": 693750,
+      "RowId": "740",
+      "Level": 740
+  },
+  {
+      "XpToNextLevel": 693750,
       "UntilLevel": 742,
-      "RowId": "741"
-    },
-    {
-      "XpPerLevel": 696750,
+      "RowId": "741",
+      "Level": 741
+  },
+  {
+      "XpToNextLevel": 696750,
       "UntilLevel": 743,
-      "RowId": "742"
-    },
-    {
-      "XpPerLevel": 699500,
+      "RowId": "742",
+      "Level": 742
+  },
+  {
+      "XpToNextLevel": 699500,
       "UntilLevel": 744,
-      "RowId": "743"
-    },
-    {
-      "XpPerLevel": 702500,
+      "RowId": "743",
+      "Level": 743
+  },
+  {
+      "XpToNextLevel": 702500,
       "UntilLevel": 745,
-      "RowId": "744"
-    },
-    {
-      "XpPerLevel": 705250,
+      "RowId": "744",
+      "Level": 744
+  },
+  {
+      "XpToNextLevel": 705250,
       "UntilLevel": 746,
-      "RowId": "745"
-    },
-    {
-      "XpPerLevel": 708250,
+      "RowId": "745",
+      "Level": 745
+  },
+  {
+      "XpToNextLevel": 708250,
       "UntilLevel": 747,
-      "RowId": "746"
-    },
-    {
-      "XpPerLevel": 711250,
+      "RowId": "746",
+      "Level": 746
+  },
+  {
+      "XpToNextLevel": 711250,
       "UntilLevel": 748,
-      "RowId": "747"
-    },
-    {
-      "XpPerLevel": 714000,
+      "RowId": "747",
+      "Level": 747
+  },
+  {
+      "XpToNextLevel": 714000,
       "UntilLevel": 749,
-      "RowId": "748"
-    },
-    {
-      "XpPerLevel": 717000,
+      "RowId": "748",
+      "Level": 748
+  },
+  {
+      "XpToNextLevel": 717000,
       "UntilLevel": 750,
-      "RowId": "749"
-    },
-    {
-      "XpPerLevel": 720000,
+      "RowId": "749",
+      "Level": 749
+  },
+  {
+      "XpToNextLevel": 720000,
       "UntilLevel": 751,
-      "RowId": "750"
-    },
-    {
-      "XpPerLevel": 723000,
+      "RowId": "750",
+      "Level": 750
+  },
+  {
+      "XpToNextLevel": 723000,
       "UntilLevel": 752,
-      "RowId": "751"
-    },
-    {
-      "XpPerLevel": 726000,
+      "RowId": "751",
+      "Level": 751
+  },
+  {
+      "XpToNextLevel": 726000,
       "UntilLevel": 753,
-      "RowId": "752"
-    },
-    {
-      "XpPerLevel": 728750,
+      "RowId": "752",
+      "Level": 752
+  },
+  {
+      "XpToNextLevel": 728750,
       "UntilLevel": 754,
-      "RowId": "753"
-    },
-    {
-      "XpPerLevel": 731750,
+      "RowId": "753",
+      "Level": 753
+  },
+  {
+      "XpToNextLevel": 731750,
       "UntilLevel": 755,
-      "RowId": "754"
-    },
-    {
-      "XpPerLevel": 734750,
+      "RowId": "754",
+      "Level": 754
+  },
+  {
+      "XpToNextLevel": 734750,
       "UntilLevel": 756,
-      "RowId": "755"
-    },
-    {
-      "XpPerLevel": 738000,
+      "RowId": "755",
+      "Level": 755
+  },
+  {
+      "XpToNextLevel": 738000,
       "UntilLevel": 757,
-      "RowId": "756"
-    },
-    {
-      "XpPerLevel": 741000,
+      "RowId": "756",
+      "Level": 756
+  },
+  {
+      "XpToNextLevel": 741000,
       "UntilLevel": 758,
-      "RowId": "757"
-    },
-    {
-      "XpPerLevel": 744000,
+      "RowId": "757",
+      "Level": 757
+  },
+  {
+      "XpToNextLevel": 744000,
       "UntilLevel": 759,
-      "RowId": "758"
-    },
-    {
-      "XpPerLevel": 747000,
+      "RowId": "758",
+      "Level": 758
+  },
+  {
+      "XpToNextLevel": 747000,
       "UntilLevel": 760,
-      "RowId": "759"
-    },
-    {
-      "XpPerLevel": 750000,
+      "RowId": "759",
+      "Level": 759
+  },
+  {
+      "XpToNextLevel": 750000,
       "UntilLevel": 761,
-      "RowId": "760"
-    },
-    {
-      "XpPerLevel": 753250,
+      "RowId": "760",
+      "Level": 760
+  },
+  {
+      "XpToNextLevel": 753250,
       "UntilLevel": 762,
-      "RowId": "761"
-    },
-    {
-      "XpPerLevel": 756250,
+      "RowId": "761",
+      "Level": 761
+  },
+  {
+      "XpToNextLevel": 756250,
       "UntilLevel": 763,
-      "RowId": "762"
-    },
-    {
-      "XpPerLevel": 759500,
+      "RowId": "762",
+      "Level": 762
+  },
+  {
+      "XpToNextLevel": 759500,
       "UntilLevel": 764,
-      "RowId": "763"
-    },
-    {
-      "XpPerLevel": 762500,
+      "RowId": "763",
+      "Level": 763
+  },
+  {
+      "XpToNextLevel": 762500,
       "UntilLevel": 765,
-      "RowId": "764"
-    },
-    {
-      "XpPerLevel": 765750,
+      "RowId": "764",
+      "Level": 764
+  },
+  {
+      "XpToNextLevel": 765750,
       "UntilLevel": 766,
-      "RowId": "765"
-    },
-    {
-      "XpPerLevel": 768750,
+      "RowId": "765",
+      "Level": 765
+  },
+  {
+      "XpToNextLevel": 768750,
       "UntilLevel": 767,
-      "RowId": "766"
-    },
-    {
-      "XpPerLevel": 772000,
+      "RowId": "766",
+      "Level": 766
+  },
+  {
+      "XpToNextLevel": 772000,
       "UntilLevel": 768,
-      "RowId": "767"
-    },
-    {
-      "XpPerLevel": 775250,
+      "RowId": "767",
+      "Level": 767
+  },
+  {
+      "XpToNextLevel": 775250,
       "UntilLevel": 769,
-      "RowId": "768"
-    },
-    {
-      "XpPerLevel": 778250,
+      "RowId": "768",
+      "Level": 768
+  },
+  {
+      "XpToNextLevel": 778250,
       "UntilLevel": 770,
-      "RowId": "769"
-    },
-    {
-      "XpPerLevel": 781500,
+      "RowId": "769",
+      "Level": 769
+  },
+  {
+      "XpToNextLevel": 781500,
       "UntilLevel": 771,
-      "RowId": "770"
-    },
-    {
-      "XpPerLevel": 784750,
+      "RowId": "770",
+      "Level": 770
+  },
+  {
+      "XpToNextLevel": 784750,
       "UntilLevel": 772,
-      "RowId": "771"
-    },
-    {
-      "XpPerLevel": 788000,
+      "RowId": "771",
+      "Level": 771
+  },
+  {
+      "XpToNextLevel": 788000,
       "UntilLevel": 773,
-      "RowId": "772"
-    },
-    {
-      "XpPerLevel": 791250,
+      "RowId": "772",
+      "Level": 772
+  },
+  {
+      "XpToNextLevel": 791250,
       "UntilLevel": 774,
-      "RowId": "773"
-    },
-    {
-      "XpPerLevel": 794500,
+      "RowId": "773",
+      "Level": 773
+  },
+  {
+      "XpToNextLevel": 794500,
       "UntilLevel": 775,
-      "RowId": "774"
-    },
-    {
-      "XpPerLevel": 797750,
+      "RowId": "774",
+      "Level": 774
+  },
+  {
+      "XpToNextLevel": 797750,
       "UntilLevel": 776,
-      "RowId": "775"
-    },
-    {
-      "XpPerLevel": 801000,
+      "RowId": "775",
+      "Level": 775
+  },
+  {
+      "XpToNextLevel": 801000,
       "UntilLevel": 777,
-      "RowId": "776"
-    },
-    {
-      "XpPerLevel": 804250,
+      "RowId": "776",
+      "Level": 776
+  },
+  {
+      "XpToNextLevel": 804250,
       "UntilLevel": 778,
-      "RowId": "777"
-    },
-    {
-      "XpPerLevel": 807500,
+      "RowId": "777",
+      "Level": 777
+  },
+  {
+      "XpToNextLevel": 807500,
       "UntilLevel": 779,
-      "RowId": "778"
-    },
-    {
-      "XpPerLevel": 811000,
+      "RowId": "778",
+      "Level": 778
+  },
+  {
+      "XpToNextLevel": 811000,
       "UntilLevel": 780,
-      "RowId": "779"
-    },
-    {
-      "XpPerLevel": 814250,
+      "RowId": "779",
+      "Level": 779
+  },
+  {
+      "XpToNextLevel": 814250,
       "UntilLevel": 781,
-      "RowId": "780"
-    },
-    {
-      "XpPerLevel": 817500,
+      "RowId": "780",
+      "Level": 780
+  },
+  {
+      "XpToNextLevel": 817500,
       "UntilLevel": 782,
-      "RowId": "781"
-    },
-    {
-      "XpPerLevel": 821000,
+      "RowId": "781",
+      "Level": 781
+  },
+  {
+      "XpToNextLevel": 821000,
       "UntilLevel": 783,
-      "RowId": "782"
-    },
-    {
-      "XpPerLevel": 824250,
+      "RowId": "782",
+      "Level": 782
+  },
+  {
+      "XpToNextLevel": 824250,
       "UntilLevel": 784,
-      "RowId": "783"
-    },
-    {
-      "XpPerLevel": 827750,
+      "RowId": "783",
+      "Level": 783
+  },
+  {
+      "XpToNextLevel": 827750,
       "UntilLevel": 785,
-      "RowId": "784"
-    },
-    {
-      "XpPerLevel": 831250,
+      "RowId": "784",
+      "Level": 784
+  },
+  {
+      "XpToNextLevel": 831250,
       "UntilLevel": 786,
-      "RowId": "785"
-    },
-    {
-      "XpPerLevel": 834500,
+      "RowId": "785",
+      "Level": 785
+  },
+  {
+      "XpToNextLevel": 834500,
       "UntilLevel": 787,
-      "RowId": "786"
-    },
-    {
-      "XpPerLevel": 838000,
+      "RowId": "786",
+      "Level": 786
+  },
+  {
+      "XpToNextLevel": 838000,
       "UntilLevel": 788,
-      "RowId": "787"
-    },
-    {
-      "XpPerLevel": 841500,
+      "RowId": "787",
+      "Level": 787
+  },
+  {
+      "XpToNextLevel": 841500,
       "UntilLevel": 789,
-      "RowId": "788"
-    },
-    {
-      "XpPerLevel": 845000,
+      "RowId": "788",
+      "Level": 788
+  },
+  {
+      "XpToNextLevel": 845000,
       "UntilLevel": 790,
-      "RowId": "789"
-    },
-    {
-      "XpPerLevel": 848250,
+      "RowId": "789",
+      "Level": 789
+  },
+  {
+      "XpToNextLevel": 848250,
       "UntilLevel": 791,
-      "RowId": "790"
-    },
-    {
-      "XpPerLevel": 851750,
+      "RowId": "790",
+      "Level": 790
+  },
+  {
+      "XpToNextLevel": 851750,
       "UntilLevel": 792,
-      "RowId": "791"
-    },
-    {
-      "XpPerLevel": 855250,
+      "RowId": "791",
+      "Level": 791
+  },
+  {
+      "XpToNextLevel": 855250,
       "UntilLevel": 793,
-      "RowId": "792"
-    },
-    {
-      "XpPerLevel": 858750,
+      "RowId": "792",
+      "Level": 792
+  },
+  {
+      "XpToNextLevel": 858750,
       "UntilLevel": 794,
-      "RowId": "793"
-    },
-    {
-      "XpPerLevel": 862500,
+      "RowId": "793",
+      "Level": 793
+  },
+  {
+      "XpToNextLevel": 862500,
       "UntilLevel": 795,
-      "RowId": "794"
-    },
-    {
-      "XpPerLevel": 866000,
+      "RowId": "794",
+      "Level": 794
+  },
+  {
+      "XpToNextLevel": 866000,
       "UntilLevel": 796,
-      "RowId": "795"
-    },
-    {
-      "XpPerLevel": 869500,
+      "RowId": "795",
+      "Level": 795
+  },
+  {
+      "XpToNextLevel": 869500,
       "UntilLevel": 797,
-      "RowId": "796"
-    },
-    {
-      "XpPerLevel": 873000,
+      "RowId": "796",
+      "Level": 796
+  },
+  {
+      "XpToNextLevel": 873000,
       "UntilLevel": 798,
-      "RowId": "797"
-    },
-    {
-      "XpPerLevel": 876750,
+      "RowId": "797",
+      "Level": 797
+  },
+  {
+      "XpToNextLevel": 876750,
       "UntilLevel": 799,
-      "RowId": "798"
-    },
-    {
-      "XpPerLevel": 880250,
+      "RowId": "798",
+      "Level": 798
+  },
+  {
+      "XpToNextLevel": 880250,
       "UntilLevel": 800,
-      "RowId": "799"
-    },
-    {
-      "XpPerLevel": 884000,
+      "RowId": "799",
+      "Level": 799
+  },
+  {
+      "XpToNextLevel": 884000,
       "UntilLevel": 801,
-      "RowId": "800"
-    },
-    {
-      "XpPerLevel": 887500,
+      "RowId": "800",
+      "Level": 800
+  },
+  {
+      "XpToNextLevel": 887500,
       "UntilLevel": 802,
-      "RowId": "801"
-    },
-    {
-      "XpPerLevel": 891250,
+      "RowId": "801",
+      "Level": 801
+  },
+  {
+      "XpToNextLevel": 891250,
       "UntilLevel": 803,
-      "RowId": "802"
-    },
-    {
-      "XpPerLevel": 894750,
+      "RowId": "802",
+      "Level": 802
+  },
+  {
+      "XpToNextLevel": 894750,
       "UntilLevel": 804,
-      "RowId": "803"
-    },
-    {
-      "XpPerLevel": 898500,
+      "RowId": "803",
+      "Level": 803
+  },
+  {
+      "XpToNextLevel": 898500,
       "UntilLevel": 805,
-      "RowId": "804"
-    },
-    {
-      "XpPerLevel": 902250,
+      "RowId": "804",
+      "Level": 804
+  },
+  {
+      "XpToNextLevel": 902250,
       "UntilLevel": 806,
-      "RowId": "805"
-    },
-    {
-      "XpPerLevel": 906000,
+      "RowId": "805",
+      "Level": 805
+  },
+  {
+      "XpToNextLevel": 906000,
       "UntilLevel": 807,
-      "RowId": "806"
-    },
-    {
-      "XpPerLevel": 909750,
+      "RowId": "806",
+      "Level": 806
+  },
+  {
+      "XpToNextLevel": 909750,
       "UntilLevel": 808,
-      "RowId": "807"
-    },
-    {
-      "XpPerLevel": 913500,
+      "RowId": "807",
+      "Level": 807
+  },
+  {
+      "XpToNextLevel": 913500,
       "UntilLevel": 809,
-      "RowId": "808"
-    },
-    {
-      "XpPerLevel": 917250,
+      "RowId": "808",
+      "Level": 808
+  },
+  {
+      "XpToNextLevel": 917250,
       "UntilLevel": 810,
-      "RowId": "809"
-    },
-    {
-      "XpPerLevel": 921000,
+      "RowId": "809",
+      "Level": 809
+  },
+  {
+      "XpToNextLevel": 921000,
       "UntilLevel": 811,
-      "RowId": "810"
-    },
-    {
-      "XpPerLevel": 924750,
+      "RowId": "810",
+      "Level": 810
+  },
+  {
+      "XpToNextLevel": 924750,
       "UntilLevel": 812,
-      "RowId": "811"
-    },
-    {
-      "XpPerLevel": 928500,
+      "RowId": "811",
+      "Level": 811
+  },
+  {
+      "XpToNextLevel": 928500,
       "UntilLevel": 813,
-      "RowId": "812"
-    },
-    {
-      "XpPerLevel": 932250,
+      "RowId": "812",
+      "Level": 812
+  },
+  {
+      "XpToNextLevel": 932250,
       "UntilLevel": 814,
-      "RowId": "813"
-    },
-    {
-      "XpPerLevel": 936250,
+      "RowId": "813",
+      "Level": 813
+  },
+  {
+      "XpToNextLevel": 936250,
       "UntilLevel": 815,
-      "RowId": "814"
-    },
-    {
-      "XpPerLevel": 940000,
+      "RowId": "814",
+      "Level": 814
+  },
+  {
+      "XpToNextLevel": 940000,
       "UntilLevel": 816,
-      "RowId": "815"
-    },
-    {
-      "XpPerLevel": 944000,
+      "RowId": "815",
+      "Level": 815
+  },
+  {
+      "XpToNextLevel": 944000,
       "UntilLevel": 817,
-      "RowId": "816"
-    },
-    {
-      "XpPerLevel": 947750,
+      "RowId": "816",
+      "Level": 816
+  },
+  {
+      "XpToNextLevel": 947750,
       "UntilLevel": 818,
-      "RowId": "817"
-    },
-    {
-      "XpPerLevel": 951750,
+      "RowId": "817",
+      "Level": 817
+  },
+  {
+      "XpToNextLevel": 951750,
       "UntilLevel": 819,
-      "RowId": "818"
-    },
-    {
-      "XpPerLevel": 955500,
+      "RowId": "818",
+      "Level": 818
+  },
+  {
+      "XpToNextLevel": 955500,
       "UntilLevel": 820,
-      "RowId": "819"
-    },
-    {
-      "XpPerLevel": 959500,
+      "RowId": "819",
+      "Level": 819
+  },
+  {
+      "XpToNextLevel": 959500,
       "UntilLevel": 821,
-      "RowId": "820"
-    },
-    {
-      "XpPerLevel": 963500,
+      "RowId": "820",
+      "Level": 820
+  },
+  {
+      "XpToNextLevel": 963500,
       "UntilLevel": 822,
-      "RowId": "821"
-    },
-    {
-      "XpPerLevel": 967500,
+      "RowId": "821",
+      "Level": 821
+  },
+  {
+      "XpToNextLevel": 967500,
       "UntilLevel": 823,
-      "RowId": "822"
-    },
-    {
-      "XpPerLevel": 971500,
+      "RowId": "822",
+      "Level": 822
+  },
+  {
+      "XpToNextLevel": 971500,
       "UntilLevel": 824,
-      "RowId": "823"
-    },
-    {
-      "XpPerLevel": 975500,
+      "RowId": "823",
+      "Level": 823
+  },
+  {
+      "XpToNextLevel": 975500,
       "UntilLevel": 825,
-      "RowId": "824"
-    },
-    {
-      "XpPerLevel": 979500,
+      "RowId": "824",
+      "Level": 824
+  },
+  {
+      "XpToNextLevel": 979500,
       "UntilLevel": 826,
-      "RowId": "825"
-    },
-    {
-      "XpPerLevel": 983500,
+      "RowId": "825",
+      "Level": 825
+  },
+  {
+      "XpToNextLevel": 983500,
       "UntilLevel": 827,
-      "RowId": "826"
-    },
-    {
-      "XpPerLevel": 987500,
+      "RowId": "826",
+      "Level": 826
+  },
+  {
+      "XpToNextLevel": 987500,
       "UntilLevel": 828,
-      "RowId": "827"
-    },
-    {
-      "XpPerLevel": 991500,
+      "RowId": "827",
+      "Level": 827
+  },
+  {
+      "XpToNextLevel": 991500,
       "UntilLevel": 829,
-      "RowId": "828"
-    },
-    {
-      "XpPerLevel": 995500,
+      "RowId": "828",
+      "Level": 828
+  },
+  {
+      "XpToNextLevel": 995500,
       "UntilLevel": 830,
-      "RowId": "829"
-    },
-    {
-      "XpPerLevel": 999750,
+      "RowId": "829",
+      "Level": 829
+  },
+  {
+      "XpToNextLevel": 999750,
       "UntilLevel": 831,
-      "RowId": "830"
-    },
-    {
-      "XpPerLevel": 1003750,
+      "RowId": "830",
+      "Level": 830
+  },
+  {
+      "XpToNextLevel": 1003750,
       "UntilLevel": 832,
-      "RowId": "831"
-    },
-    {
-      "XpPerLevel": 1008000,
+      "RowId": "831",
+      "Level": 831
+  },
+  {
+      "XpToNextLevel": 1008000,
       "UntilLevel": 833,
-      "RowId": "832"
-    },
-    {
-      "XpPerLevel": 1012000,
+      "RowId": "832",
+      "Level": 832
+  },
+  {
+      "XpToNextLevel": 1012000,
       "UntilLevel": 834,
-      "RowId": "833"
-    },
-    {
-      "XpPerLevel": 1016250,
+      "RowId": "833",
+      "Level": 833
+  },
+  {
+      "XpToNextLevel": 1016250,
       "UntilLevel": 835,
-      "RowId": "834"
-    },
-    {
-      "XpPerLevel": 1020500,
+      "RowId": "834",
+      "Level": 834
+  },
+  {
+      "XpToNextLevel": 1020500,
       "UntilLevel": 836,
-      "RowId": "835"
-    },
-    {
-      "XpPerLevel": 1024500,
+      "RowId": "835",
+      "Level": 835
+  },
+  {
+      "XpToNextLevel": 1024500,
       "UntilLevel": 837,
-      "RowId": "836"
-    },
-    {
-      "XpPerLevel": 1028750,
+      "RowId": "836",
+      "Level": 836
+  },
+  {
+      "XpToNextLevel": 1028750,
       "UntilLevel": 838,
-      "RowId": "837"
-    },
-    {
-      "XpPerLevel": 1033000,
+      "RowId": "837",
+      "Level": 837
+  },
+  {
+      "XpToNextLevel": 1033000,
       "UntilLevel": 839,
-      "RowId": "838"
-    },
-    {
-      "XpPerLevel": 1037250,
+      "RowId": "838",
+      "Level": 838
+  },
+  {
+      "XpToNextLevel": 1037250,
       "UntilLevel": 840,
-      "RowId": "839"
-    },
-    {
-      "XpPerLevel": 1041500,
+      "RowId": "839",
+      "Level": 839
+  },
+  {
+      "XpToNextLevel": 1041500,
       "UntilLevel": 841,
-      "RowId": "840"
-    },
-    {
-      "XpPerLevel": 1045750,
+      "RowId": "840",
+      "Level": 840
+  },
+  {
+      "XpToNextLevel": 1045750,
       "UntilLevel": 842,
-      "RowId": "841"
-    },
-    {
-      "XpPerLevel": 1050250,
+      "RowId": "841",
+      "Level": 841
+  },
+  {
+      "XpToNextLevel": 1050250,
       "UntilLevel": 843,
-      "RowId": "842"
-    },
-    {
-      "XpPerLevel": 1054500,
+      "RowId": "842",
+      "Level": 842
+  },
+  {
+      "XpToNextLevel": 1054500,
       "UntilLevel": 844,
-      "RowId": "843"
-    },
-    {
-      "XpPerLevel": 1058750,
+      "RowId": "843",
+      "Level": 843
+  },
+  {
+      "XpToNextLevel": 1058750,
       "UntilLevel": 845,
-      "RowId": "844"
-    },
-    {
-      "XpPerLevel": 1063250,
+      "RowId": "844",
+      "Level": 844
+  },
+  {
+      "XpToNextLevel": 1063250,
       "UntilLevel": 846,
-      "RowId": "845"
-    },
-    {
-      "XpPerLevel": 1067500,
+      "RowId": "845",
+      "Level": 845
+  },
+  {
+      "XpToNextLevel": 1067500,
       "UntilLevel": 847,
-      "RowId": "846"
-    },
-    {
-      "XpPerLevel": 1072000,
+      "RowId": "846",
+      "Level": 846
+  },
+  {
+      "XpToNextLevel": 1072000,
       "UntilLevel": 848,
-      "RowId": "847"
-    },
-    {
-      "XpPerLevel": 1076250,
+      "RowId": "847",
+      "Level": 847
+  },
+  {
+      "XpToNextLevel": 1076250,
       "UntilLevel": 849,
-      "RowId": "848"
-    },
-    {
-      "XpPerLevel": 1080750,
+      "RowId": "848",
+      "Level": 848
+  },
+  {
+      "XpToNextLevel": 1080750,
       "UntilLevel": 850,
-      "RowId": "849"
-    },
-    {
-      "XpPerLevel": 1085250,
+      "RowId": "849",
+      "Level": 849
+  },
+  {
+      "XpToNextLevel": 1085250,
       "UntilLevel": 851,
-      "RowId": "850"
-    },
-    {
-      "XpPerLevel": 1089750,
+      "RowId": "850",
+      "Level": 850
+  },
+  {
+      "XpToNextLevel": 1089750,
       "UntilLevel": 852,
-      "RowId": "851"
-    },
-    {
-      "XpPerLevel": 1094250,
+      "RowId": "851",
+      "Level": 851
+  },
+  {
+      "XpToNextLevel": 1094250,
       "UntilLevel": 853,
-      "RowId": "852"
-    },
-    {
-      "XpPerLevel": 1098750,
+      "RowId": "852",
+      "Level": 852
+  },
+  {
+      "XpToNextLevel": 1098750,
       "UntilLevel": 854,
-      "RowId": "853"
-    },
-    {
-      "XpPerLevel": 1103250,
+      "RowId": "853",
+      "Level": 853
+  },
+  {
+      "XpToNextLevel": 1103250,
       "UntilLevel": 855,
-      "RowId": "854"
-    },
-    {
-      "XpPerLevel": 1107750,
+      "RowId": "854",
+      "Level": 854
+  },
+  {
+      "XpToNextLevel": 1107750,
       "UntilLevel": 856,
-      "RowId": "855"
-    },
-    {
-      "XpPerLevel": 1112250,
+      "RowId": "855",
+      "Level": 855
+  },
+  {
+      "XpToNextLevel": 1112250,
       "UntilLevel": 857,
-      "RowId": "856"
-    },
-    {
-      "XpPerLevel": 1116750,
+      "RowId": "856",
+      "Level": 856
+  },
+  {
+      "XpToNextLevel": 1116750,
       "UntilLevel": 858,
-      "RowId": "857"
-    },
-    {
-      "XpPerLevel": 1121500,
+      "RowId": "857",
+      "Level": 857
+  },
+  {
+      "XpToNextLevel": 1121500,
       "UntilLevel": 859,
-      "RowId": "858"
-    },
-    {
-      "XpPerLevel": 1126000,
+      "RowId": "858",
+      "Level": 858
+  },
+  {
+      "XpToNextLevel": 1126000,
       "UntilLevel": 860,
-      "RowId": "859"
-    },
-    {
-      "XpPerLevel": 1130750,
+      "RowId": "859",
+      "Level": 859
+  },
+  {
+      "XpToNextLevel": 1130750,
       "UntilLevel": 861,
-      "RowId": "860"
-    },
-    {
-      "XpPerLevel": 1135250,
+      "RowId": "860",
+      "Level": 860
+  },
+  {
+      "XpToNextLevel": 1135250,
       "UntilLevel": 862,
-      "RowId": "861"
-    },
-    {
-      "XpPerLevel": 1140000,
+      "RowId": "861",
+      "Level": 861
+  },
+  {
+      "XpToNextLevel": 1140000,
       "UntilLevel": 863,
-      "RowId": "862"
-    },
-    {
-      "XpPerLevel": 1144750,
+      "RowId": "862",
+      "Level": 862
+  },
+  {
+      "XpToNextLevel": 1144750,
       "UntilLevel": 864,
-      "RowId": "863"
-    },
-    {
-      "XpPerLevel": 1149250,
+      "RowId": "863",
+      "Level": 863
+  },
+  {
+      "XpToNextLevel": 1149250,
       "UntilLevel": 865,
-      "RowId": "864"
-    },
-    {
-      "XpPerLevel": 1154000,
+      "RowId": "864",
+      "Level": 864
+  },
+  {
+      "XpToNextLevel": 1154000,
       "UntilLevel": 866,
-      "RowId": "865"
-    },
-    {
-      "XpPerLevel": 1158750,
+      "RowId": "865",
+      "Level": 865
+  },
+  {
+      "XpToNextLevel": 1158750,
       "UntilLevel": 867,
-      "RowId": "866"
-    },
-    {
-      "XpPerLevel": 1163500,
+      "RowId": "866",
+      "Level": 866
+  },
+  {
+      "XpToNextLevel": 1163500,
       "UntilLevel": 868,
-      "RowId": "867"
-    },
-    {
-      "XpPerLevel": 1168250,
+      "RowId": "867",
+      "Level": 867
+  },
+  {
+      "XpToNextLevel": 1168250,
       "UntilLevel": 869,
-      "RowId": "868"
-    },
-    {
-      "XpPerLevel": 1173250,
+      "RowId": "868",
+      "Level": 868
+  },
+  {
+      "XpToNextLevel": 1173250,
       "UntilLevel": 870,
-      "RowId": "869"
-    },
-    {
-      "XpPerLevel": 1178000,
+      "RowId": "869",
+      "Level": 869
+  },
+  {
+      "XpToNextLevel": 1178000,
       "UntilLevel": 871,
-      "RowId": "870"
-    },
-    {
-      "XpPerLevel": 1182750,
+      "RowId": "870",
+      "Level": 870
+  },
+  {
+      "XpToNextLevel": 1182750,
       "UntilLevel": 872,
-      "RowId": "871"
-    },
-    {
-      "XpPerLevel": 1187750,
+      "RowId": "871",
+      "Level": 871
+  },
+  {
+      "XpToNextLevel": 1187750,
       "UntilLevel": 873,
-      "RowId": "872"
-    },
-    {
-      "XpPerLevel": 1192500,
+      "RowId": "872",
+      "Level": 872
+  },
+  {
+      "XpToNextLevel": 1192500,
       "UntilLevel": 874,
-      "RowId": "873"
-    },
-    {
-      "XpPerLevel": 1197500,
+      "RowId": "873",
+      "Level": 873
+  },
+  {
+      "XpToNextLevel": 1197500,
       "UntilLevel": 875,
-      "RowId": "874"
-    },
-    {
-      "XpPerLevel": 1202500,
+      "RowId": "874",
+      "Level": 874
+  },
+  {
+      "XpToNextLevel": 1202500,
       "UntilLevel": 876,
-      "RowId": "875"
-    },
-    {
-      "XpPerLevel": 1207250,
+      "RowId": "875",
+      "Level": 875
+  },
+  {
+      "XpToNextLevel": 1207250,
       "UntilLevel": 877,
-      "RowId": "876"
-    },
-    {
-      "XpPerLevel": 1212250,
+      "RowId": "876",
+      "Level": 876
+  },
+  {
+      "XpToNextLevel": 1212250,
       "UntilLevel": 878,
-      "RowId": "877"
-    },
-    {
-      "XpPerLevel": 1217250,
+      "RowId": "877",
+      "Level": 877
+  },
+  {
+      "XpToNextLevel": 1217250,
       "UntilLevel": 879,
-      "RowId": "878"
-    },
-    {
-      "XpPerLevel": 1222250,
+      "RowId": "878",
+      "Level": 878
+  },
+  {
+      "XpToNextLevel": 1222250,
       "UntilLevel": 880,
-      "RowId": "879"
-    },
-    {
-      "XpPerLevel": 1227250,
+      "RowId": "879",
+      "Level": 879
+  },
+  {
+      "XpToNextLevel": 1227250,
       "UntilLevel": 881,
-      "RowId": "880"
-    },
-    {
-      "XpPerLevel": 1232500,
+      "RowId": "880",
+      "Level": 880
+  },
+  {
+      "XpToNextLevel": 1232500,
       "UntilLevel": 882,
-      "RowId": "881"
-    },
-    {
-      "XpPerLevel": 1237500,
+      "RowId": "881",
+      "Level": 881
+  },
+  {
+      "XpToNextLevel": 1237500,
       "UntilLevel": 883,
-      "RowId": "882"
-    },
-    {
-      "XpPerLevel": 1242500,
+      "RowId": "882",
+      "Level": 882
+  },
+  {
+      "XpToNextLevel": 1242500,
       "UntilLevel": 884,
-      "RowId": "883"
-    },
-    {
-      "XpPerLevel": 1247750,
+      "RowId": "883",
+      "Level": 883
+  },
+  {
+      "XpToNextLevel": 1247750,
       "UntilLevel": 885,
-      "RowId": "884"
-    },
-    {
-      "XpPerLevel": 1252750,
+      "RowId": "884",
+      "Level": 884
+  },
+  {
+      "XpToNextLevel": 1252750,
       "UntilLevel": 886,
-      "RowId": "885"
-    },
-    {
-      "XpPerLevel": 1258000,
+      "RowId": "885",
+      "Level": 885
+  },
+  {
+      "XpToNextLevel": 1258000,
       "UntilLevel": 887,
-      "RowId": "886"
-    },
-    {
-      "XpPerLevel": 1263000,
+      "RowId": "886",
+      "Level": 886
+  },
+  {
+      "XpToNextLevel": 1263000,
       "UntilLevel": 888,
-      "RowId": "887"
-    },
-    {
-      "XpPerLevel": 1268250,
+      "RowId": "887",
+      "Level": 887
+  },
+  {
+      "XpToNextLevel": 1268250,
       "UntilLevel": 889,
-      "RowId": "888"
-    },
-    {
-      "XpPerLevel": 1273500,
+      "RowId": "888",
+      "Level": 888
+  },
+  {
+      "XpToNextLevel": 1273500,
       "UntilLevel": 890,
-      "RowId": "889"
-    },
-    {
-      "XpPerLevel": 1278750,
+      "RowId": "889",
+      "Level": 889
+  },
+  {
+      "XpToNextLevel": 1278750,
       "UntilLevel": 891,
-      "RowId": "890"
-    },
-    {
-      "XpPerLevel": 1284000,
+      "RowId": "890",
+      "Level": 890
+  },
+  {
+      "XpToNextLevel": 1284000,
       "UntilLevel": 892,
-      "RowId": "891"
-    },
-    {
-      "XpPerLevel": 1289250,
+      "RowId": "891",
+      "Level": 891
+  },
+  {
+      "XpToNextLevel": 1289250,
       "UntilLevel": 893,
-      "RowId": "892"
-    },
-    {
-      "XpPerLevel": 1294500,
+      "RowId": "892",
+      "Level": 892
+  },
+  {
+      "XpToNextLevel": 1294500,
       "UntilLevel": 894,
-      "RowId": "893"
-    },
-    {
-      "XpPerLevel": 1300000,
+      "RowId": "893",
+      "Level": 893
+  },
+  {
+      "XpToNextLevel": 1300000,
       "UntilLevel": 895,
-      "RowId": "894"
-    },
-    {
-      "XpPerLevel": 1305250,
+      "RowId": "894",
+      "Level": 894
+  },
+  {
+      "XpToNextLevel": 1305250,
       "UntilLevel": 896,
-      "RowId": "895"
-    },
-    {
-      "XpPerLevel": 1310750,
+      "RowId": "895",
+      "Level": 895
+  },
+  {
+      "XpToNextLevel": 1310750,
       "UntilLevel": 897,
-      "RowId": "896"
-    },
-    {
-      "XpPerLevel": 1316000,
+      "RowId": "896",
+      "Level": 896
+  },
+  {
+      "XpToNextLevel": 1316000,
       "UntilLevel": 898,
-      "RowId": "897"
-    },
-    {
-      "XpPerLevel": 1321500,
+      "RowId": "897",
+      "Level": 897
+  },
+  {
+      "XpToNextLevel": 1321500,
       "UntilLevel": 899,
-      "RowId": "898"
-    },
-    {
-      "XpPerLevel": 1326750,
+      "RowId": "898",
+      "Level": 898
+  },
+  {
+      "XpToNextLevel": 1326750,
       "UntilLevel": 900,
-      "RowId": "899"
-    },
-    {
-      "XpPerLevel": 1332250,
+      "RowId": "899",
+      "Level": 899
+  },
+  {
+      "XpToNextLevel": 1332250,
       "UntilLevel": 901,
-      "RowId": "900"
-    },
-    {
-      "XpPerLevel": 1337750,
+      "RowId": "900",
+      "Level": 900
+  },
+  {
+      "XpToNextLevel": 1337750,
       "UntilLevel": 902,
-      "RowId": "901"
-    },
-    {
-      "XpPerLevel": 1343250,
+      "RowId": "901",
+      "Level": 901
+  },
+  {
+      "XpToNextLevel": 1343250,
       "UntilLevel": 903,
-      "RowId": "902"
-    },
-    {
-      "XpPerLevel": 1348750,
+      "RowId": "902",
+      "Level": 902
+  },
+  {
+      "XpToNextLevel": 1348750,
       "UntilLevel": 904,
-      "RowId": "903"
-    },
-    {
-      "XpPerLevel": 1354250,
+      "RowId": "903",
+      "Level": 903
+  },
+  {
+      "XpToNextLevel": 1354250,
       "UntilLevel": 905,
-      "RowId": "904"
-    },
-    {
-      "XpPerLevel": 1360000,
+      "RowId": "904",
+      "Level": 904
+  },
+  {
+      "XpToNextLevel": 1360000,
       "UntilLevel": 906,
-      "RowId": "905"
-    },
-    {
-      "XpPerLevel": 1365500,
+      "RowId": "905",
+      "Level": 905
+  },
+  {
+      "XpToNextLevel": 1365500,
       "UntilLevel": 907,
-      "RowId": "906"
-    },
-    {
-      "XpPerLevel": 1371250,
+      "RowId": "906",
+      "Level": 906
+  },
+  {
+      "XpToNextLevel": 1371250,
       "UntilLevel": 908,
-      "RowId": "907"
-    },
-    {
-      "XpPerLevel": 1376750,
+      "RowId": "907",
+      "Level": 907
+  },
+  {
+      "XpToNextLevel": 1376750,
       "UntilLevel": 909,
-      "RowId": "908"
-    },
-    {
-      "XpPerLevel": 1382500,
+      "RowId": "908",
+      "Level": 908
+  },
+  {
+      "XpToNextLevel": 1382500,
       "UntilLevel": 910,
-      "RowId": "909"
-    },
-    {
-      "XpPerLevel": 1388000,
+      "RowId": "909",
+      "Level": 909
+  },
+  {
+      "XpToNextLevel": 1388000,
       "UntilLevel": 911,
-      "RowId": "910"
-    },
-    {
-      "XpPerLevel": 1393750,
+      "RowId": "910",
+      "Level": 910
+  },
+  {
+      "XpToNextLevel": 1393750,
       "UntilLevel": 912,
-      "RowId": "911"
-    },
-    {
-      "XpPerLevel": 1399500,
+      "RowId": "911",
+      "Level": 911
+  },
+  {
+      "XpToNextLevel": 1399500,
       "UntilLevel": 913,
-      "RowId": "912"
-    },
-    {
-      "XpPerLevel": 1405250,
+      "RowId": "912",
+      "Level": 912
+  },
+  {
+      "XpToNextLevel": 1405250,
       "UntilLevel": 914,
-      "RowId": "913"
-    },
-    {
-      "XpPerLevel": 1411000,
+      "RowId": "913",
+      "Level": 913
+  },
+  {
+      "XpToNextLevel": 1411000,
       "UntilLevel": 915,
-      "RowId": "914"
-    },
-    {
-      "XpPerLevel": 1417000,
+      "RowId": "914",
+      "Level": 914
+  },
+  {
+      "XpToNextLevel": 1417000,
       "UntilLevel": 916,
-      "RowId": "915"
-    },
-    {
-      "XpPerLevel": 1422750,
+      "RowId": "915",
+      "Level": 915
+  },
+  {
+      "XpToNextLevel": 1422750,
       "UntilLevel": 917,
-      "RowId": "916"
-    },
-    {
-      "XpPerLevel": 1428500,
+      "RowId": "916",
+      "Level": 916
+  },
+  {
+      "XpToNextLevel": 1428500,
       "UntilLevel": 918,
-      "RowId": "917"
-    },
-    {
-      "XpPerLevel": 1434500,
+      "RowId": "917",
+      "Level": 917
+  },
+  {
+      "XpToNextLevel": 1434500,
       "UntilLevel": 919,
-      "RowId": "918"
-    },
-    {
-      "XpPerLevel": 1440250,
+      "RowId": "918",
+      "Level": 918
+  },
+  {
+      "XpToNextLevel": 1440250,
       "UntilLevel": 920,
-      "RowId": "919"
-    },
-    {
-      "XpPerLevel": 1446250,
+      "RowId": "919",
+      "Level": 919
+  },
+  {
+      "XpToNextLevel": 1446250,
       "UntilLevel": 921,
-      "RowId": "920"
-    },
-    {
-      "XpPerLevel": 1452250,
+      "RowId": "920",
+      "Level": 920
+  },
+  {
+      "XpToNextLevel": 1452250,
       "UntilLevel": 922,
-      "RowId": "921"
-    },
-    {
-      "XpPerLevel": 1458250,
+      "RowId": "921",
+      "Level": 921
+  },
+  {
+      "XpToNextLevel": 1458250,
       "UntilLevel": 923,
-      "RowId": "922"
-    },
-    {
-      "XpPerLevel": 1464250,
+      "RowId": "922",
+      "Level": 922
+  },
+  {
+      "XpToNextLevel": 1464250,
       "UntilLevel": 924,
-      "RowId": "923"
-    },
-    {
-      "XpPerLevel": 1470250,
+      "RowId": "923",
+      "Level": 923
+  },
+  {
+      "XpToNextLevel": 1470250,
       "UntilLevel": 925,
-      "RowId": "924"
-    },
-    {
-      "XpPerLevel": 1476250,
+      "RowId": "924",
+      "Level": 924
+  },
+  {
+      "XpToNextLevel": 1476250,
       "UntilLevel": 926,
-      "RowId": "925"
-    },
-    {
-      "XpPerLevel": 1482250,
+      "RowId": "925",
+      "Level": 925
+  },
+  {
+      "XpToNextLevel": 1482250,
       "UntilLevel": 927,
-      "RowId": "926"
-    },
-    {
-      "XpPerLevel": 1488500,
+      "RowId": "926",
+      "Level": 926
+  },
+  {
+      "XpToNextLevel": 1488500,
       "UntilLevel": 928,
-      "RowId": "927"
-    },
-    {
-      "XpPerLevel": 1494500,
+      "RowId": "927",
+      "Level": 927
+  },
+  {
+      "XpToNextLevel": 1494500,
       "UntilLevel": 929,
-      "RowId": "928"
-    },
-    {
-      "XpPerLevel": 1500750,
+      "RowId": "928",
+      "Level": 928
+  },
+  {
+      "XpToNextLevel": 1500750,
       "UntilLevel": 930,
-      "RowId": "929"
-    },
-    {
-      "XpPerLevel": 1506750,
+      "RowId": "929",
+      "Level": 929
+  },
+  {
+      "XpToNextLevel": 1506750,
       "UntilLevel": 931,
-      "RowId": "930"
-    },
-    {
-      "XpPerLevel": 1513000,
+      "RowId": "930",
+      "Level": 930
+  },
+  {
+      "XpToNextLevel": 1513000,
       "UntilLevel": 932,
-      "RowId": "931"
-    },
-    {
-      "XpPerLevel": 1519250,
+      "RowId": "931",
+      "Level": 931
+  },
+  {
+      "XpToNextLevel": 1519250,
       "UntilLevel": 933,
-      "RowId": "932"
-    },
-    {
-      "XpPerLevel": 1525500,
+      "RowId": "932",
+      "Level": 932
+  },
+  {
+      "XpToNextLevel": 1525500,
       "UntilLevel": 934,
-      "RowId": "933"
-    },
-    {
-      "XpPerLevel": 1531750,
+      "RowId": "933",
+      "Level": 933
+  },
+  {
+      "XpToNextLevel": 1531750,
       "UntilLevel": 935,
-      "RowId": "934"
-    },
-    {
-      "XpPerLevel": 1538000,
+      "RowId": "934",
+      "Level": 934
+  },
+  {
+      "XpToNextLevel": 1538000,
       "UntilLevel": 936,
-      "RowId": "935"
-    },
-    {
-      "XpPerLevel": 1544500,
+      "RowId": "935",
+      "Level": 935
+  },
+  {
+      "XpToNextLevel": 1544500,
       "UntilLevel": 937,
-      "RowId": "936"
-    },
-    {
-      "XpPerLevel": 1550750,
+      "RowId": "936",
+      "Level": 936
+  },
+  {
+      "XpToNextLevel": 1550750,
       "UntilLevel": 938,
-      "RowId": "937"
-    },
-    {
-      "XpPerLevel": 1557250,
+      "RowId": "937",
+      "Level": 937
+  },
+  {
+      "XpToNextLevel": 1557250,
       "UntilLevel": 939,
-      "RowId": "938"
-    },
-    {
-      "XpPerLevel": 1563500,
+      "RowId": "938",
+      "Level": 938
+  },
+  {
+      "XpToNextLevel": 1563500,
       "UntilLevel": 940,
-      "RowId": "939"
-    },
-    {
-      "XpPerLevel": 1570000,
+      "RowId": "939",
+      "Level": 939
+  },
+  {
+      "XpToNextLevel": 1570000,
       "UntilLevel": 941,
-      "RowId": "940"
-    },
-    {
-      "XpPerLevel": 1576500,
+      "RowId": "940",
+      "Level": 940
+  },
+  {
+      "XpToNextLevel": 1576500,
       "UntilLevel": 942,
-      "RowId": "941"
-    },
-    {
-      "XpPerLevel": 1583000,
+      "RowId": "941",
+      "Level": 941
+  },
+  {
+      "XpToNextLevel": 1583000,
       "UntilLevel": 943,
-      "RowId": "942"
-    },
-    {
-      "XpPerLevel": 1589500,
+      "RowId": "942",
+      "Level": 942
+  },
+  {
+      "XpToNextLevel": 1589500,
       "UntilLevel": 944,
-      "RowId": "943"
-    },
-    {
-      "XpPerLevel": 1596000,
+      "RowId": "943",
+      "Level": 943
+  },
+  {
+      "XpToNextLevel": 1596000,
       "UntilLevel": 945,
-      "RowId": "944"
-    },
-    {
-      "XpPerLevel": 1602500,
+      "RowId": "944",
+      "Level": 944
+  },
+  {
+      "XpToNextLevel": 1602500,
       "UntilLevel": 946,
-      "RowId": "945"
-    },
-    {
-      "XpPerLevel": 1609000,
+      "RowId": "945",
+      "Level": 945
+  },
+  {
+      "XpToNextLevel": 1609000,
       "UntilLevel": 947,
-      "RowId": "946"
-    },
-    {
-      "XpPerLevel": 1615750,
+      "RowId": "946",
+      "Level": 946
+  },
+  {
+      "XpToNextLevel": 1615750,
       "UntilLevel": 948,
-      "RowId": "947"
-    },
-    {
-      "XpPerLevel": 1622250,
+      "RowId": "947",
+      "Level": 947
+  },
+  {
+      "XpToNextLevel": 1622250,
       "UntilLevel": 949,
-      "RowId": "948"
-    },
-    {
-      "XpPerLevel": 1629000,
+      "RowId": "948",
+      "Level": 948
+  },
+  {
+      "XpToNextLevel": 1629000,
       "UntilLevel": 950,
-      "RowId": "949"
-    },
-    {
-      "XpPerLevel": 1635750,
+      "RowId": "949",
+      "Level": 949
+  },
+  {
+      "XpToNextLevel": 1635750,
       "UntilLevel": 951,
-      "RowId": "950"
-    },
-    {
-      "XpPerLevel": 1642500,
+      "RowId": "950",
+      "Level": 950
+  },
+  {
+      "XpToNextLevel": 1642500,
       "UntilLevel": 952,
-      "RowId": "951"
-    },
-    {
-      "XpPerLevel": 1649250,
+      "RowId": "951",
+      "Level": 951
+  },
+  {
+      "XpToNextLevel": 1649250,
       "UntilLevel": 953,
-      "RowId": "952"
-    },
-    {
-      "XpPerLevel": 1656000,
+      "RowId": "952",
+      "Level": 952
+  },
+  {
+      "XpToNextLevel": 1656000,
       "UntilLevel": 954,
-      "RowId": "953"
-    },
-    {
-      "XpPerLevel": 1662750,
+      "RowId": "953",
+      "Level": 953
+  },
+  {
+      "XpToNextLevel": 1662750,
       "UntilLevel": 955,
-      "RowId": "954"
-    },
-    {
-      "XpPerLevel": 1669750,
+      "RowId": "954",
+      "Level": 954
+  },
+  {
+      "XpToNextLevel": 1669750,
       "UntilLevel": 956,
-      "RowId": "955"
-    },
-    {
-      "XpPerLevel": 1676500,
+      "RowId": "955",
+      "Level": 955
+  },
+  {
+      "XpToNextLevel": 1676500,
       "UntilLevel": 957,
-      "RowId": "956"
-    },
-    {
-      "XpPerLevel": 1683500,
+      "RowId": "956",
+      "Level": 956
+  },
+  {
+      "XpToNextLevel": 1683500,
       "UntilLevel": 958,
-      "RowId": "957"
-    },
-    {
-      "XpPerLevel": 1690250,
+      "RowId": "957",
+      "Level": 957
+  },
+  {
+      "XpToNextLevel": 1690250,
       "UntilLevel": 959,
-      "RowId": "958"
-    },
-    {
-      "XpPerLevel": 1697250,
+      "RowId": "958",
+      "Level": 958
+  },
+  {
+      "XpToNextLevel": 1697250,
       "UntilLevel": 960,
-      "RowId": "959"
-    },
-    {
-      "XpPerLevel": 1704250,
+      "RowId": "959",
+      "Level": 959
+  },
+  {
+      "XpToNextLevel": 1704250,
       "UntilLevel": 961,
-      "RowId": "960"
-    },
-    {
-      "XpPerLevel": 1711250,
+      "RowId": "960",
+      "Level": 960
+  },
+  {
+      "XpToNextLevel": 1711250,
       "UntilLevel": 962,
-      "RowId": "961"
-    },
-    {
-      "XpPerLevel": 1718250,
+      "RowId": "961",
+      "Level": 961
+  },
+  {
+      "XpToNextLevel": 1718250,
       "UntilLevel": 963,
-      "RowId": "962"
-    },
-    {
-      "XpPerLevel": 1725250,
+      "RowId": "962",
+      "Level": 962
+  },
+  {
+      "XpToNextLevel": 1725250,
       "UntilLevel": 964,
-      "RowId": "963"
-    },
-    {
-      "XpPerLevel": 1732500,
+      "RowId": "963",
+      "Level": 963
+  },
+  {
+      "XpToNextLevel": 1732500,
       "UntilLevel": 965,
-      "RowId": "964"
-    },
-    {
-      "XpPerLevel": 1739500,
+      "RowId": "964",
+      "Level": 964
+  },
+  {
+      "XpToNextLevel": 1739500,
       "UntilLevel": 966,
-      "RowId": "965"
-    },
-    {
-      "XpPerLevel": 1746750,
+      "RowId": "965",
+      "Level": 965
+  },
+  {
+      "XpToNextLevel": 1746750,
       "UntilLevel": 967,
-      "RowId": "966"
-    },
-    {
-      "XpPerLevel": 1754000,
+      "RowId": "966",
+      "Level": 966
+  },
+  {
+      "XpToNextLevel": 1754000,
       "UntilLevel": 968,
-      "RowId": "967"
-    },
-    {
-      "XpPerLevel": 1761000,
+      "RowId": "967",
+      "Level": 967
+  },
+  {
+      "XpToNextLevel": 1761000,
       "UntilLevel": 969,
-      "RowId": "968"
-    },
-    {
-      "XpPerLevel": 1768250,
+      "RowId": "968",
+      "Level": 968
+  },
+  {
+      "XpToNextLevel": 1768250,
       "UntilLevel": 970,
-      "RowId": "969"
-    },
-    {
-      "XpPerLevel": 1775500,
+      "RowId": "969",
+      "Level": 969
+  },
+  {
+      "XpToNextLevel": 1775500,
       "UntilLevel": 971,
-      "RowId": "970"
-    },
-    {
-      "XpPerLevel": 1783000,
+      "RowId": "970",
+      "Level": 970
+  },
+  {
+      "XpToNextLevel": 1783000,
       "UntilLevel": 972,
-      "RowId": "971"
-    },
-    {
-      "XpPerLevel": 1790250,
+      "RowId": "971",
+      "Level": 971
+  },
+  {
+      "XpToNextLevel": 1790250,
       "UntilLevel": 973,
-      "RowId": "972"
-    },
-    {
-      "XpPerLevel": 1797500,
+      "RowId": "972",
+      "Level": 972
+  },
+  {
+      "XpToNextLevel": 1797500,
       "UntilLevel": 974,
-      "RowId": "973"
-    },
-    {
-      "XpPerLevel": 1805000,
+      "RowId": "973",
+      "Level": 973
+  },
+  {
+      "XpToNextLevel": 1805000,
       "UntilLevel": 975,
-      "RowId": "974"
-    },
-    {
-      "XpPerLevel": 1812500,
+      "RowId": "974",
+      "Level": 974
+  },
+  {
+      "XpToNextLevel": 1812500,
       "UntilLevel": 976,
-      "RowId": "975"
-    },
-    {
-      "XpPerLevel": 1820000,
+      "RowId": "975",
+      "Level": 975
+  },
+  {
+      "XpToNextLevel": 1820000,
       "UntilLevel": 977,
-      "RowId": "976"
-    },
-    {
-      "XpPerLevel": 1827250,
+      "RowId": "976",
+      "Level": 976
+  },
+  {
+      "XpToNextLevel": 1827250,
       "UntilLevel": 978,
-      "RowId": "977"
-    },
-    {
-      "XpPerLevel": 1835000,
+      "RowId": "977",
+      "Level": 977
+  },
+  {
+      "XpToNextLevel": 1835000,
       "UntilLevel": 979,
-      "RowId": "978"
-    },
-    {
-      "XpPerLevel": 1842500,
+      "RowId": "978",
+      "Level": 978
+  },
+  {
+      "XpToNextLevel": 1842500,
       "UntilLevel": 980,
-      "RowId": "979"
-    },
-    {
-      "XpPerLevel": 1850000,
+      "RowId": "979",
+      "Level": 979
+  },
+  {
+      "XpToNextLevel": 1850000,
       "UntilLevel": 981,
-      "RowId": "980"
-    },
-    {
-      "XpPerLevel": 1857500,
+      "RowId": "980",
+      "Level": 980
+  },
+  {
+      "XpToNextLevel": 1857500,
       "UntilLevel": 982,
-      "RowId": "981"
-    },
-    {
-      "XpPerLevel": 1865250,
+      "RowId": "981",
+      "Level": 981
+  },
+  {
+      "XpToNextLevel": 1865250,
       "UntilLevel": 983,
-      "RowId": "982"
-    },
-    {
-      "XpPerLevel": 1873000,
+      "RowId": "982",
+      "Level": 982
+  },
+  {
+      "XpToNextLevel": 1873000,
       "UntilLevel": 984,
-      "RowId": "983"
-    },
-    {
-      "XpPerLevel": 1880500,
+      "RowId": "983",
+      "Level": 983
+  },
+  {
+      "XpToNextLevel": 1880500,
       "UntilLevel": 985,
-      "RowId": "984"
-    },
-    {
-      "XpPerLevel": 1888250,
+      "RowId": "984",
+      "Level": 984
+  },
+  {
+      "XpToNextLevel": 1888250,
       "UntilLevel": 986,
-      "RowId": "985"
-    },
-    {
-      "XpPerLevel": 1896000,
+      "RowId": "985",
+      "Level": 985
+  },
+  {
+      "XpToNextLevel": 1896000,
       "UntilLevel": 987,
-      "RowId": "986"
-    },
-    {
-      "XpPerLevel": 1904000,
+      "RowId": "986",
+      "Level": 986
+  },
+  {
+      "XpToNextLevel": 1904000,
       "UntilLevel": 988,
-      "RowId": "987"
-    },
-    {
-      "XpPerLevel": 1911750,
+      "RowId": "987",
+      "Level": 987
+  },
+  {
+      "XpToNextLevel": 1911750,
       "UntilLevel": 989,
-      "RowId": "988"
-    },
-    {
-      "XpPerLevel": 1919500,
+      "RowId": "988",
+      "Level": 988
+  },
+  {
+      "XpToNextLevel": 1919500,
       "UntilLevel": 990,
-      "RowId": "989"
-    },
-    {
-      "XpPerLevel": 1927500,
+      "RowId": "989",
+      "Level": 989
+  },
+  {
+      "XpToNextLevel": 1927500,
       "UntilLevel": 991,
-      "RowId": "990"
-    },
-    {
-      "XpPerLevel": 1935500,
+      "RowId": "990",
+      "Level": 990
+  },
+  {
+      "XpToNextLevel": 1935500,
       "UntilLevel": 992,
-      "RowId": "991"
-    },
-    {
-      "XpPerLevel": 1943250,
+      "RowId": "991",
+      "Level": 991
+  },
+  {
+      "XpToNextLevel": 1943250,
       "UntilLevel": 993,
-      "RowId": "992"
-    },
-    {
-      "XpPerLevel": 1951250,
+      "RowId": "992",
+      "Level": 992
+  },
+  {
+      "XpToNextLevel": 1951250,
       "UntilLevel": 994,
-      "RowId": "993"
-    },
-    {
-      "XpPerLevel": 1959500,
+      "RowId": "993",
+      "Level": 993
+  },
+  {
+      "XpToNextLevel": 1959500,
       "UntilLevel": 995,
-      "RowId": "994"
-    },
-    {
-      "XpPerLevel": 1967500,
+      "RowId": "994",
+      "Level": 994
+  },
+  {
+      "XpToNextLevel": 1967500,
       "UntilLevel": 996,
-      "RowId": "995"
-    },
-    {
-      "XpPerLevel": 1975500,
+      "RowId": "995",
+      "Level": 995
+  },
+  {
+      "XpToNextLevel": 1975500,
       "UntilLevel": 997,
-      "RowId": "996"
-    },
-    {
-      "XpPerLevel": 1983750,
+      "RowId": "996",
+      "Level": 996
+  },
+  {
+      "XpToNextLevel": 1983750,
       "UntilLevel": 998,
-      "RowId": "997"
-    },
-    {
-      "XpPerLevel": 1991750,
+      "RowId": "997",
+      "Level": 997
+  },
+  {
+      "XpToNextLevel": 1991750,
       "UntilLevel": 999,
-      "RowId": "998"
-    },
-    {
-      "XpPerLevel": 2000000,
+      "RowId": "998",
+      "Level": 998
+  },
+  {
+      "XpToNextLevel": 2000000,
       "UntilLevel": 1000,
-      "RowId": "999"
-    }
-  ]
+      "RowId": "999",
+      "Level": 999
+  }
+]

@@ -128,6 +128,12 @@ export default function () {
         }
       }
 
+      if (roles.includes("1270055222105870468")) {
+        if (user.hasFL == false) {
+          await axios.post(`http://127.0.0.1:21491/celestia/gift/fl/${user.accountId}`);
+        }
+      }
+
       // donator stuff
 
       if (roles.includes("1263582817242189914")) {

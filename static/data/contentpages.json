@@ -101,8 +101,16 @@
           "_type": "FortPlaylistInfo"
         },
         {
-          "image": "https://cdn.itztiva.me/lategame_solo_s13.png",
+          "image": "https://static.wikia.nocookie.net/fortnite/images/0/09/Solo_%28C2S3%29_-_Gamemode_-_Fortnite.jpg/revision/latest/scale-to-width-down/1000?cb=20210831200316",
           "playlist_name": "Playlist_DefaultSolo",
+          "hidden": false,
+          "display_name": "Solo",
+          "special_border": "None",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn.itztiva.me/lategame_solo_s13.png",
+          "playlist_name": "Playlist_DefaultSoloooo",
           "hidden": false,
           "display_name": "Lategame",
           "description": "A fun and fast-paced game of Fortnite with a twist! The storm zone is 5x smaller, and you start with a full loadout. Have fun!",
