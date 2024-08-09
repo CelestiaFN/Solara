@@ -25,7 +25,7 @@ const bp = await fs.promises.readFile(
 const bpdata = JSON.parse(bp);
 
 export default function () {
-    app.post("/celestia/api/:username/dedicated_server/ApplyMatchResults", async (c) => {
+    app.post("/celestia/api/:accountId/dedicated_server/ApplyMatchResults", async (c) => {
         let body;
         try {
             body = await c.req.json();
@@ -54,7 +54,7 @@ export default function () {
 
         let xpBody = XP || 1;
 
-        const username = c.req.param("username");
+        const username = c.req.param("accountId");
 
         const user = await User.findOne({ username });
         if (!user) {
