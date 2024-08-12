@@ -8,6 +8,11 @@ import path from 'node:path'
 export default function () {
   app.get("/api/v1/events/Fortnite/download/:accountid", async (c) => {
     const ver = getVersion(c);
+
+    if (!(c.req.param("accountid") === "0cdf98f06c78488eae5574dc35fe68e3")) {
+      return c.json([])
+    }
+
     try {
       let stats = await Stats.findOne({ accountId: c.req.param("accountid") });
       const user = await User.findOne({ accountId: c.req.param("accountid") });
@@ -62,7 +67,9 @@ export default function () {
             "epicgames_Arena_S13_Solo:Arena_S13_Division9_Solo": [user?.accountId],
             "epicgames_Arena_S13_Solo:Arena_S13_Division10_Solo": [user?.accountId],
           },
-          tokens: [`ARENA_${ver.season}_Division1`],
+          tokens: [
+            `ARENA_S${ver.season}_Division1`,
+          ],
         },
         templates: arenaTemplates,
       }

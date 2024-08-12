@@ -2,7 +2,7 @@
     {
         "eventTemplateId": "eventTemplate_Arena_S13_Division1_Solo",
         "gameId": "Fortnite",
-        "matchcAP": 0,
+        "matchcap": 0,
         "persistentScoreId": "Hype",
         "playlistId": "Playlist_ShowdownAlt_Solo",
         "scoringRules": [
@@ -54,7 +54,7 @@
     {
         "eventTemplateId": "eventTemplate_Arena_S13_Division2_Solo",
         "gameId": "Fortnite",
-        "matchcAP": 0,
+        "matchcap": 0,
         "persistentScoreId": "Hype",
         "playlistId": "Playlist_ShowdownAlt_Solo",
         "scoringRules": [
@@ -106,7 +106,7 @@
     {
         "eventTemplateId": "eventTemplate_Arena_S13_Division3_Solo",
         "gameId": "Fortnite",
-        "matchcAP": 0,
+        "matchcap": 0,
         "persistentScoreId": "Hype",
         "playlistId": "Playlist_ShowdownAlt_Solo",
         "scoringRules": [
@@ -158,7 +158,7 @@
     {
         "eventTemplateId": "eventTemplate_Arena_S13_Division4_Solo",
         "gameId": "Fortnite",
-        "matchcAP": 0,
+        "matchcap": 0,
         "persistentScoreId": "Hype",
         "playlistId": "Playlist_ShowdownAlt_Solo",
         "scoringRules": [
@@ -210,7 +210,7 @@
     {
         "eventTemplateId": "eventTemplate_Arena_S13_Division5_Solo",
         "gameId": "Fortnite",
-        "matchcAP": 0,
+        "matchcap": 0,
         "persistentScoreId": "Hype",
         "playlistId": "Playlist_ShowdownAlt_Solo",
         "scoringRules": [
@@ -262,7 +262,7 @@
     {
         "eventTemplateId": "eventTemplate_Arena_S13_Division6_Solo",
         "gameId": "Fortnite",
-        "matchcAP": 0,
+        "matchcap": 0,
         "persistentScoreId": "Hype",
         "playlistId": "Playlist_ShowdownAlt_Solo",
         "scoringRules": [
@@ -314,7 +314,7 @@
     {
         "eventTemplateId": "eventTemplate_Arena_S13_Division7_Solo",
         "gameId": "Fortnite",
-        "matchcAP": 0,
+        "matchcap": 0,
         "persistentScoreId": "Hype",
         "playlistId": "Playlist_ShowdownAlt_Solo",
         "scoringRules": [
@@ -366,7 +366,7 @@
     {
         "eventTemplateId": "eventTemplate_Arena_S13_Division8_Solo",
         "gameId": "Fortnite",
-        "matchcAP": 0,
+        "matchcap": 0,
         "persistentScoreId": "Hype",
         "playlistId": "Playlist_ShowdownAlt_Solo",
         "scoringRules": [
@@ -418,7 +418,7 @@
     {
         "eventTemplateId": "eventTemplate_Arena_S13_Division9_Solo",
         "gameId": "Fortnite",
-        "matchcAP": 0,
+        "matchcap": 0,
         "persistentScoreId": "Hype",
         "playlistId": "Playlist_ShowdownAlt_Solo",
         "scoringRules": [
@@ -470,7 +470,7 @@
     {
         "eventTemplateId": "eventTemplate_Arena_S13_Division10_Solo",
         "gameId": "Fortnite",
-        "matchcAP": 0,
+        "matchcap": 0,
         "persistentScoreId": "Hype",
         "playlistId": "Playlist_ShowdownAlt_Solo",
         "scoringRules": [

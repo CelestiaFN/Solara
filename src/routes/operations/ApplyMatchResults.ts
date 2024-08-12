@@ -56,7 +56,8 @@ export default function () {
 
         const username = c.req.param("accountId");
 
-        const user = await User.findOne({ username });
+        const user = await User.findOne({ accountId: c.req.param("accountId") });
+
         if (!user) {
             return c.json(Solara.account.accountNotFound, 404);
         }

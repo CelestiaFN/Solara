@@ -160,6 +160,23 @@
           "secondary_color": "031E6B",
           "playlist_tile_image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/tournaments/Season-X/10BR_InGame_CashCup_ModeTile_Contender_Solo-1024x512-76579321607d00782a039ee157518175c5dcaaf4.jpg",
           "base_color": "FFFFFF"
+        },
+        {
+          "loading_screen_image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/tournaments/12BR_Arena_Solo_ModeTile-1024x512-f0ecee555f69c65e8a0eace05372371bebcb050f.jpg",
+          "title_color": "0BFFAC",
+          "background_right_color": "41108C",
+          "background_text_color": "390087",
+          "_type": "Tournament Display Info",
+          "tournament_display_id": "epicgames_Arena_S13_Solo",
+          "highlight_color": "FFFFFF",
+          "primary_color": "0BFFAC",
+          "title_line_1": "ARENA",
+          "shadow_color": "5000BE",
+          "background_left_color": "B537FB",
+          "poster_fade_color": "420793",
+          "secondary_color": "FF1A40",
+          "playlist_tile_image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/tournaments/12BR_Arena_Solo_ModeTile-1024x512-f0ecee555f69c65e8a0eace05372371bebcb050f.jpg",
+          "base_color": "FFFFFF"
         }
       ],
       "_type": "Tournaments Info"
