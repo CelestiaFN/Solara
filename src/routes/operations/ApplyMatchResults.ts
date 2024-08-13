@@ -54,8 +54,6 @@ export default function () {
 
         let xpBody = XP || 1;
 
-        const username = c.req.param("accountId");
-
         const user = await User.findOne({ accountId: c.req.param("accountId") });
 
         if (!user) {
@@ -190,6 +188,8 @@ export default function () {
                 const lootList = [];
                 const rewardList = bpdata.rewards[profile.profiles.athena.stats.attributes.level - 1];
 
+                if (!rewardList) break;
+
                 for (const [item, quantity] of Object.entries(rewardList)) {
                     lootList.push({
                         itemType: item,
@@ -248,7 +248,7 @@ export default function () {
                 //   console.log(value)
             });
         }
-
+        
         switch (true) {
             case Playlist.includes("DefaultSolo"):
                 stats.solos.kills += Eliminations;
@@ -293,6 +293,7 @@ export default function () {
 
         if (profileUpdate.modifiedCount === 0 || statsUpdate.modifiedCount === 0) {
             console.error("Failed to update profile or stats");
+            return c.body(null, 204)
         }
 
         refreshAccount(user.accountId, user.username);
