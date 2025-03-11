@@ -14,10 +14,10 @@ import verifyAuth from "../../utils/handlers/verifyAuth";
 const s3 = new S3Client({
     region: "us-east-1",
     credentials: {
-        accessKeyId: "6989b3cfee39668c4b82955c5c2f2903",
-        secretAccessKey: "7afe38662535bef3fd7509810d28c33ed990440aba5d0bc35f5498e8cf0d903d",
+        accessKeyId: "",
+        secretAccessKey: "",
     },
-    endpoint: "https://12c008e459133019e8a56130d9ed8842.r2.cloudflarestorage.com",
+    endpoint: "https://skid.r2.cloudflarestorage.com",
     forcePathStyle: true,
 });
 
